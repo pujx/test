@@ -8,35 +8,31 @@
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="icon" href="favicon.ico">
 		<title></title>
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="css/jquery-confirm.min.css" />
-		<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
-		<link rel="stylesheet" href="css/cropper.min.css" />
-		<link rel="stylesheet" href="css/interInput.css" />
-		<link rel="stylesheet" href="css/upload.css" />
-		<link rel="stylesheet" href="css/Language-Lato-Light.css" />
+		<link rel="stylesheet" href="../Common/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../Common/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../Common/css/chosen-1.0.8.min.css" />
+		<link rel="stylesheet" href="../Common/css/interInput.css" />
+		<link rel="stylesheet" href="../Common/css/Language-Lato-Light.css" />
+		<link rel="stylesheet" href="../Common/css/jquery-confirm.min.css" />
 		<link rel="stylesheet" href="css/index.css" />
-		<!--<link rel="stylesheet" href="css/index-cn.css" />-->
-		<!--简体中文、繁体中文加上这个CSS文件-->
 		<!--[if lt IE 9]>
       			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
        <![endif]-->
-		<!--[if lt IE 11]>
- 				<script>
- 					window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;'></script>
+		<!--[if lte IE 8]>
+ 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
  		<![endif]-->
+
 	</head>
 
 	<body>
 		<!--头部-->
 		<header>
 			<div class="container">
-				<a href="javascript:" class="login-logo"> <img src="images/login-logo.png" /></a>
+				<a href="javascript:" class="login-logo"> <img src="../Common/images/login-logo.png" /></a>
 				<ul class="login-language pull-right">
 					<li class="right-bar-toogle right-bar-language">
-						<a href="javascript:"><img src="images/top-language.svg" alt="" />&nbsp;<i class="fa fa-angle-down"></i></a>
+						<a href="javascript:"><img src="../Common/images/top-language.png" alt="" />&nbsp;<i class="fa fa-angle-down"></i></a>
 						<ul class="scale-up">
 							<li>
 								<a href="javascript:">简体中文</a>
@@ -53,1246 +49,204 @@
 			</div>
 
 		</header>
-		<div class="page-line">
-			<p class="page-line-shadow"></p>
-		</div>
-		<p class="second-logo hidden-xs hidden-sm"><img src="images/logo.png" alt="" /></p>
-		<p class="second-logo visible-xs visible-sm"><img src="images/logo.svg" alt="" width="101" /></p>
-		<div class="stepCont">
-			<div class="pageCont">
-				<div id="page1" class="stepPage">
-					<div class="step1">
-						<h1 class="step1-name">START YOUR APPLICATION</h1>
-						<div class="container">
-							<h4 class="page-title">Account Profile . 1</h4>
-							<form class="form-horizontal" name="">
-								<div class="form-group">
-									<label for="" class="col-md-4 control-label"><em>*</em>Family Name:</label>
-									<div class="col-md-4">
-										<input type="text" class="form-control" placeholder="Family Name*" id="familyname">
-									</div>
-									<p class="col-md-3 help-block"><img src="images/login-check.svg" alt="" /></p>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-md-4 control-label"><em>*</em>Given Name:</label>
-									<div class="col-md-4">
-										<input type="text" class="form-control" placeholder="Given Name*">
-									</div>
-									<p class="col-md-3 help-block"><img src="images/login-check.svg" alt="" /></p>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-md-4 control-label"><em>*</em>E-mail Address:</label>
-									<div class="col-md-4">
-										<input type="text" class="form-control" placeholder="Enter your email*">
-									</div>
-									<p class="col-md-3 help-block"><img src="images/login-check.svg" alt="" /></p>
-								</div>
-								<div class="form-group" id="card">
-									<label for="" class="col-md-4 control-label"><em>*</em>国家：</label>
-									<div class="col-md-4">
-										<select class="form-control form-control-chosen" data-placeholder="請選擇一項*" id="country_id" onchange="loadProvince('')">
-											<option value=""></option>
-											<option value="CHN" ename="China" countrycode="CN" areacode="86" selected="selected">中國</option>
-											<option value="TWN" ename="Taiwan" countrycode="TW" areacode="886">臺灣</option>
-											<option value="AUS" ename="Australia" countrycode="AU" areacode="61">澳大利亞</option>
-											<option value="GBR" ename="United Kingdom" countrycode="GB" areacode="44">英國</option>
-											<option value="VNM" ename="Vietnam" countrycode="VN" areacode="84">越南</option>
-											<option value="PHL" ename="Philippines" countrycode="PH" areacode="63">菲律賓</option>
-											<option value="CAN" ename="Canada" countrycode="CA" areacode="1">加拿大</option>
-											<option value="ALB" ename="Albania" countrycode="AL" areacode="355">阿爾巴尼亞</option>
-											<option value="DZA" ename="Algeria" countrycode="DZ" areacode="213">阿爾及利亞</option>
-											<option value="AFG" ename="Afghanistan" countrycode="AF" areacode="93">阿富汗</option>
-											<option value="ARG" ename="Argentina" countrycode="AR" areacode="54">阿根廷</option>
-											<option value="ARE" ename="United Arab Emirates" countrycode="AE" areacode="971">阿拉伯聯合酋長國</option>
-											<option value="ABW" ename="Aruba" countrycode="AW" areacode="297">阿魯巴</option>
-											<option value="OMN" ename="Oman" countrycode="OM" areacode="968">阿曼</option>
-											<option value="AZE" ename="Azerbaijan" countrycode="AZ" areacode="994">阿塞拜疆</option>
-											<option value="ASC" ename="Ascension Island" countrycode="AC" areacode="247">阿森松島</option>
-											<option value="EGY" ename="Egypt" countrycode="EG" areacode="20">埃及</option>
-											<option value="ETH" ename="Ethiopia" countrycode="ET" areacode="251">埃塞俄比亞</option>
-											<option value="IRL" ename="Ireland" countrycode="IE" areacode="353">愛爾蘭</option>
-											<option value="EST" ename="Estonia" countrycode="EE" areacode="372">愛沙尼亞</option>
-											<option value="AND" ename="Andorra" countrycode="AD" areacode="">安道爾</option>
-											<option value="AGO" ename="Angola" countrycode="AO" areacode="244">安哥拉</option>
-											<option value="AIA" ename="Anguilla" countrycode="AI" areacode="">安圭拉</option>
-											<option value="ATG" ename="Antigua and Barbuda" countrycode="AG" areacode="">安提瓜島和巴布達</option>
-											<option value="AUT" ename="Austria" countrycode="AT" areacode="43">奧地利</option>
-											<option value="ALA" ename="Aland lslands" countrycode="AX" areacode="">奧蘭群島</option>
-											<option value="BRB" ename="Barbados" countrycode="BB" areacode="">巴巴多斯島</option>
-											<option value="PNG" ename="Papua New Guinea" countrycode="PG" areacode="">巴布亞新幾內亞</option>
-											<option value="BHS" ename="Bahamas" countrycode="BS" areacode="1809">巴哈馬</option>
-											<option value="PAK" ename="Pakistan" countrycode="PK" areacode="92">巴基斯坦</option>
-											<option value="PRY" ename="Paraguay" countrycode="PY" areacode="595">巴拉圭</option>
-											<option value="PSE" ename="Palestinian Authority" countrycode="PS" areacode="970">巴勒斯坦</option>
-											<option value="BHR" ename="Bahrain" countrycode="BH" areacode="973">巴林</option>
-											<option value="PAN" ename="Panama" countrycode="PA" areacode="507">巴拿馬</option>
-											<option value="BRA" ename="Brazil" countrycode="BR" areacode="55">巴西</option>
-											<option value="BLR" ename="White Russia" countrycode="BY" areacode="">白俄羅斯</option>
-											<option value="BMU" ename="Bermuda" countrycode="BM" areacode="">百慕大</option>
-											<option value="BGR" ename="Bulgaria" countrycode="BG" areacode="359">保加利亞</option>
-											<option value="MNP" ename="Northern Mariana Islands" countrycode="MP" areacode="">北馬里亞納群島</option>
-											<option value="BEN" ename="Benin" countrycode="BJ" areacode="229">貝寧</option>
-											<option value="BEL" ename="Belgium" countrycode="BE" areacode="32">比利時</option>
-											<option value="ISL" ename="Iceland" countrycode="IS" areacode="354">冰島</option>
-											<option value="PRI" ename="Puerto Rico" countrycode="PR" areacode="1809">波多黎各</option>
-											<option value="POL" ename="Poland" countrycode="PL" areacode="48">波蘭</option>
-											<option value="BOL" ename="Bolivia" countrycode="BO" areacode="591">玻利維亞</option>
-											<option value="BIH" ename="Bosnia and Herzegovina" countrycode="BA" areacode="">波斯尼亞和黑塞哥維那</option>
-											<option value="BWA" ename="Botswana" countrycode="BW" areacode="267">博茨瓦納</option>
-											<option value="BLZ" ename="Belize" countrycode="BZ" areacode="501">伯利茲</option>
-											<option value="BTN" ename="Bhutan" countrycode="BT" areacode="975">不丹</option>
-											<option value="BFA" ename="Burkina Faso" countrycode="BF" areacode="">布基納法索</option>
-											<option value="BDI" ename="Burundi" countrycode="BI" areacode="257">布隆迪</option>
-											<option value="BVT" ename="Bouvet Island" countrycode="BV" areacode="">布韋島</option>
-											<option value="PRK" ename="North Korea" countrycode="KP" areacode="850">朝鮮</option>
-											<option value="DNK" ename="Denmark" countrycode="DK" areacode="45">丹麥</option>
-											<option value="DEU" ename="Germany" countrycode="DE" areacode="49">德國</option>
-											<option value="TLS" ename="Timor-Leste" countrycode="TL" areacode="670">東帝汶</option>
-											<option value="TGO" ename="Togo" countrycode="TG" areacode="228">多哥</option>
-											<option value="DMA" ename="Dominica" countrycode="DM" areacode="">多明尼加</option>
-											<option value="DOM" ename="Dominican Republic" countrycode="DO" areacode="">多明尼加共和國</option>
-											<option value="RUS" ename="Russia" countrycode="RU" areacode="7">俄羅斯</option>
-											<option value="ECU" ename="Ecuador" countrycode="EC" areacode="593">厄瓜多爾</option>
-											<option value="ERI" ename="Eritrea" countrycode="ER" areacode="291">厄立特里亞</option>
-											<option value="FRA" ename="France" countrycode="FR" areacode="33">法國</option>
-											<option value="FRO" ename="Faroe Islands" countrycode="FO" areacode="298">法羅群島</option>
-											<option value="PYF" ename="French Polynesia" countrycode="PF" areacode="">法屬波利尼西亞</option>
-											<option value="GUF" ename="French Guiana" countrycode="GF" areacode="594">法屬圭亞那</option>
-											<option value="ATF" ename="French Southern and Antarctic Lands" countrycode="TF" areacode="">法屬南部領地</option>
-											<option value="VAT" ename="Vatican City" countrycode="VA" areacode="396">梵蒂岡</option>
-											<option value="FJI" ename="Fiji Islands" countrycode="FJ" areacode="679">斐濟</option>
-											<option value="FIN" ename="Finland" countrycode="FI" areacode="358">芬蘭</option>
-											<option value="CPV" ename="Cape Verde" countrycode="CV" areacode="238">佛得角</option>
-											<option value="FLK" ename="Falkland Islands" countrycode="FK" areacode="">弗蘭克群島</option>
-											<option value="GMB" ename="Gambia" countrycode="GM" areacode="220">岡比亞</option>
-											<option value="COG" ename="Congo" countrycode="CG" areacode="242">剛果</option>
-											<option value="COD" ename="Congo(DRC)" countrycode="CD" areacode="">剛果民主共和國</option>
-											<option value="COL" ename="Colombia" countrycode="CO" areacode="57">哥倫比亞</option>
-											<option value="CRI" ename="Costa Rica" countrycode="CR" areacode="506">哥斯大黎加</option>
-											<option value="GGY" ename="Guernsey" countrycode="GG" areacode="">格恩西島</option>
-											<option value="GRD" ename="Grenada" countrycode="GD" areacode="">格林納達</option>
-											<option value="GRL" ename="Greenland" countrycode="GL" areacode="">格陵蘭</option>
-											<option value="CUB" ename="Cuba" countrycode="CU" areacode="53">古巴</option>
-											<option value="GLP" ename="Guadeloupe" countrycode="GP" areacode="590">瓜德羅普</option>
-											<option value="GUM" ename="Guam" countrycode="GU" areacode="671">關島</option>
-											<option value="GUY" ename="Guyana" countrycode="GY" areacode="592">圭亞那</option>
-											<option value="KAZ" ename="Kazakhstan" countrycode="KZ" areacode="7">哈薩克斯坦</option>
-											<option value="HTI" ename="Haiti" countrycode="HT" areacode="509">海地</option>
-											<option value="KOR" ename="Korea" countrycode="KR" areacode="82">韓國</option>
-											<option value="NLD" ename="Netherlands" countrycode="NL" areacode="31">荷蘭</option>
-											<option value="ANT" ename="Netherlands Antilles" countrycode="AN" areacode="">荷屬安地列斯</option>
-											<option value="HMD" ename="Heard Island and McDonald Islands" countrycode="HM" areacode="">赫德和麥克唐納群島</option>
-											<option value="HND" ename="Honduras" countrycode="HN" areacode="504">洪都拉斯</option>
-											<option value="KIR" ename="Kiribati" countrycode="KI" areacode="686">基裏巴斯</option>
-											<option value="DJI" ename="Djibouti" countrycode="DJ" areacode="253">吉布提</option>
-											<option value="KGZ" ename="Kyrgyzstan" countrycode="KG" areacode="996">吉爾吉斯斯坦</option>
-											<option value="GIN" ename="Guinea" countrycode="GN" areacode="224">幾內亞</option>
-											<option value="GNB" ename="Guinea-Bissau" countrycode="GW" areacode="245">幾內亞比紹</option>
-											<option value="GHA" ename="Ghana" countrycode="GH" areacode="233">加納</option>
-											<option value="GAB" ename="Gabon" countrycode="GA" areacode="241">加蓬</option>
-											<option value="KHM" ename="Cambodia" countrycode="KH" areacode="855">柬埔寨</option>
-											<option value="CZE" ename="Czech Republic" countrycode="CZ" areacode="">捷克共和國</option>
-											<option value="ZWE" ename="Zimbabwe" countrycode="ZW" areacode="263">辛巴威</option>
-											<option value="CMR" ename="Cameroon" countrycode="CM" areacode="237">喀麥隆</option>
-											<option value="QAT" ename="Qatar" countrycode="QA" areacode="974">卡塔爾</option>
-											<option value="CYM" ename="Cayman Islands" countrycode="KY" areacode="">開曼群島</option>
-											<option value="CCK" ename="Cocos(Keeling)Islands" countrycode="CC" areacode="">科科斯群島</option>
-											<option value="COM" ename="Comoros" countrycode="KM" areacode="269">科摩羅</option>
-											<option value="CIV" ename="" countrycode="CI" areacode="225">象牙海岸</option>
-											<option value="KWT" ename="Kuwait" countrycode="KW" areacode="965">科威特</option>
-											<option value="HRV" ename="Croatia" countrycode="HR" areacode="385">克羅地亞</option>
-											<option value="KEN" ename="Kenya" countrycode="KE" areacode="254">肯雅</option>
-											<option value="COK" ename="Cook Islands" countrycode="CK" areacode="">庫克群島</option>
-											<option value="LVA" ename="Latvia" countrycode="LV" areacode="371">拉脫維亞</option>
-											<option value="LSO" ename="Lesotho" countrycode="LS" areacode="266">萊索托</option>
-											<option value="LAO" ename="Laos" countrycode="LA" areacode="856">老撾</option>
-											<option value="LBN" ename="Lebanon" countrycode="LB" areacode="961">黎巴嫩</option>
-											<option value="LBR" ename="Liberia" countrycode="LR" areacode="231">利比理亞</option>
-											<option value="LBY" ename="Libya" countrycode="LY" areacode="218">利比亞</option>
-											<option value="LTU" ename="Lithuania" countrycode="LT" areacode="370">立陶宛</option>
-											<option value="LIE" ename="Liechtenstein" countrycode="LI" areacode="423">列支敦士登</option>
-											<option value="REU" ename="Reunion" countrycode="RE" areacode="262">留尼旺島</option>
-											<option value="LUX" ename="Luxembourg" countrycode="LU" areacode="352">盧森堡</option>
-											<option value="RWA" ename="Rwanda" countrycode="RW" areacode="250">盧旺達</option>
-											<option value="ROU" ename="Romania" countrycode="RO" areacode="40">羅馬尼亞</option>
-											<option value="MDG" ename="Madagascar" countrycode="MG" areacode="261">馬達加斯加</option>
-											<option value="MDV" ename="Maldives" countrycode="MV" areacode="960">馬爾代夫</option>
-											<option value="MLT" ename="Malta" countrycode="MT" areacode="356">馬爾他</option>
-											<option value="MWI" ename="Malawi" countrycode="MW" areacode="265">馬拉維</option>
-											<option value="MYS" ename="Malaysia" countrycode="MY" areacode="60">馬來西亞</option>
-											<option value="MLI" ename="Mali" countrycode="ML" areacode="223">馬里</option>
-											<option value="MKD" ename="Macedonia,Former Yugoslav Republic of" countrycode="MK" areacode="389">馬其頓</option>
-											<option value="MHL" ename="Marshall Islands" countrycode="MH" areacode="">馬紹爾群島</option>
-											<option value="MTQ" ename="Martinique" countrycode="MQ" areacode="596">馬提尼克</option>
-											<option value="MYT" ename="Mayotte" countrycode="YT" areacode="">馬約特島</option>
-											<option value="IMN" ename="Isle of Man" countrycode="IM" areacode="">曼島</option>
-											<option value="MUS" ename="Mauritius" countrycode="MU" areacode="230">毛里求斯</option>
-											<option value="MRT" ename="Mauritania" countrycode="MR" areacode="222">茅利塔尼亞</option>
-											<option value="USA" ename="United States" countrycode="US" areacode="1">美國</option>
-											<option value="ASM" ename="American Samoa" countrycode="AS" areacode="">美屬薩摩亞</option>
-											<option value="UMI" ename="United States Minor Outlying Islands" countrycode="UM" areacode="">美屬外島</option>
-											<option value="MNG" ename="Mongolia" countrycode="MN" areacode="976">蒙古</option>
-											<option value="MSR" ename="Montserrat" countrycode="MS" areacode="">蒙塞拉特</option>
-											<option value="BGD" ename="Bangladesh" countrycode="BD" areacode="">孟加拉</option>
-											<option value="FSM" ename="Micronesia" countrycode="FM" areacode="">密克羅尼西亞</option>
-											<option value="PER" ename="Peru" countrycode="PE" areacode="51">祕魯</option>
-											<option value="MMR" ename="Myanmar" countrycode="MM" areacode="95">緬甸</option>
-											<option value="MDA" ename="Moldova" countrycode="MD" areacode="373">摩爾多瓦</option>
-											<option value="MAR" ename="Morocco" countrycode="MA" areacode="212">摩洛哥</option>
-											<option value="MCO" ename="Monaco" countrycode="MC" areacode="377">摩納哥</option>
-											<option value="MOZ" ename="Mozambique" countrycode="MZ" areacode="258">莫三比克</option>
-											<option value="MEX" ename="Mexico" countrycode="MX" areacode="52">墨西哥</option>
-											<option value="NAM" ename="Namibia" countrycode="NA" areacode="264">納米比亞</option>
-											<option value="ZAF" ename="South Africa" countrycode="ZA" areacode="27">南非</option>
-											<option value="ATA" ename="Antarctica" countrycode="AQ" areacode="64672">南極洲</option>
-											<option value="SGS" ename="South Georgia and South Sandwich Islands" countrycode="GS" areacode="">南喬治亞與南三明治群島</option>
-											<option value="NRU" ename="Nauru" countrycode="NR" areacode="674">諾魯</option>
-											<option value="NPL" ename="Nepal" countrycode="NP" areacode="977">尼泊爾</option>
-											<option value="NIC" ename="Nicaragua" countrycode="NI" areacode="505">尼加拉瓜</option>
-											<option value="NER" ename="Niger" countrycode="NE" areacode="227">尼日</option>
-											<option value="NGA" ename="Nigeria" countrycode="NG" areacode="234">奈及利亞</option>
-											<option value="NIU" ename="Niue" countrycode="NU" areacode="">紐埃島</option>
-											<option value="NOR" ename="Norway" countrycode="NO" areacode="47">挪威</option>
-											<option value="NFK" ename="Norfolk Island" countrycode="NF" areacode="">諾福克島</option>
-											<option value="PLW" ename="Palau" countrycode="PW" areacode="">帛琉</option>
-											<option value="PCN" ename="Pitcairn Islands" countrycode="PN" areacode="">皮特肯群島</option>
-											<option value="PRT" ename="Portugal" countrycode="PT" areacode="351">葡萄牙</option>
-											<option value="GEO" ename="Georgia" countrycode="GE" areacode="995">喬治亞</option>
-											<option value="JPN" ename="Japan" countrycode="JP" areacode="81">日本</option>
-											<option value="SWE" ename="Sweden" countrycode="SE" areacode="46">瑞典</option>
-											<option value="CHE" ename="Switzerland" countrycode="CH" areacode="41">瑞士</option>
-											<option value="SLV" ename="El Salvador" countrycode="SV" areacode="503">薩爾瓦多</option>
-											<option value="WSM" ename="Samoa" countrycode="WS" areacode="">薩摩亞</option>
-											<option value="SCG" ename="Serbia,Montenegro" countrycode="SG" areacode="">塞爾維亞與蒙特內哥羅</option>
-											<option value="SLE" ename="Sierra Leone" countrycode="SL" areacode="232">獅子山</option>
-											<option value="SEN" ename="Senegal" countrycode="SN" areacode="221">塞內加爾</option>
-											<option value="CYP" ename="Cyprus" countrycode="CY" areacode="357">賽普勒斯</option>
-											<option value="SYC" ename="Seychelles" countrycode="SC" areacode="248">賽席爾</option>
-											<option value="SAU" ename="Saudi Arabia" countrycode="SA" areacode="966">沙烏地阿拉伯</option>
-											<option value="CXR" ename="Christmas Island" countrycode="CX" areacode="619164">聖誕島</option>
-											<option value="STP" ename="Sao Tome and Principe" countrycode="ST" areacode="">聖多美普林西比</option>
-											<option value="SHN" ename="St.Helena" countrycode="SH" areacode="290">聖凱倫拿島</option>
-											<option value="KNA" ename="St.Kitts and Nevis" countrycode="KN" areacode="">聖克里斯多福及尼維斯</option>
-											<option value="LCA" ename="St.Lucia" countrycode="LC" areacode="1809">聖露西亞</option>
-											<option value="SMR" ename="San Marino" countrycode="SM" areacode="223">聖馬利諾</option>
-											<option value="SPM" ename="St.Pierre and Miquelon" countrycode="PM" areacode="">聖皮埃與密克隆群島</option>
-											<option value="VCT" ename="St.Vincent and the Grenadines" countrycode="VC" areacode="">聖文森及格瑞那丁</option>
-											<option value="LKA" ename="Sri Lanka" countrycode="LK" areacode="94">斯里蘭卡</option>
-											<option value="SVK" ename="Slovakia" countrycode="SK" areacode="421">斯洛伐克</option>
-											<option value="SVN" ename="Slovenia" countrycode="SI" areacode="386">斯洛伐尼亞</option>
-											<option value="SJM" ename="Svalbard and Jan Mayen" countrycode="SJ" areacode="">挪威屬斯瓦巴及尖棉</option>
-											<option value="SWZ" ename="Swaziland" countrycode="SZ" areacode="268">史瓦濟蘭</option>
-											<option value="SDN" ename="Sudan" countrycode="SD" areacode="249">蘇丹</option>
-											<option value="SUR" ename="Suriname" countrycode="SR" areacode="597">蘇利南</option>
-											<option value="SLB" ename="Solomon Islands" countrycode="SB" areacode="677">所羅門群島</option>
-											<option value="SOM" ename="Somalia" countrycode="SO" areacode="252">索馬利亞</option>
-											<option value="TJK" ename="Tajikistan" countrycode="TJ" areacode="7">台灣</option>
-											<option value="THA" ename="Thailand" countrycode="TH" areacode="66">泰國</option>
-											<option value="TZA" ename="Tanzania" countrycode="TZ" areacode="255">坦尚尼亞</option>
-											<option value="TON" ename="Tonga" countrycode="TO" areacode="676">東加</option>
-											<option value="TCA" ename="Turks and Caicos Islands" countrycode="TC" areacode="">土克斯及開科斯</option>
-											<option value="TAA" ename="Tristan da Cunha" countrycode="TA" areacode="">垂斯坦昆哈</option>
-											<option value="TTO" ename="Trinidad and Tobago" countrycode="TT" areacode="">千里達及托巴哥</option>
-											<option value="TUN" ename="Tunisia" countrycode="TN" areacode="216">突尼西亞</option>
-											<option value="TUV" ename="Tuvalu" countrycode="TV" areacode="688">吐瓦魯</option>
-											<option value="TUR" ename="Turkey" countrycode="TR" areacode="90">土耳其</option>
-											<option value="TKM" ename="Turkmenistan" countrycode="TM" areacode="993">土庫曼</option>
-											<option value="TKL" ename="Tokelau" countrycode="TK" areacode="690">托克勞</option>
-											<option value="WLF" ename="Wallis and Futuna" countrycode="WF" areacode="">瓦利斯群島和富圖那</option>
-											<option value="VUT" ename="Vanuatu" countrycode="VU" areacode="678">萬那杜</option>
-											<option value="GTM" ename="Guatemala" countrycode="GT" areacode="502">瓜地馬拉</option>
-											<option value="VIR" ename="Virgin Islands" countrycode="VI" areacode="">美屬維京群島</option>
-											<option value="VGB" ename="Virgin Islands,British" countrycode="VG" areacode="">英屬維京群島</option>
-											<option value="VEN" ename="Venezuela" countrycode="VE" areacode="58">委內瑞拉</option>
-											<option value="BRN" ename="Brunei" countrycode="BN" areacode="673">汶萊</option>
-											<option value="UGA" ename="Uganda" countrycode="UG" areacode="256">烏干達</option>
-											<option value="UKR" ename="Ukraine" countrycode="UA" areacode="380">烏克蘭</option>
-											<option value="URY" ename="Uruguay" countrycode="UY" areacode="598">烏拉圭</option>
-											<option value="UZB" ename="Uzbekistan" countrycode="UZ" areacode="998">烏茲別克</option>
-											<option value="ESP" ename="Spain" countrycode="ES" areacode="34">西班牙</option>
-											<option value="GRC" ename="Greece" countrycode="GR" areacode="30">希臘</option>
-											<option value="SGP" ename="Singapore" countrycode="SG" areacode="65">新加坡</option>
-											<option value="NCL" ename="New Caledonia" countrycode="NC" areacode="687">新喀里多尼亞</option>
-											<option value="NZL" ename="New Zealand" countrycode="NZ" areacode="64">紐西蘭</option>
-											<option value="HUN" ename="Hungary" countrycode="HU" areacode="36">匈牙利</option>
-											<option value="SYR" ename="Syria" countrycode="SY" areacode="963">敘利亞</option>
-											<option value="JAM" ename="Jamaica" countrycode="JM" areacode="1876">牙買加</option>
-											<option value="ARM" ename="Armenia" countrycode="AM" areacode="374">亞美尼亞</option>
-											<option value="YEM" ename="Yemen" countrycode="YE" areacode="967">葉門</option>
-											<option value="IRQ" ename="Iraq" countrycode="IQ" areacode="964">伊拉克</option>
-											<option value="IRN" ename="Iran" countrycode="IR" areacode="98">伊朗</option>
-											<option value="ISR" ename="Israel" countrycode="IL" areacode="972">以色列</option>
-											<option value="ITA" ename="Italy" countrycode="IT" areacode="39">義大利</option>
-											<option value="IND" ename="India" countrycode="IN" areacode="91">印度</option>
-											<option value="IDN" ename="Indonesia" countrycode="ID" areacode="62">印尼</option>
-											<option value="IOT" ename="British Indian Ocean Territory" countrycode="IO" areacode="246">英屬印度洋領地</option>
-											<option value="JOR" ename="Jordan" countrycode="JO" areacode="962">約旦</option>
-											<option value="ZMB" ename="Zambia" countrycode="ZM" areacode="260">贊比亞</option>
-											<option value="JEY" ename="Jersey" countrycode="JE" areacode="44">澤西島</option>
-											<option value="TCD" ename="Chad" countrycode="TD" areacode="235">查德</option>
-											<option value="GIB" ename="Gibraltar" countrycode="GI" areacode="350">直布羅陀</option>
-											<option value="CHL" ename="Chile" countrycode="CL" areacode="56">智利</option>
-											<option value="CAF" ename="Central African Republic" countrycode="CF" areacode="236">中非共和國</option>
-										</select>
-										<input type="hidden" name="CountryCode" value="CHN" />
-									</div>
-									<p class="col-md-3 help-block"><img src="images/login-check.svg" alt="" /></p>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-md-4 control-label"><em>*</em>Mobile Number:</label>
-									<div class="col-md-4">
-										<div class="changeTel">
-											<input type="text" class="form-control" placeholder="Mobile Number*" />
-											<div class="changeTelSel">
-												<em class="telLine"></em>
-												<input maxlength="30" type="text" name="AreaCode" id="areaCode" />
-											</div>
-											<!--<i class="form-control-feedback" aria-hidden="true"><img src="images/form-check.svg" alt="" /></i>-->
-										</div>
-									</div>
-									<p class="col-md-3 help-block"><img src="images/login-check.svg" alt="" /></p>
-								</div>
 
-							</form>
+		<p class="page-line-shadow"></p>
 
-						</div>
+		<div class="demo-container d-flex">
+			<div class="left-box order-1">
+				<a href="javascript:" class="left-box-logo"> <img src="images/white-text-logo.png" alt="" /></a>
 
-						<div class="container">
-							<!--<div class="form-group">-->
-							<div class="col-xs-12">
-								<div class="submit-btn common-btn">
-									<a href="javascript:" id="nextBtn" class="nextBtn">
-										<span><em>NEXT</em></span>
-										<i class=""><img src="images/submit-btn-arrow.svg" alt="" /></i>
-									</a>
-								</div>
-							</div>
-							<!--</div>-->
+				<div class="left-box-text">
+					<h2>DEMO ACCOUNT <br />FEATURES</h2>
 
-						</div>
+					<ul class="icon-ul">
+						<li>Real-time spreads and charts</li>
+						<li>Over 80 technical analysis tools</li>
+						<li>24/5 multilingual client support</li>
+						<li>Access to all types of accounts, and products</li>
+					</ul>
 
-						<p class="bottom-progress-text">It starts here, and it only takes a few minutes.</p>
+					<div class="left-box-tips">
+						* Share CFDs currently are not available on demo accounts *
 					</div>
 
 				</div>
-				<div id="page2" class="stepPage">
-					<div class="step2">
-						<div class="container">
-							<h4 class="page-title">Account Profile . 2</h4>
-							<form class="form-horizontal" name="reg_testdate">
-								<div class="form-group">
-									<label for="" class="col-md-4 control-label"><em>*</em>姓名：</label>
-									<div class="col-md-4">
-										<input type="text" class="form-control" placeholder="中文姓名*">
-									</div>
-									<p class="col-md-3 help-block"><img src="images/login-check.svg" alt="" /></p>
-								</div>
-								<div class="form-group" id="card">
-									<label for="" class="col-md-4 control-label"><em>*</em>证件类型：</label>
-									<div class="col-md-4">
-										<select name="" id="idcard" class="form-control form-control-chosen" data-placeholder="请选择一项*">
-											<option value=""></option>
-											<option value="">身份证</option>
-											<option value="">护照</option>
-										</select>
-									</div>
-									<p class="col-md-3 help-block"><img src="images/login-check.svg" alt="" /></p>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-md-4 control-label"><em>*</em>证件号码：</label>
-									<div class="col-md-4">
-										<input type="text" class="form-control" placeholder="证件号码*">
-									</div>
-									<p class="col-md-3 help-block"><img src="images/login-check.svg" alt="" /></p>
-								</div>
-								<div class="form-group" style="margin-bottom: 15px;">
-									<label for="" class="col-md-4 control-label"><em>*</em>出生日期：</label>
-									<div class="col-md-4">
-										<div class="row birthday-box">
-											<div class="col-xs-4 col-lg-41">
-												<select name="YYYY" class="form-control form-control-chosen" data-placeholder="YYYY*" onChange="YYYYDD(this.value)">
-													<option value=""></option>
-												</select>
-											</div>
-											<div class="col-xs-4 col-lg-42">
-												<select name="MM" class="form-control form-control-chosen" data-placeholder="MM*" onChange="MMDD(this.value)">
-													<option value=""></option>
-												</select>
-											</div>
-											<div class="col-xs-4 col-lg-43">
-												<select name="DD" class="form-control form-control-chosen" data-placeholder="DD*">
-													<option value=""></option>
-												</select>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-md-4 control-label"><em>*</em>是否为美国公民或美国税收居民？</label>
-									<div class="col-md-4">
-										<span class="radiospan"><em><input class="radio1" type="radio" id="step3-no" name="radio1"/></em><label for="step3-no">NO</label></span>
-										<span class="radiospan"><em><input class="radio1" type="radio" id="step3-yes" name="radio1"/></em><label for="step3-yes">YES</label></span>
-									</div>
-								</div>
-
-							</form>
-
-						</div>
-						<div class="container container-1170">
-							<div class="form-group">
-								<div class="col-md-offset-4 col-md-4">
-									<div class="row">
-										<div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-6 col-md-offset-0">
-											<div class="cancel-btn common-btn">
-												<a href="javascript:" id="prevBtn" class="prevBtn">
-													<i class=""><img src="images/cancel-btn-arrow.svg" alt="" /></i>
-													<span>PREVIOUS</span>
-												</a>
-											</div>
-										</div>
-										<div class="col-xs-6 col-sm-3 col-md-6">
-											<div class="submit-btn common-btn">
-												<a href="javascript:" id="nextBtn" class="nextBtn">
-													<span><em>NEXT</em></span>
-													<i class=""><img src="images/submit-btn-arrow.svg" alt="" /></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-						<p class="bottom-progress-text">It starts here, and it only takes a few minutes.</p>
-					</div>
-
-				</div>
-
-				<!--<div id="page2" class="stepPage">
-					<div class="step2 en-step2">
-						<div class="container">
-							<h4 class="page-title">Account Profile . 2</h4>
-							<form class="form-horizontal" name="reg_testdate">
-								<div class="form-group fogot-birth-box">
-									<label for="" class="col-md-4 control-label"><em>*</em>Date of Birth:</label>
-									<div class="col-md-4">
-										<div class="row birthday-box">
-											<div class="col-xs-4 col-lg-41">
-												<select name="YYYY" class="form-control form-control-chosen" data-placeholder="YYYY*" onChange="YYYYDD(this.value)">
-													<option value=""></option>
-												</select>
-											</div>
-											<div class="col-xs-4 col-lg-42">
-												<select name="MM" class="form-control form-control-chosen" data-placeholder="MM*" onChange="MMDD(this.value)">
-													<option value=""></option>
-												</select>
-											</div>
-											<div class="col-xs-4 col-lg-43">
-												<select name="DD" class="form-control form-control-chosen" data-placeholder="DD*">
-													<option value=""></option>
-												</select>
-											</div>
-										</div>
-									</div>
-
-								</div>
-								<div class="form-group">
-									<label for="" class="col-md-4 control-label"><em>*</em>Proof of Identity:</label>
-									<div class="col-md-4">
-										<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please choose one item*">
-											<option value=""></option>
-											<option value="">ID card</option>
-											<option value="">Passport</option>
-										</select>
-									</div>
-									<p class="col-md-3 help-block"><img src="images/login-check.svg" alt="" /></p>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-md-4 control-label"><em>*</em>ID Number:</label>
-									<div class="col-md-4">
-										<input type="text" class="form-control" placeholder="Enter your number*">
-									</div>
-									<p class="col-md-3 help-block"><img src="images/login-check.svg" alt="" /></p>
-								</div>
-								<div class="form-group">
-									<label for="" class="en-ask-us col-md-6 col-lg-5 control-label"><em>*</em>Are you a US citizen or a US resident for tax purposes?</label>
-									<div class="col-md-4">
-										<span class="radiospan"><em><input class="radio1" type="radio" id="step3-no" name="radio1"/></em><label for="step3-no">NO</label></span>
-										<span class="radiospan"><em><input class="radio1" type="radio" id="step3-yes" name="radio1"/></em><label for="step3-yes">YES</label></span>
-
-									</div>
-								</div>
-							</form>
-
-						</div>
-						<div class="container container-1170">
-							<div class="form-group">
-								<div class="col-md-offset-4 col-md-4">
-									<div class="row">
-										<div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-6 col-md-offset-0">
-											<div class="cancel-btn common-btn">
-												<a href="javascript:" id="prevBtn" class="prevBtn">
-													<i class=""><img src="images/cancel-btn-arrow.svg" alt="" /></i>
-													<span>PREVIOUS</span>
-												</a>
-											</div>
-										</div>
-										<div class="col-xs-6 col-sm-3 col-md-6">
-											<div class="submit-btn common-btn">
-												<a href="javascript:" id="nextBtn" class="nextBtn">
-													<span><em>NEXT</em></span>
-													<i class=""><img src="images/submit-btn-arrow.svg" alt="" /></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bottom-progress-text">It starts here, and it only takes a few minutes.</p>
-					</div>
-
-				</div>-->
-
-				<div id="page3" class="stepPage">
-					<div class="step3">
-						<div class="container">
-							<h4 class="page-title page-title2">Account Profile . 3</h4>
-							<form class="form-horizontal">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group has-chosen-search">
-											<label for="" class="col-md-6 control-label"><em>*</em>Country/Region:</label>
-											<div class="col-md-5">
-												<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please choose one item*">
-													<option value=""></option>
-												</select>
-											</div>
-											<p class="help-block col-md-1"><img src="images/login-check.svg" alt="" /></p>
-										</div>
-										<div class="form-group has-chosen-search">
-											<label for="" class="col-md-6 control-label"><em>*</em>State/Province:</label>
-											<div class="col-md-5">
-												<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please choose one item*">
-													<option value=""></option>
-												</select>
-											</div>
-											<p class="help-block col-md-1"><img src="images/login-check.svg" alt="" /></p>
-										</div>
-										<div class="form-group has-chosen-search">
-											<label for="" class="col-md-6 control-label"><em>*</em>City:</label>
-											<div class="col-md-5">
-												<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please choose one item*">
-													<option value=""></option>
-												</select>
-											</div>
-											<p class="help-block col-md-1"><img src="images/login-check.svg" alt="" /></p>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label for="" class="col-md-3 control-label"><em>*</em>Street address 1:</label>
-											<div class="col-md-5">
-												<input type="text" class="form-control" placeholder="Enter your adress*" />
-											</div>
-											<p class="help-block col-md-2"><img src="images/login-check.svg" alt="" /></p>
-										</div>
-										<div class="form-group">
-											<label for="" class="col-md-3 control-label">Street address 2:</label>
-											<div class="col-md-5">
-												<input type="text" class="form-control" placeholder="Enter your adress*" />
-											</div>
-										</div>
-										<div class="form-group">
-											<label for="" class="col-md-3 control-label"><em>*</em>ZIP or postal code:</label>
-											<div class="col-md-5">
-												<input type="text" class="form-control" />
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</form>
-
-						</div>
-						<div class="container container-1170">
-							<div class="form-group">
-								<div class="col-md-offset-4 col-md-4">
-									<div class="row">
-										<div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-6 col-md-offset-0">
-											<div class="cancel-btn common-btn">
-												<a href="javascript:" id="prevBtn" class="prevBtn">
-													<i class=""><img src="images/cancel-btn-arrow.svg" alt="" /></i>
-													<span>PREVIOUS</span>
-												</a>
-											</div>
-										</div>
-										<div class="col-xs-6 col-sm-3 col-md-6">
-											<div class="submit-btn common-btn">
-												<a href="javascript:" id="nextBtn" class="nextBtn">
-													<span><em>NEXT</em></span>
-													<i class=""><img src="images/submit-btn-arrow.svg" alt="" /></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-				<div id="page4" class="stepPage">
-					<div class="step4">
-						<div class="container">
-							<h4 class="page-title page-title2">Personal Details</h4>
-							<form class="form-horizontal">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label for="" class="col-md-6 control-label"><em>*</em>Employment Status:</label>
-											<div class="col-md-5">
-												<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please choose one item*">
-													<option value=""></option>
-													<option value="">Employed</option>
-													<option value="">Self-employed</option>
-													<option value="">Retired</option>
-													<option value="">Unemployed</option>
-												</select>
-											</div>
-											<p class="help-block col-md-1"><img src="images/login-check.svg" alt="" /></p>
-										</div>
-
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label for="" class="col-md-3 control-label"><em>*</em>Annual Income:</label>
-											<div class="col-md-5">
-												<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please choose one item*">
-													<option value=""></option>
-													<option value="">Less than $25,000</option>
-													<option value="">$25,001 ~ $40,000</option>
-													<option value="">$40,001 ~ $75,000</option>
-													<option value="">$75,001 ~ $250,000</option>
-													<option value="">$250,001 ~ $1,000,000</option>
-													<option value="">More than $1,000,000</option>
-												</select>
-											</div>
-											<p class="help-block col-md-1"><img src="images/login-check.svg" alt="" /></p>
-										</div>
-
-									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label for="" class="col-md-6 control-label"><em>*</em>Industry:</label>
-											<div class="col-md-5">
-												<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please choose one item*">
-													<option value=""></option>
-													<option value="">Accountancy</option>
-													<option value="">Admin / Secretarial</option>
-													<option value="">Agricultural</option>
-													<option value="">Advertising</option>
-													<option value="">Catering / Hospitality</option>
-													<option value="">Company Services</option>
-													<option value="">Creative / Media</option>
-													<option value="">Defence / Military</option>
-													<option value="">Education</option>
-													<option value="">Emergency Services</option>
-													<option value="">Energy</option>
-													<option value="">Engineering</option>
-													<option value="">Export / Import</option>
-													<option value="">Financial Services</option>
-													<option value="">Government / Public </option>
-													<option value="">Health / Medicine</option>
-													<option value="">Legal</option>
-													<option value="">Leisure / Entertainment / Manufacturing</option>
-													<option value="">Marketing / PR / Non-Governmental</option>
-													<option value="">Not for Profit / Charity Organisation</option>
-													<option value="">Pharmaceuticals</option>
-													<option value="">Precious Metals / Stones</option>
-													<option value="">Property / Construction / Retail</option>
-													<option value="">Sector</option>
-													<option value="">Social Care / Services / Tourism</option>
-													<option value="">Trade</option>
-													<option value="">Technology</option>
-													<option value="">Telecommunications</option>
-													<option value="">Transport / Logistics</option>
-													<option value="">Other</option>
-												</select>
-											</div>
-											<p class="help-block col-md-1"><img src="images/login-check.svg" alt="" /></p>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label for="" class="col-md-3 control-label"><em>*</em>Your Net Assets:</label>
-											<div class="col-md-5">
-												<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please choose one item*">
-													<option value=""></option>
-													<option value="">Less than $25,000</option>
-													<option value="">$25,001 ~ $50,000</option>
-													<option value="">$50,001 ~ $1,000,000</option>
-													<option value="">More than $1,000,000</option>
-												</select>
-											</div>
-											<p class="help-block col-md-1"><img src="images/login-check.svg" alt="" /></p>
-										</div>
-									</div>
-								</div>
-
-							</form>
-
-						</div>
-						<div class="container container-1170">
-							<div class="form-group">
-								<div class="col-md-offset-4 col-md-4">
-									<div class="row">
-										<div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-6 col-md-offset-0">
-											<div class="cancel-btn common-btn">
-												<a href="javascript:" id="prevBtn" class="prevBtn">
-													<i class=""><img src="images/cancel-btn-arrow.svg" alt="" /></i>
-													<span>PREVIOUS</span>
-												</a>
-											</div>
-										</div>
-										<div class="col-xs-6 col-sm-3 col-md-6">
-											<div class="submit-btn common-btn">
-												<a href="javascript:" id="nextBtn" class="nextBtn">
-													<span><em>NEXT</em></span>
-													<i class=""><img src="images/submit-btn-arrow.svg" alt="" /></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bottom-progress-text">Let us know more about you.</p>
-					</div>
-
-				</div>
-				<div id="page5" class="stepPage">
-					<div class="step5">
-						<div class="container">
-							<h4 class="page-title page-title2">Account Setup</h4>
-							<form class="form-horizontal">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label for="" class="col-md-6 control-label"><em>*</em>Account Type:</label>
-											<div class="col-md-5">
-												<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please choose one item*">
-													<option value=""></option>
-													<option value="">STANDARD Account</option>
-													<option value="">RAW Account</option>
-												</select>
-											</div>
-											<p class="help-block col-md-1"><img src="images/login-check.svg" alt="" /></p>
-										</div>
-										<div class="form-group">
-											<label for="" class="col-md-6 control-label"><em>*</em>Account Base Currency:</label>
-											<div class="col-md-5">
-												<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please choose one item*">
-													<option value=""></option>
-													<option value="">USD</option>
-													<option value="">EUR</option>
-													<option value="">GBP</option>
-													<option value="">AUD</option>
-												</select>
-											</div>
-											<p class="help-block col-md-1"><img src="images/login-check.svg" alt="" /></p>
-										</div>
-										<div class="form-group">
-											<label for="" class="col-md-6 control-label">Promo code/Referrer:</label>
-											<div class="col-md-5">
-												<input type="text" class="form-control" />
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-
-											<label for="" class="col-md-3 control-label"><em>*</em>Password:</label>
-											<div class="col-md-5">
-												<input type="password" class="form-control" placeholder="8-12digits, with numbers and letters*" />
-											</div>
-											<p class="help-block col-md-2"><img src="images/login-check.svg" alt="" /></p>
-										</div>
-										<div class="form-group">
-											<label for="" class="col-md-3 control-label hidden-xs hidden-sm">&nbsp;</label>
-											<div class="col-md-5">
-												<input type="password" class="form-control" placeholder="Please retype in your password*" />
-											</div>
-											<p class="help-block col-md-2"><img src="images/login-check.svg" alt="" /></p>
-										</div>
-										<div class="form-group">
-											<label for="" class="col-md-3 control-label"><em>*</em>leverage:</label>
-											<div class="col-md-5">
-												<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please choose one item*">
-													<option value=""></option>
-													<option value="">1:100</option>
-													<option value="">1:200</option>
-													<option value="">1:400</option>
-													<option value="">1:500</option>
-												</select>
-											</div>
-											<p class="help-block col-md-1"><img src="images/login-check.svg" alt="" /></p>
-										</div>
-
-									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<label for="" class="col-md-4 control-label">Products you’ll be trading:</label>
-											<div class="col-md-8">
-												<p class="piaochecked"><em><input type="checkbox" class="check1"/></em>Forex</p>
-												<p class="piaochecked"><em><input type="checkbox"  class="check1"/></em>Metals</p>
-												<p class="piaochecked"><em><input type="checkbox"  class="check1"/></em>Indices/CFD</p>
-												<p class="piaochecked"><em><input type="checkbox"  class="check1"/></em>Share CFDs</p>
-											</div>
-										</div>
-
-									</div>
-								</div>
-
-							</form>
-
-						</div>
-
-						<div class="container container-1170">
-							<div class="form-group">
-								<div class="col-md-offset-4 col-md-4">
-									<div class="row">
-										<div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-6 col-md-offset-0">
-											<div class="cancel-btn common-btn">
-												<a href="javascript:" id="prevBtn" class="prevBtn">
-													<i class=""><img src="images/cancel-btn-arrow.svg" alt="" /></i>
-													<span>PREVIOUS</span>
-												</a>
-											</div>
-										</div>
-										<div class="col-xs-6 col-sm-3 col-md-6">
-											<div class="submit-btn common-btn">
-												<a href="javascript:" id="nextBtn" class="nextBtn">
-													<span><em>NEXT</em></span>
-													<i class=""><img src="images/submit-btn-arrow.svg" alt="" /></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bottom-progress-text">Let us know how you want your account to be set up? </p>
-					</div>
-
-				</div>
-				<div id="page6" class="stepPage">
-					<div class="step6">
-						<div class="container">
-							<h4 class="page-title page-title2">Terms & Conditions</h4>
-							<div class="legal-box">
-								<div class="legal-text-box bor8">
-									<div class="legal-text-detail">
-										<a href="javascript:" class="legal-logo"> <img src="images/login-logo.png" /></a>
-										<p>RADEX MARKETS' financial service license allows it to provide financial services. To all investors who receive the financial services that RADEX MARKETS provide, RADEX MARKETS fulfils the obligations that the financial service license outlines.</p>
-										<p><b>Client Agreement Form</b>
-											<br /> Online sign up is intended to be completed in conjunction with relevant provisions of the respective Client Agreement Form.
-										</p>
-										<p>
-											<b>Product Suitability</b>
-											<br />Before you open an account with RADEX MARKETS to trade Derivatives, it is important that you read RADEX MARKETS’ legal documents including RADEX MARKETS Product Disclosure Statement, RADEX MARKETS Terms and Conditions.
-										</p>
-										<p>
-											<b>Derivatives Risk Warning</b>
-											<br /> Trading Derivatives carries a high degree of risk and may not be suitable for every investor. If you are in any doubt, it is important that you seek independent financial advice.
-										</p>
-										<p>
-											<b>Warning if you elect not to provide all information</b>
-											<br /> Unless you provide all information, we have asked for, there is risk we may not be able to assess whether you have ability to understand the risks involved and the product suitability. It is essential that you provide accurate and full information and if, at a future date, any circumstance adversely affect this information you are required to write to us advising us of these details.
-										</p>
-										<p>
-											<b>Country Restrictions</b>
-											<br /> Applicants from outside Australia must check their local laws and regulations before applying for an account. RADEX MARKETS cannot accept any live account applications from clients who are residents of Israel, Belgium, Canada, Japan, New Zealand, Turkey, United States of America and Vietnam. If you feel that you may qualify for an exemption, please email to support@radexmarkets.com . In this email you will need to provide us with details of the grounds for your exemption before applying for an account.
-										</p>
-										<p>
-											RADEX MARKETS does not accept applications from applicants in the following countries: Afghanistan, Barbados, Haiti, Iran, Iraq, Lebanon, Libya, Myanmar, New Zealand Retail, Nicaragua, North Korea (DPRK), Pakistan, Panama, Somalia, South Sudan, State of Palestine, Syria, Timor-Leste, USA, Venezuela, Yemen and Zimbabwe.
-										</p>
-										<p>
-											By proceeding the account opening process, meaning that you understand and approve the terms and conditions and the legal disclaimer by RADEX MARKETS.
-										</p>
-									</div>
-								</div>
-								<div class="legal-download-box">
-									<div class="row">
-										<div class="col-md-6 piaochecked">
-											<em></em>
-											<a href="../Common/pdf/RM-Privacy-Policy.pdf" target="_blank" class="legal-pdf-box d-flex">
-												<i><img src="images/pdf-icon.svg" alt="" /></i>
-												<div class="pdf-text">
-													<span class="">Privacy Policy</span>
-													<p>Our Privacy Policy discloses how we collect, use, hold, disclose and disseminate your personal information.</p>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-6 piaochecked">
-											<em></em>
-											<a href="../Common/pdf/RM-Terms-and-Conditions.pdf" target="_blank" class="legal-pdf-box d-flex">
-												<i><img src="images/pdf-icon.svg" alt="" /></i>
-												<div class="pdf-text">
-													<span class="">Terms and Conditions</span>
-													<p>These Terms & Conditions will govern all Financial Product transactions entered between us and you.</p>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-6 piaochecked">
-											<em></em>
-											<a href="../Common/pdf/RM-Product-Disclosure-Statement.pdf" target="_blank" class="legal-pdf-box d-flex">
-												<i><img src="images/pdf-icon.svg" alt="" /></i>
-												<div class="pdf-text">
-													<span class="">Product Disclosure Statement</span>
-													<p>Information about the financial products’ features, fees, commissions, benefits, risks and complaint handling procedures is all included in this document. </p>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-6 piaochecked">
-											<em></em>
-											<a href="../Common/pdf/RM-Execution-Policy.pdf" target="_blank" class="legal-pdf-box d-flex">
-												<i><img src="images/pdf-icon.svg" alt="" /></i>
-												<div class="pdf-text">
-													<span class="">	Execution Policy</span>
-													<p>The order execution policy explains how RADEX MARKETS obtain the best possible result for clients when executing orders.</p>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="agree-legal">
-									<em>*</em>I declare that I have read, understood and accept the above terms and conditions of use documents.
-									<span class="radiospan noselect" id="uncheckAll"><label for="step6-no">NO</label><em><input class="radio1" type="radio" id="step6-no" name="radio6"/></em></span>
-									<span class="radiospan noselect" id="checkAll"><label for="step6-yes">YES</label><em><input class="radio1" type="radio" id="step6-yes" name="radio6"/></em></span>
-								</div>
-							</div>
-						</div>
-						<div class="container container-1170">
-							<div class="form-group">
-								<div class="col-md-offset-4 col-md-4">
-									<div class="row">
-										<div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-6 col-md-offset-0">
-											<div class="cancel-btn common-btn">
-												<a href="javascript:" id="prevBtn" class="prevBtn">
-													<i class=""><img src="images/cancel-btn-arrow.svg" alt="" /></i>
-													<span>PREVIOUS</span>
-												</a>
-											</div>
-										</div>
-										<div class="col-xs-6 col-sm-3 col-md-6">
-											<div class="submit-btn common-btn">
-												<a href="javascript:" id="nextBtn" class="nextBtn">
-													<span><em>NEXT</em></span>
-													<i class=""><img src="images/submit-btn-arrow.svg" alt="" /></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bottom-progress-text">Things you should know before you kick start.</p>
-					</div>
-
-				</div>
-				<div id="page7" class="stepPage">
-					<div class="step7">
-						<div class="container">
-							<h4 class="page-title page-title2">Upload Documents</h4>
-							<div class="upload-box">
-								<div class="upload-text-box">
-									<p>Please upload your valid proof of identity for your trading account at RADEX MARKETS according to the instructions below.</p>
-									<p>Please be noted in accordance with regulatory requirements, we may require you to submit proof of address.</p>
-									<p>Your name and date of birth must be on a government-issued ID.</p>
-									<h3>We accept one of the following types of documents:</h3>
-									<div class="upload-file-box">
-										<form class="form-horizontal">
-											<div class="col-md-6">
-												<div class="form-group">
-													<label for="" class="control-label"><em>*</em>Proof of identity<em class="f12">(documents should not be older than 6 months)</em>:</label>
-													<div class="">
-														<div class="upload-img-box upload-img-box1 upload-img-click-box clearfix">
-															<a href="javascript:" class="upload-click" data-toggle="modal" data-target="#cropperModal"><img src="images/pop-upload-bg.svg" alt="" /></a>
-														</div>
-														<ul class="photo-description">
-															<li>ID Card - Front and back side.</li>
-															<li>Passport - Face photo page.</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-group">
-													<label for="" class="control-label"><em>*</em>Proof of address<em class="f12">(statements should not be older than 3 months)</em>:</label>
-													<div class="">
-														<div class="upload-img-box upload-img-click-box clearfix" id="J_upload_box1">
-															<a href="javascript:" class="upload-click" data-toggle="modal" data-target="#cropperModal"><img src="images/pop-upload-bg.svg" alt=""></a>
-														</div>
-														<!-- </div> -->
-														<ul class="photo-description">
-															<li>Credit card/Bank Detail Statement.</li>
-															<li>Utility bills such as landline, electricity, gas bill, and Internet Statement.</li>
-															<li>XXX</li>
-															<li>XXX</li>
-														</ul>
-													</div>
-
-												</div>
-
-											</div>
-										</form>
-
-									</div>
-
-								</div>
-							</div>
-
-						</div>
-						<div class="container container-1170">
-							<div class="form-group">
-								<div class="col-md-offset-4 col-md-4">
-									<div class="row">
-										<div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-6 col-md-offset-0">
-											<div class="cancel-btn common-btn">
-												<a href="javascript:" id="prevBtn" class="prevBtn">
-													<i class=""><img src="images/cancel-btn-arrow.svg" alt="" /></i>
-													<span>PREVIOUS</span>
-												</a>
-											</div>
-										</div>
-										<div class="col-xs-6 col-sm-3 col-md-6">
-											<div class="submit-btn common-btn">
-												<a href="javascript:" id="nextBtn" class="nextBtn">
-													<span><em>NEXT</em></span>
-													<i class=""><img src="images/submit-btn-arrow.svg" alt="" /></i>
-												</a>
-												<br />
-												<a href="javascript:" id="nextBtn" class="nextBtn skipBtn">skip and next</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bottom-progress-text">Upload your documents here.</p>
-					</div>
-
-				</div>
-				<div id="page8" class="stepPage">
-					<div class="step8">
-						<h1 class="step8-name">Now, you’re all set!</h1>
-						<div class="container">
-							<div class="row d-flex align-items-center">
-								<div class="col-xs-12 col-md-6">
-									<div class="step8-l-box">
-										<h4 class="page-title page-title3">Your Account Details</h4>
-										<ul>
-											<li><span>MT4 Login:</span><b>Chen066888</b></li>
-											<li><span>Account Name:</span><b>John Chen</b></li>
-											<li><span>Password:</span><b>Password you entered in your registration</b></li>
-											<li><span>MT4 Server:</span><b>Real_rm01</b></li>
-										</ul>
-
-									</div>
-								</div>
-								<div class="col-xs-12 col-md-6">
-									<div class="step8-r-box">
-										<p class="step8-shadow"></p>
-
-										<div class="step8-item">
-											<a href="http://14.192.67.34:2001/" target="_blank" class="d-flex align-items-center">
-												<p><img src="images/account-step1.svg" alt="" /></p>
-												<span>01</span>
-												<div class="item-right">
-													<h4>Verify</h4>
-													<em>Upload your documents if you haven’t finished it during account opening process.</em>
-												</div>
-
-											</a>
-
-										</div>
-										<div class="step8-item">
-											<a href="http://14.192.67.34:2001/" target="_blank" class="d-flex align-items-center">
-												<p><img src="images/account-step2.svg" alt="" /></p>
-												<span>02</span>
-												<div class="item-right">
-													<h4>Fund</h4>
-													<em>Make your deposit via a range of funding options with 0 fees.</em>
-												</div>
-
-											</a>
-
-										</div>
-										<div class="step8-item">
-											<a href="http://14.192.67.34:2001/" target="_blank" class="d-flex align-items-center">
-												<p><img src="images/account-step3.svg" alt="" /></p>
-												<span>03</span>
-												<div class="item-right">
-													<h4>Trade</h4>
-													<em>Start your trading with 350+ products: Forex, Shares, CFDs, Commodities, Indices, and Metals.</em>
-												</div>
-
-											</a>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-
-				</div>
+				<p class="copy hidden-sm hidden-xs">© 2021 RADEX MARKETS. All rights reserved.</p>
 			</div>
 
-			<div class='ystep-container'></div>
-
-		</div>
-		<footer>
-			<p class="footer-box-shadow"></p>
-			<div class="footer-text">
-				<div class="container">
-					<p>© 2021 GO Markets International Ltd Co. No. 8425985-1, Securities Dealer Licence No SD043 trading as Radex Markets.</p>
-					<p><b>Risk Warning:</b> Trading derivatives and leveraged products carries a high level of risk, including the risk of losing substantially more than your initial investment. It is not suitable for everyone. Before you make any decision in relation to a financial product you should obtain and consider our
-						<a href="../Common/pdf/RM-Product-Disclosure-Statement.pdf" target="_blank">Product Disclosure Statement (PDS) </a>Pavailable on our website and seek independent advice if necessary.</p>
-					<p>The information on this website is of a general nature only and does not consider your objectives, financial situation or needs. Every effort is made to provide information that is accurate. However, information is subject to change at any time without notice. Radex Markets cannot guarantee, and assumes no legal liability or responsibility for, the relevance, accuracy, currency or completeness of the information.</p>
-					<p>The information on this site is not directed at residents in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.</p>
-					<p>All contents <span id="footer-year"></span> Radex Markets. All rights reserved.</p>
-				</div>
-
-			</div>
-		</footer>
-		<!--上传-->
-		<div class="modal fade" id="cropperModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-body">
-						<div class="tailoring-box">
-							<form action="" class="form-horizontal">
-								<ul class="upload-address-ul">
-									<li>Credit card/Bank Detail Statement.</li>
-									<li>Utility bills such as landline, electricity, gas bill and Internet Statement.</li>
-								</ul>
-								<div class="form-group identity-dropdown">
-									<label for="" class="col-md-5 control-label"><em>*</em>Proof of identity:</label>
-									<div class="col-md-7">
-										<select class="form-control form-control-chosen" name="question" onchange="identity(this)">
-											<option value="2">ID Card</option>
-											<option value="1">Passport</option>
-										</select>
-									</div>
-								</div>
-								<div class="tailoring-content">
-									<div class="tailoring-content-two">
-										<div class="tailoring-box-parcel col-sm-12" id="J_file_box">
-											<label for="J_file" id="pop-upload-bg"></label>
-											<img src="" id="J_file_box_img" alt="">
-											<div id="upload-select-loading">
-												<i class="fa fa-spin"><img src="images/upload-loading.svg" alt="" /></i>
-											</div>
-										</div>
-										<div class="preview-box-parcel hidden-xs hidden-sm">
-											<p>Preview Picture:</p>
-											<div class="square previewImg"></div>
-										</div>
-									</div>
-									<div class="identity-select">
-										<h2 class="select-id">ID Card - Front and back side</h2>
-										<h2 class="select-passport">Passport - Face photo page</h2>
-									</div>
-
-									<div>
-										<div class="upload-file-box">
-											<div class="upload-img-box" id="J_upload_box">
-												<a href="javascript:" id="J_file_wrap">
-													<label title="上传图片" for="J_file">
-															<input type="file" accept="image/jpg,image/jpeg,image/png" name="file" id="J_file" class="hidden" onChange="selectImg(this)">
-														</label>
-												</a>
-											</div>
-										</div>
-
-									</div>
-
-									<div id="J_btn_group">
-										<div class="row">
-											<div class="col-xs-6">
-												<div class="cancel-btn common-btn">
-													<a href="javascript:" data-dismiss="modal">
-														<i class=""><img src="images/cancel-btn-arrow.svg" alt="" /></i>
-														<span>Close</span>
-													</a>
-												</div>
-											</div>
-											<div class="col-xs-6">
-
-												<div class="submit-btn common-btn">
-													<a href="javascript:" id="J_crop">
-														<span><em>Submit</em></span>
-														<i class=""><img src="images/submit-btn-arrow.svg" alt="" /></i>
-													</a>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</div>
-
-							</form>
-						</div>
-
+			<div class="right-box order-2">
+				<div class="right-form" id="right-form">
+					<div class="right-form-top">
+						<h4><em></em>OPEN DEMO ACCOUNT</h4>
+						<p>Try our free demo account today.</p>
 					</div>
 
+					<form action="" class="password-modal">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group has-feedback">
+									<input type="text" class="form-control" placeholder="First Name*" />
+									<i class="form-control-feedback" aria-hidden="true"><img src="../Common/images/form-check.svg" alt="" /></i>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group has-feedback">
+									<input type="text" class="form-control" placeholder="Last Name*" />
+									<i class="form-control-feedback" aria-hidden="true"><img src="../Common/images/form-check.svg" alt="" /></i>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group has-feedback">
+									<div class="changeTel">
+										<input type="text" class="form-control" placeholder="Your Moblile*" />
+										<div class="changeTelSel">
+											<input maxlength="30" type="text" />
+										</div>
+										<i class="form-control-feedback" aria-hidden="true"><img src="../Common/images/form-check.svg" alt="" /></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group has-feedback">
+									<input type="text" class="form-control" placeholder="Enter Your Email*" />
+									<p class="sent-to-email">Password will be sent to your E-mail.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 account-col-md-4">
+								<div class="form-group">
+									<select class="form-control form-control-chosen" data-placeholder="Account Type*">
+										<option value=""></option>
+										<option value="">Standard Account</option>
+										<option value="">Raw Account</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<select class="form-control form-control-chosen" data-placeholder="Leverage*">
+										<option value=""></option>
+										<option value="">1:100</option>
+										<option value="">1:200</option>
+										<option value="">1:400</option>
+										<option value="">1:500</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<select class="form-control form-control-chosen" data-placeholder="Balance*">
+										<option value=""></option>
+										<option value="">10,000</option>
+										<option value="">20,000</option>
+										<option value="">30,000</option>
+										<option value="">40,000</option>
+										<option value="">50,000</option>
+										<option value="">100,000</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="right-form-btm">
+							<div class="check-box">
+								<div class="check-box-top bor4">
+									<p>
+										<label class="anim">
+										<input class="inp-cbx" id="evening" type="checkbox"/>
+										<label class="cbx" for="evening">
+											<span>
+  												<svg width="18px" height="18px">
+   	 												<use xlink:href="#check"></use>
+  												</svg>
+  											</span>
+  										<b>I'm not a robot</b>
+										</label>
+										<svg class="inline-svg">
+											<symbol id="check" viewbox="0 0 12 10">
+												<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+											</symbol>
+										</svg>
+										</label>
+
+										<img src="images/not-robot.png" alt="" align="right" />
+									</p>
+
+								</div>
+
+							</div>
+
+							<div class="demo-button">
+								<button type="button" id="demo-btn">SUBMIT</button>
+							</div>
+
+						</div>
+
+						<p class="protect-text">
+							This site is protected by reCAPTCHA and the Google
+							<a href=" https://policies.google.com/privacy?hl=en-GB" target="_blank">Privacy Policy</a> and
+							<a href="https://policies.google.com/terms?hl=en-GB" target="_blank">Terms of Service</a> apply.
+						</p>
+					</form>
+
+					<div class="shadow-line"></div>
+				</div>
+
+				<div class="right-form right-form-successful" id="right-form-successful">
+					<div class="right-form-top">
+						<h4><em></em>Demo account registration successful!</h4>
+					</div>
+					<div class="right-successful-box">
+						<p class="successful-thanks">Thank you for registering a demo account with RADEX MARKETS.
+							<br /> Please see your login credentials below:</p>
+
+						<ul class="successful-account">
+							<li><b>Demo account number : </b>Demo_1234</li>
+							<li><b>Login password : </b>Password_1234</li>
+							<li><b>Server : </b>RadexMarkets-Demo</li>
+						</ul>
+						<p class="successful-days">You have $10,000 USD balance on the demo account, which will be valid for 30 days.</p>
+						<p class="successful-download">We have sent the above login credentials and the platform download link to your registered email address, please kindly check your email inbox.</p>
+					</div>
+					<div class="shadow-line"></div>
+				</div>
+
+				<div class="risk-box">
+					<p>We’re here to help. Feel free to contact us via the methods below:</p>
+					<a href="javascript:">+44 20 8610 1608</a>
+					<em>|</em>
+					<a href="javascript:">400 120 9160</a>
+					<em class="hidden-xs">|</em>
+					<a href="mailto:support@radexmarkets.com" class="risk-box-email">support@radexmarkets.com</a>
+					<p class="copy visible-xs visible-sm">© 2021 RADEX MARKETS. All rights reserved.</p>
 				</div>
 			</div>
+	
 		</div>
-
-		<!--上传 end-->
-
 		<div class="online-float-box">
 			<div class="feedback">
 				<span>Feedback</span>
 				<a href="javascript:" data-toggle="modal" data-target="#feedback-modal" id="feedback">
-					<div class="img"><img src="images/float-feedback.svg" alt="" /></div>
+					<div class="img"><img src="../Common/images/float-feedback.svg" alt="" /></div>
 				</a>
 			</div>
 			<div class="service">
 				<span>Chat</span>
 				<a href="javascript:" target="_blank">
-					<div class="img"><img src="images/float-chat.svg" alt="" /></div>
+					<div class="img"><img src="../Common/images/float-chat.svg" alt="" /></div>
 				</a>
 			</div>
 			<div class="call-back">
 				<span>Callback</span>
 				<a href="javascript:" data-toggle="modal" data-target="#call-back-modal">
-					<div class="img"><img src="images/float-tel.svg" alt="" /></div>
+					<div class="img"><img src="../Common/images/float-tel.svg" alt="" /></div>
 				</a>
 			</div>
 		</div>
+
 		<!--feedback-->
-		<div class="modal fade public-modal" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal fade" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -1300,14 +254,11 @@
 					<div class="modal-body">
 						<form action="">
 							<div class="form-group">
-								<label for="">账户号码：</label>
-								<select name="" class="form-control form-control-chosen">
-									<option value="">同名账户1</option>
-									<option value="">同名账户2</option>
-								</select>
+								<label for=""><em>*</em>账户号码：</label>
+								<input type="text" class="form-control" placeholder="" />
 							</div>
 							<div class="form-group">
-								<label for="">问题类别：</label>
+								<label for=""><em>*</em>问题类别：</label>
 								<select name="" class="form-control form-control-chosen">
 									<option value="">交易相关</option>
 									<option value="">账户相关</option>
@@ -1324,30 +275,9 @@
 								<textarea name="" rows="5" cols="5" placeholder="将您的反馈、意见与建议发给我们！" class="form-control"></textarea>
 							</div>
 							<div class="form-group">
-								<div class="row">
-									<div class="col-xs-6">
-										<div class="cancel-btn common-btn">
-											<a href="javascript:" id="prevBtn" class="prevBtn" data-dismiss="modal">
-												<i class=""><img src="images/cancel-btn-arrow.svg" alt="" /></i>
-												<span>CANCEL</span>
-											</a>
-										</div>
-									</div>
-									<div class="col-xs-6">
-										<div class="submit-btn common-btn">
-											<a href="javascript:" id="nextBtn" class="nextBtn">
-												<span><em>SUBMIT</em></span>
-												<i class=""><img src="images/submit-btn-arrow.svg" alt="" /></i>
-											</a>
-										</div>
-									</div>
-								</div>
+								<button type="button" class="buttons buttons-success" id="close-feedback-btn">Submit <i class="fa fa-circle-o-notch fa-spin"></i></button>
 							</div>
-
 						</form>
-					</div>
-					<div class="modal-footer">
-						&nbsp;
 					</div>
 				</div>
 
@@ -1355,7 +285,7 @@
 		</div>
 
 		<!--call-back-->
-		<div class="modal fade public-modal" id="call-back-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal fade" id="call-back-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -1370,7 +300,7 @@
 								<label for=""><em>*</em>Email:</label>
 								<input type="text" class="form-control">
 							</div>
-							<div class="form-group has-chosen-search">
+							<div class="form-group">
 								<label for=""><em>*</em>Country:</label>
 								<select id="country" class="form-control form-control-chosen" data-placeholder="Please select..." name="country" title="country" onkeyup="selCountry()" onchange="selCountry()">
 
@@ -1584,85 +514,44 @@
 								<textarea name="" rows="3" cols="" class="form-control"></textarea>
 							</div>
 							<div class="form-group">
-								<div class="row">
-									<div class="col-xs-6">
-										<div class="cancel-btn common-btn">
-											<a href="javascript:" id="prevBtn" class="prevBtn" data-dismiss="modal">
-												<i class=""><img src="images/cancel-btn-arrow.svg" alt="" /></i>
-												<span>CANCEL</span>
-											</a>
-										</div>
-									</div>
-									<div class="col-xs-6">
-										<div class="submit-btn common-btn">
-											<a href="javascript:" id="nextBtn" class="nextBtn">
-												<span><em>SUBMIT</em></span>
-												<i class=""><img src="images/submit-btn-arrow.svg" alt="" /></i>
-											</a>
-										</div>
-									</div>
-								</div>
+								<button type="button" class="buttons buttons-success" id="close-callback-btn">Submit <i class="fa fa-circle-o-notch fa-spin"></i></button>
 							</div>
-
 						</form>
-					</div>
-					<div class="modal-footer">
-						&nbsp;
 					</div>
 				</div>
 
 			</div>
 		</div>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/chosen-1.1.8.min.js"></script>
-		<script src="js/chosen.js"></script>
-		<script src="js/cropper.min.js"></script>
-		<script src="js/cropper.js"></script>
-		<script src="js/telInput.js"></script>
-		<script src="js/chosen-birthday.js"></script>
-		<script src="js/jquery-confirm.min.js"></script>
-		<script src="js/steps-animate.js"></script>
-		<script src="js/alert.js"></script>
-		<script src="js/common.js"></script>
+		<script src="../Common/js/jquery.min.js"></script>
+		<script src="../Common/js/bootstrap.min.js"></script>
+		<script src="../Common/js/chosen-1.1.8.min.js"></script>
+		<script src="../Common/js/chosen.js"></script>
+		<script src="../Common/js/telInput.js"></script>
+		<script src="../Common/js/jquery-confirm.min.js"></script>
+		<script src="js/index.js"></script>
 		<script>
-			$('#familyname').on('focus', function() {
-				$(".error-box").remove();
-				$('#familyname').css("border-color", "#003b4d");
-			});
-			$(function() {
-				$(".telDropdown .selected-flag").attr("title", "");
-			});
-		</script>
-		<script>
-			// 步骤
-			var step = new SetStep({
-				content: '.stepCont',
-				clickAble: false
-			})
-		</script>
-		<script>
-			//加载省份列表
-			function loadProvince(state) {
-				var areaCode = $("#country_id").find("option:selected").attr("areacode");
-				
-				
-				var areaVal = $("#country_id").find("option:selected").attr("value");
-				if(areaVal=='CAN'){
-					$(".flag").addClass("ca").removeClass('us');
-				}else{
-					$(".flag").removeClass("ca");
+//			页面打开,左边出现轻微上浮动动画
+			$(document).ready(function() {
+				if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {} else {
+					$(".left-box").animate({
+						paddingTop: '104px'
+					}, 800);
+
 				};
-				
-				
-				$("input#areaCode").intlTelInput("setNumber", "+" + areaCode);
-				$("#province_id").html("<option value=\"\"></option>").trigger("chosen:updated");
-				var country = $("#country_id").select().val();
-				$("#country_sync").val(country).trigger("chosen:updated");
-				if($("#province_id")) {
-					state = $("#province_id").select().val();
-				}
-			};
+			});
+		</script>
+		<script>
+			$(function() {
+//				点击提交按钮后  出现注册成功信息
+				$("#demo-btn").click(function() {
+					$('#right-form').hide();
+					$("#right-form-successful").fadeIn(200);
+					$('body,html').animate({
+							scrollTop: 0
+						},
+						800);
+				});
+			});
 		</script>
 	</body>
 
