@@ -316,5 +316,7 @@ footer .footer-box-shadow{background:url(../images/footer-box-shadow.png) repeat
 .modal .upload-img-box,.upload-img-box{width:100%}
 .tailoring-box{padding:30px 0}
 .legal-pdf-box .pdf-text{width:80%}
-.public-modal .modal-header button.close{top:12px}
+.public-modal .modal-header button.close{top: 15px;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;}
 }
