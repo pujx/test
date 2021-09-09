@@ -278,6 +278,8 @@ footer .footer-box-shadow{background:url(../images/footer-box-shadow.png) repeat
 #page2 .en-step2 .common-btn{margin-top:30px}
 .step7 .common-btn{margin-top: -8px;}
 }@media screen and (max-width:991px){.step8-r-box{margin-left:0;margin-top:15px}
+
+.legal-text-detail .legal-logo img{width: 220px;}
 .step8-item a{margin:20px 0}
 .modal-call-back>div{padding:10px 2px}
 .stepPage{padding-bottom:100px}
