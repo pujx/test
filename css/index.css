@@ -39,7 +39,7 @@ li{list-style:none}
 header{padding:20px 0;background:#fff}
 header .login-language{margin-bottom:0}
 header .login-language li{position:relative}
-header .login-language li a img{width: 16px;height: 16px;}
+header .login-language li a img{width: 20px;height: 20px;}
 body.modal-open{overflow:hidden !important}
 .login-language .scale-up{border:1px solid #eee}
 .chosen-container .chosen-results li.result-selected:before{display:none}
@@ -96,9 +96,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#b2b2b2 !import
 .chosen-container-active.chosen-with-drop .chosen-single{border-radius:4px !important;-webkit-border-radius:4px !important;-moz-border-radius:4px !important}
 .chosen-container-active.chosen-with-drop .chosen-single div:after{background-image:url(../images/chosen-up.png);width:15px;height:10px;background-size:100%;top:0}
 .chosen-container-single .chosen-single div{top:0}
-.chosen-container-single .chosen-single div b{display: none;}
-.chosen-container-single .chosen-single div:after{background-image:url(../images/chosen-down.png);width:15px;height:10px;background-size:100%;top:0;
-    background-repeat: no-repeat;}
+.chosen-container-single .chosen-single div:after{background-image:url(../images/chosen-down.png);width:15px;height:10px;background-size:100%;top:0}
 @media screen and (max-width:991px){.common-btn{text-align:center}
 }@media (min-width:992px){.modal-lg{width:775px}
 }.public-modal .modal-header button.close{position:absolute;right:20px;top:20px;background:url(../images/slide-close.svg);width:35px;height:35px}
@@ -201,7 +199,7 @@ footer .footer-box-shadow{background:url(../images/footer-box-shadow.png) repeat
 .step8-l-box{margin-top:45px}
 .step8-l-box ul{font-size:15px;margin-top:25px}
 .step8-l-box ul li{margin-bottom:10px}
-.step8-l-box ul li span{display:inline-block;width:65%;text-align:right;padding-right:18px;vertical-align: middle;}
+.step8-l-box ul li span{display:inline-block;width:65%;text-align:right;padding-right:18px}
 .step8-l-box ul li b{font-weight:normal;color:#585963;display:inline-block;width:34%;vertical-align:middle}
 .step8-r-box{color:#003B4D;margin-top:45px;position:relative;overflow:hidden;margin-left:10px}
 .step8-shadow{position:absolute;box-shadow:0 0 38px -2px #c3c3c3;-webkit-box-shadow:0 0 38px -2px #c3c3c3;top:0;bottom:0;width:15px;left:-22px}
