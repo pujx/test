@@ -75,7 +75,7 @@ button{transition:all 0.5s ease;-moz-transition:all 0.5s ease;-ms-transition:all
 .form-control[readonly]{background:#fff;color:#585963}
 form .form-control:focus{box-shadow:0px 0px 3px 0px #003b4d !important;-webkit-box-shadow:0px 0px 3px 0px #003b4d !important}
 input:focus,select:focus,textarea:focus{box-shadow:none !important;-webkit-box-shadow:none !important;-moz-box-shadow:none !important;border-color:#000 !important;transition:border-color .8s;-webkit-transition:border-color .8s;-moz-transition:border-color .8s;-ms-transition:border-color .8s}
-form .help-block{height:18px}
+form .help-block{height:18px;position: relative;}
 .help-block{color:#e86060;margin-bottom:0}
 .form-group{margin-bottom:20px}
 .form-group label em{color:#f00;font-style:normal;line-height:inherit;margin-right:3px}
@@ -98,6 +98,10 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#b2b2b2 !import
 .chosen-container-single .chosen-single div{top:0}
 .chosen-container-single .chosen-single div:after{background-image:url(../images/chosen-down.png);width:15px;height:10px;background-size:100%;top:0}
 @media screen and (max-width:991px){.common-btn{text-align:center}
+form .help-block{height:0}
+form .help-block img{position: absolute;
+    right:30px;
+    top: -41px;}
 }@media (min-width:992px){.modal-lg{width:775px}
 }.public-modal .modal-header button.close{position:absolute;right:20px;top:20px;background:url(../images/slide-close.svg);width:35px;height:35px}
 @media only screen and (min-width:768px){.public-modal .modal-dialog{width:550px}
