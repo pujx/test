@@ -100,8 +100,8 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#b2b2b2 !import
 @media screen and (max-width:991px){.common-btn{text-align:center}
 form .help-block{height:0}
 form .help-block img{position: absolute;
-    right:15px;
-    top: -41px;}
+    right:20px;
+    top: -40px;}
 }@media (min-width:992px){.modal-lg{width:775px}
 }.public-modal .modal-header button.close{position:absolute;right:20px;top:20px;background:url(../images/slide-close.svg);width:35px;height:35px}
 @media only screen and (min-width:768px){.public-modal .modal-dialog{width:550px}
