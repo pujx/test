@@ -1,0 +1,10 @@
+@charset "utf-8";
+@media screen and (min-width: 992px){
+.step6 .common-btn {
+    margin-top: 8px;
+}
+
+}
+.bottom-progress-text{font-size: 15px;}
+.step1-name,.step8 .step8-name{font-size: 24px;}
+.step8-item .item-right h4{font-size: 18px;}
