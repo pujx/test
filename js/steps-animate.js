@@ -143,22 +143,13 @@ SetStep.prototype.checkPage = function(pageCont, curStep, steps) {
 		if(i === curStep) {
 			var findPageCont = pageCont.find('#page' + i)
 			if($(this.body).width() <= 991) {
-				this.content.css("height", findPageCont.children('.step' + i)[0].scrollHeight + 70);
-				
+				this.content.css("height", findPageCont.children('.step' + i)[0].scrollHeight + 70)
 			}
 			findPageCont.css("left", "0");
 		} else if(curStep > i) {
 			pageCont.find('#page' + i).css("left", "-200vw");
-				$('body,html').animate({
-							scrollTop: 0
-						},
-						500);
 		} else {
 			pageCont.find('#page' + i).css("left", "200vw");
-				$('body,html').animate({
-							scrollTop: 0
-						},
-						500);
 		}
 	}
 };
