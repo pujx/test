@@ -8,8 +8,8 @@
     border-radius: 4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;    text-align: center;
     line-height: 46px;}
 .upload-img-box a img{max-width: inherit;
-    /*width: 30px;
-    height: 28px;*/
+    width: 30px;
+    height: 28px;
     }
 .tailoring-box{padding:45px 80px}
 #cropperModal .modal-header{padding:15px}
