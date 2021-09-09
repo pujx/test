@@ -39,6 +39,7 @@ li{list-style:none}
 header{padding:20px 0;background:#fff}
 header .login-language{margin-bottom:0}
 header .login-language li{position:relative}
+header .login-language li a img{width: 16px;height: 16px;}
 body.modal-open{overflow:hidden !important}
 .login-language .scale-up{border:1px solid #eee}
 .chosen-container .chosen-results li.result-selected:before{display:none}
