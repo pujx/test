@@ -142,7 +142,7 @@ header .login-language li a img{width: 20px;height: 20px;}
 .left-box{position:relative;width:39.999%;background-color:#111315;background-image:url(../images/left-box-bg.jpg);background-repeat:repeat-y;color:#fff;padding-top:114px;padding-bottom:40px}
 .left-box .left-box-logo{text-align:center;display:block;margin-left:-25px}
 .left-box .left-box-logo img{
-    width: 150px;}
+    width: 150px;height: 96px;}
 .left-box .left-box-text{padding-left:160px;padding-right:45px}
 .left-box-text h2{margin:75px 0 55px;font-family:'DIN-Bold',"微软雅黑";font-size:36px}
 .left-box-text .left-box-tips{display:inline-block;padding:20px 0 0 0;border-top:1px solid #fff;margin-top:10px}
