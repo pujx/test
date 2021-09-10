@@ -213,6 +213,8 @@ width: 160px;
 @media screen and (min-width:991px){.modal-dialog{width:550px}
 .buttons.buttons-success:hover{background:#fff;border:2px solid #003B4D;color:#003B4D}
 }@media screen and (max-width:991px){.demo-container .order-2{order:1}
+.left-box .left-box-logo img{
+width: 150px;}
 }@media screen and (max-width:1440px){}
 @media screen and (min-width:1200px) and (max-width:1440px){.left-box .left-box-text{padding-left:55px}
 .left-box-text h2{font-size:30px}
