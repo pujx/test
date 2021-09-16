@@ -189,7 +189,7 @@ option{font-size:15px}
 .main-header .logo{text-align:center;border-bottom:1px solid #313131}
 .main-header .navbar-custom-menu>ul>li>a.right-bar-link i{width:32px;height:32px}
 .mobile-user{padding:4px 7px}
-.login-logo img,.main-header .logo img{width:185px}
+.login-logo img,.main-header .logo img{width:150px}
 .main-header .navbar-custom-menu>ul>li{margin:0 3px}
 }@media (max-width:374px){.main-header .navbar-custom-menu>ul>li>a.right-bar-link i{width:28px;height:28px}
 .mobile-user{padding:2px 5px}
