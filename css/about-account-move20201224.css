@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*MYGO 首页提示*/
+.main-sidebar{padding-top:160px}
+@media only screen and (max-width:767px){.main-sidebar{padding-top:178px !important}
+}.tips-box{color:#ff1100;background-color:#FFEB3B;border-color:#ffd47a;padding:20px 15px;position:relative;z-index:812;font-size:18px;text-align:center}
+.tips-box a{color:#ff1100;text-decoration:underline}
+.tips-box .close{font-size:32px;color:#000}
+.tips-box strong i{font-size:24px;vertical-align:middle;margin-right:10px}
+
+
+/*同邮箱三个页面*/
+.top{text-align:center;margin-top:30px;padding-left:30pt;padding-right:30pt}
+.footer{padding-top:8pt;line-height:11pt;text-align:justify;color:#919191;font-size:9pt;font-family:'calibri',arial,'microsoft yahei';padding-left:30pt;padding-right:30pt;padding-bottom:40px}
+.footer hr{border-color:#ddd}
+.main-text{padding-left:30pt;padding-right:30pt;padding-top:12pt;padding-bottom:10pt;font-size:13px;font-family:'calibri',arial,'microsoft yahei';line-height:18px;text-align:justify;background:#fff}
+.contact{padding-left:30pt;padding-right:30pt;margin-top:30px}
+table button{transition:background .5s;-webkit-transition:background .5s;-webkit-transition:background .5s}
+/*table button:hover{background:#0aa56c !important}*/
+table button:focus{outline:none !important;border:none !important}
+@media screen and (min-width:1200px){.container{width:1050px}
+}@media only screen and (max-width:768px){.top{padding-left:15px;padding-right:15px}
+.top a img{width:300px;height:auto;margin:0 auto 30px;max-width:100%;height:auto !important}
+.main-text{padding-left:15px;padding-right:15px}
+.main-text table{width:100%}
+.contact,.footer{padding-left:0px;padding-right:0px}
+.contact td{display:block;text-align:left !important}
+}
