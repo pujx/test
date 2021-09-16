@@ -45,8 +45,16 @@ body.modal-open{overflow:hidden !important}
 .chosen-container .chosen-results li.result-selected:before{display:none}
 .page-line{height:55px;background:#f9f9f9;border-style:solid;border-width:5px;border-left:0;border-top:0;border-right:0;-webkit-border-image:linear-gradient(to right,#fff,#003b4d,#fff) 20 20;-moz-border-image:linear-gradient(to right,#fff,#003b4d,#fff) 20 20;border-image:linear-gradient(to right,#fff,#003b4d,#fff) 20 20;position:relative}
 .page-line-shadow{background:url(../images/footer-box-shadow.png) repeat-x;height:12px;position:absolute;left:0;right:0;width:100%}
-@media screen and (max-width:767px){.login-logo img{width:220px}
-}.modal-content{border:2px solid #003b4d;-webkit-box-shadow:0 0px 2px 0 #909090;box-shadow:0 0px 2px 0 #909090}
+
+.login-logo img{width:280px}
+@media screen and(min-width:400px) and (max-width:767px) {
+.login-logo img{width:250px}
+}
+@media screen and (max-width:399px){
+.login-logo img{width:220px}
+}
+
+.modal-content{border:2px solid #003b4d;-webkit-box-shadow:0 0px 2px 0 #909090;box-shadow:0 0px 2px 0 #909090}
 @media screen and (min-width:992px){.modal-backdrop{opacity:0 !important;filter:alpha(opacity=0) !important}
 }.common-btn{display:block;margin-top:15px}
 .modal .common-btn{margin-top:20px}
