@@ -298,12 +298,14 @@ textarea:focus {
 
 .help-block.success-block {
 	color: #20bf55;
-	background-image: url(../images/check.png);
-	background-repeat: no-repeat;
-	padding-left: 40px;
-	height: 20px;
-	margin-top: 14px;
-	background-position: 15px;
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    height: 20px;
+    width: 20px;
+    margin-top: 14px;
+    background-position: 15px;
+    background-size: contain;
 }
 
 .help-block.error-block {
