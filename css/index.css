@@ -47,12 +47,17 @@ body.modal-open{overflow:hidden !important}
 .page-line-shadow{background:url(../images/footer-box-shadow.png) repeat-x;height:12px;position:absolute;left:0;right:0;width:100%}
 
 .login-logo img{width:280px}
+
 @media screen and(min-width:400px) and (max-width:767px) {
-.login-logo img{width:250px}
+.login-logo img{width:240px}
 }
 @media screen and (max-width:399px){
 .login-logo img{width:220px}
 }
+
+
+
+
 
 .modal-content{border:2px solid #003b4d;-webkit-box-shadow:0 0px 2px 0 #909090;box-shadow:0 0px 2px 0 #909090}
 @media screen and (min-width:992px){.modal-backdrop{opacity:0 !important;filter:alpha(opacity=0) !important}
@@ -332,3 +337,69 @@ footer .footer-box-shadow{background:url(../images/footer-box-shadow.png) repeat
     background-size: 80% 80%;
     background-repeat: no-repeat;}
 }
+
+
+
+			.chat-fc-form-outer {
+				font-family: verdana, "微软雅黑" !important;
+			}
+			
+			.chat-fc-form-outer p.fc-header {
+				margin: 0 !important;
+			}
+			
+			.chat-fc-form-outer p.fc-header {
+				position: relative !important;
+				font-family: verdana, "微软雅黑" !important;
+			}
+			
+			.chat-fc-form-outer div.fc-form p {
+				font-size: 14px;
+				line-height: 20px !important;
+				font-family: verdana, "微软雅黑" !important;
+				margin-bottom: 40px !important;
+				margin-top: 15px;
+			}
+			
+			.chat-fc-form-outer div.fc-form ul li label {
+				font-size: 13px;
+			}
+			
+			.chat-fc-form-outer div.fc-form ul li {
+				margin-bottom: 35px !important;
+				margin-top: 15px;
+			}
+			
+			.form.chat-fc-form {
+				min-height: 165px;
+			}
+			
+			.chat-fc-form-outer div.fc-form ul li input {
+				font-family: verdana, "微软雅黑" !important;
+				padding: 10px 0!important;
+				text-indent: 12px;
+				font-size: 13px;
+				appearance:none;
+				-webkit-appearance:none;
+				-moz-appearance:none;
+			}
+			.chat-fc-form-outer div.fc-form a.fc-button {
+				text-decoration: none;
+				font-size: 14px;
+			}
+			
+			div.chat-fc-form-outer {
+				max-width: 384px !important;
+			}
+			
+			.chat-fc-form-outer div.fc-form ul li label {
+				top: -12px !important;
+				font-family: verdana, "微软雅黑" !important;
+			}
+			
+			.chat-fc-form-outer div.fc-form a.fc-button {
+				margin-bottom: 8px;
+			}
+			@media only screen and (max-width: 640px) {
+				div.chat-fc-form-outer{width: 100% !important;max-width: 100% !important;}
+			}
