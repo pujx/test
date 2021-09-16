@@ -7,13 +7,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="icon" href="favicon.ico">
-		<title>Account Status</title>
+		<title>Login</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
+		<link rel="stylesheet" href="css/jquery-confirm.min.css">
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/loading.css" />
-		<link rel="stylesheet" href="css/about-account-move20201224.css" />
 		<!--[if lt IE 9]>
       			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
@@ -21,529 +21,67 @@
 		<!--[if lte IE 8]>
  				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
  		<![endif]-->
-
 	</head>
 
-	<body class="sidebar-mini">
-<a href="login.html">login</a>
-		<div class="wrapper">
-			<header class="main-header">
-				<div class="container-fluid">
-					<nav class="navbar">
-						<a href="https://www.int.gomarkets.com/" class="logo hidden-md hidden-lg" target="_blank"><img src="images/logo-m.png" alt="logo"></a>
-						<a href="https://www.int.gomarkets.com/" class="logo hidden-xs hidden-sm" target="_blank"><img src="images/logo.png" alt="logo"></a>
-						<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-							<span class="sr-only">Toggle navigation</span>
-						</a>
-						<div class="navbar-custom-menu">
-							<ul>
-								<li>
-									<a href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNDIxMl8yNTcxODdfODAwMDI0MjEyXzJf" target="_blank" class="right-bar-link right-bar-service" title="online service"><i></i></a>
-								</li>
-								<li>
-									<a href="https://www.int.gomarkets.com/" target="_blank" class="right-bar-link right-bar-home" title="home"><i></i></a>
-								</li>
-								<li>
-									<a href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNDIxMl8yNTcxODdfODAwMDI0MjEyXzJf" target="_blank" class="right-bar-link right-bar-qq" title="qq"><i></i></a>
-								</li>
-								<li>
-									<a href="javascript:" class="right-bar-link right-bar-tel" title="call back" data-toggle="modal" data-target="#call-back-modal"><i></i></a>
-								</li>
-								<li>
-									<a href="mailto:support@gomarkets.sc" class="right-bar-link right-bar-mail" title="email"><i></i></a>
-								</li>
-								<li>
-									<a href="javascript:" class="fa fa-user visible-xs mobile-user"></a>
-									<a href="javascript:" class="right-bar-user hidden-xs">Welcome:5056 Jack<i class="fa fa-angle-down"></i></a>
-									<ul class="scale-up">
-										<li>
-											<a href="login.html"><i class="fa fa-sign-out"></i>Sign Out</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-					</nav>
-
+	<body style="background: #02070a;">
+		<div class="login-wrap">
+			<div class="container">
+				<div class="login-header">
+					<a class="login-logo hidden-xs hidden-sm" href="https://www.int.gomarkets.com/" target="_blank"> <img src="images/logo.png" alt="Go Markets first choice for forex" /></a>
+					<a class="login-logo hidden-md hidden-lg" href="https://www.int.gomarkets.com/" target="_blank"> <img src="images/logo-m.png" alt="Go Markets first choice for forex" /></a>
+					<div class="pull-right login-right-bar">
+						<a href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNDIxMl8yNTcxODdfODAwMDI0MjEyXzJf" target="_blank"><img src="images/right-bar-service.png" alt="" /><span>Live chat</span></a>
+						<a href="https://www.int.gomarkets.com/" target="_blank"><img src="images/right-bar-home.png" alt="" /><span>Home page</span></a>
+					</div>
 				</div>
-			</header>
 
-			<!--公告通知栏-->
-			<div class="tips-box">
-				<button type="button" class="close" id="tips-box-close"><span aria-hidden="true">&times;</span></button>
-				<strong><i class="fa fa-warning"></i><a href="account-move.html">Important account changes – your consent is required./重要的帐户更改 - 需要您的同意。</a></strong>
-			</div>
-			<!--公告通知栏 end-->
-			<aside class="main-sidebar">
-				<section class="sidebar">
-					<ul class="sidebar-menu">
-						<li class="active">
-							<a href="index.html">
-								<i class="menu-icon1"></i>
-								<span>Account Status</span>
-							</a>
-						</li>
-						<li class="treeview">
-							<a href="javascript:">
-								<i class="menu-icon2"></i>
-								<span>Account Profile</span>
-							</a>
-							<ul class="treeview-menu">
-								<li>
-									<a href="change-email.html">Email</a>
-								</li>
-								<li>
-									<a href="change-phonenumber.html">Phone Number</a>
-								</li>
-								<li>
-									<a href="change-address.html">Address</a>
-								</li>
-								<li>
-									<a href="change-password.html">Change Password</a>
-								</li>
-							</ul>
-						</li>
-						<li class="treeview">
-							<a href="javascript:">
-								<i class="menu-icon3"></i>
-								<span>Account Management</span>
-							</a>
-							<ul class="treeview-menu">
-								<li>
-									<a href="change-leverage.html">Change Leverage</a>
-								</li>
-								<li>
-									<a href="open-second-account.html">Apply 2nd account</a>
-								</li>
-								<li>
-									<a href="binding-account.html">Bind an Existing Account</a>
-								</li>
-								<li>
-									<a href="order-history.html">Order History</a>
-								</li>
-							</ul>
-						</li>
-						<li class="treeview">
-							<a href="javascript:">
-								<i class="menu-icon4"></i>
-								<span>Balance Management</span>
-							</a>
-							<ul class="treeview-menu">
-								<li>
-									<a href="online-deposit.html">Deposit</a>
-								</li>
-								<li>
-									<a href="withdrawal.html">Withdrawal</a>
-								</li>
-								<li>
-									<a href="internal-transfer.html">Internal Transfer</a>
-								</li>
-								<li>
-									<a href="account-record.html">Account Record</a>
-								</li>
-							</ul>
-						</li>
-						<li class="treeview">
-							<a href="javascript:">
-								<i class="menu-icon5"></i>
-								<span>Useful Tools</span>
-							</a>
-							<ul class="treeview-menu">
-								<li>
-									<a href="MT4MT5-genesis.html">MT4&MT5 Genesis</a>
-								</li>
-								<li>
-									<a href="trading-central.html">Trading Central</a>
-								</li>
-								<li>
-									<a href="vps.html">VPS</a>
-								</li>
-								<li>
-									<a href="download-center.html">Download Center</a>
-								</li>
-								<li>
-									<a href="express-internal-transfer.html">Express Internal Transfer</a>
-								</li>
-								<li>
-									<a href="legal-document.html">Legal Document</a>
-								</li>
-								<li>
-									<a href="application-history.html">Application History</a>
-								</li>
-							</ul>
-						</li>
-						<li class="treeview">
-							<a href="javascript:">
-								<i class="menu-icon7"></i>
-								<span>Copy Trade</span>
-							</a>
-							<ul class="treeview-menu">
-								<li>
-									<a href="dashboard.html">PAMM Fund</a>
-								</li>
-								<li>
-									<a href="signal-copy-trade-dashboard.html">Signal Copy Trade</a>
-								</li>
-								<li>
-									<a href="my-follow.html">My Follow</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="contact-us.html" style="border-bottom: none;">
-								<i class="menu-icon6"></i>
-								<span>Contact Us</span>
-							</a>
-						</li>
-						<li class="nav-small-cap">
-							<a href="https://mygo.gomarkets.com/zh/mygo/Promotion?promotioncode=5311e778e16e46228e919ab38fd53264&isParticipation=1" target="_blank"><img src="images/menu-footer.jpg" alt="" /></a>
-						</li>
-					</ul>
-				</section>
-			</aside>
-
-			<div class="content-wrapper">
-
-				<section class="container-fluid">
-					<div class="row account-box-btns  deposit-box-btns">
-						<div class="col-md-6 col-lg-3">
-							<a href="online-deposit.html" class="account-box-btn account-box-btn-green">
-								<i></i>
-								<em></em>
-								<strong>Deposit</strong>
-							</a>
-						</div>
-						<div class="col-md-6 col-lg-3">
-							<a href="withdrawal.html" class="account-box-btn account-box-btn-orange">
-								<i></i>
-								<em></em>
-								<strong>Withdrawal</strong>
-							</a>
-						</div>
-
-						<!--<div class="col-md-6 col-lg-3">
-							<a href="internal-transfer.html" class="account-box-btn account-box-btn-blue">
-								<i></i>
-								<em></em>
-								<strong>Internal Transfer</strong>
-							</a>
-						</div>-->
-						<div class="col-md-6 col-lg-3">
-							<a href="cash-withdrawal.html" class="account-box-btn account-box-btn-yellow">
-								<i></i>
-								<em></em>
-								<strong>E-Wallet</strong>
-								<div class="scroll-box">
-									<p class="scroll-num"></p>
-									<b>$</b>
-								</div>
-							</a>
-						</div>
-					</div>
+				<div class="login-container">
 					<div class="row">
-						<div class="col-lg-12">
-							<div class="box">
-								<h5 class="box-title">My Trading Account</h5>
-								<div class="box-body">
-									<div class="table-responsive">
-										<table class="table table-bordered table-hover table-striped">
-											<tr>
-												<th>Meta Login</th>
-												<th>Account Name</th>
-												<th>Opening Date</th>
-												<th>Balance</th>
-												<th>Credit</th>
-												<th>Equity</th>
-												<th>Leverage</th>
-												<th>Action</th>
-											</tr>
-											<tr>
-												<td>5056</td>
-												<td>GO Markets Test account</td>
-												<td>2015-06-03 08:06:25</td>
-												<td>$1580.47</td>
-												<td>$0.00</td>
-												<td>$4,439.95</td>
-												<td>300</td>
-												<td>
-													<button type="button" class="buttons buttons-primary">Current Account</button>
-												</td>
-											</tr>
-											<tr>
-												<td>760113</td>
-												<td>GO Markets Test account - (2nd Account)</td>
-												<td>2019-07-02 04:07:53</td>
-												<td>$0.00</td>
-												<td>$0.00</td>
-												<td>$0.00</td>
-												<td>300</td>
-												<td>
-													<button type="button" class="buttons buttons-danger">Unlink</button>
-												</td>
-											</tr>
-											<tr>
-												<td>5056</td>
-												<td>GO Markets Test account</td>
-												<td>2015-06-03 08:06:25</td>
-												<td>$1580.47</td>
-												<td>$0.00</td>
-												<td>$4,439.95</td>
-												<td>300</td>
-												<td>
-													<button type="button" class="buttons buttons-danger">Unlink</button>
-												</td>
-											</tr>
-											<tr>
-												<td>5056</td>
-												<td>GO Markets Test account</td>
-												<td>2015-06-03 08:06:25</td>
-												<td>$1580.47</td>
-												<td>$0.00</td>
-												<td>$4,439.95</td>
-												<td>300</td>
-												<td>
-													<button type="button" class="buttons buttons-danger">Unlink</button>
-												</td>
-											</tr>
-											<tr>
-												<td>5056</td>
-												<td>GO Markets Test account</td>
-												<td>2015-06-03 08:06:25</td>
-												<td>$1580.47</td>
-												<td>$0.00</td>
-												<td>$4,439.95</td>
-												<td>300</td>
-												<td>
-													<button type="button" class="buttons buttons-danger" disabled="disabled">Unlink</button>
-												</td>
-											</tr>
-
-											<tfoot>
-												<tr>
-													<td colspan="7"></td>
-													<td>
-														<button type="button" class="buttons buttons-success" disabled="disabled">Create an additional account</button>
-													</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-									<nav class="nav-pagination">
-										<span>162 entries in total</span>
-										<ul class="pagination">
-											<li>
-												<a href="javascript:" aria-label="Previous">
-													<i class="fa fa-angle-left"></i>
-												</a>
-											</li>
-											<li>
-												<a href="javascript:">1</a>
-											</li>
-											<li>
-												<a href="javascript:">2</a>
-											</li>
-											<li>
-												<a href="javascript:">3</a>
-											</li>
-											<li>
-												<a href="javascript:" class="pagination-ellipsis">...</a>
-											</li>
-											<li>
-												<a href="javascript:" class="current">5</a>
-											</li>
-											<li>
-												<a href="javascript:" aria-label="Next" class="disabled">
-													<i class="fa fa-angle-right"></i>
-												</a>
-											</li>
-										</ul>
-									</nav>
+						<div class="col-md-4 login-form">
+							<h4>Account Management</h4>
+							<form>
+								<div class="form-group">
+									<label for="">Language:</label>
+									<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please select...">
+										<option value="">English</option>
+										<option value="">中文</option>
+									</select>
 								</div>
+								<div class="form-group ">
+									<label for="">Account:</label>
+									<input type="text" class="form-control" id="" placeholder="Account">
+								</div>
+								<div class="form-group">
+									<label for="">Password:</label>
+									<input type="password" class="form-control" id="" placeholder="*****">
+								</div>
+								<div class="form-group text-right">
+									<a href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNDIxMl8yNTcxODdfODAwMDI0MjEyXzJf" target="_blank">Forgot password？</a>
+								</div>
+								<button type="button" class="buttons buttons-success" onclick="window.open('index.html','_self')"><i class="fa fa-spinner fa-spin"></i>Submit</button>
+							</form>
+						</div>
+						<div class="col-md-8">
+							<div class="login-table">
+								<div class="load-container load1" style="width: 100%;height: 100%;position: absolute;">
+									<div class="loader"></div>
+								</div>
+								<div class="hiddenIframe"></div>
+								<script type="text/javascript" src="https://c.mql5.com/js/widgets/calendar/widget.js?6"></script>
+								<div id="economicCalendarWidget"></div>
+								<script type="text/javascript">
+									new economicCalendar({
+										width: "100%",
+										height: "100%",
+										mode: 2
+									});
+								</script>
 							</div>
 						</div>
-						<div class="col-lg-12">
-							<div class="box">
-								<h5 class="box-title">My Subscribtion</h5>
-								<div class="box-body">
-									<div class="table-responsive">
-										<table class="table table-bordered table-hover table-striped">
-											<tr>
-												<th>Useful Tools</th>
-												<th>Start</th>
-												<th>End</th>
-												<th>Action</th>
-												<th>Action</th>
-											</tr>
-											<tr>
-												<td><strong>VPS</strong></td>
-												<td>2020-01-13</td>
-												<td>Colse Account</td>
-												<td>
-													<button type="button" class="buttons buttons-success">Read more</button></td>
-												<td>
-													<button type="button" class="buttons buttons-danger">Unsubscribe</button>
-												</td>
-											</tr>
-											<tr>
-												<td><strong>Express Internal Transfer</strong></td>
-												<td>2020-01-13</td>
-												<td>Fo</td>
-												<td>2020-02-13
-													<td>
-														<button type="button" class="buttons buttons-danger">Unsubscribe</button>
-													</td>
-											</tr>
-											<tr>
-												<td colspan="5" style="height: 25px !important;"></td>
-											</tr>
-										</table>
-									</div>
-									<!--<nav class="nav-pagination">
-										<span>162 entries in total</span>
-										<ul class="pagination">
-											<li>
-												<a href="javascript:" aria-label="Previous">
-													<i class="fa fa-angle-left"></i>
-												</a>
-											</li>
-											<li>
-												<a href="javascript:">1</a>
-											</li>
-											<li>
-												<a href="javascript:">2</a>
-											</li>
-											<li>
-												<a href="javascript:">3</a>
-											</li>
-											<li>
-												<a href="javascript:" class="pagination-ellipsis">...</a>
-											</li>
-											<li>
-												<a href="javascript:" class="current">5</a>
-											</li>
-											<li>
-												<a href="javascript:" aria-label="Next" class="disabled">
-													<i class="fa fa-angle-right"></i>
-												</a>
-											</li>
-										</ul>
-									</nav>-->
-								</div>
-								<div class="box-body">
-									<div class="table-responsive">
-										<table class="table table-bordered table-hover table-striped">
-											<tr>
-												<th>Available Promo</th>
-												<th>Start</th>
-												<th>End</th>
-												<th>Application Date</th>
-												<th></th>
-											</tr>
-											<tr>
-												<td><strong><a href="">2020 Q4 - 30% Trading Bonus</a></strong></td>
-												<td>2020-10-01</td>
-												<td>2020-12-31</td>
-												<td></td>
-												<td>
-													<button type="button" class="buttons buttons-danger">Submit to Apply</button>
-												</td>
-											</tr>
-										</table>
-									</div>
-									<!--<nav class="nav-pagination">
-										<span>共20条记录</span>
-										<ul class="pagination">
-											<li>
-												<a href="javascript:" aria-label="Previous">
-													<i class="fa fa-angle-left"></i>
-												</a>
-											</li>
-											<li>
-												<a href="javascript:">1</a>
-											</li>
-											<li>
-												<a href="javascript:">2</a>
-											</li>
-											<li>
-												<a href="javascript:">3</a>
-											</li>
-											<li>
-												<a href="javascript:" class="pagination-ellipsis">...</a>
-											</li>
-											<li>
-												<a href="javascript:" class="current">5</a>
-											</li>
-											<li>
-												<a href="javascript:" aria-label="Next" class="disabled">
-													<i class="fa fa-angle-right"></i>
-												</a>
-											</li>
-										</ul>
-									</nav>-->
-								</div>
-
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="box">
-								<h5 class="box-title">Latest Notice</h5>
-								<div class="box-body">
-									<div class="table-responsive">
-										<table class="table table-bordered table-hover table-striped">
-											<tr>
-												<th>Title</th>
-												<th>Updated By</th>
-												<th>Action</th>
-											</tr>
-											<tr>
-												<td><strong>【Important update】Trading hours update: June 2021&nbsp;<span><img src="images/notice-new.gif" alt="" /></span></strong></td>
-												<td>2021-06-04</td>
-												<td>
-													<button type="button" class="buttons buttons-success" onclick="window.open('notice-holiday.html','_black')">Read More</button>
-												</td>
-
-											</tr>
-										</table>
-									</div>
-									<!--<nav class="nav-pagination">
-										<span>162 entries in total</span>
-										<ul class="pagination">
-											<li>
-												<a href="javascript:" aria-label="Previous">
-													<i class="fa fa-angle-left"></i>
-												</a>
-											</li>
-											<li>
-												<a href="javascript:">1</a>
-											</li>
-											<li>
-												<a href="javascript:">2</a>
-											</li>
-											<li>
-												<a href="javascript:">3</a>
-											</li>
-											<li>
-												<a href="javascript:" class="pagination-ellipsis">...</a>
-											</li>
-											<li>
-												<a href="javascript:" class="current">5</a>
-											</li>
-											<li>
-												<a href="javascript:" aria-label="Next" class="disabled">
-													<i class="fa fa-angle-right"></i>
-												</a>
-											</li>
-										</ul>
-									</nav>-->
-								</div>
-							</div>
-						</div>
-
 					</div>
-				</section>
+				</div>
 			</div>
-			<footer class="main-footer container-fluid">
-				<hr/>
+			<div class="login-footer container-fluid">
 				<div class="footer-menu">
 					<a target="_blank" href="https://www.int.gomarkets.com/contact-us/">Contact Us</a>|
 					<a target="_blank" href="https://www.int.gomarkets.com/legal-documents/">Privacy Policy</a>|
@@ -551,411 +89,150 @@
 				</div>
 				<div class="footer-text">
 					<p>GO Markets brand is authorized and regulated in various jurisdictions.</p>
-					<p><b>Risk Warning:</b> Trading Forex and Derivatives carries a high level of risk, including the risk of losing substantially more than your initial deposit. Leverage magnifies both gains and losses. You should only trade in risk capital (capital you can afford to lose). Trading leveraged products may not be suitable for all investors, please ensure that you fully understand the risks involved, and take into consideration your level of experience, investment objectives and seek independent advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to use the services provided by GO Markets based on the legal requirements in his/her country of residence. Before you start to trade, please take some to fully read our
-						<a href="https://www.int.gomarkets.com/legal-documents/" target="_blank">Product Disclosure Statement(PDS)</a>.</p>
+					<p><b>Risk Warning:</b> Trading Forex and Derivatives carries a high level of risk, including the risk of losing substantially more than your initial deposit. Leverage magnifies both gains and losses. You should only trade in risk capital (capital you can afford to lose). Trading leveraged products may not be suitable for all investors, please ensure that you fully understand the risks involved, and take into consideration your level of experience, investment objectives and seek independent advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to use the services provided by GO Markets based on the legal requirements in his/her country of residence. Before you start to trade, please take some to fully read our <a href="https://www.int.gomarkets.com/legal-documents/" target="_blank">Product Disclosure Statement(PDS)</a>.</p>
 					<p>This website is owned and operated by GO Markets. All contents © <span id="footer-year"></span> GO Markets. All rights reserved.</p>
 				</div>
-			</footer>
+			</div>
 		</div>
-
-		<div class="modal fade" id="call-back-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal fade" id="first-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-						<h4 class="modal-title">Call Back</h4></div>
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title">GO MAKETS</h4>
+					</div>
 					<div class="modal-body">
-						<p><i class="fa fa-edit"></i>请正确填写您的信息，我们会尽快给您回电</p>
+						<p><i class="fa fa-edit"></i>This is the first time you log into My GO, please enter below information to enable your account.</p>
 						<form class="form-horizontal">
-							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Name:</label>
-								<div class="col-sm-7"><input type="email" class="form-control" id="" placeholder="Name"></div>
-							</div>
-							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Email:</label>
-								<div class="col-sm-7"><input type="text" class="form-control" id="" placeholder="Email"></div>
-							</div>
-							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Country:</label>
+							<div class="form-group">
+								<label for="" class="col-sm-4 control-label"><em>*</em>Name:</label>
 								<div class="col-sm-7">
-									<select id="country" class="form-control form-control-chosen" data-placeholder="Please select..." name="country" title="country" onkeyup="selCountry()" onchange="selCountry()">
-										<option value="CN" title="+86">中国</option>
-										<option value="GB" title="+44">英国</option>
-										<option value="US" title="+001">美国</option>
-										<option value="CA" title="+1">加拿大</option>
-										<option value="AU" title="+61">澳大利亚</option>
-										<option value="TW" title="+886">中国台湾</option>
-										<option value="ID" title="+62">印度尼西亚</option>
-										<option value="SG" title="+65">新加坡</option>
-										<option value="" title="">-----------</option>
-										<option value="AL" title="+355">阿尔巴尼亚</option>
-										<option value="DZ" title="+213">阿尔及利亚</option>
-										<option value="AD" title="+376">安道尔</option>
-										<option value="AN" title="+599">荷属安的列斯群岛</option>
-										<option value="AG" title="+1268">安提瓜</option>
-										<option value="AR" title="+54">阿根廷</option>
-										<option value="AM" title="+374">亚美尼亚</option>
-										<option value="AW" title="+297">阿鲁巴</option>
-										<option value="AT" title="+43">奥地利</option>
-										<option value="AZ" title="+994">阿塞拜疆</option>
-										<option value="BS" title="+1242">巴哈马群岛</option>
-										<option value="BH" title="+973">巴林</option>
-										<option value="BD" title="+880">孟加拉</option>
-										<option value="BB" title="+268">巴巴多斯</option>
-										<option value="BY" title="+375">白俄罗斯</option>
-										<option value="BE" title="+32">比利时</option>
-										<option value="BZ" title="+501">伯利兹</option>
-										<option value="BJ" title="+229">贝宁</option>
-										<option value="BM" title="+441">百慕大</option>
-										<option value="BT" title="+975">不丹</option>
-										<option value="BO" title="+591">玻利维亚</option>
-										<option value="BA" title="+00387">波黑</option>
-										<option value="BW" title="+267">博茨瓦纳</option>
-										<option value="BR" title="+55">巴西</option>
-										<option value="VG" title="+001284">英属维尔京群岛</option>
-										<option value="BN" title="+673">文莱达鲁萨兰国</option>
-										<option value="BG" title="+359">保加利亚</option>
-										<option value="BF" title="+226">布基纳法索</option>
-										<option value="KH" title="+855">柬埔寨</option>
-										<option value="CM" title="+237">咔麦隆</option>
-										<option value="CA" title="+1">加拿大</option>
-										<option value="IC" title="+34">加那利群岛</option>
-										<option value="CV" title="+238">佛得角</option>
-										<option value="KY" title="+1-345">开曼群岛</option>
-										<option value="CF" title="+236">中非</option>
-										<option value="TD" title="+235">查德</option>
-										<option value="CL" title="+56">智利</option>
-										<option value="CO" title="+57">哥伦比亚</option>
-										<option value="CK" title="+682">库克群岛</option>
-										<option value="CR" title="+506">哥斯达黎加</option>
-										<option value="HR" title="+385">克罗埃西亚</option>
-										<option value="CY" title="+357">塞浦路斯</option>
-										<option value="CZ" title="+420">捷克共和国</option>
-										<option value="DK" title="+45">丹麦</option>
-										<option value="DJ" title="+253">吉布提</option>
-										<option value="DM" title="+1849">多米尼加岛</option>
-										<option value="TP" title="+670">东帝汶</option>
-										<option value="DO" title="+1849">多米尼加共和国</option>
-										<option value="EC" title="+593">厄瓜多尔</option>
-										<option value="EG" title="+20">埃及</option>
-										<option value="SV" title="+503">萨尔瓦多</option>
-										<option value="GQ" title="+240">赤道几内亚共和国</option>
-										<option value="EE" title="+372">爱沙尼亚</option>
-										<option value="ET" title="+251">埃塞俄比亚</option>
-										<option value="FO" title="+298">法罗群岛</option>
-										<option value="FJ" title="+679">斐济群岛</option>
-										<option value="FI" title="+358">芬兰</option>
-										<option value="FR" title="+33">法国</option>
-										<option value="GF" title="+594">法属圭亚那</option>
-										<option value="GA" title="+241">加蓬共和国</option>
-										<option value="GM" title="+220">冈比亚</option>
-										<option value="GE" title="+995">乔治亚</option>
-										<option value="DE" title="+49">德国</option>
-										<option value="GH" title="+233">加纳</option>
-										<option value="GI" title="+350">直布罗陀</option>
-										<option value="GR" title="+30">希腊</option>
-										<option value="GL" title="+45">格陵兰</option>
-										<option value="GD" title="+1473">格瑞那达国</option>
-										<option value="GP" title="+00590">瓜德罗普</option>
-										<option value="GT" title="+502">瓜地马拉</option>
-										<option value="GN" title="+00224">几内亚</option>
-										<option value="GY" title="+592">盖亚那</option>
-										<option value="HT" title="+509">海地</option>
-										<option value="HN" title="+504">洪都拉斯</option>
-										<option value="HK" title="+852">中国香港</option>
-										<option value="HU" title="+36">匈牙利</option>
-										<option value="IS" title="+354">冰岛</option>
-										<option value="IN" title="+91">印度</option>
-										<option value="ID" title="+62">印度尼西亚</option>
-										<option value="IE" title="+353">爱尔兰</option>
-										<option value="IL" title="+00972">以色列</option>
-										<option value="IT" title="+39">意大利</option>
-										<option value="JM" title="+876">牙买加</option>
-										<option value="JO" title="+962">约旦</option>
-										<option value="KZ" title="+7">哈萨克斯坦</option>
-										<option value="KE" title="+254">肯尼亚</option>
-										<option value="KW" title="+965">科威特</option>
-										<option value="KG" title="+996">吉尔吉斯斯坦</option>
-										<option value="LA" title="+856">老挝</option>
-										<option value="LV" title="+371">拉脱维亚</option>
-										<option value="LB" title="+961">黎巴嫩</option>
-										<option value="LS" title="+266">莱索托</option>
-										<option value="LR" title="+231">利比里亚</option>
-										<option value="LI" title="+423">列支敦斯登</option>
-										<option value="LT" title="+370">立陶宛</option>
-										<option value="LU" title="+352">卢森堡</option>
-										<option value="MO" title="+853">中国澳门</option>
-										<option value="MK" title="+389">马其顿</option>
-										<option value="MG" title="+261">马达加斯加</option>
-										<option value="MW" title="+265">马拉维</option>
-										<option value="MY" title="+60">马来西亚</option>
-										<option value="MV" title="+960">马尔代夫</option>
-										<option value="MT" title="00356">马耳他</option>
-										<option value="MH" title="+692">马绍尔群岛</option>
-										<option value="MQ" title="+596">马提尼克岛</option>
-										<option value="MR" title="+222">茅利塔尼亚</option>
-										<option value="MU" title="+230">毛里求斯</option>
-										<option value="MX" title="+52">墨西哥</option>
-										<option value="MD" title="+373">摩尔多瓦</option>
-										<option value="MC" title="+377">摩纳哥</option>
-										<option value="MN" title="+976">蒙古</option>
-										<option value="ME" title="+382">黑山</option>
-										<option value="MS" title="+001664">蒙特塞拉特</option>
-										<option value="MA" title="+212">摩洛哥</option>
-										<option value="MZ" title="+258">莫桑比克</option>
-										<option value="NA" title="+264">纳米比亚</option>
-										<option value="NR" title="+674">瑙鲁</option>
-										<option value="NP" title="+977">尼泊尔</option>
-										<option value="NL" title="+31">荷兰</option>
-										<option value="NC" title="+687">新喀里多尼亚</option>
-										<option value="NZ" title="+64">新西兰</option>
-										<option value="NI" title="+505">尼加拉瓜</option>
-										<option value="NE" title="+227">尼日尔</option>
-										<option value="NO" title="+47">挪威</option>
-										<option value="OM" title="+968">阿曼</option>
-										<option value="PK" title="+92">巴基斯坦</option>
-										<option value="PA" title="+507">巴拿马</option>
-										<option value="PG" title="+675">巴布亚新几内亚</option>
-										<option value="PY" title="+595">巴拉圭</option>
-										<option value="PE" title="+51">秘鲁</option>
-										<option value="PH" title="+63">菲律宾</option>
-										<option value="PL" title="+48">波兰</option>
-										<option value="PT" title="+351">葡萄牙</option>
-										<option value="QA" title="+974">卡塔尔</option>
-										<option value="RE" title="+262">留尼汪岛</option>
-										<option value="RO" title="+40">罗马尼亚</option>
-										<option value="RU" title="+7">俄国</option>
-										<option value="RW" title="+250">卢旺达</option>
-										<option value="WS" title="+685">西萨摩亚</option>
-										<option value="SM" title="+378">圣马力诺共和国</option>
-										<option value="SA" title="+966">沙特阿拉伯</option>
-										<option value="SN" title="+221">塞内加尔</option>
-										<option value="RS" title="+381">塞尔维亚</option>
-										<option value="SC" title="+248">塞舌尔共和国</option>
-										<option value="SL" title="+232">塞拉利昂</option>
-										<option value="SG" title="+65">新加坡</option>
-										<option value="SK" title="+421">斯洛伐克共和国</option>
-										<option value="SI" title="+386">斯洛文尼亚</option>
-										<option value="SB" title="+677">所罗门群岛</option>
-										<option value="ZA" title="+27">南非</option>
-										<option value="KR" title="+82">韩国</option>
-										<option value="ES" title="+34">西班牙</option>
-										<option value="LK" title="+0094">斯里兰卡</option>
-										<option value="KN" title="+1 869">圣基茨</option>
-										<option value="LC" title="+1-758">圣卢西亚</option>
-										<option value="PM" title="(+7)812">圣彼得堡</option>
-										<option value="VC" title="+1784">圣文森特</option>
-										<option value="SR" title="+597">苏里南</option>
-										<option value="SZ" title="+41">瑞士</option>
-										<option value="SE" title="+46">瑞典</option>
-										<option value="CH" title="+41">瑞士</option>
-										<option value="TJ" title="+992">塔吉克斯坦</option>
-										<option value="PF" title="+00689">大溪地</option>
-										<option value="TW" title="+886">中国台湾</option>
-										<option value="TZ" title="+255">坦桑尼亚</option>
-										<option value="TH" title="+66">泰国</option>
-										<option value="TG" title="+228">多哥</option>
-										<option value="TO" title="+675">汤加</option>
-										<option value="TN" title="+216">突尼斯</option>
-										<option value="TR" title="+90">土耳其</option>
-										<option value="TM" title="+993">土库曼</option>
-										<option value="UG" title="+256">乌干达</option>
-										<option value="UA" title="+380">乌克兰</option>
-										<option value="AE" title="+971">阿拉伯联合酋长国</option>
-										<option value="GB" title="+44">英国</option>
-										<option value="US" title="+001">美国</option>
-										<option value="UY" title="+598">乌拉圭</option>
-										<option value="UZ" title="+998">乌兹别克斯坦</option>
-										<option value="VU" title="+00678">瓦努阿图共和国</option>
-										<option value="VA" title="+379">梵蒂冈</option>
-										<option value="VE" title="+58">委内瑞拉</option>
-										<option value="VN" title="+84">越南</option>
-										<option value="YE" title="+967">也门</option>
-										<option value="ZM" title="+260">赞比亚</option>
+									<input type="email" class="form-control" id="" placeholder="Name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-4 control-label"><em>*</em>Chinese name</label>
+								<div class="col-sm-7">
+									<input type="text" class="form-control" id="" placeholder="Chinese name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-4 control-label"><em>*</em>ID type:</label>
+								<div class="col-sm-7">
+									<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please select...">
+										<option value="" selected="selected"></option>
+										<option value="">ID Card</option>
+										<option value="">Passport</option>
+										<option value="">Driver license</option>
+										<option value="">Other</option>
 									</select>
 								</div>
 							</div>
-							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>City:</label>
-								<div class="col-sm-7"><input type="text" class="form-control" id="" placeholder="City"></div>
+							<div class="form-group">
+								<label for="" class="col-sm-4 control-label"><em>*</em>ID number:</label>
+								<div class="col-sm-7">
+									<input type="text" class="form-control" id="" placeholder="ID number">
+								</div>
 							</div>
-							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Phone Number:</label>
-								<div class="col-sm-7 modal-call-back">
-									<div><span id="CountryNumber">+86</span></div><input type="text" class="form-control" placeholder="Phone Number" id="phonenumber"></div>
-							</div>
-							<div class="form-group"><label for="" class="col-sm-4 control-label">Comments:</label>
-								<div class="col-sm-7"><textarea name="" rows="" cols="" class="form-control"></textarea></div>
+							<div class="form-group">
+								<label for="" class="col-sm-4 control-label"><em>*</em>re-enter ID number:</label>
+								<div class="col-sm-7">
+									<input type="text" class="form-control" id="" placeholder="please enter your ID number again">
+								</div>
 							</div>
 						</form>
 					</div>
-					<div class="modal-footer"><button type="button" class="buttons buttons-success btn-sm" data-dismiss="modal">Submit<i class="fa fa-angle-right"></i></button>
-						<a class="" href="https://www.gomarkets.com/legal-documents/" target="_blank">Privacy Policy</a>
+					<div class="modal-footer">
+						<button type="button" class="buttons buttons-success btn-sm" data-dismiss="modal">Submit<i class="fa fa-angle-right"></i></button>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="modal fade" id="tips-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog modal-lg">
+		<div class="modal fade" id="upload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" aria-hidden="true" data-backdrop="static">
+			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-						<h4 class="modal-title">Trading hours update: July 2021</h4>
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title">Please submit your credentials to complete your account application.</h4>
 					</div>
-					<style>
-						.slidetable {
-							border: 1px solid #efefef;
-							margin-bottom: 15px;
-						}
-						
-						.slidetable>a {
-							display: block;
-							color: #48cc7f;
-							font-size: 16px;
-							font-weight: bold;
-							padding: 15px;
-							transition: all .5s;
-							-webkit-transition: all .5s;
-						}
-						
-						.slidetable>a:hover {
-							color: #ff8308;
-						}
-						
-						.slidetable>a i {
-							float: right;
-							font-size: 20px;
-							font-weight: bold;
-							margin-top: -5px;
-							color: #333;
-							text-align: center;
-						}
-						
-						.slidetable>a:focus {
-							text-decoration: none;
-						}
-						
-						.slidetable>.slide-table-box {
-							padding: 0 15px;
-							display: none;
-						}
-						
-						.slidetable>a.tabopen i {
-							font-size: 17px;
-						}
-					</style>
 					<div class="modal-body">
-
-						<!--中文-->
-						<div>
-							<h5 style="margin-bottom: 25px;font-size: 18px;"><b>Dear Client,</b><br /></h5>
-							<p>Please be advised that due to <b>Hong Kong Special Administrative Region Establishment Day</b> and <b>Independence Day</b> in July, trading hours for the following products will be affected as listed:</p>
-
-							<div class="slidetable">
-								<a href="javascript:">Trading hours update<i>+</i></a>
-								<div class="slide-table-box">
-									<table class="table table-bordered table-hover table-striped">
-										<thead>
-											<tr>
-												<th width="20%">Symbols</th>
-												<th width="40%">Hong Kong Special Admin. <br />Region Establishment Day <br />Thursday 1st July</th>
-												<th width="40%">Independence Day <br />Monday 5th July</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>JP225</td>
-												<td>Normal</td>
-												<td>Closed at 20:00</td>
-											</tr>
-											<tr>
-												<td>HK50</td>
-												<td>Closed</td>
-												<td>Normal</td>
-											</tr>
-											<tr>
-												<td>WS30</td>
-												<td>Normal</td>
-												<td>Closed at 20:00</td>
-											</tr>
-											<tr>
-												<td>NDX100</td>
-												<td>Normal</td>
-												<td>Closed at 20:00</td>
-											</tr>
-											<tr>
-												<td>US500</td>
-												<td>Normal</td>
-												<td>Closed at 20:00</td>
-											</tr>
-											<tr>
-												<td>US2000</td>
-												<td>Normal</td>
-												<td>Closed at 20:00</td>
-											</tr>
-											<tr>
-												<td>USDOLLAR</td>
-												<td>Normal</td>
-												<td>Closed at 20:00</td>
-											</tr>
-											<tr>
-												<td>US Shares</td>
-												<td>Normal</td>
-												<td>Closed</td>
-											</tr>
-											<tr>
-												<td>USOUSD</td>
-												<td>Normal</td>
-												<td>Closed at 20:00</td>
-											</tr>
-											<tr>
-												<td>UKOUSD</td>
-												<td>Normal</td>
-												<td>Closed at 20:30</td>
-											</tr>
-											<tr>
-												<td>USOil-F</td>
-												<td>Normal</td>
-												<td>Closed at 20:00</td>
-											</tr>
-											<tr>
-												<td>UKOil-F</td>
-												<td>Normal</td>
-												<td>Closed at 20:30</td>
-											</tr>
-											<tr>
-												<td>XAUUSD</td>
-												<td>Normal</td>
-												<td>Closed at 20:00</td>
-											</tr>
-											<tr>
-												<td>XAGUSD</td>
-												<td>Normal</td>
-												<td>Closed at 20:00</td>
-											</tr>
-											<tr>
-												<td>COPPER-F</td>
-												<td>Normal</td>
-												<td>Closed at 20:00</td>
-											</tr>
-											<tr>
-												<td>VIX</td>
-												<td>Normal</td>
-												<td>Closed at 18:30</td>
-											</tr>
-											<tr>
-												<td>HK Shares</td>
-												<td>Closed</td>
-												<td>Normal</td>
-											</tr>
-										</tbody>
-									</table>
+						<div class="container-fluid">
+							<div class="card-menu-step">
+								<div class="row">
+									<span class="col-lg-4"><em>1</em>Basic account setting</span>
+									<span class="col-lg-4"><em>2</em>Personal information</span>
+									<span class="col-lg-4 card-menu-linked"><em>3</em>Submit your credentials to complete your account application</span>
 								</div>
 							</div>
-							<p style="border: 1px solid #48CC7F;padding: 15px;background:#edfff5"><b>IMPORTANT:</b>
-								<br /> Some times may be subject to further change due to liquidity constraints. All times displayed are in Platform Time (GMT+3).
-							</p>
-							<br />
-							<p>Should you have any questions, please feel free to contact us using the details below.</p>
+							<p>According to regulation request, please provide your valid credential to open trade account.</p>
+							<p>The credential should be issued by Government and include your name, photo, and birthday on it.</p>
+							<form action="">
+								<div class="cardList">
+									<div class="row">
+										<a href="#idcard" class="card-menu-check col-xs-4">ID Card</a>
+										<a href="#passport" class="col-xs-4">Passport</a>
+										<a href="#driver" class="col-xs-4">Driver license</a>
+									</div>
+								</div>
+								<p>Your credential must be in the period of validity,Plese submit both front and reverse side of your valid credential.</p>
+								<ul class="carlListUl">
+									<li id="idcard" class="cardListOn">
+										<div class="form-group">
+											<label for=""><em>*</em>the front side of ID card:</label>
+											<div>
+												<div class="uploader">
+													<input type="text" class="filename" readonly/>
+													<input type="button" name="file" class="button" value="Upload" />
+													<input type="file" size="30" onchange="fileChange(this);" />
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for=""><em>*</em>the reverse side of ID card:</label>
+											<div>
+												<div class="uploader">
+													<input type="text" class="filename" readonly/>
+													<input type="button" name="file" class="button" value="Upload" />
+													<input type="file" size="30" onchange="fileChange(this);" />
+												</div>
+											</div>
+										</div>
+										<p>Picture size should be smaller than 10 MB, Format: JPG,GIF,PNG.</p>
+									</li>
+									<li id="passport">
+										<div class="form-group">
+											<label for=""><em>*</em>Passport:</label>
+											<div>
+												<div class="uploader">
+													<input type="text" class="filename" readonly/>
+													<input type="button" name="file" class="button" value="Upload" />
+													<input type="file" size="30" onchange="fileChange(this);" />
+												</div>
+											</div>
+										</div>
+										<p>Picture size should be smaller than 10 MB, Format: JPG,GIF,PNG.</p>
+									</li>
+									<li id="driver">
+										<div class="form-group">
+											<label for=""><em>*</em>the reverse side of driver license:</label>
+											<div>
+												<div class="uploader">
+													<input type="text" class="filename" readonly/>
+													<input type="button" name="file" class="button" value="Upload" />
+													<input type="file" size="30" onchange="fileChange(this);" />
+												</div>
+											</div>
+										</div>
+										<p>Picture size should be smaller than 10 MB, Format: JPG,GIF,PNG.</p>
+									</li>
+								</ul>
+							</form>
+
 						</div>
-
 					</div>
-					<div class="modal-footer"><button type="button" class="buttons buttons-success btn-sm" data-dismiss="modal">Close<i class="fa fa-close"></i></button>
-
+					<div class="modal-footer">
+						<button type="button" class="buttons buttons-success btn-sm" data-dismiss="modal">Finish<i class="fa fa-angle-right"></i></button>
 					</div>
 				</div>
 			</div>
@@ -963,79 +240,18 @@
 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/NProgress.min.js"></script>
-		<script src="js/loading.js"></script>
+		<script src="js/jquery-confirm.min.js"></script>
 		<script src="js/chosen-1.1.8.min.js"></script>
 		<script src="js/chosen.js"></script>
 		<script src="js/common.js"></script>
-		<script src="js/online-buttons.js"></script>
 		<script src="js/index.js"></script>
 		<script>
-			$(function() {
-				$("#tips-modal").modal();
-				$(".slidetable a").click(function(e) {
-					if($(this).hasClass("tabopen")) {
-						$(this).removeClass("tabopen");
-						$(this).children("i").html("+");
-						$(this).parent().children(".slide-table-box").slideUp();
-					} else {
-						$(this).addClass("tabopen");
-						$(this).children("i").html("—");
-						$(this).parent().children(".slide-table-box").slideDown()
-					}
-				});
-
-			});
-		</script>
-		<script type="text/javascript">
-			$(function() {
-				var Event = {
-					number: function(digit) {
-						var num_arr = [];
-						for(var i = 0; i < digit.length; i++) {
-							num_arr.push(digit.charAt(i));
-						}
-						return num_arr;
-					},
-					dom: function(arr) {
-						var str = '';
-						for(var i = 0; i < arr.length; i++) {
-							if(parseInt(arr[i]) >= 0) {
-								str += '<div class="l js-l-box digit-container" data-show=' + arr[i] + '>\
-	                  <span>0</span>\
-	                  <span>1</span>\
-	                  <span>2</span>\
-	                  <span>3</span>\
-	                  <span>4</span>\
-	                  <span>5</span>\
-	                  <span>6</span>\
-	                  <span>7</span>\
-	                  <span>8</span>\
-	                  <span>9</span>\
-	                </div>';
-							} else {
-								str += '<div class="sign-box l"><span>' + arr[i] + '</span></div>';
-							}
-						}
-						return str;
-					},
-					animation: function() {
-						var height = $(".scroll-num").height();
-						$(".js-l-box").each(function(i) {
-							var num = parseInt($(this).data("show"));
-							var scrollTop = 0;
-							var scrollTop = height * num;
-							$(this).css("margin-top", 0);
-							$(this).animate({
-								marginTop: -scrollTop
-							}, 1500);
-						});
-					}
-				};
-				var final_arr = Event.number('9654.05');
-				$(".scroll-num").html(Event.dom(final_arr));
-				Event.animation();
-			});
+			//			window.onload = function() {
+			//				$(".load1").hide();
+			//			}
+			//			$(document).ready(function() {
+			//				$("#upload").modal("show")
+			//			})
 		</script>
 	</body>
 
