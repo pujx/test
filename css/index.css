@@ -1179,7 +1179,7 @@ width: 24px;
 	-ms-user-select: none;
 	user-select: none;
 	padding-left: 20px;
-	margin: 10px 0 25px;
+    margin: 10px 0 15px;
 }
 .agreement-box p i {
 	position: absolute;
@@ -1196,8 +1196,8 @@ width: 24px;
 	color: #717171
 }
 .agreement-text-zh {
-	padding: 0 35px;
-	margin-top: -15px;
+padding: 0 35px;
+    margin-bottom: 15px;
 }
 .agreement-text-zh li {
 	list-style: disc;
@@ -1220,7 +1220,6 @@ width: 24px;
 }
 .agreement-clause {
 	padding-left: 40px;
-	margin-top: -15px
 }
 .agreement-clause span {
 	margin-bottom: 5px;
