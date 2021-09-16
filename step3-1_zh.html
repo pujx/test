@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="favicon.ico">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/jquery-confirm.min.css" />
+		<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
+		<link rel="stylesheet" href="css/interInput.css" />
+		<link rel="stylesheet" href="css/index.css">
+		<!--[if lt IE 9]>
+      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
+       <![endif]-->
+		<!--[if lte IE 8]>
+ 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
+ 		<![endif]-->
+	</head>
+
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<nav class="navbar">
+				<a href="https://chn.gomarkets.com/" target="_blank" class="logo"><img src="images/logo.png" alt="logo"></a>
+					<div class="navbar-custom-menu">
+						<ul>
+							<li>
+									<div class="header-dropdown btn-group">
+											<button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                								<img src="images/zh-hans.png" height="18" alt="en" width="27" />中文          
+					                			<span class="fa fa-angle-down"></span>
+											</button>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li>
+													<a href="step3-1_en.html"><img src="images/uk.png" height="18" alt="zh-hans" width="27" />英文</a>
+												</li>
+												<li>
+													<a href="step3-1_vi.html"><img src="images/vi.png" height="18" alt="vi" width="27" />越南文</a>
+												</li>
+											</ul>
+										</div>
+								</li>
+							<li>
+								<a href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNDIxMl8yNTcxODdfODAwMDI0MjEyXzJf" target="_blank" class="right-bar-link right-bar-service" title="online service"><i></i></a>
+							</li>
+							<li>
+								<a href="javascript:" class="right-bar-link right-bar-tel" title="call back" data-toggle="modal" data-target="#call-back-modal"><i></i></a>
+							</li>
+							<li>
+								<a href="mailto:AsiaSupport@gomarkets.sc " class="right-bar-link right-bar-mail" title="email"><i></i></a>
+							</li>
+							<li>
+								<a href="tel:400-120-8537" class="right-bar-user">联系我们：<b>400 120 8537</b></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<aside class="step-body">
+			<p class="step-bar-bg"></p>
+			<p class="step-bar-bg-active"></p>
+			<div class="step-header">
+				<div class="container">
+					<div class="step-bar">
+					<div class="step-bar-active" style="width: 56%;"></div>
+				</div>
+				<ul class="row">
+					<li class="step-active step-finish col-xs-offset-1 col-xs-2">
+						<span></span>
+							<p>开户申请</p>
+					</li>
+					<li class="step-active step-finish col-xs-2">
+						<span></span>
+						<p>基本账户</p>
+					</li>
+					<li class="step-active col-xs-2">
+						<span></span>
+						<p>个人信息</p>
+					</li>
+					<li class="col-xs-2">
+						<span></span>
+						<p>提交证明</p>
+					</li>
+					<li class="col-xs-2">
+						<span></span>
+						<p>注册成功</p>
+					</li>
+				</ul>
+				</div>
+			</div>
+		</aside>
+		<section class="main-content">
+			<div class="container">
+			<form class="form-horizontal" name="reg_testdate">
+				<div class="box">
+					<h5 class="box-title"><i></i><span>请填写您的真实信息</h5>
+					<div class="title-line">
+						<p></p>
+					</div>
+					<div class="box-body">
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>中文姓名：</label>
+								<div class="col-lg-5">
+									<input type="text" class="form-control" placeholder="请输入您的中文姓名">
+								</div>
+								<p class="col-lg-4 help-block"><img src="images/check.png" alt="" /></p>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>性别：</label>
+								<div class="col-lg-5">
+									<select name="" class="form-control form-control-chosen" data-placeholder="请选择一项...">
+										<option value="">请选择一项...</option>
+										<option value="">男</option>
+										<option value="">女</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>证件类型：</label>
+								<div class="col-lg-5">
+									<select name="" class="form-control form-control-chosen" data-placeholder="请选择一项...">
+										<option value="">请选择一项...</option>
+										<option value="">居民身份证</option>
+										<option value="">护照</option>
+										<option value="">驾驶证</option>
+										<option value="">其它</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>证件号码：</label>
+								<div class="col-lg-5">
+									<input type="text" class="form-control" placeholder="">
+								</div>
+								<p class="col-lg-4 help-block">error!</p>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-lg-3 control-label"><em>*</em>出生日期：</label>
+								<div class="col-lg-5">
+									<div class="row change-address">
+										<div class="col-lg-4">
+											<select name="YYYY" class="form-control form-control-chosen" data-placeholder="请选择一项" onChange="YYYYDD(this.value)">
+												<option value="">请选择一项</option>
+											</select>
+										</div>
+										<div class="col-lg-4">
+											<select name="MM" class="form-control form-control-chosen" data-placeholder="请选择一项" onChange="MMDD(this.value)">
+												<option value="">请选择一项</option>
+											</select>
+										</div>
+										<div class="col-lg-4">
+											<select name="DD" class="form-control form-control-chosen" data-placeholder="请选择一项">
+												<option value="">请选择一项</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+					
+
+					</div>
+				</div>
+
+				<div class="box">
+					<h5 class="box-title"><i></i>交易知识和经验</h5>
+					<div class="title-line">
+						<p></p>
+					</div>
+					<div class="box-body">
+						<div class="experience-box">
+								<div class="qustion">
+									<div class="row">
+										<div class="col-lg-6">
+											<p><em>*</em>您之前是否有过相关产品的交易经验？</p>
+										</div>
+										<div class="col-md-6 col-lg-2">
+											<a href="#answer-box1" class=""><i class="fa fa-circle-o"></i><input type="radio"/>是</a>
+										</div>
+										<div class="col-md-6 col-lg-2">
+											<a href="#answer-box2" class=""><i class="fa fa-circle-o"></i><input type="radio"/>否</a>
+										</div>
+									</div>
+								</div>
+								<div class="answer-box" id="answer-box1">
+									<p>1.杠杆（或保证金）交易涉及使用较少的资金来控制较大的头寸。</p>
+									<div class="answer-chosen">
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
+									</div>
+									<p>2.如果我没有足够的资金来弥补交易亏损，我的未结仓位将会以现有市场价格被强制平仓。</p>
+									<div class="answer-chosen">
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
+									</div>
+									<p>3.使用 Expert Advisor（EA, 自动交易程序）仍需要仔细监控仓位。</p>
+									<div class="answer-chosen">
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
+									</div>
+								</div>
+								<div class="answer-box" id="answer-box2">
+									<p>1.市场行情不会快速波动。</p>
+									<div class="answer-chosen">
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
+									</div>
+									<p>2.止损订单可以用来减少进一步的潜在损失。</p>
+									<div class="answer-chosen">
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
+									</div>
+									<p>3.在交易外汇/差价合约交易中，买入价和卖出价之间的差异通常称为“点差“。</p>
+									<div class="answer-chosen">
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>正确</a>
+										<a href="javascript:"><i class="fa fa-circle-o"></i><input type="radio"/>错误</a>
+									</div>
+								</div>
+
+
+						</div>
+					</div>
+
+				</div>
+				<div class="box">
+					<h5 class="box-title"><i></i>确认并接受协议</h5>
+					<div class="title-line">
+						<p></p>
+					</div>
+					<div class="box-body">
+							<div class="agreement-box">
+								<p><i class="fa fa-square-o"></i><input type="checkbox"/>我确认在此申请中所提供的都是真实正确的信息。</p>
+								<p><i class="fa fa-square-o"></i><input type="checkbox" />我理解外汇交易和和差价合约保证金交易含有较高损失风险，甚至包括超过投资本金的损失额度。杠杆交易的影响是同时放大收益和损失。我能够承担并了解所述风险。交易金融衍生品可能不适合所有类型的投资者，我已完全理解将要面临的有关风险。</p>
+								<p><i class="fa fa-square-o"></i><input type="checkbox" />本人/吾等接受并确认 GO Markets 向介绍人支付介绍费 。</p>
+								<ul class="agreement-text agreement-text-zh">
+									<li>如您由您的介绍人推介至 GO Markets，则介绍人将根据您的交易活动收取介绍费。</li>
+									<li>本人/吾等（客户）同意 GO Markets 根据本人/吾等在 GO Markets 进行的外汇和衍生品交易向介绍人支付介绍费。本人/吾等指示并授权 GO Markets 代表本人/吾等向介绍人支付介绍费，并理解该款项的支付仅与交易服务相关，并不视为任何财务建议的报酬。</li>
+								</ul>
+								<p><i class="fa fa-square-o"></i><input type="checkbox" />我承诺账户只用于本人的交易和操作，不被第三方使用。一旦被他人使用而导致的风险和损失，我愿意自行承担。</p>
+								<p id="checkAll"><i class="fa fa-square-o"></i><input type="checkbox" />我已阅读，理解并同意接受 GO Markets 高汇提供有关的金融产品账户条款和条件的法律约束。</p>
+								<div class="agreement-clause">
+									<div class="row agreement-clause-check">
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇产品披露声明</a></span>
+										</div>
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇金融服务指南</a></span>
+										</div>
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇隐私权政策</a></span>
+										</div>
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇条款及细则</a></span>
+										</div>
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 	高汇外汇智能指南</a></span>
+										</div>
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇风险警告</a></span>
+										</div>
+										<div class="col-md-6 col-lg-3">
+											<span><i class="fa fa-square-o"></i><input type="checkbox"/><a target="_blank" href="https://chn.gomarkets.com/About/LegalDocuments">GO Markets 高汇公平使用政策</a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group buttons-group">
+								<div class="col-lg-offset-3 col-md-6 col-lg-3">
+									<button type="button" class="buttons buttons-success" onclick="window.open('step3_zh.html','_self')"><i class="fa fa-spinner fa-spin"></i>Previous</button>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<button type="button" class="buttons buttons-success" onclick="window.open('step3-2_zh.html','_self')"><i class="fa fa-spinner fa-spin"></i>Save and Next</button>
+								</div>
+							</div>
+						
+					</div>
+				</div>
+</form>
+			</div>
+
+		</section>
+		<footer class="main-footer">
+			<div class="container">
+				<div class="footer-menu">
+					<a target="_blank" href="https://chn.gomarkets.com/About/ContactUs">联系我们</a>
+					<!--<span>|</span>
+					<a target="_blank" href="https://www.gomarkets.com/legal-documents/">隐私政策</a>
+					<span>|</span>
+					<a target="_blank" href="https://www.gomarkets.com/legal-documents/">风险披露</a>-->
+				</div>
+				<div class="footer-text">
+					<p>GO Markets 品牌在多个司法管辖区均获得授权和监管。</p>
+					<p><b>风险提示：</b> 交易外汇和杠杆化金融品种具有高风险，可能导致您损失本金。您所承担的亏损风险不应超过您的承受能力，请确保您完全理解其中所涉风险。交易杠杆化产品并不适合所有投资者。在交易前，请考虑您的经验水平、投资目标，如有必要请寻求独立财务建议。客户有责任确保他/她所居住国法律要求允许其使用 GO Markets 品牌提供的服务。在交易前，请您仔细阅读 GO Markets <a href="https://chn.gomarkets.com/About/LegalDocuments" target="_blank">风险披露</a>。</p>
+					<p>网站运营及所有权归 GO Markets 高汇所有。© <span id="footer-year">2021</span> GO Markets。最终解释权归 GO Markets 高汇所有。</p>
+				</div>
+			</div>
+		</footer>
+
+		<div class="modal fade" id="call-back-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title">Call Back</h4></div>
+					<div class="modal-body">
+						<p><i class="fa fa-edit"></i>请正确填写您的信息，我们会尽快给您回电</p>
+						<form class="form-horizontal">
+							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Name:</label>
+								<div class="col-sm-7"><input type="email" class="form-control" id="" placeholder="Name"></div>
+							</div>
+							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Email:</label>
+								<div class="col-sm-7"><input type="text" class="form-control" id="" placeholder="Email"></div>
+							</div>
+							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Country:</label>
+								<div class="col-sm-7">
+									<select id="country" class="form-control form-control-chosen" data-placeholder="请选择一项" name="country" title="country" onkeyup="selCountry()" onchange="selCountry()">
+										<option value="" title="-">请选择一项</option>
+										<option value="CN" title="+86">中国</option>
+										<option value="GB" title="+44">英国</option>
+										<option value="US" title="+001">美国</option>
+										<option value="CA" title="+1">加拿大</option>
+										<option value="AU" title="+61">澳大利亚</option>
+										<option value="TW" title="+886">中国台湾</option>
+										<option value="ID" title="+62">印度尼西亚</option>
+										<option value="SG" title="+65">新加坡</option>
+										<option value="" title="">-----------</option>
+										<option value="AL" title="+355">阿尔巴尼亚</option>
+										<option value="DZ" title="+213">阿尔及利亚</option>
+										<option value="AD" title="+376">安道尔</option>
+										<option value="AN" title="+599">荷属安的列斯群岛</option>
+										<option value="AG" title="+1268">安提瓜</option>
+										<option value="AR" title="+54">阿根廷</option>
+										<option value="AM" title="+374">亚美尼亚</option>
+										<option value="AW" title="+297">阿鲁巴</option>
+										<option value="AT" title="+43">奥地利</option>
+										<option value="AZ" title="+994">阿塞拜疆</option>
+										<option value="BS" title="+1242">巴哈马群岛</option>
+										<option value="BH" title="+973">巴林</option>
+										<option value="BD" title="+880">孟加拉</option>
+										<option value="BB" title="+268">巴巴多斯</option>
+										<option value="BY" title="+375">白俄罗斯</option>
+										<option value="BE" title="+32">比利时</option>
+										<option value="BZ" title="+501">伯利兹</option>
+										<option value="BJ" title="+229">贝宁</option>
+										<option value="BM" title="+441">百慕大</option>
+										<option value="BT" title="+975">不丹</option>
+										<option value="BO" title="+591">玻利维亚</option>
+										<option value="BA" title="+00387">波黑</option>
+										<option value="BW" title="+267">博茨瓦纳</option>
+										<option value="BR" title="+55">巴西</option>
+										<option value="VG" title="+001284">英属维尔京群岛</option>
+										<option value="BN" title="+673">文莱达鲁萨兰国</option>
+										<option value="BG" title="+359">保加利亚</option>
+										<option value="BF" title="+226">布基纳法索</option>
+										<option value="KH" title="+855">柬埔寨</option>
+										<option value="CM" title="+237">咔麦隆</option>
+										<option value="CA" title="+1">加拿大</option>
+										<option value="IC" title="+34">加那利群岛</option>
+										<option value="CV" title="+238">佛得角</option>
+										<option value="KY" title="+1-345">开曼群岛</option>
+										<option value="CF" title="+236">中非</option>
+										<option value="TD" title="+235">查德</option>
+										<option value="CL" title="+56">智利</option>
+										<option value="CO" title="+57">哥伦比亚</option>
+										<option value="CK" title="+682">库克群岛</option>
+										<option value="CR" title="+506">哥斯达黎加</option>
+										<option value="HR" title="+385">克罗埃西亚</option>
+										<option value="CY" title="+357">塞浦路斯</option>
+										<option value="CZ" title="+420">捷克共和国</option>
+										<option value="DK" title="+45">丹麦</option>
+										<option value="DJ" title="+253">吉布提</option>
+										<option value="DM" title="+1849">多米尼加岛</option>
+										<option value="TP" title="+670">东帝汶</option>
+										<option value="DO" title="+1849">多米尼加共和国</option>
+										<option value="EC" title="+593">厄瓜多尔</option>
+										<option value="EG" title="+20">埃及</option>
+										<option value="SV" title="+503">萨尔瓦多</option>
+										<option value="GQ" title="+240">赤道几内亚共和国</option>
+										<option value="EE" title="+372">爱沙尼亚</option>
+										<option value="ET" title="+251">埃塞俄比亚</option>
+										<option value="FO" title="+298">法罗群岛</option>
+										<option value="FJ" title="+679">斐济群岛</option>
+										<option value="FI" title="+358">芬兰</option>
+										<option value="FR" title="+33">法国</option>
+										<option value="GF" title="+594">法属圭亚那</option>
+										<option value="GA" title="+241">加蓬共和国</option>
+										<option value="GM" title="+220">冈比亚</option>
+										<option value="GE" title="+995">乔治亚</option>
+										<option value="DE" title="+49">德国</option>
+										<option value="GH" title="+233">加纳</option>
+										<option value="GI" title="+350">直布罗陀</option>
+										<option value="GR" title="+30">希腊</option>
+										<option value="GL" title="+45">格陵兰</option>
+										<option value="GD" title="+1473">格瑞那达国</option>
+										<option value="GP" title="+00590">瓜德罗普</option>
+										<option value="GT" title="+502">瓜地马拉</option>
+										<option value="GN" title="+00224">几内亚</option>
+										<option value="GY" title="+592">盖亚那</option>
+										<option value="HT" title="+509">海地</option>
+										<option value="HN" title="+504">洪都拉斯</option>
+										<option value="HK" title="+852">中国香港</option>
+										<option value="HU" title="+36">匈牙利</option>
+										<option value="IS" title="+354">冰岛</option>
+										<option value="IN" title="+91">印度</option>
+										<option value="ID" title="+62">印度尼西亚</option>
+										<option value="IE" title="+353">爱尔兰</option>
+										<option value="IL" title="+00972">以色列</option>
+										<option value="IT" title="+39">意大利</option>
+										<option value="JM" title="+876">牙买加</option>
+										<option value="JO" title="+962">约旦</option>
+										<option value="KZ" title="+7">哈萨克斯坦</option>
+										<option value="KE" title="+254">肯尼亚</option>
+										<option value="KW" title="+965">科威特</option>
+										<option value="KG" title="+996">吉尔吉斯斯坦</option>
+										<option value="LA" title="+856">老挝</option>
+										<option value="LV" title="+371">拉脱维亚</option>
+										<option value="LB" title="+961">黎巴嫩</option>
+										<option value="LS" title="+266">莱索托</option>
+										<option value="LR" title="+231">利比里亚</option>
+										<option value="LI" title="+423">列支敦斯登</option>
+										<option value="LT" title="+370">立陶宛</option>
+										<option value="LU" title="+352">卢森堡</option>
+										<option value="MO" title="+853">中国澳门</option>
+										<option value="MK" title="+389">马其顿</option>
+										<option value="MG" title="+261">马达加斯加</option>
+										<option value="MW" title="+265">马拉维</option>
+										<option value="MY" title="+60">马来西亚</option>
+										<option value="MV" title="+960">马尔代夫</option>
+										<option value="MT" title="00356">马耳他</option>
+										<option value="MH" title="+692">马绍尔群岛</option>
+										<option value="MQ" title="+596">马提尼克岛</option>
+										<option value="MR" title="+222">茅利塔尼亚</option>
+										<option value="MU" title="+230">毛里求斯</option>
+										<option value="MX" title="+52">墨西哥</option>
+										<option value="MD" title="+373">摩尔多瓦</option>
+										<option value="MC" title="+377">摩纳哥</option>
+										<option value="MN" title="+976">蒙古</option>
+										<option value="ME" title="+382">黑山</option>
+										<option value="MS" title="+001664">蒙特塞拉特</option>
+										<option value="MA" title="+212">摩洛哥</option>
+										<option value="MZ" title="+258">莫桑比克</option>
+										<option value="NA" title="+264">纳米比亚</option>
+										<option value="NR" title="+674">瑙鲁</option>
+										<option value="NP" title="+977">尼泊尔</option>
+										<option value="NL" title="+31">荷兰</option>
+										<option value="NC" title="+687">新喀里多尼亚</option>
+										<option value="NZ" title="+64">新西兰</option>
+										<option value="NI" title="+505">尼加拉瓜</option>
+										<option value="NE" title="+227">尼日尔</option>
+										<option value="NO" title="+47">挪威</option>
+										<option value="OM" title="+968">阿曼</option>
+										<option value="PK" title="+92">巴基斯坦</option>
+										<option value="PA" title="+507">巴拿马</option>
+										<option value="PG" title="+675">巴布亚新几内亚</option>
+										<option value="PY" title="+595">巴拉圭</option>
+										<option value="PE" title="+51">秘鲁</option>
+										<option value="PH" title="+63">菲律宾</option>
+										<option value="PL" title="+48">波兰</option>
+										<option value="PT" title="+351">葡萄牙</option>
+										<option value="QA" title="+974">卡塔尔</option>
+										<option value="RE" title="+262">留尼汪岛</option>
+										<option value="RO" title="+40">罗马尼亚</option>
+										<option value="RU" title="+7">俄国</option>
+										<option value="RW" title="+250">卢旺达</option>
+										<option value="WS" title="+685">西萨摩亚</option>
+										<option value="SM" title="+378">圣马力诺共和国</option>
+										<option value="SA" title="+966">沙特阿拉伯</option>
+										<option value="SN" title="+221">塞内加尔</option>
+										<option value="RS" title="+381">塞尔维亚</option>
+										<option value="SC" title="+248">塞舌尔共和国</option>
+										<option value="SL" title="+232">塞拉利昂</option>
+										<option value="SG" title="+65">新加坡</option>
+										<option value="SK" title="+421">斯洛伐克共和国</option>
+										<option value="SI" title="+386">斯洛文尼亚</option>
+										<option value="SB" title="+677">所罗门群岛</option>
+										<option value="ZA" title="+27">南非</option>
+										<option value="KR" title="+82">韩国</option>
+										<option value="ES" title="+34">西班牙</option>
+										<option value="LK" title="+0094">斯里兰卡</option>
+										<option value="KN" title="+1 869">圣基茨</option>
+										<option value="LC" title="+1-758">圣卢西亚</option>
+										<option value="PM" title="(+7)812">圣彼得堡</option>
+										<option value="VC" title="+1784">圣文森特</option>
+										<option value="SR" title="+597">苏里南</option>
+										<option value="SZ" title="+41">瑞士</option>
+										<option value="SE" title="+46">瑞典</option>
+										<option value="CH" title="+41">瑞士</option>
+										<option value="TJ" title="+992">塔吉克斯坦</option>
+										<option value="PF" title="+00689">大溪地</option>
+										<option value="TW" title="+886">中国台湾</option>
+										<option value="TZ" title="+255">坦桑尼亚</option>
+										<option value="TH" title="+66">泰国</option>
+										<option value="TG" title="+228">多哥</option>
+										<option value="TO" title="+675">汤加</option>
+										<option value="TN" title="+216">突尼斯</option>
+										<option value="TR" title="+90">土耳其</option>
+										<option value="TM" title="+993">土库曼</option>
+										<option value="UG" title="+256">乌干达</option>
+										<option value="UA" title="+380">乌克兰</option>
+										<option value="AE" title="+971">阿拉伯联合酋长国</option>
+										<option value="GB" title="+44">英国</option>
+										<option value="US" title="+001">美国</option>
+										<option value="UY" title="+598">乌拉圭</option>
+										<option value="UZ" title="+998">乌兹别克斯坦</option>
+										<option value="VU" title="+00678">瓦努阿图共和国</option>
+										<option value="VA" title="+379">梵蒂冈</option>
+										<option value="VE" title="+58">委内瑞拉</option>
+										<option value="VN" title="+84">越南</option>
+										<option value="YE" title="+967">也门</option>
+										<option value="ZM" title="+260">赞比亚</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>City:</label>
+								<div class="col-sm-7"><input type="text" class="form-control" id="" placeholder="City"></div>
+							</div>
+							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Phone Number:</label>
+								<div class="col-sm-7 modal-call-back">
+									<div><span id="CountryNumber">+86</span></div><input type="text" class="form-control" placeholder="Phone Number" id="phonenumber"></div>
+							</div>
+							<div class="form-group"><label for="" class="col-sm-4 control-label">Comments:</label>
+								<div class="col-sm-7"><textarea name="" rows="" cols="" class="form-control"></textarea></div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer"><button type="button" class="buttons buttons-success btn-sm" data-dismiss="modal">Submit<i class="fa fa-angle-right"></i></button>
+						<a class="" href="https://www.gomarkets.com/legal-documents/" target="_blank">Privacy Policy</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-confirm.min.js"></script>
+		<script src="js/chosen-1.1.8.min.js"></script>
+		<script src="js/telInput.js"></script>
+		<script src="js/chosen.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/chosen-birthday.js"></script>
+	</body>
+
+</html>
