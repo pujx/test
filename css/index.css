@@ -529,7 +529,7 @@ option {
 
 @media only screen and (min-width:100px) and (max-width:991px) {
 	.buttons-group .buttons {
-		margin-bottom: 5px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -659,7 +659,9 @@ option {
 	transform: none!important;
 	top: 25px!important;
 	padding: 5px 0 8px 0;
-	min-width: 100px;
+	min-width: max-content;
+	min-width:-moz-max-content;
+	min-width:-webkit-max-content;
 }
 .main-header .header-dropdown ul li {
 	font-size: 13px;
@@ -791,8 +793,9 @@ width: 22px;
 	color: #ffffff;
 	width: 45px;
 	height: 45px;
-	background: url(../images/cell.png) center top no-repeat;
-	display: block
+	background: url(../images/cell.png) center center no-repeat;
+	display: block;
+	background-size: 100%;
 }
 .step-bar-bg {
 	position: absolute;
@@ -814,10 +817,10 @@ width: 22px;
 	right: 88%;
 }
 .step-header li.step-active span {
-	background: url(../images/cell-active.png) center top no-repeat
+	background: url(../images/cell-active.png) center center no-repeat
 }
 .step-header li.step-finish.step-active span {
-	background: url(../images/cell-finish.png) center top no-repeat
+	background: url(../images/cell-finish.png) center center no-repeat
 }
 .step-header li.step-active p {
 	color: #20bf55;
@@ -851,6 +854,12 @@ width: 22px;
 	.step-header li p {
 		display: none
 	}
+	.step-bar-bg,.step-bar-bg-active,.step-bar{top: 19px;}
+	.step-header li span{width: 36px;height: 36px;}
+	.step-header li.step-active span{background-size: 100%;}
+	.step-header li.step-finish.step-active span{background-size: 100%;}
+	
+	
 }
 @media (max-width:767px) {
 	.content-wrapper {
@@ -994,7 +1003,6 @@ width: 22px;
 	.box .box-title {
 		font-size: 14px;
 	}
-	.step-header li span{width: 36px;height: 36px;}
 }
 .panel-group .panel-heading {
 	padding: 0
@@ -1440,7 +1448,6 @@ padding: 0 35px;
 	.success-steps .download-btns a.buttons-success:hover i {
 		background-position: -58px -29px
 	}
-	.success-steps .successful-box img{width:180px ;}
 	.success-steps .download-btns a.buttons-black:hover i {
 		background-position: -86px -28px
 	}
@@ -1483,6 +1490,7 @@ padding: 0 35px;
 		margin-left: -5px;
 	}
 	
+	.success-steps .successful-box img{width:180px;}
 	.success-steps .contact-box {
 		padding: 0;
 	}
