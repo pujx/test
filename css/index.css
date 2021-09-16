@@ -142,9 +142,13 @@ option{font-size:15px}
 .login-form form{padding:15px;background:#fff;margin-bottom:25px}
 .login-container{padding-right:0;border-top:0;background:none}
 .login-form h4{padding:15px 0;background:#48cc7f;margin:0;color:#fff;border-top-left-radius:8px;border-top-right-radius:8px}
-}@media screen and (max-width:767px){.login-right-bar a{border:none;padding:0 8px}
+}@media screen and (max-width:767px){
+.login-right-bar a img{width: 20px;}
+.login-right-bar{margin-top: 0;}
+.login-right-bar a{border:none;padding:0 8px}
 .login-right-bar a span{display:none}
 .login-header{margin:25px 0}
+.login-logo img,.main-header .logo img{width:160px}
 .login-form .buttons{height:40px}
 }.login-form .form-control{height:45px}
 .login-footer{background-color:#000;background:url(../images/login-footer-bg.png) repeat;margin-top:25px}
@@ -189,7 +193,6 @@ option{font-size:15px}
 .main-header .logo{text-align:center;border-bottom:1px solid #313131}
 .main-header .navbar-custom-menu>ul>li>a.right-bar-link i{width:32px;height:32px}
 .mobile-user{padding:4px 7px}
-.login-logo img,.main-header .logo img{width:150px}
 .main-header .navbar-custom-menu>ul>li{margin:0 3px}
 }@media (max-width:374px){.main-header .navbar-custom-menu>ul>li>a.right-bar-link i{width:28px;height:28px}
 .mobile-user{padding:2px 5px}
