@@ -79,7 +79,7 @@ button.buttons[disabled],a.buttons[disabled]{background:#e3e9ed}
 button.buttons[disabled]:hover,a.buttons[disabled]:hover{background:#e3e9ed;cursor:not-allowed;border-color:#e3e9ed;color:#fff !important}
 label{color:#000;font-weight:normal}
 .bor4{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px}
-.form-control{box-shadow:none !important;-webkit-box-shadow:none !important;-ms-box-shadow:none;border-color:#e1eaf2;height:36px;color:#4b5056;padding:6px 5px;text-transform:none;appearance:none;-webkit-appearance:none;-moz-appearance:none}
+.form-control{box-shadow:none !important;-webkit-box-shadow:none !important;-ms-box-shadow:none;border-color:#e1eaf2;height:36px;color:#4b5056;padding:6px 10px;text-transform:none;appearance:none;-webkit-appearance:none;-moz-appearance:none}
 .form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control{background:#e3e9ed;color:#999}
 input:focus,select:focus,textarea:focus{box-shadow:none !important;-webkit-box-shadow:none !important;-moz-box-shadow:none !important;border-color:#48cc7f !important;transition:border-color .8s;-webkit-transition:border-color .8s;-moz-transition:border-color .8s;-ms-transition:border-color .8s}
 .help-block{color:#f00;display:none;margin-bottom:0}
@@ -148,7 +148,6 @@ option{font-size:15px}
 .login-right-bar a{border:none;padding:0 8px}
 .login-right-bar a span{display:none}
 .login-header{margin:25px 0}
-.login-logo img,.main-header .logo img{width:160px}
 .login-form .buttons{height:40px}
 }.login-form .form-control{height:45px}
 .login-footer{background-color:#000;background:url(../images/login-footer-bg.png) repeat;margin-top:25px}
@@ -190,6 +189,8 @@ option{font-size:15px}
 .scale-up li a i{margin-right:8px}
 @media (max-width:767px){.main-header .logo,.main-header .navbar{width:100%;float:none}
 .main-header .navbar{margin:0}
+
+/*.login-logo img,.main-header .logo img{width:160px}*/
 .main-header .logo{text-align:center;border-bottom:1px solid #313131}
 .main-header .navbar-custom-menu>ul>li>a.right-bar-link i{width:32px;height:32px}
 .mobile-user{padding:4px 7px}
