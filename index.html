@@ -1,230 +1,1364 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<meta name="format-detection" content="telephone=no" />
-		<link rel="icon" href="favicon.ico">
-		<title></title>
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<title>GO Markets 高汇-您的外汇交易首选</title>
+		<!--最好是控制在28个文字内，最先出现的词语权重越高，-->
+		<meta name="keywords" content="外汇，GO Markets 高汇，外汇交易，澳大利亚老牌外汇交易平台，外汇交易平台，外汇在线交易平台" />
+		<!--搜索关键词-->
+		<meta name="description" content="GO Markets 高汇成立于2004年，是一家拥有多国监管的澳洲老牌知名券商，并在全球多个重要城市设有分支机构。凭借超过10年的外汇交易经验，GO Markets 高汇一直致力于为客户提供丰富的在线金融产品选择，包括外汇、黄金、白银、股指、原油的交易。" />
+		<!--bootstrap-->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--字体-->
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="css/jquery-confirm.min.css" />
-		<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
-		<link rel="stylesheet" href="css/interInput.css" />
-		<link rel="stylesheet" href="css/index.css">
-		<!--[if lt IE 9]>
-      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
-       <![endif]-->
-		<!--[if lte IE 8]>
+		<!--首页轮播-->
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<!--css3 动画-->
+		<link href="css/animate.css" rel="stylesheet">
+		<!--菜单 new 闪烁动画-->
+		<link href="css/font-awesome-animation.min.css" rel="stylesheet">
+		<!--首页 table 切换滚动条-->
+		<link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+		<!--导航菜单样式-->
+		<link href="css/navigation.css" rel="stylesheet">
+		<!--自定义样式-->
+		<link href="css/style.css" rel="stylesheet">
+		<!--loading 样式-->
+		<link rel="stylesheet" href="css/loading.css" />
+		<!--jquery插件*务必*放在页面头部-->
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<!--[if lte IE 9]>
  				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
  		<![endif]-->
 	</head>
 
 	<body>
-		<header class="main-header">
-			<div class="container">
-				<nav class="navbar">
-				<a href="https://www.int.gomarkets.com/" target="_blank" class="logo"><img src="images/logo.png" alt="logo"></a>
-					<div class="navbar-custom-menu">
-						<ul>
-							<li>
-									<div class="header-dropdown btn-group">
-											<button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                								<img src="images/uk.png" height="18" alt="zh-hans" width="27" />UK
-					                			<span class="fa fa-angle-down"></span>
-											</button>
-											<ul class="dropdown-menu dropdown-menu-right">
+		<div class="site-main">
+			<noscript>
+    			<div class="noscript">
+        			<p><i class="fa fa-exclamation-triangle fa-1"></i>Please enable JavaScript in your browser.</p>
+    			</div>
+			</noscript>
+			<header>
+				<div class="header ">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 clearfix">
+								<div class="header-navigation">
+
+									<a href="javascript:" class="button primary" title="开立真实账户" target="_blank">开立真实账户</a>
+									<a href="javascript:" class="button secondary" title="体验模拟账户" target="_blank">体验模拟账户</a>
+								</div>
+								<div class="logo">
+									<a href="index.html" class="logo-text"><img src="images/site-logo.png" alt="" /></a>
+									<a href="index.html" class="logo-icon"><img src="images/logo-icon.png" alt="" /></a>
+								</div>
+								<div class="float-right">
+									<div class="header-top">
+										<div class="header-desk-links">
+											<ul id="menu-top-header-menu" class="t">
 												<li>
-													<a href="index_zh.html"><img src="images/zh-hans.png" height="18" alt="en" width="27" />CN </a>
+													<a href="javascript:" target="_blank">我的 GO</a>
 												</li>
 												<li>
-													<a href="index_vi.html"> <img src="images/vi.png" height="18" alt="vi" width="27" />33333333333</a>
+													<a href="javascript:" data-toggle="modal" data-target="#callBack">回电请求</a>
 												</li>
 											</ul>
 										</div>
-								</li>
-							<li>
-								<a href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNDIxMl8yNTcxODdfODAwMDI0MjEyXzJf" target="_blank" class="right-bar-link right-bar-service" title="online service"><i></i></a>
-							</li>
-							<li>
-								<a href="javascript:" class="right-bar-link right-bar-tel" title="call back" data-toggle="modal" data-target="#call-back-modal"><i></i></a>
-							</li>
-							<li>
-								<a href="mailto:support@gomarkets.sc" class="right-bar-link right-bar-mail" title="email"><i></i></a>
-							</li>
-							<li>
-								<a href="tel:+248 4 671 903" class="right-bar-user">Call Us:<b>+248 4 671 903</b></a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</header>
-		<aside class="step-body">
-			<p class="step-bar-bg"></p>
-			<p class="step-bar-bg-active"></p>
-			<div class="step-header">
-				<div class="container">
-					<div class="step-bar">
-					<div class="step-bar-active" style="width: 15%;"></div>
-				</div>
-				<ul class="row">
-					<li class="step-active col-xs-offset-1 col-xs-2">
-						<span></span>
-						<p>Start Your Application</p>
-					</li>
-					<li class="col-xs-2">
-						<span></span>
-						<p>Account Profile</p>
-					</li>
-					<li class="col-xs-2">
-						<span></span>
-						<p>Personal Details</p>
-					</li>
-					<li class="col-xs-2">
-						<span></span>
-						<p>Document Submission</p>
-					</li>
-					<li class="col-xs-2">
-						<span></span>
-						<p>Registration Complete</p>
-					</li>
-				</ul>
-				</div>
-			</div>
-		</aside>
-		<section class="main-content">
-			<div class="container">
-				<div class="box">
-					<h5 class="box-title"><i></i>Account Profile</h5>
-					<div class="well-success">Please fill in your email address correctly so that you can receive the  account verification email we sent to you in time to continue your account opening application.</div>
-					<div class="box-body">
-						<form class="form-horizontal">
-							<div class="form-group">
-								<label for="" class="col-lg-3 control-label"><em>*</em>Family Name:</label>
-								<div class="col-lg-5">
-									<input type="text" class="form-control" placeholder="please type in your Family Name">
-								</div>
-								<p class="col-lg-4 help-block success-block">check</p>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-lg-3 control-label"><em>*</em>Given Name:</label>
-								<div class="col-lg-5">
-									<input type="text" class="form-control error-form-control" placeholder="Please type in your given name on your ID Certificate in letters">
-								</div>
-								<p class="col-lg-4 help-block error-block">!</p>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-lg-3 control-label"><em>*</em>Email address:</label>
-								<div class="col-lg-5">
-									<input type="text" class="form-control" placeholder="Please type in your email address">
-								</div>
-								<p class="col-lg-4 help-block error-block">!</p>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-lg-3 control-label"><em>*</em>Country:</label>
-								<div class="col-lg-5">
-											<select class="form-control form-control-chosen" data-placeholder="Please choose..." id="select-country">
-												<option value="">Please choose...</option>
-												<option value="">China</option>
-											</select>
+										<div class="header-dropdown btn-group">
+											<button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                								<img src="images/flags/zh-hans.png" height="18" alt="en" width="27" />CN          
+					                			<span class="fa fa-angle-down"></span>
+											</button>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<!--中文官网-->
+												<!--<li>
+													<a href="https://chn.gomarkets.com"> <img src="images/flags/zh-hans.png" height="18" alt="id" width="27" />ZH</a>
+												</li>-->
+												<li>
+													<a href="https://www.int.gomarkets.com/"> <img src="images/flags/en.png" height="18" alt="zh-hans" width="27" />EN</a>
+												</li>
+												<!--<li>
+													<a href="javascript:"> <img src="images/flags/es.png" height="18" alt="es" width="27" />ES</a>
+												</li>
+												<li>
+													<a href="javascript:"> <img src="images/flags/vi.png" height="18" alt="vi" width="27" />VI</a>
+												</li>
+												<li>
+													<a href="javascript:"> <img src="images/flags/ko.png" height="18" alt="ko" width="27" />KO</a>
+												</li>
+												<li>
+													<a href="javascript:"> <img src="images/flags/it.png" height="18" alt="it" width="27" />IT</a>
+												</li>
+												<li>
+													<a href="javascript:"> <img src="images/flags/ar.png" height="18" alt="ar" width="27" />AR</a>
+												</li>
+												<li>
+													<a href="javascript:"> <img src="images/flags/pt-br.png" height="18" alt="pt-br" width="27" />PT</a>
+												</li>
+												<li>
+													<a href="javascript:"> <img src="images/flags/th.png" height="18" alt="th" width="27" />TH</a>
+												</li>-->
+											</ul>
+										</div>
+										<div class="header-cta ">
+											<ul>
+												<li class="header-call mob-hid">
+													<a href="tel:400 120 8537" title="400 120 8537"><span>400 120 8537</span></a>
+												</li>
+												<li class="desk-hid"><span class="fa fa-lock" onclick="location.href='javascript:'" style="color:#42ce7a;cursor:pointer;"></span></li>
+											</ul>
+										</div>
+										<!--<div class="header-search mob-hid">
+											<button title="Search" class="search-btn"><span class="fa fa-search"></span></button>
+											<div class="search-box" style="display: none;">
+												<form class="searchform" id="searchform" action="">
+													<input class="search-text" placeholder="Search..." type="search" />
+													<input class="search-input" id="searchsubmit" value="" type="submit" />
+												</form>
+											</div>
+										</div>-->
+										<div class="navigation">
+											<ul id="menu-main-menu" class="menu">
+												<li>
+													<a href="Promotion.html" class="text-orange bold">最新优惠</a>
+													<ul class="sub">
+														<li>
+															<a href="New-Account-Bonus.html">新春红包福利 <span class="faa-flash animated">New</span></a>
+														</li>
+														<li>
+															<a href="30Trading-Bonus.html">30% 交易赠金</a>
+														</li>
+														<li>
+															<a href="Trading-Gift.html">2021 “汇”生活</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="TradingPlatform.html">交易平台</a>
+													<ul class="sub">
+														<li>
+															<a href="TradingPlatform-MT4.html">MetaTrader 4</a>
+														</li>
+														<li>
+															<a href="TradingPlatform-MT5.html">MetaTrader 5 <span class="faa-flash animated">New</span></a>
+														</li>
+														<li>
+															<a href="TradingPlatform-Mobile.html">Mobile Trading Platforms</a>
+														</li>
+														<!--<li>
+															<a href="TradingPlatform-WebTrader.html">WebTrader</a>
+														</li>-->
+														<!--<li>
+															<a href="TradingPlatform-Myfxbook.html">Myfxbook</a>
+														</li>-->
+													</ul>
+												</li>
+												<li>
+													<a href="Products-Trading.html">交易产品</a>
+													<ul class="sub">
+														<li>
+															<a href="Products-Forex.html">外汇交易</a>
+														</li>
+														<li>
+															<a href="Products-Share-Cfds.html">Share-CFDs <span class="faa-flash animated">New</span></a>
+														</li>
+														<li>
+															<a href="Products-Indices.html">全球股指</a>
+														</li>
+														<li>
+															<a href="Products-Metals.html">贵金属</a>
+														</li>
+														<li>
+															<a href="Products-Commodities.html">大宗商品</a>
+														</li>
+														<li>
+															<a href="Products-Cryptocurrencies.html">Cryptocurrencies</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="javascript:">交易工具</a>
+													<ul class="sub">
+														<li>
+															<a href="Tools-Autochartist.html">Autochartist</a>
+														</li>
+														<li>
+															<a href="Tools-MT4-Genesis.html">MT4 Genesis</a>
+														</li>
+														<li>
+															<a href="Tools-TradingCentral.html">Trading Central</a>
+														</li>
+														<li>
+															<a href="Tools-VPS.html">VPS</a>
+														</li>
+														<li>
+															<a href="Tools-a-quant.html">a-Quant</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="javascript:">账户类型</a>
+													<ul class="sub">
+														<li>
+															<a href="AccountType-Standard.html">标准账户</a>
+														</li>
+														<li>
+															<a href="AccountType-Pro.html">PRO 专业账户</a>
+														</li>
+														<li>
+															<a href="Compare-Account-Types.html">账户类型对比</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="javascript:">新闻中心</a>
+													<ul class="sub">
+														<li>
+															<a href="News-DailyNews.html">每日财经新闻</a>
+														</li>
+														<li>
+															<a href="News-WeeklySummaries.html">每周财经评论</a>
+														</li>
+														<li>
+															<a href="News-Articles.html">财经短评</a>
+														</li>
+														<!--<li>
+															<a href="News-Podcast.html">博客频道</a>
+														</li>-->
+														<!--<li>
+															<a href="News-PressRelease.html">新闻稿</a>
+														</li>-->
+														<li>
+															<a href="News-EconomicCalendar.html">财经日历</a>
+														</li>
+														<!--<li>
+															<a href="News-MeetTheExperts.html">名家讲堂</a>
+														</li>-->
+														<li>
+															<a href=".html">平台公告</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="Edu-LearningCenter.html">投资者教育</a>
+													<ul class="sub">
+														<li>
+															<a href="Edu-FreeCourses.html">免费外汇培训课程</a>
+														</li>
+														<li>
+															<a href="Edu-IntroductionToForex.html">外汇入门</a>
+														</li>
+														<li>
+															<a href="Edu-ForeignExchange.html">外汇交易</a>
+														</li>
+														<li>
+															<a href="Edu-MT4VideoTutorials.html">视频教程</a>
+														</li>
+														<li>
+															<a href="Edu-Chinese-Seminars.html">中文专题课堂</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="javascript:">合作伙伴</a>
+													<ul class="sub">
+														<li>
+															<a href="Partners-White-Labels.html">白标合作伙伴</a>
+														</li>
+														<li>
+															<a href="Partner-Introducing-Brokers.html">介绍经纪商</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="">客户支持</a>
+													<ul class="sub">
+														<li>
+															<a href="https://mygo.gomarkets.com/zh/mygo/login">My GO</a>
+														</li>
+														<li>
+															<a href="Client-Wallet.html">入金/取款</a>
+														</li>
+														<li>
+															<a href="Leverage-Change.html">杠杆调整</a>
+														</li>
+														<li>
+															<a href="Faqs.html">常见问题</a>
+														</li>
+														<li>
+															<a href="News-EconomicCalendar.html">财经日历</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="About-GO-Markets.html">高汇介绍</a>
+													<ul class="sub">
+														<li>
+															<a href="Contact-Us.html">联系我们</a>
+														</li>
+														<li>
+															<a href="Legal-Documents.html">法律文件</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+											<div class="navigation-buttons">
+
+												<a href="https://mygo.gomarkets.com/zh/mygo/login" class="button yellow" title="我的 GO" target="_blank">我的 GO</a>
+												<a href="javascript:" title="开立真实账户" class="button primary" target="_blank">开立真实账户</a>
+												<a href="javascript:" title="体验模拟账户" class="button secondary" target="_blank">体验模拟账户</a>
+												<a href="javascript:" title="回电请求" class="button blue" data-toggle="modal" data-target="#callBack">回电请求</a>
+											</div>
+											<div class="navigation-cta-box">
+												<a href="tel:400 120 8537" title="400 120 8537" class="navigation-cta">Call:400 120 8537</a>
+												<a href="mailto:AsiaInfo@gomarkets.sc" title="AsiaInfo@gomarkets.sc" class="navigation-cta">Mail: AsiaInfo@gomarkets.sc</a>
+											</div>
+										</div>
+										<button class="navigation-toggle">
+                							<span class="span-icon"></span>
+                							<span class="span-icon"></span>
+                							<span class="span-icon"></span>
+            							</button>
 									</div>
+									<div class="header-bottom">
+										<ul id="menu-new-header-menu">
+											<li>
+												<a href="Promotion.html" class="text-orange bold">最新优惠</a>
+												<ul class="sub">
+													<li>
+														<a href="New-Account-Bonus.html">新春红包福利 <span class="faa-flash animated">New</span></a>
+													</li>
+													<li>
+														<a href="30Trading-Bonus.html">30% 交易赠金</a>
+													</li>
+													<li>
+														<a href="Trading-Gift.html">2021 “汇”生活</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="TradingPlatform.html">交易平台</a>
+												<ul class="sub">
+													<li>
+														<a href="TradingPlatform-MT4.html">MetaTrader 4</a>
+													</li>
+													<li>
+														<a href="TradingPlatform-MT5.html">MetaTrader 5 <span class="faa-flash animated">New</span></a>
+													</li>
+													<li>
+														<a href="TradingPlatform-Mobile.html">Mobile Trading Platforms</a>
+													</li>
+													<!--<li>
+															<a href="TradingPlatform-WebTrader.html">WebTrader</a>
+														</li>-->
+													<!--<li>
+															<a href="TradingPlatform-Myfxbook.html">Myfxbook</a>
+														</li>-->
+												</ul>
+											</li>
+											<li>
+												<a href="Products-Trading.html">交易产品</a>
+												<ul class="sub">
+													<li>
+														<a href="Products-Forex.html">外汇交易</a>
+													</li>
+													<li>
+														<a href="Products-Share-Cfds.html">Share-CFDs <span class="faa-flash animated">New</span></a>
+													</li>
+													<li>
+														<a href="Products-Indices.html">全球股指</a>
+													</li>
+													<li>
+														<a href="Products-Metals.html">贵金属</a>
+													</li>
+													<li>
+														<a href="Products-Commodities.html">大宗商品</a>
+													</li>
+													<li>
+														<a href="Products-Cryptocurrencies.html">Cryptocurrencies</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="javascript:">交易工具</a>
+												<ul class="sub">
+													<li>
+														<a href="Tools-Autochartist.html">Autochartist</a>
+													</li>
+													<li>
+														<a href="Tools-MT4-Genesis.html">MT4 Genesis</a>
+													</li>
+													<li>
+														<a href="Tools-TradingCentral.html">Trading Central</a>
+													</li>
+													<li>
+														<a href="Tools-VPS.html">VPS</a>
+													</li>
+													<li>
+														<a href="Tools-a-quant.html">a-Quant</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="javascript:">账户类型</a>
+												<ul class="sub">
+													<li>
+														<a href="AccountType-Standard.html">标准账户</a>
+													</li>
+													<li>
+														<a href="AccountType-Pro.html">PRO 专业账户</a>
+													</li>
+													<li>
+														<a href="Compare-Account-Types.html">账户类型对比</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="javascript:">新闻中心</a>
+												<ul class="sub">
+													<li>
+														<a href=".html">平台公告</a>
+													</li>
+													<li>
+														<a href="News-DailyNews.html">财经新闻 </a>
+													</li>
+													<li>
+														<a href="News-EconomicCalendar.html">财经日历</a>
+													</li>
+													<!--<li>
+															<a href="News-Articles.html">财经短评</a>
+														</li>-->
+													<!--<li>
+															<a href="News-Podcast.html">博客频道</a>
+														</li>-->
+													<!--<li>
+															<a href="News-PressRelease.html">新闻稿</a>
+														</li>-->
+													<!--<li>
+															<a href="News-MeetTheExperts.html">名家讲堂</a>
+														</li>-->
+												</ul>
+											</li>
+											<li>
+												<a href="Edu-LearningCenter.html">投资者教育</a>
+												<ul class="sub">
+													<li>
+														<a href="Edu-FreeCourses.html">免费外汇培训课程</a>
+													</li>
+													<li>
+														<a href="Edu-IntroductionToForex.html">外汇入门</a>
+													</li>
+													<li>
+														<a href="Edu-ForeignExchange.html">外汇交易</a>
+													</li>
+													<li>
+														<a href="Edu-MT4VideoTutorials.html">视频教程</a>
+													</li>
+													<li>
+														<a href="Edu-Chinese-Seminars.html">中文专题课堂</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="javascript:">合作伙伴</a>
+												<ul class="sub">
+													<li>
+														<a href="Partners-White-Labels.html">白标合作伙伴</a>
+													</li>
+													<li>
+														<a href="Partner-Introducing-Brokers.html">介绍经纪商</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="">客户支持</a>
+												<ul class="sub">
+													<li>
+														<a href="https://mygo.gomarkets.com/zh/mygo/login">My GO</a>
+													</li>
+													<!--<li>
+														<a href="Client-Wallet.html">入金/取款</a>
+													</li>-->
+													<li>
+														<a href="Leverage-Change.html">杠杆调整</a>
+													</li>
+													<li>
+														<a href="Faqs.html">常见问题</a>
+													</li>
+													<li>
+														<a href="News-EconomicCalendar.html">财经日历</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="About-GO-Markets.html">高汇介绍</a>
+												<ul class="sub">
+													<li>
+														<a href="Contact-Us.html">联系我们</a>
+													</li>
+													<li>
+														<a href="Legal-Documents.html">法律文件</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+
 							</div>
-							<div class="form-group">
-									<label for="" class="col-lg-3 control-label"><em>*</em>Phone Number:</label>
-									<div class="col-lg-5">
-										<div class="changeTel" style="">
-											<input type="text" class="form-control" placeholder="Type in phone number" />
-											<div class="changeTelSel">
-												<em class="telLine"></em>
-												<input maxlength="30" onkeyup="addnewareacode()" onchange="addnewareacode()" type="text" name="registration[phone][main_phone]" id="registration_phone_main_phone" />
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="container-main home_page">
+				<section id="hl-banner">
+					<div class="hl-banner">
+						<div class="hl-banner-slider">
+							<figure>
+								<img src="images/home-page-banner7.jpg" class="homebanner-dasktop" alt="" />
+								<figcaption class="banner-30-bonus">
+									<span class="h1"><span>全新升级 成本直降</span>30% 交易赠金活动再度来袭</span>
+                        			<p>赠金高达 9,000 美金</p>
+									<a href="30Trading-Bonus.html" title="了解更多" class="read-more" target="_blank">了解更多 <span class="fa fa-angle-right"></span></a>
+								</figcaption>
+							</figure>
+							<figure>
+								<img src="images/home-page-banner8.jpg" class="homebanner-dasktop" alt="" />
+								<figcaption class="banner-trading-gift">
+									<p>2021 “汇” 生活</p>
+									<span class="h1">交易生活随心切换</span>
+									<a href="Trading-Gift.html" title="了解更多" class="read-more" target="_blank">了解更多 <span class="fa fa-angle-right"></span></a>
+								</figcaption>
+							</figure>
+							<figure>
+								<img src="images/home-page-banner9.jpg" class="homebanner-dasktop" alt="" />
+								<figcaption class="banner-new-account-bonus">
+									<img src="images/banner-new-account-bonus.png" alt="" />
+									<span class="h1">新年双喜临门 红包好运当头</span>
+									<a href="New-Account-Bonus.html" title="了解更多" class="read-more" target="_blank">了解更多 <span class="fa fa-angle-right"></span></a>
+								</figcaption>
+							</figure>
+							<figure>
+								<img src="images/home-page-banner6.jpg" class="homebanner-dasktop" alt="" />
+								<figcaption class="banner-chelseafc">
+									<img src="images/chelseafc.png" alt="" />
+									<span class="h1">官方线上合作伙伴</span>
+									<p></p>
+									<a href="chelseafc.html" title="了解更多" class="read-more" target="_blank">了解更多 <span class="fa fa-angle-right"></span></a>
+								</figcaption>
+							</figure>
+							<figure>
+								<img src="images/home-page-banner1.jpg" class="homebanner-dasktop" alt="" />
+								<figcaption>
+									<span class="h1"><span>一个账户</span>交易全球 350+ 种主流金融产品</span>
+									<p>涵盖外汇、股指、贵金属、大宗商品、股票等</p>
+									<a href="Products-Trading.html" title="了解更多" class="read-more" target="_blank">了解更多 <span class="fa fa-angle-right"></span></a>
+								</figcaption>
+							</figure>
+							<figure>
+								<img src="images/home-page-banner2.jpg" class="homebanner-dasktop" alt="" />
+								<figcaption>
+									<span class="h1"><span>MetaTrader 5</span>功能丰富，功能多样，安全便捷</span>
+									<p>GO Markets MT5 交易平台将成为您的不二选择</p>
+									<a href="TradingPlatform-MT5.html" title="了解更多" class="read-more" target="_blank">了解更多 <span class="fa fa-angle-right"></span></a>
+								</figcaption>
+							</figure>
+							<figure>
+								<img src="images/home-page-banner3.jpg" class="homebanner-dasktop" alt="" />
+								<figcaption>
+									<span class="h1"><span>CFDs 一站式交易</span>交易超过 200 支全球股票差价合约</span>
+									<p>利用先进的 MT5 平台，探索完整的 EA 功能和高级工具</p>
+									<a href="Products-Share-Cfds.html" title="了解更多" class="read-more" target="_blank">了解更多 <span class="fa fa-angle-right"></span></a>
+								</figcaption>
+							</figure>
+							<figure>
+								<img src="images/home-page-banner4.jpg" class="homebanner-dasktop" alt="" />
+								<figcaption>
+									<span class="h1"><span>通过免费的教育课程</span>学习更多的外汇课程</span>
+									<p>相信通过不断地知识学习和巩固，定能帮助您进一步提升交易技能</p>
+									<a href="Edu-LearningCenter.html" title="了解更多" class="read-more" target="_blank">了解更多 <span class="fa fa-angle-right"></span></a>
+								</figcaption>
+							</figure>
+							<figure>
+								<img src="images/home-page-banner5.jpg" class="homebanner-dasktop" alt="" />
+								<figcaption>
+									<span class="h1"><span>使用 GO Markets 交易工具</span>增强您在 GO Markets 高汇的交易体验</span>
+									<p>GO Markets 高汇的所有真实账户客户都可免费使用</p>
+									<a href="Tools-TradingCentral.html" title="了解更多" class="read-more" target="_blank">了解更多 <span class="fa fa-angle-right"></span></a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="lets-start-box">
+							<a href="javascript:" title="" class="button primary">开立真实账户</a>
+							<a href="javascript:" title="" class="button secondary">免费模拟账户</a>
+							<a href="javascript:" title="" class="button blue">公司优惠政策</a>
+						</div>
+						<div class="banner-boxes">
+							<div class="banner-box-container">
+								<div class="banner-box wow fadeInUp" data-wow-delay="0.3s">
+									<a href="javascript:">
+										<img src="images/banner-icon1.png" alt="极具竞争力点差" />极具竞争力点差</a>
+									<div class="banner-box-content">
+										<img src="images/banner-icon1.png" alt="极具竞争力点差" />
+										<p>在 GO Markets 高汇，享受极具竞争力的点差和丰富的交易品种，涵盖外汇、股指、贵金属、大宗商品、股票。</p>
+										<a href="Spreads.html" title="了解更多" class="read-more" target="_blank">了解更多</a>
+									</div>
+								</div>
+								<div class="banner-box wow fadeInUp" data-wow-delay="0.6s">
+									<a href="javascript:">
+										<img src="images/banner-icon2.png" alt="一个账户,多种交易途径" />一个账户,多种交易途径</a>
+									<div class="banner-box-content">
+										<img src="images/banner-icon2.png" alt="一个账户,多种交易途径" />
+										<p>执行准确、优质稳定、信息丰富的交易平台，迎合每一位投资者的喜好。</p>
+										<a href="Products-Trading.html" title="了解更多" class="read-more" target="_blank">了解更多</a>
+									</div>
+								</div>
+								<div class="banner-box wow fadeInUp" data-wow-delay="0.9s">
+									<a href="javascript:">
+										<img src="images/banner-icon3.png" alt="灵活杠杆交易" />灵活杠杆交易</a>
+									<div class="banner-box-content">
+										<img src="images/banner-icon3.png" alt="灵活杠杆交易" />
+										<p>高达 300：1 的灵活杠杆比例，适用于不同账户类型的多样化需求。</p>
+										<a href="Leverage-Change.html" title="了解更多" class="read-more" target="_blank">了解更多</a>
+									</div>
+								</div>
+								<div class="banner-box wow fadeInUp" data-wow-delay="1.2s">
+									<a href="javascript:">
+										<img src="images/banner-icon4.png" alt="丰富的在线学习资源" />丰富的在线学习资源</a>
+									<div class="banner-box-content">
+										<img src="images/banner-icon4.png" alt="丰富的在线学习资源" />
+										<p>强大、专业的分析师团队每日为客户分析市场脉搏，撰写财经分析报告，实盘技术分析评论。</p>
+										<a href="Edu-LearningCenter.html" title="了解更多" class="read-more" target="_blank">了解更多</a>
+									</div>
+								</div>
+								<div class="banner-box wow fadeInUp" data-wow-delay="1.5s">
+									<a href="javascript:">
+										<img src="images/banner-icon5.png" alt="专业客户服务" />专业客户服务</a>
+									<div class="banner-box-content">
+										<img src="images/banner-icon5.png" alt="专业客户服务" />
+										<p>GO Markets 高汇专业客服团队，支持使用多国语言，5*24 不间断为客户提供一对一优质服务。</p>
+										<a href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNDIxMl8yNTcxODdfODAwMDI0MjEyXzJf" title="了解更多" class="read-more" target="_blank">了解更多</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="hl-live-spreads">
+					<div class="hl-live-spreads">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-5">
+									<div class="hl-live-spreads-content">
+										<h2>首屈一指的在线交易平台</h2>
+										<p>使用 GO Markets MetaTrader 4 & MetaTrader 5 交易平台, 交易超过 350 种产品，包括外汇，股票差价合约，大宗商品，指数和贵金属。</p>
+										<a href="TradingPlatform.html" title="了解更多" class="link primary" target="_blank">了解更多<span class="fa fa-angle-right"></span></a>
+										<a href="News-DailyNews.html" title="GO Daily 每日快讯" class="link secondary" target="_blank">GO Daily 每日快讯<span class="fa fa-angle-right"></span></a>
+									</div>
+								</div>
+								<div class="col-lg-7">
+									<div class="hl-live-spreads-table">
+										<div class='tabs tabs_rotate'>
+											<ul class='horizontal'>
+												<li class="active">
+													<a href="#tab-1" title="外汇交易"><img src="images/live-spread-icon1.png" alt="" /><span>外汇交易</span></a>
+												</li>
+												<li>
+													<a href="#tab-2" title="贵金属"><img src="images/live-spread-icon2.png" alt="" /><span>贵金属</span></a>
+												</li>
+												<li>
+													<a href="#tab-3" title="大宗商品"><img src="images/live-spread-icon3.png" alt="" /><span>大宗商品</span></a>
+												</li>
+												<li>
+													<a href="#tab-4" title="全球股指"><img src="images/live-spread-icon4.png" alt="" /><span>全球股指</span></a>
+												</li>
+												<!--<li>
+													<a href="#tab-5" title="Cryptos"><img src="images/live-spread-icon5.png" alt="" /><span>Cryptos</span></a>
+												</li>-->
+											</ul>
+											<style type="text/css">
+												.green {
+													color: #42ce7a !important;
+												}
+												
+												.red {
+													color: #d95252 !important;
+												}
+											</style>
+
+											<div id='tab-1'>
+												<span class="hl-live-spreads-mobile-title">外汇交易</span>
+												<table class="table table-striped table-bordered market-survey-table">
+													<thead>
+														<th>交易符号</th>
+														<th>买价</th>
+														<th>卖价</th>
+														<th>点差</th>
+													</thead>
+													<tr id="tr_AUDUSD">
+														<td>AUDUSD</td>
+														<td class="" id="bid_AUDUSD">0.67113</td>
+														<td class="" id="ask_AUDUSD">0.67114</td>
+														<td class=""><span id="change_AUDUSD">0.1</span></td>
+													</tr>
+													<tr id="tr_EURUSD">
+														<td>EURUSD</td>
+														<td class="" id="bid_EURUSD">1.10439</td>
+														<td class="" id="ask_EURUSD">1.1044</td>
+														<td class=""><span id="change_EURUSD">0.1</span></td>
+													</tr>
+													<tr id="tr_GBPUSD">
+														<td>GBPUSD</td>
+														<td class="" id="bid_GBPUSD">1.21814</td>
+														<td class="" id="ask_GBPUSD">1.21819</td>
+														<td class=""><span id="change_GBPUSD">0.5</span></td>
+													</tr>
+													<tr id="tr_USDCAD">
+														<td>USDCAD</td>
+														<td class="" id="bid_USDCAD">1.33014</td>
+														<td class="" id="ask_USDCAD">1.33017</td>
+														<td class=""><span id="change_USDCAD">0.3</span></td>
+													</tr>
+												</table>
+											</div>
+											<div id='tab-2'>
+												<span class="hl-live-spreads-mobile-title">贵金属</span>
+												<table class="table table-striped table-bordered market-survey-table">
+													<thead>
+														<th>交易符号</th>
+														<th>买价</th>
+														<th>卖价</th>
+														<th>点差</th>
+													</thead>
+													<tr id="tr_XAGUSD">
+														<td>XAGUSD</td>
+														<td class="" id="bid_XAGUSD">18.21</td>
+														<td class="" id="ask_XAGUSD">18.22</td>
+														<td class=""><span id="change_XAGUSD">0.8</span></td>
+													</tr>
+													<tr id="tr_XAUUSD">
+														<td>XAUUSD</td>
+														<td class="" id="bid_XAUUSD">1524.06</td>
+														<td class="" id="ask_XAUUSD">1524.22</td>
+														<td class=""><span id="change_XAUUSD">1.6</span></td>
+													</tr>
+												</table>
+											</div>
+											<div id='tab-3'>
+												<span class="hl-live-spreads-mobile-title">大宗商品</span>
+												<table class="table table-striped table-bordered market-survey-table">
+													<thead>
+														<th>交易符号</th>
+														<th>买价</th>
+														<th>卖价</th>
+														<th>点差</th>
+													</thead>
+													<tr id="tr_USOUSD">
+														<td>USOUSD</td>
+														<td class="" id="bid_USOUSD">56.52</td>
+														<td class="" id="ask_USOUSD">56.546</td>
+														<td class=""><span id="change_USOUSD">2.6</span></td>
+													</tr>
+													<tr id="tr_UKOUSD">
+														<td>UKOUSD</td>
+														<td class="" id="bid_UKOUSD">60.469</td>
+														<td class="" id="ask_UKOUSD">60.492</td>
+														<td class=""><span id="change_UKOUSD">2.3</span></td>
+													</tr>
+												</table>
+											</div>
+											<div id='tab-4'>
+												<span class="hl-live-spreads-mobile-title">全球股指</span>
+												<table class="table table-striped table-bordered market-survey-table">
+													<thead>
+														<th>交易符号</th>
+														<th>买价</th>
+														<th>卖价</th>
+														<th>点差</th>
+													</thead>
+													<tr id="tr_WS30">
+														<td>WS30</td>
+														<td class="" id="bid_WS30">26425.83</td>
+														<td class="" id="ask_WS30">26428.83</td>
+														<td class=""><span id="change_WS30">3</span></td>
+													</tr>
+													<tr id="tr_US500">
+														<td>US500</td>
+														<td class="" id="bid_US500">2931.32</td>
+														<td class="" id="ask_US500">2931.82</td>
+														<td class=""><span id="change_US500">0.5</span></td>
+													</tr>
+													<tr id="tr_FTSE100">
+														<td>FTSE100</td>
+														<td class="" id="bid_FTSE100">7201.19</td>
+														<td class="" id="ask_FTSE100">7205.19</td>
+														<td class=""><span id="change_FTSE100">4</span></td>
+													</tr>
+													<tr id="tr_DAX30">
+														<td>DAX30</td>
+														<td class="" id="bid_DAX30">11871.55</td>
+														<td class="" id="ask_DAX30">11875.55</td>
+														<td class=""><span id="change_DAX30">4</span></td>
+													</tr>
+													<tr id="tr_ASX200">
+														<td>ASX200</td>
+														<td class="" id="bid_ASX200">6595.75</td>
+														<td class="" id="ask_ASX200">6596.75</td>
+														<td class=""><span id="change_ASX200">1</span></td>
+													</tr>
+												</table>
+											</div>
+											<!--<div id='tab-5'> <span class="hl-live-spreads-mobile-title">CRYPTOs</span>
+												<table class="table table-striped table-bordered market-survey-table">
+													<thead>
+														<th>Market</th>
+														<th>Bid</th>
+														<th>Ask</th>
+														<th>Spread</th>
+													</thead>
+													<tr id="tr_BCHUSD">
+														<td>BCHUSD</td>
+														<td class="" id="bid_BCHUSD">208.95</td>
+														<td class="" id="ask_BCHUSD">213.95</td>
+														<td class=""><span id="change_BCHUSD">5</span></td>
+													</tr>
+													<tr id="tr_BTCUSD">
+														<td>BTCUSD</td>
+														<td class="" id="bid_BTCUSD">7332</td>
+														<td class="" id="ask_BTCUSD">7354</td>
+														<td class=""><span id="change_BTCUSD">22</span></td>
+													</tr>
+													<tr id="tr_ETHUSD">
+														<td>ETHUSD</td>
+														<td class="" id="bid_ETHUSD">133</td>
+														<td class="" id="ask_ETHUSD">136</td>
+														<td class=""><span id="change_ETHUSD">3</span></td>
+													</tr>
+													<tr id="tr_LTCUSD">
+														<td>LTCUSD</td>
+														<td class="" id="bid_LTCUSD">42.46</td>
+														<td class="" id="ask_LTCUSD">43.46</td>
+														<td class=""><span id="change_LTCUSD">1</span></td>
+													</tr>
+													<tr id="tr_XRPUSD">
+														<td>XRPUSD</td>
+														<td class="" id="bid_XRPUSD">0.1922</td>
+														<td class="" id="ask_XRPUSD">0.1978</td>
+														<td class=""><span id="change_XRPUSD">0.0056</span></td>
+													</tr>
+												</table>
+											</div>-->
+
+										</div>
+										<p>实时价格仅供参考。</p>
+									</div>
+									<a href="Spreads.html" title="GO Markets 实时点差预览表" class="link primary" target="_blank">GO Markets 实时点差预览表<span class="fa fa-angle-right"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="hl-cta2">
+					<div class="hl-cta2">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-5">
+									<div class="hl-cta2-title">
+										<h3>New to trading Forex & CFDs?</h3>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="hl-cta2-content">
+										<p>立即注册， <br />即刻获取海量在线学习资源！</p>
+									</div>
+								</div>
+								<div class="col-lg-4 col-lg-offset-3">
+									<div class="hl-cta2-links">
+										<a href="https://www.int.gomarkets.com/forex-education-courses/" title="Register now" class="button default">免费获取</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!--<section class="inner-page home-news">
+					<div class="container">
+						<h2 class="text-center">每日市场新闻</h2>
+						<div class="row">
+							<div class="col-6 col-sm-4 col-md-3 col-xl"><img src="images/home-page-news1.jpg" /></p>
+								<h5>亚洲每日市场回顾</h5>
+								<span class="home-date">July 25, 2019</span>
+								<a href="javascript:" class="home-news-txt" target="_blank">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate recusandae vero in. A modi ullam laudantium quasi dignissimos veniam eos blanditiis earum cupiditate illo libero quidem in sed dolor consequatur.</a>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-xl"><img src="images/home-page-news2.jpg" /></p>
+								<h5>亚洲每日市场回顾</h5>
+								<span class="home-date">July 25, 2019</span>
+								<a href="javascript:" class="home-news-txt" target="_blank">lorem </a>
+							</div>
+
+							<div class="col-6 col-sm-4 col-md-3 col-xl"><img src="images/home-page-news3.jpg" /></p>
+								<h5>亚洲每日市场回顾</h5>
+								<span class="home-date">July 25, 2019</span>
+								<a href="" class="home-news-txt" target="_blank">Lorem ipsum dolor sit amet, consectetur elit. Officiis ex pariatur a quibusdam ab voluptate soluta fugiat praesentium inventore consequatur obcaecati ipsum accusantium minima animi fugit nisi alias dolores non.</a>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-xl"><img src="images/home-page-news4.jpg" /></p>
+								<h5>亚洲每日市场回顾</h5>
+								<span class="home-date">July 25, 2019</span>
+								<a href="" class="home-news-txt" target="_blank">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolorem vel fugit maiores ex similique laboriosam reprehenderit fuga amet iure inventore cum consequatur consequuntur magni adipisci aut ut minima quas!</a>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-xl"><img src="images/home-page-news5.jpg" /></p>
+								<h5>亚洲每日市场回顾</h5>
+								<span class="home-date">July 25, 2019</span>
+								<a href="" class="home-news-txt" target="_blank">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolorem vel fugit maiores ex similique laboriosam reprehenderit fuga amet iure inventore cum consequatur consequuntur magni adipisci aut ut minima quas!</a>
+							</div>
+							<div class="col-12">
+								<p></p>
+								<a href="News-DailyNews.html" target="_blank" title="最新快讯" class="link primary">最新快讯<span class="fa fa-angle-right"></span></a>
+							</div>
+						</div>
+					</div>
+				</section>-->
+				<!--<section class="home-intro">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 text-center">
+								<h4>享受极致、稳定、便捷的线上交易体验</h4>
+								<p>GO Markets 高汇是澳大利亚首家使用
+									<a href="TradingPlatform-MT4.html" target="_blank">Meta Trader 4 </a>在线平台的外汇经纪商，并于 2004 年正式取得澳大利亚金融服务执照 AFSL 授权的外汇交易资格，执照编号为 254963，成为了澳大利亚境内历史悠久的老牌在线外汇交易平台领导者之一。</p>
+								<br />
+								<h4>丰富的在线学习资源，助您成功下好第一单</h4>
+								<p>GO Markets 高汇为投资者提供系统化学习课程，并将定期开展线下讲座，在线视频讲解课程，帮助投资者积累知识，增强交易信心。无论您是交易新手还是进阶用户，都能在这里寻找到丰富全面的学习资源。
+									<br />GO Markets 高汇致力于为全球机构投资者、基金管理人和个人交易者提供优质卓越的线上服务。无论您是经验丰富的投资者还是新手，GO Markets 高汇都能为您提供极具竞争力的点差。</p>
+								<br />
+								<h4>GO Markets 高汇 MT4 & MT5，尽享极致交易体验</h4>
+								<p>我们的 MT4 & MT5 模拟账户反映真实的交易环境，将为您提供与真实账户完全相同的精确化模拟交易体验。<br /> 高达 $100,000 虚拟资金，超过 90 种交易产品。<br /> 高达 300：1 的灵活杠杆，极具竞争力的点差优势。</p>
+							</div>
+						</div>
+					</div>
+				</section>-->
+				<section id="hl-cta">
+					<div class="hl-cta" style="background:url('images/why-us-bg-1920x496.jpg') no-repeat center center transparent fixed">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="hl-cta-title">
+										<h2>Ready to give it a GO ? <br />即刻开启无与伦比的线上交易体验！</h2>
+									</div>
+									<div class="hl-cta-links">
+										<a href="https://apply.gomarkets.com/opennewaccount/register" title="开立真实账户" class="button primary" target="_blank">开立真实账户</a>
+										<a href="Pages-Demo-Trading-Account.html" title="体验模拟账户" class="button secondary" target="_blank">体验模拟账户</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="hl-looking-for2">
+					<div class="container">
+						<h2 class="text-center">一个账户，交易全球 350+ 种主流金融产品</h2>
+						<br />
+						<div class="row justify-content-center">
+							<div class="col-md-6 col-lg-4">
+								<div class="hl-product2">
+									<div class="hl-product-icon">
+										<a href="" title="外汇交易" target="_blank">
+											<img src="images/product-icon1.png" alt="外汇交易" class="hl-product-img" />
+											<img src="images/product-icon1-hover.png" alt="外汇交易" class="hl-product-img-hover" />
+										</a>
+									</div>
+									<div class="hl-product-content">
+										<h4><a href="Products-Forex.html" title="外汇交易" target="_blank">外汇交易</a></h4>
+										<p>全天候 24 小时</p>
+										<p>不间断交易</p>
+										<p>超过 50 种外汇货币对</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="hl-product2">
+									<div class="hl-product-icon">
+										<a href="" title="股票 CFD" target="_blank">
+											<img src="images/product-icon2.png" alt="股票 CFD" class="hl-product-img" />
+											<img src="images/product-icon2-hover.jpg" alt="股票 CFD" class="hl-product-img-hover" />
+										</a>
+									</div>
+									<div class="hl-product-content">
+										<h4><a href="Products-Share-Cfds.html" title="股票 CFD" target="_blank">股票 CFD</a></h4>
+										<p>强大的 MT5 平台，使得所有您喜爱和极受欢迎的 ASX 、NYSE 、和 NAS 股票近在您的指尖。</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="hl-product2">
+									<div class="hl-product-icon">
+										<a href="" title="全球股指" target="_blank">
+											<img src="images/product-icon3.png" alt="全球股指" class="hl-product-img" />
+											<img src="images/product-icon3-hover.png" alt="全球股指" class="hl-product-img-hover" />
+										</a>
+									</div>
+									<div class="hl-product-content">
+										<h4><a href="Products-Indices.html" title="全球股指" target="_blank">全球股指</a></h4>
+										<p>GO Markets 高汇为投资者提供多种全球知名指数产品，投资者只需通过交易价格的变动进行交易，无需购买实际资产。
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="hl-product2">
+									<div class="hl-product-icon">
+										<a href="" title="贵金属" target="_blank">
+											<img src="images/product-icon4.png" alt="贵金属" class="hl-product-img" />
+											<img src="images/product-icon4-hover.png" alt="贵金属" class="hl-product-img-hover" />
+										</a>
+									</div>
+									<div class="hl-product-content">
+										<h4><a href="Products-Metals.html" title="贵金属" target="_blank">贵金属</a></h4>
+										<p>作为一种较长期的投资产品，</p>
+										<p>无论是经验丰富的投资者还是新手，</p>
+										<p>都能利用产品优势获取丰富的获利机会。</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="hl-product2">
+									<div class="hl-product-icon">
+										<a href="Products-Commodities.html" title="大宗商品" target="_blank">
+											<img src="images/product-icon5.png" alt="大宗商品" class="hl-product-img" />
+											<img src="images/product-icon5-hover.png" alt="大宗商品" class="hl-product-img-hover" />
+										</a>
+									</div>
+									<div class="hl-product-content">
+										<h4><a href="Products-Commodities.html" title="大宗商品" target="_blank">大宗商品</a></h4>
+										<p>GO Markets 高汇为投资者提供两种现货原油，西德克萨斯轻质原油（WTI-NYMEX )和布伦特原油（BRENT-IPE )。</p>
+									</div>
+								</div>
+							</div>
+							<!--<div class="col-md-6 col-lg-4">
+								<div class="hl-product2">
+									<div class="hl-product-icon">
+										<a href="" title="Cryptocurrencies" target="_blank">
+											<img src="images/product-icon6.png" alt="Cryptocurrencies" class="hl-product-img" />
+											<img src="images/product-icon6-hover.png" alt="Cryptocurrencies" class="hl-product-img-hover" />
+										</a>
+									</div>
+									<div class="hl-product-content">
+										<h4><a href="Products-Cryptocurrencies.html" title="Cryptocurrencies" target="_blank">Cryptocurrencies</a></h4>
+										<p>Engage with the </p>
+										<p>Next Generation of</p>
+										<p>Trading Instruments</p>
+									</div>
+								</div>
+							</div>
+						-->
+						</div>
+					</div>
+					<br />
+				</section>
+
+				<section>
+					<div class="hl-why-us" style="background:url('images/why-us-bg-1920x1018.jpg') no-repeat center center transparent fixed">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<h2 class="text-center">选择 GO Markets 高汇的理由</h2>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="hl-why-us-box">
+										<img src="images/why-us-icon3.png" alt="极具竞争力的点差" />
+										<h3>极具竞争力的点差</h3>
+										<p>GO Markets 高汇致力于发展报价技术，提供极<br />具竞争力的点差。充裕的流通性和市场深度为客<br />户争取到有利的报价和优质的交易体验。</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="hl-why-us-box">
+										<img src="images/why-us-icon4.png" alt="严格的监管机构" />
+										<h3>严格的监管机构</h3>
+										<p>GO Markets International Ltd 在 <br />塞舌尔共和国注册成立，注册号为 8425985-1。</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="hl-why-us-box">
+										<img src="images/why-us-icon2.png" alt="快速执行" />
+										<h3>快速执行</h3>
+										<p>GO Markets 的服务器位于<br /> Equinix LD4 数据中心，低延迟的环境<br />保证了交易的高效进行。</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="hl-why-us-box">
+										<img src="images/why-us-icon8.png" alt="客户资金安全隔离" />
+										<h3>客户资金安全隔离</h3>
+										<p>客户资金均存放于<br />国际级顶尖银行的隔离账户，<br />资金安全有保障。</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="hl-why-us-box">
+										<img src="images/why-us-icon6.png" alt="24/5 专业客户服务" />
+										<h3>24/5 专业客户服务</h3>
+										<p>专业的客服团队，支持使用多国语言为客户提供 <br />一对一的优质服务。无论您是账户或是技术、交 <br />易问题，我们都能为您一一解答。</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="hl-why-us-box">
+										<img src="images/why-us-icon5.png" alt="350+ 多样化投资产品组合" />
+										<h3>350+ 多样化投资产品组合</h3>
+										<p>超过 350 种交易产品，涵盖外汇、全球股指、 <br />贵金属、大宗商品、全球股票等多样化投资品种。</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="hl-why-us-box">
+										<img src="images/why-us-icon1.png" alt="交易零手续费" />
+										<h3>交易零手续费</h3>
+										<p>为您的交易账户注资，无需任何<br />交易手续费，即刻享受极致交易体验。</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="hl-why-us-box">
+										<img src="images/why-us-icon7.png" alt="安全交易" />
+										<h3>安全交易 </h3>
+										<p>我们提供 3D Secure 更快，更安全地<br />为您的帐户注资，并为您的在线支付交易保驾护航。</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<div class="hl-why-us-box">
+										<img src="images/why-us-icon9.png" alt="免费的交易辅助工具" />
+										<h3>免费的交易辅助工具</h3>
+										<p>GO Markets 高汇为所有真实账户投资者<br />免费提供包括 Trading Central，Autochartist <br />以及 MT4 Genesis 在内的多种交易辅助工具，帮助您更好地抓住时机，更自信地开启交易。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="hl-funding-methods">
+					<div class="hl-funding-methods">
+						<div class="container">
+							<div class="row align-items-center">
+								<h4 class="col-md-5 text-center">注资方式</h4>
+								<div class="col-md-7">
+									<div class="hl-funding-methods-slider row align-items-center">
+										<div class="item">
+											<a href="https://chn.gomarkets.com/" title="funding-img"><img src="images/fundmethod1.png" alt="founding-img" /></a>
+										</div>
+										<div class="item">
+											<a href="https://chn.gomarkets.com/" title="funding-img"><img src="images/fundmethod2.png" alt="founding-img" /></a>
+										</div>
+										<div class="item">
+											<a href="https://chn.gomarkets.com/" title="funding-img"><img src="images/fundmethod3.png" alt="founding-img" /></a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="hl-newsletter">
+					<div class="hl-newsletter">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<h1 class="text-center">免费订阅 GO Markets 高汇市场邮件及每日快讯</h1>
+									<form method="" action="">
+										<div class="hl-newsletter-input-box">
+											<label class="lbl_input">姓</label>
+											<input type="text" name="" class="hl-newsletter-input" value="" />
+										</div>
+										<div class="hl-newsletter-input-box">
+											<label class="lbl_input">名</label>
+											<input type="text" name="" class="hl-newsletter-input" value="" />
+										</div>
+										<div class="hl-newsletter-input-box">
+											<label class="lbl_input">邮箱</label>
+											<input type="text" name="" class="hl-newsletter-input" value="" />
+										</div>
+										<div class="hl-newsletter-input-box">
+											<label class="lbl_input">电话</label>
+											<input type="text" name="" class="hl-newsletter-input" value="" />
+										</div>
+										<div class="hl-newsletter-submit-box">
+											<div class="hl-newsletter-submit-container">
+												<input class="hl-newsletter-submit" type="submit" value="免费订阅" />
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<footer>
+				<section class="footer">
+					<div class="footer-top">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-2 col-xl-3">
+									<div class="footer-logo">
+										<a href="index.html"><img src="images/footer-logo.png" alt="footer-logo" /></a>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-3">
+									<div class="mobile-accordion mobile-toggle">
+										<span class="title">客户支持<span></span></span>
+										<div class="mobile-accordion-toggle">
+											<div class="footer-contact">
+												<p><strong>一般支持和问题</strong>
+													<a href="mailto:AsiaInfo@gomarkets.sc" title="AsiaInfo@gomarkets.sc">AsiaInfo@gomarkets.sc</a>
+												</p>
+												<p><strong>平台支持和问题</strong>
+													<a href="mailto:AsiaSupport@gomarkets.sc" title="AsiaSupport@gomarkets.sc">AsiaSupport@gomarkets.sc</a>
+												</p>
+												<p><strong>账户支持和问题</strong>
+													<a href="mailto:AsiaAccounts@gomarkets.sc" title="AsiaAccounts@gomarkets.sc">AsiaAccounts@gomarkets.sc</a>
+												</p>
+												<p><strong>代理商支持和问题</strong>
+													<a href="mailto:AsiaIB@gomarkets.sc" title="AsiaIB@gomarkets.sc">AsiaIB@gomarkets.sc</a>
+												</p>
 											</div>
 										</div>
 									</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-lg-3 control-label"><em>*</em>Password:</label>
-								<div class="col-lg-5">
-									<input type="password" class="form-control" placeholder="Your password shall contain 8-12 digits, with numbers and letters">
 								</div>
-								<p class="col-lg-4 help-block">error!</p>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-lg-3 control-label"><em>*</em>Confirm Password:</label>
-								<div class="col-lg-5">
-									<input type="password" class="form-control" placeholder="Please retype in your password">
+								<div class="col-md-4 col-lg-2">
+									<div class="mobile-accordion mobile-toggle">
+										<span class="title">联系我们<span></span></span>
+										<div class="mobile-accordion-toggle">
+											<div class="footer-contact">
+												<p><strong>中文服务</strong>
+													<a href="tel:400 120 8537" title="400 120 8537">400 120 8537</a>
+												</p>
+												<p><strong>英文服务</strong>
+													<a dir="ltr" href="tel:+248 4 671 903" title="+248 4 671 903">+248 4 671 903</a>
+												</p>
+												<!--<p><strong>英国 </strong>
+													<a dir="ltr" href="tel:442036377618" title="+44 203 637 7618">+44 203 637 7618</a>
+												</p>
+												<p><strong>国际电话</strong>
+													<a dir="ltr" href="tel:61385667680" title="+61 3 8566 7680">+61 3 8566 7680</a>
+												</p>-->
+											</div>
+										</div>
+									</div>
 								</div>
-								<p class="col-lg-4 help-block"></p>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-lg-3 control-label"><em>*</em>Please select your account type:</label>
-								<div class="col-lg-5">
-								<select name="" class="form-control form-control-chosen" data-placeholder="Please choose one item">
-									<option value="">Please choose one item</option>
-									<option value="">Individual Account</option>
-								</select>
+								<div class="col-md-4 col-lg-2">
+									<div class="mobile-accordion mobile-toggle">
+										<span class="title">法律文件<span></span></span>
+										<div class="mobile-accordion-toggle">
+											<div class="quick-links">
+												<ul>
+													<li>
+														<a href="Legal-Documents.html" target="_blank">隐私政策</a>
+													</li>
+													<li>
+														<a href="Legal-Documents.html" target="_blank">产品披露声明</a>
+													</li>
+													<li>
+														<a href="Legal-Documents.html" target="_blank">高汇总产品交易章程与条款</a>
+													</li>
+													<li>
+														<a href="Legal-Documents.html" target="_blank">交易执行政策</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-xl-2">
+									<div class="mobile-accordion mobile-toggle">
+										<span class="title">社交互动<span></span></span>
+										<div class="mobile-accordion-toggle">
+											<div class="footer-social">
+												<ul>
+													<li>
+														<a href="images/weixin-code.jpg" title="weixin" target="_blank" class="fa fa-weixin">
+														</a>
+													</li>
+													<li>
+														<a href="https://weibo.com/gomarkets" title="weibo" target="_blank" class="fa fa-weibo"></a>
+													</li>
+													<li>
+														<a href="https://i.youku.com/i/UMzA2MTU3MDU1Mg==/videos?spm=a2hzp.8244740.0.0" title="youku" target="_blank" class="fa fa-youku"><img src="images/youku.png" width="25px" alt="" /></a>
+													</li>
+													<li>
+														<a href="https://www.facebook.com/GOMarkets" title="facebook" target="_blank" class="fa fa-facebook"></a>
+													</li>
+													<li>
+														<a href="https://twitter.com/go_markets/" title="twitter" target="_blank" class="fa fa-twitter"></a>
+													</li>
+													<li>
+														<a href="https://www.linkedin.com/company/go-markets" title="领英" target="_blank" class="fa fa-linkedin"></a>
+													</li>
+													<li>
+														<a href="https://www.instagram.com/gomarkets/" title="Instagram" target="_blank" class="fa fa-instagram"></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="footer-content">
+										<p>GO Markets International Ltd 在塞舌尔共和国注册成立，注册号为 8425985-1，由塞舌尔金融服务管理局（FSA）根据《 2007 年塞舌尔证券法》颁发的证券交易商许可证号 SD043 进行监管。</p>
+										<p><b>风险提示：</b>外汇及其衍生品交易具有高风险性，损失金额可能会超过您原本的投资本金。同时，您并没有资格获得所投资产品的实际所有权。杠杆交易在放大收益的同时也可能会放大损失。只有当您有能力承担这些风险的时候您才可以进行交易。GO Markets International Ltd 无法承诺并保证交易业绩、投资回报、或任何固定的回报率。我们提醒您仔细考虑投资的风险性，慎重决定风险资本金额（即可承担的亏损资金量）。</p>
+										<p>请注意，过往的标的工具、或市场趋势都无法预计未来的真正走势。衍生品交易因其存在的高风险性，并不适合所有投资者。您须充分了解交易所涉及的风险，必要时可向第三方征询意见。</p>
+										<p>如果发布或使用此类信息违反当地法律或法规，本网站上的信息则不针对任何此类国家或司法管辖区的任何人。</p>
+										<p>GO Markets International Ltd 有权使用 “GO Markets” 作为其商标使用，该商标由注册于澳大利亚维多利亚州 GO Markets Pty Ltd 公司所持有。</p>
+										<p>网站运营及所有权归 GO Markets International Ltd。最终解释权归 GO Markets 高汇所有。</p>
+									</div>
 								</div>
 							</div>
-							<div class="form-group">
-								<label for="" class="col-lg-3 control-label"><em>*</em>Please select platform:</label>
-								<div class="col-lg-5">
-									<select name="" class="form-control form-control-chosen" data-placeholder="Please choose one item">
-										<option value="">Please choose one item</option>
-										<option value="">MT4 account</option>
-										<option value="">MT5 stock CFD account</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-lg-offset-3 col-md-2">
-									<button type="button" class="buttons buttons-success" onclick="window.open('step2-1_en.html','_self')"><i class="fa fa-spinner fa-spin"></i>Next</button>
-								</div>
-							</div>
-						</form>
-
+						</div>
 					</div>
+				</section>
+				<div class="footer-line">
+					<p>外汇和差价合约交易具有高风险</p>
 				</div>
-			</div>
-
-		</section>
-		<footer class="main-footer">
-			<div class="container">
-				<div class="footer-menu">
-					<a target="_blank" href="https://www.int.gomarkets.com/contact-us/">Contact Us</a>
-					<!--<span>|</span>
-					<a target="_blank" href="https://www.gomarkets.com/legal-documents/">Privacy Policy</a>
-					<span>|</span>
-					<a target="_blank" href="https://www.gomarkets.com/legal-documents/">Product Disclosure Statement</a>-->
+				<div class="scroll_top">
+					<span class="fa fa-angle-up"></span>
+					<span class="top-text">top</span>
 				</div>
-				<div class="footer-text">
-					<p>GO Markets brand is authorized and regulated in various jurisdictions. </p>
-					<p><b>Risk Warning:</b> Trading Forex and Derivatives carries a high level of risk, including the risk of losing substantially more than your initial deposit. Leverage magnifies both gains and losses. You should only trade in risk capital (capital you can afford to lose). Trading leveraged products may not be suitable for all investors, please ensure that you fully understand the risks involved, and take into consideration your level of experience, investment objectives and seek independent advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to use the services provided by GO Markets based on the legal requirements in his/her country of residence. Before you start to trade, please take some to fully read our <a href="https://www.int.gomarkets.com/legal-documents/" target="_blank">Product Disclosure Statement(PDS)</a>.</p>
-					<p>This website is owned and operated by GO Markets. All contents © <span id="footer-year"></span> GO Markets. All rights reserved.</p>
-				</div>
-			</div>
-		</footer>
-
-		<div class="modal fade" id="call-back-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog">
+			</footer>
+		</div>
+		<a href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNDIxMl8yNTcxODdfODAwMDI0MjEyXzJf" target="_blank" class="live-chat"><i class="fa fa-comment"></i><b>和我们在线交谈</b></a>
+		<!-- Modal -->
+		<div class="modal fade" id="callBack" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
-					<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-						<h4 class="modal-title">Call Back</h4></div>
+					<div class="modal-header text-center">
+						<h6 class="modal-title w-100" id="exampleModalLabel">免费中文回电服务</h6>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          					<span aria-hidden="true">&times;</span>
+       	 				</button>
+					</div>
 					<div class="modal-body">
-						<p><i class="fa fa-edit"></i>请正确填写您的信息，我们会尽快给您回电</p>
-						<form class="form-horizontal">
-							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Name:</label>
-								<div class="col-sm-7"><input type="email" class="form-control" id="" placeholder="Name"></div>
+						<p class="text-center"><b>请正确填写您的信息，我们会尽快给您回电。</b></p>
+						<form>
+							<div class="form-group form-row">
+								<label for="call-back-name" class="col-sm-3 col-form-label col-form-label-sm text-right"><em class="text-danger">*</em>姓名：</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control form-control-sm" id="call-back-name" placeholder="姓名" />
+								</div>
 							</div>
-							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Email:</label>
-								<div class="col-sm-7"><input type="text" class="form-control" id="" placeholder="Email"></div>
+							<div class="form-group form-row">
+								<label for="call-back-Email" class="col-sm-3 col-form-label col-form-label-sm text-right"><em class="text-danger">*</em>电子邮件：</label>
+								<div class="col-sm-8">
+									<input type="email" class="form-control form-control-sm" id="call-back-Email" placeholder="电子邮件" />
+								</div>
 							</div>
-							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Country:</label>
-								<div class="col-sm-7">
-									<select id="country" class="form-control form-control-chosen" data-placeholder="Please choose one item" name="country" title="country" onkeyup="selCountry()" onchange="selCountry()">
-										<option value="" title="-">Please choose one item</option>
+
+							<div class="form-group form-row">
+								<label for="call-back-country" class="col-sm-3 col-form-label col-form-label-sm text-right"><em class="text-danger">*</em>国家：</label>
+								<div class="col-sm-8 select-box">
+									<select class="form-control form-control-sm" id="call-back-country" name="country" title="country" onkeyup="selCountry()" onchange="selCountry()">
+										<option value="CN" title="-">请选择一项</option>
 										<option value="CN" title="+86">中国</option>
 										<option value="GB" title="+44">英国</option>
 										<option value="US" title="+001">美国</option>
@@ -284,7 +1418,7 @@
 										<option value="DO" title="+1849">多米尼加共和国</option>
 										<option value="EC" title="+593">厄瓜多尔</option>
 										<option value="EG" title="+20">埃及</option>
-										<option value="SV" title="+503">萨尔瓦多</option>
+										<option value="SV" title="+503"> 萨尔瓦多</option>
 										<option value="GQ" title="+240">赤道几内亚共和国</option>
 										<option value="EE" title="+372">爱沙尼亚</option>
 										<option value="ET" title="+251">埃塞俄比亚</option>
@@ -336,6 +1470,7 @@
 										<option value="MW" title="+265">马拉维</option>
 										<option value="MY" title="+60">马来西亚</option>
 										<option value="MV" title="+960">马尔代夫</option>
+										<!--<option value="ML" title="">马利共和国</option>-->
 										<option value="MT" title="00356">马耳他</option>
 										<option value="MH" title="+692">马绍尔群岛</option>
 										<option value="MQ" title="+596">马提尼克岛</option>
@@ -402,6 +1537,7 @@
 										<option value="TH" title="+66">泰国</option>
 										<option value="TG" title="+228">多哥</option>
 										<option value="TO" title="+675">汤加</option>
+										<!--<option value="TT" title="">千里达</option>-->
 										<option value="TN" title="+216">突尼斯</option>
 										<option value="TR" title="+90">土耳其</option>
 										<option value="TM" title="+993">土库曼</option>
@@ -421,36 +1557,167 @@
 									</select>
 								</div>
 							</div>
-							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>City:</label>
-								<div class="col-sm-7"><input type="text" class="form-control" id="" placeholder="City"></div>
+							<div class="form-group form-row">
+								<label for="call-back-city" class="col-sm-3 col-form-label col-form-label-sm text-right"><em class="text-danger">*</em>城市：</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control form-control-sm" id="call-back-city" />
+								</div>
 							</div>
-							<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Phone Number:</label>
-								<div class="col-sm-7 modal-call-back">
-									<div><span id="CountryNumber">+86</span></div><input type="text" class="form-control" placeholder="Phone Number" id="phonenumber"></div>
+							<div class="form-group row form-row">
+								<label for="call-back-phone" class="col-sm-3 col-form-label col-form-label-sm text-right"><em class="text-danger">*</em>电话：</label>
+								<div class="col-2 col-sm-2">
+									<input type="text" class="form-control form-control-sm" disabled="disabled" id="CountryNumber" value="-" />
+								</div>
+								<div class="col-10 col-sm-6">
+									<input type="text" class="form-control form-control-sm" placeholder="" id="call-back-phone" />
+								</div>
 							</div>
-							<div class="form-group"><label for="" class="col-sm-4 control-label">Comments:</label>
-								<div class="col-sm-7"><textarea name="" rows="" cols="" class="form-control"></textarea></div>
+							<div class="form-group form-row">
+								<label for="call-back-question" class="col-sm-3 col-form-label col-form-label-sm text-right">咨询内容：</label>
+								<div class="col-sm-8">
+									<textarea name="" rows="" class="form-control form-control-sm" cols="" id="call-back-question"></textarea>
+								</div>
+							</div>
+							<div class="form-group form-row">
+								<label for="colFormLabelLg" class="col-sm-3 col-form-label"><img src="https://cn.gomarkets.com/captcha.php?rand=263.546922390546" alt="验证码" /></label>
+								<div class="col-sm-8">
+									<input type="email" class="form-control form-control-sm" id="colFormLabelLg" />
+								</div>
+							</div>
+							<hr/>
+							<div class="text-center">
+								<button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">取消</button>
+								<button type="button" class="btn btn-sm btn-outline-success">马上提交</button>
 							</div>
 						</form>
-					</div>
-					<div class="modal-footer"><button type="button" class="buttons buttons-success btn-sm" data-dismiss="modal">Submit<i class="fa fa-angle-right"></i></button>
-						<a class="" href="https://www.gomarkets.com/legal-documents/" target="_blank">Privacy Policy</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script src="js/jquery.min.js"></script>
+
+		<!--loading-->
+		<script src="js/NProgress.min.js"></script>
+		<script src="js/loading.js"></script>
+		<!--bootstrap4 依赖插件-->
+		<script src="js/popper.min.js"></script>
+		<!--bootstrap-->
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery-confirm.min.js"></script>
-		<script src="js/chosen-1.1.8.min.js"></script>
-		<script src="js/telInput.js"></script>
-		<script src="js/chosen.js"></script>
-		<script src="js/common.js"></script>
+		<!--首页轮播-->
+		<script src="js/owl.carousel.min.js"></script>
+		<!--首页 table 切换滚动条-->
+		<script src="js/jquery.mCustomScrollbar.js"></script>
+		<!--配合 css3 动画样式-->
+		<script src="js/wow.min.js"></script>
+		<!--首页table切换-->
+		<script src="js/jquery.tabslet.min.js"></script>
+		<!--导航菜单-->
+		<script src="js/navigation.js"></script>
+		<!--页面 自定义 js -->
+		<script src="js/custom.js"></script>
+
 		<script>
-			$(function(){
-				$("#select-country").siblings(".chosen-container").children("a").addClass("error-form-control");
+			/*--------- market table data change on ajax ---- */
+			jQuery(document).ready(function(e) {
+				getLiveRate();
+			});
+
+			function getLiveRate() {
+				$.ajax({
+					url: 'https://www.gomarkets.com/wp-content/themes/gomarket/inc/live-market-json-data.php',
+					dataType: "json",
+					cache: false,
+					success: function(r) {
+						drawTable(r);
+						getLiveRate();
+					}
+				});
+			}
+
+			function drawTable(r) {
+
+				$.each(r, function(market, row) {
+					//console.log(market);
+					//console.log(row);
+					$.each(row, function(cur, data) {
+						var bid = data[2];
+						var ask = data[3];
+						var change = data[6];
+						var cur_bid = $("#bid_" + cur).text();
+						var cur_ask = $("#ask_" + cur).text();
+						var cur_change = $("#change_" + cur).text();
+						/* Find Change In Big */
+						if(cur_bid > bid) {
+							$("#bid_" + cur).removeClass("green");
+							$("#bid_" + cur).addClass("red");
+						} else if(cur_bid < bid) {
+							$("#bid_" + cur).removeClass("red");
+							$("#bid_" + cur).addClass("green");
+						} else if(cur_bid == bid) {
+							$("#bid_" + cur).removeClass("red");
+							$("#bid_" + cur).removeClass("green");
+						}
+						/* Find Change In Ask */
+						if(cur_ask > ask) {
+							$("#ask_" + cur).removeClass("green");
+							$("#ask_" + cur).addClass("red");
+						} else if(cur_ask < ask) {
+							$("#ask_" + cur).removeClass("red");
+							$("#ask_" + cur).addClass("green");
+						} else if(cur_ask == ask) {
+							$("#ask_" + cur).removeClass("red");
+							$("#ask_" + cur).removeClass("green");
+						}
+						$("#bid_" + cur).text(bid);
+						$("#ask_" + cur).text(ask);
+						$("#change_" + cur).text(change);
+					})
+				});
+
+			}
+			/*----------------table end ----------*/
+
+			jQuery(document).ready(function() {
+				//banner 轮播
+				var banner_count = jQuery(".hl-banner-slider figure").toArray();
+				if(banner_count.length >= 2) {
+					jQuery(".hl-banner-slider").owlCarousel({
+						loop: true,
+						dots: true,
+						items: 1,
+						autoplay: true,
+						autoplayTimeout: 7500,
+						smartSpeed: 1500,
+						nav: true,
+						navText: ['<span title="Previous"></span>', '<span title="Next"></span>'],
+						responsiveClass: true,
+						responsive: {
+							0: {
+								items: 1
+							},
+							1200: {
+								dots: false
+							}
+						}
+					});
+				};
+				//	table 切换
+				jQuery('.tabs_rotate').tabslet({
+					delay: 5000,
+				});
+				jQuery('.tabs_rotate').on("_after", function() {
+					jQuery(".ui-tabs-panel").removeClass("selected");
+					var m = jQuery(".tabs_rotate .horizontal li");
+					for(i = 0; i <= m.length; i++) {
+						if(jQuery(m[i]).hasClass("active")) {
+							var z = i + 1;
+							jQuery("#fragment-" + z).addClass("selected");
+						}
+					}
+				});
+				$(".tabs.tabs_rotate > div").mCustomScrollbar();
 			});
 		</script>
+
 	</body>
 
 </html>
