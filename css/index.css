@@ -654,12 +654,12 @@ option {
 	margin: -3px 10px 0 0
 }
 .main-header .header-dropdown ul {
-	min-width: inherit;
 	left: auto!important;
 	transform: none!important;
 	top: 25px!important;
 	left: 0;
 	padding: 5px 0 8px 0;
+	min-width: 100px;
 }
 .main-header .header-dropdown ul li {
 	font-size: 13px;
@@ -709,8 +709,9 @@ option {
 	}
 	
 	.main-header .navbar-custom-menu>ul>li>a.right-bar-link i {
-		width: 28px;
-		height: 28px
+width: 24px;
+    height: 24px;
+    background-size: contain;
 	}
 	
 	.main-header .navbar-custom-menu {
@@ -719,8 +720,8 @@ option {
 		position: relative;
 	}
 	
-	.logo img {
-		width: 200px
+	.main-header .logo img {
+		width: 220px
 	}
 }
 @media (max-width:374px) {
@@ -882,6 +883,7 @@ option {
 .chosen-container-single .chosen-single div {
 	top: 2px
 }
+.chosen-container-single .chosen-single div b{display: none;}
 .chosen-container-single .chosen-single span {
 	font-size: 14px;
 	overflow: hidden;
@@ -992,6 +994,7 @@ option {
 	.box .box-title {
 		font-size: 14px;
 	}
+	.step-header li span{width: 36px;height: 36px;}
 }
 .panel-group .panel-heading {
 	padding: 0
@@ -1047,7 +1050,8 @@ option {
 	font-size: 15px
 }
 .panel-body p {
-	font-size: 13px
+	font-size: 13px;
+    line-height: 20px;
 }
 .old-data {
 	padding: 0 15px
@@ -1074,6 +1078,12 @@ option {
 	.old-data {
 		padding: 0;
 	}
+	.panel-group .panel-title a i{
+    background-position: -20px 0;
+    width: 20px;height: 20px;
+    background-size: cover;}
+    
+	.panel-group .panel-title a i{}
 }
 .experience-box {
 	padding: 0 15px
@@ -1393,6 +1403,7 @@ option {
 	.tailoring-container .preview-box-parcel {
 		display: none
 	}
+	.cropper .choose-pic img{width: 52px;}
 }
 .success-steps .successful-box {
 	text-align: center;
@@ -1430,7 +1441,7 @@ option {
 	.success-steps .download-btns a.buttons-success:hover i {
 		background-position: -58px -29px
 	}
-	
+	.success-steps .successful-box img{width:180px ;}
 	.success-steps .download-btns a.buttons-black:hover i {
 		background-position: -86px -28px
 	}
