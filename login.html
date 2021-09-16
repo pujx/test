@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="favicon.ico">
+		<title>Login</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
+		<link rel="stylesheet" href="css/jquery-confirm.min.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/loading.css" />
+		<!--[if lt IE 9]>
+      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
+       <![endif]-->
+		<!--[if lte IE 8]>
+ 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
+ 		<![endif]-->
+	</head>
+
+	<body style="background: #02070a;">
+		<div class="login-wrap">
+			<div class="container">
+				<div class="login-header">
+					<a class="login-logo" href="https://www.int.gomarkets.com/" target="_blank"> <img src="images/logo.png" alt="Go Markets first choice for forex" /></a>
+					<div class="pull-right login-right-bar">
+						<a href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNDIxMl8yNTcxODdfODAwMDI0MjEyXzJf" target="_blank"><img src="images/right-bar-service.png" alt="" /><span>Live chat</span></a>
+						<a href="https://www.int.gomarkets.com/" target="_blank"><img src="images/right-bar-home.png" alt="" /><span>Home page</span></a>
+					</div>
+				</div>
+
+				<div class="login-container">
+					<div class="row">
+						<div class="col-md-4 login-form">
+							<h4>Account Management</h4>
+							<form>
+								<div class="form-group">
+									<label for="">Language:</label>
+									<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please select...">
+										<option value="">English</option>
+										<option value="">中文</option>
+									</select>
+								</div>
+								<div class="form-group ">
+									<label for="">Account:</label>
+									<input type="text" class="form-control" id="" placeholder="Account">
+								</div>
+								<div class="form-group">
+									<label for="">Password:</label>
+									<input type="password" class="form-control" id="" placeholder="*****">
+								</div>
+								<div class="form-group text-right">
+									<a href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNDIxMl8yNTcxODdfODAwMDI0MjEyXzJf" target="_blank">Forgot password？</a>
+								</div>
+								<button type="button" class="buttons buttons-success" onclick="window.open('index.html','_self')"><i class="fa fa-spinner fa-spin"></i>Submit</button>
+							</form>
+						</div>
+						<div class="col-md-8">
+							<div class="login-table">
+								<div class="load-container load1" style="width: 100%;height: 100%;position: absolute;">
+									<div class="loader"></div>
+								</div>
+								<div class="hiddenIframe"></div>
+								<script type="text/javascript" src="https://c.mql5.com/js/widgets/calendar/widget.js?6"></script>
+								<div id="economicCalendarWidget"></div>
+								<script type="text/javascript">
+									new economicCalendar({
+										width: "100%",
+										height: "100%",
+										mode: 2
+									});
+								</script>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="login-footer container-fluid">
+				<div class="footer-menu">
+					<a target="_blank" href="https://www.int.gomarkets.com/contact-us/">Contact Us</a>|
+					<a target="_blank" href="https://www.int.gomarkets.com/legal-documents/">Privacy Policy</a>|
+					<a target="_blank" href="https://www.int.gomarkets.com/legal-documents/">Product Disclosure Statement</a>
+				</div>
+				<div class="footer-text">
+					<p>GO Markets brand is authorized and regulated in various jurisdictions.</p>
+					<p><b>Risk Warning:</b> Trading Forex and Derivatives carries a high level of risk, including the risk of losing substantially more than your initial deposit. Leverage magnifies both gains and losses. You should only trade in risk capital (capital you can afford to lose). Trading leveraged products may not be suitable for all investors, please ensure that you fully understand the risks involved, and take into consideration your level of experience, investment objectives and seek independent advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to use the services provided by GO Markets based on the legal requirements in his/her country of residence. Before you start to trade, please take some to fully read our <a href="https://www.int.gomarkets.com/legal-documents/" target="_blank">Product Disclosure Statement(PDS)</a>.</p>
+					<p>This website is owned and operated by GO Markets. All contents © <span id="footer-year"></span> GO Markets. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="first-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title">GO MAKETS</h4>
+					</div>
+					<div class="modal-body">
+						<p><i class="fa fa-edit"></i>This is the first time you log into My GO, please enter below information to enable your account.</p>
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label for="" class="col-sm-4 control-label"><em>*</em>Name:</label>
+								<div class="col-sm-7">
+									<input type="email" class="form-control" id="" placeholder="Name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-4 control-label"><em>*</em>Chinese name</label>
+								<div class="col-sm-7">
+									<input type="text" class="form-control" id="" placeholder="Chinese name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-4 control-label"><em>*</em>ID type:</label>
+								<div class="col-sm-7">
+									<select name="" id="" class="form-control form-control-chosen" data-placeholder="Please select...">
+										<option value="" selected="selected"></option>
+										<option value="">ID Card</option>
+										<option value="">Passport</option>
+										<option value="">Driver license</option>
+										<option value="">Other</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-4 control-label"><em>*</em>ID number:</label>
+								<div class="col-sm-7">
+									<input type="text" class="form-control" id="" placeholder="ID number">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-4 control-label"><em>*</em>re-enter ID number:</label>
+								<div class="col-sm-7">
+									<input type="text" class="form-control" id="" placeholder="please enter your ID number again">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="buttons buttons-success btn-sm" data-dismiss="modal">Submit<i class="fa fa-angle-right"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="upload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" aria-hidden="true" data-backdrop="static">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title">Please submit your credentials to complete your account application.</h4>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="card-menu-step">
+								<div class="row">
+									<span class="col-lg-4"><em>1</em>Basic account setting</span>
+									<span class="col-lg-4"><em>2</em>Personal information</span>
+									<span class="col-lg-4 card-menu-linked"><em>3</em>Submit your credentials to complete your account application</span>
+								</div>
+							</div>
+							<p>According to regulation request, please provide your valid credential to open trade account.</p>
+							<p>The credential should be issued by Government and include your name, photo, and birthday on it.</p>
+							<form action="">
+								<div class="cardList">
+									<div class="row">
+										<a href="#idcard" class="card-menu-check col-xs-4">ID Card</a>
+										<a href="#passport" class="col-xs-4">Passport</a>
+										<a href="#driver" class="col-xs-4">Driver license</a>
+									</div>
+								</div>
+								<p>Your credential must be in the period of validity,Plese submit both front and reverse side of your valid credential.</p>
+								<ul class="carlListUl">
+									<li id="idcard" class="cardListOn">
+										<div class="form-group">
+											<label for=""><em>*</em>the front side of ID card:</label>
+											<div>
+												<div class="uploader">
+													<input type="text" class="filename" readonly/>
+													<input type="button" name="file" class="button" value="Upload" />
+													<input type="file" size="30" onchange="fileChange(this);" />
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for=""><em>*</em>the reverse side of ID card:</label>
+											<div>
+												<div class="uploader">
+													<input type="text" class="filename" readonly/>
+													<input type="button" name="file" class="button" value="Upload" />
+													<input type="file" size="30" onchange="fileChange(this);" />
+												</div>
+											</div>
+										</div>
+										<p>Picture size should be smaller than 10 MB, Format: JPG,GIF,PNG.</p>
+									</li>
+									<li id="passport">
+										<div class="form-group">
+											<label for=""><em>*</em>Passport:</label>
+											<div>
+												<div class="uploader">
+													<input type="text" class="filename" readonly/>
+													<input type="button" name="file" class="button" value="Upload" />
+													<input type="file" size="30" onchange="fileChange(this);" />
+												</div>
+											</div>
+										</div>
+										<p>Picture size should be smaller than 10 MB, Format: JPG,GIF,PNG.</p>
+									</li>
+									<li id="driver">
+										<div class="form-group">
+											<label for=""><em>*</em>the reverse side of driver license:</label>
+											<div>
+												<div class="uploader">
+													<input type="text" class="filename" readonly/>
+													<input type="button" name="file" class="button" value="Upload" />
+													<input type="file" size="30" onchange="fileChange(this);" />
+												</div>
+											</div>
+										</div>
+										<p>Picture size should be smaller than 10 MB, Format: JPG,GIF,PNG.</p>
+									</li>
+								</ul>
+							</form>
+
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="buttons buttons-success btn-sm" data-dismiss="modal">Finish<i class="fa fa-angle-right"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-confirm.min.js"></script>
+		<script src="js/chosen-1.1.8.min.js"></script>
+		<script src="js/chosen.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/index.js"></script>
+		<script>
+			//			window.onload = function() {
+			//				$(".load1").hide();
+			//			}
+			//			$(document).ready(function() {
+			//				$("#upload").modal("show")
+			//			})
+		</script>
+	</body>
+
+</html>
