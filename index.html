@@ -9,7 +9,12 @@
 	<link rel="stylesheet" href="css/index.css" />
 	<style>
 		@charset "utf-8";
-		html,body{width: 100%;}
+		html,
+		body {
+			width: 100%;
+			color: #333;
+		}
+		
 		a,
 		input,
 		button {
@@ -24,7 +29,11 @@
 		*:focus {
 			outline: none!important
 		}
-		em{font-style: normal;}
+		
+		em {
+			font-style: normal;
+		}
+		
 		.h1,
 		.h2,
 		.h3,
@@ -69,28 +78,31 @@
 		.clear {
 			clear: both
 		}
+		
 		.top-box {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		
 		.top-search-box {
-    margin-left: -15px;
-    margin-right: -15px;
-}
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+		
 		.float-left {
-float: left;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 20%;
+			float: left;
+			padding-right: 15px;
+			padding-left: 15px;
+			width: 20%;
 		}
 		
 		.float-left label {
-    margin-bottom: 3px;
-    display: block;
-    font-weight: bold;
-    font-size: 13px;
+			margin-bottom: 3px;
+			display: block;
+			font-weight: bold;
+			font-size: 13px;
 		}
 		
 		.container {
@@ -109,7 +121,7 @@ float: left;
 		
 		.float-left .form-group {
 			position: relative;
-    margin-bottom: 15px;
+			margin-bottom: 15px;
 		}
 		
 		.float-left .form-group input {
@@ -120,8 +132,9 @@ float: left;
 			-webkit-border-radius: 4px;
 			-moz-border-radius: 4px;
 			border: 1px solid #ddd;
-			color: #595757; box-sizing: border-box;   
-    width: 100%;
+			color: #595757;
+			box-sizing: border-box;
+			width: 100%;
 		}
 		
 		.float-left .form-group.form-date input {
@@ -155,13 +168,17 @@ float: left;
 			background: #009355;
 			border: 1px solid #009355;
 		}
-		input:focus{
+		
+		input:focus {
 			transition: all .2s;
-    box-shadow: 0 0px 3px 0 #bdbdbd;  -webkit-box-shadow: 0 0px 3px 0 #bdbdbd;}
+			box-shadow: 0 0px 3px 0 #bdbdbd;
+			-webkit-box-shadow: 0 0px 3px 0 #bdbdbd;
+		}
+		
 		.top-table {
-margin: 15px 0 45px 0;
-    max-height: 505px;
-    overflow: auto;
+			margin: 15px 0 45px 0;
+			max-height: 505px;
+			overflow: auto;
 		}
 		
 		.bottom-table {
@@ -169,30 +186,55 @@ margin: 15px 0 45px 0;
 		}
 		
 		table {
-			border-bottom: 1px solid #ddd;
-			border-right: 1px solid #ddd;
+			border-bottom:1px solid #e4e4e4;
+			border-right:1px solid #e4e4e4;
 			width: 100%;
 			text-align: center;
 		}
 		
 		table th,
 		table td {
-			border-top: 1px solid #ddd;
-			border-left: 1px solid #ddd;
+			border-top:1px solid #e4e4e4;
+			border-left:1px solid #e4e4e4;
 			padding: 3px;
 			font-size: 13px;
 		}
+		
 		table th {
-    background: #f3f3f3;
-}
+			background: #f3f3f3;
+		}
+		
 		div#jedatebox {
-    font-size: 12px;
-}
-.jedatebot .botflex.jedatehms{width: 35% !important;}
-.jedatebot .botflex.jedatebtn{width:55% !important;}
-		.hr{border-top: 1px solid #f5f5f5;
-    margin: 0 15px 45px;}
-    
+			font-size: 12px;
+		}
+		
+		.jedatebot .botflex.jedatehms {
+			width: 35% !important;
+		}
+		
+		.jedatebot .botflex.jedatebtn {
+			width: 55% !important;
+		}
+		
+		.hr {
+			border-top: 1px solid #f5f5f5;
+			margin: 0 15px 45px;
+		}
+		@media only screen and (min-width: 992px) and (max-width:1230px) {
+			.container{width: 930px;}
+			.float-left{width: 30%;}
+		}
+		@media only screen and (max-width:991px) {
+			.container{width: 100%;padding: 45px 0;}
+			.float-left{width:29%;}
+		}
+		@media only screen and (max-width:767px) {
+			
+			.top-search-box{margin-right: 15px;}
+			.float-left{width:100%;}
+			.float-left.form-submit label{display: none;}
+			button{width: 100%;padding: 5px;}
+		}
 	</style>
 
 	<body>
@@ -236,9 +278,9 @@ margin: 15px 0 45px 0;
 							<input type="text" class="form-input" />
 						</div>
 					</div>
-					<div class="float-left">
+					<div class="float-left form-submit">
 						<label for="">&nbsp;</label>
-						<div class="form-group form-submit">
+						<div class="form-group">
 							<button type="button">Submit</button>
 						</div>
 					</div>
@@ -340,9 +382,9 @@ margin: 15px 0 45px 0;
 							<input type="text" class="form-input" />
 						</div>
 					</div>
-					<div class="float-left">
+					<div class="float-left float-submit">
 						<label for="">&nbsp;</label>
-						<div class="form-group form-submit">
+
 							<button type="button">Submit</button>
 						</div>
 					</div>
