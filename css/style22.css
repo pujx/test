@@ -8037,7 +8037,16 @@ p {
 .pLR10 {
 	padding: 0 10px
 }
-
+.home-wrap .form-group{margin-bottom: 15px;}
+.form-group{margin-bottom: 0;}
+@media only screen and (max-width:1700px) {
+	.ibox-content{}
+	.ibox-content .row .col-xs-2{width: 25%;}
+	.ibox-content .row .col-xs-1{width: 50%;}
+}
+@media only screen and (min-width:992px) {
+	.container-fluid{min-width: 1200px;}
+}
 .form-horizontal .control-label.t_left,
 .t_left {
 	text-align: left
