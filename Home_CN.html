@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<link rel="icon" href="favicon.ico">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style22.css" />
+		<!--IE兼容-->
+		<!--[if lt IE 9]>
+      		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+	</head>
+
+	<body>
+		<div class="head navbar-fixed-top container-fluid">
+
+			<a href="https://chn.gomarkets.com/" target="_blank"><img class="imger" src="img/logo.svg" alt="GO Markets"></a>
+			<div class="navnn">
+				<li>
+					<a href="">在线客服</a>
+					&nbsp; &nbsp; <em>|</em>
+				</li>
+				<li>
+					<a href="https://chn.gomarkets.com/About/ContactUs" target="_blank">联系我们</a>
+					&nbsp; &nbsp; <em>|</em>
+				</li>
+
+				<li>
+					<a href="Home.html">英文</a>
+				</li>
+				<li class="dropdown user">
+					<a class="dropdown-toggle" href="#" data-toggle="dropdown">
+						<img alt="" src="img/avatar1_small.jpg" />
+
+						<span class="username">欢迎 Jack</span> <i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="login.html"> <i class="fa fa-sign-out"></i> 退出
+							</a>
+						</li>
+					</ul>
+				</li>
+			</div>
+
+		</div>
+		<div class="container-fluid middle-box">
+			<div class="quee">
+				<div class="page-container">
+					<div class="page-sidebar">
+						<ul class="page-sidebar-menu">
+
+							<li class="start active ">
+								<a href="Home_CN.html">
+									<i class="fa fa-home"></i>
+									<span class="title">IB 摘要信息</span>
+									<span class="selected"></span>
+								</a>
+							</li>
+							<li>
+								<a href="Customer Information_CN.html">
+									<i class="fa fa-bars"></i>
+									<span class="title">账户信息</span>
+									<span class="selected"></span>
+								</a>
+							</li>
+							<li>
+								<a href="Trader Summary_CN.html">
+									<i class="fa fa-edit"></i>
+									<span class="title">账户交易摘要</span>
+									<span class="selected"></span>
+								</a>
+							</li>
+							<li>
+								<a href="Trader Detail_CN.html">
+									<i class="fa fa-file-text"></i>
+									<span class="title">账户交易详情</span>
+									<span class="selected"></span>
+								</a>
+							</li>
+							<li class="">
+								<a href="Commission Summary_CN.html">
+									<i class="fa fa-files-o"></i>
+									<span class="title">佣金摘要</span>
+									<span class="selected"></span>
+								</a>
+							</li>
+							<li class="">
+								<a href="Commission Detail_CN.html">
+									<i class="fa fa-money"></i>
+									<span class="title">佣金详情</span>
+									<span class="selected"></span>
+								</a>
+							</li>
+							<li class="">
+								<a href="Customer Deposit_CN.html">
+									<i class="fa fa-list-alt"></i>
+									<span class="title">账户入金列表</span>
+									<span class="selected"></span>
+								</a>
+							</li>
+
+							<li class="">
+								<a href="Customer Withdrawals_CN.html">
+									<i class="fa fa-stack-overflow"></i>
+									<span class="title">账户取款列表</span>
+									<span class="selected"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="rechts">
+				<a href="javascript:" class="fa fa-bars" id="slidetoggle"></a>
+				<div class="wrapper wrapper-content animated">
+					<div class="row">
+						<div class="col-xs-12">
+							<ul class="breadcrumb">
+								<li>
+									<i class="fa fa-home"></i>
+									<a href="#">IB 摘要信息</a>
+									<span class="icon-angle-right"></span>
+								</li>
+
+							</ul>
+
+						</div>
+
+					</div>
+					<div class="home-wrap">
+						<div class="row">
+							<div class="col-xs-3">
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="ibox float-e-margins">
+
+											<div class="ibox-content1">
+
+												<div class="row">
+
+													<div class="col-xs-12">
+														<div class="form-group" class="data_1">
+															<label class="font-noraml">开始日期</label>
+															<div class="input-group">
+																<span class="input-group-addon">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </span>
+																<input class="datainp form-control" id="dateinfo" type="text" placeholder="2017-01-25 15:10:24"></div>
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="form-group" class="data_1">
+															<label class="font-noraml">结束日期</label>
+															<div class="input-group">
+																<span class="input-group-addon">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </span>
+																<input class="datainp form-control" id="dateinfo1" type="text" placeholder="2017-01-25 15:10:24"></div>
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="form-group" class="data_1">
+															<label class="font-noraml">搜索</label>
+															<div class="input-group">
+																<span class="input-group-addon"><i class="fa fa-search"></i></span>
+																<input class="form-control" type="text"></div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+								<div>
+									<a class="btn btn-prima" onclick="fnClickAddRow();" href="#">Search</a>
+								</div>
+								<div class="well center ">
+									客户总计
+									<br/> <strong>32,156</strong>
+								</div>
+								<div class="separator bottom center">
+									<span class="fa fa-sort-desc"></span>
+								</div>
+								<div class="well center ">
+									本月新增客户
+									<br/> <strong>122,134</strong>
+								</div>
+
+							</div>
+							<div class="col-xs-9">
+								<div class="ibox float-e-margins">
+
+									<div class="ibox-content">
+										<div>
+											<canvas id="lineChart" height="140"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="home-wrap">
+						<div class="row">
+							<div class="col-xs-3">
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="ibox float-e-margins">
+
+											<div class="ibox-content1">
+
+												<div class="row">
+
+													<div class="col-xs-12">
+														<div class="form-group" class="data_1">
+															<label class="font-noraml">开始日期</label>
+															<div class="input-group">
+																<span class="input-group-addon">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </span>
+																<input class="datainp form-control" id="dateinfo3" type="text" placeholder="2017-01-25 15:10:24"></div>
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="form-group" class="data_1">
+															<label class="font-noraml">结束日期</label>
+															<div class="input-group">
+																<span class="input-group-addon">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </span>
+																<input class="datainp form-control" id="dateinfo4" type="text" placeholder="2017-01-25 15:10:24"></div>
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="form-group" class="data_1">
+															<label class="font-noraml">搜索</label>
+															<div class="input-group">
+																<span class="input-group-addon"><i class="fa fa-search"></i></span>
+																<input class="form-control" type="text"></div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+								<div>
+									<a class="btn btn-prima" onclick="fnClickAddRow();" href="#">Search</a>
+								</div>
+								<div class="well center ">
+									入金总计
+									<br/>
+									<strong>$32,156.00</strong>
+								</div>
+								<div class="separator bottom center">
+									<span class="fa fa-sort-desc"></span>
+								</div>
+								<div class="well center ">
+									本月新增入金
+									<br/>
+									<strong>$122,134.00</strong>
+								</div>
+
+							</div>
+							<div class="col-xs-9">
+								<div class="ibox float-e-margins">
+
+									<div class="ibox-content">
+										<div>
+											<canvas id="lineChart1" height="140"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="home-wrap" style="margin-bottom: 0;">
+						<div class="row">
+							<div class="col-xs-3">
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="ibox float-e-margins">
+
+											<div class="ibox-content1">
+
+												<div class="row">
+
+													<div class="col-xs-12">
+														<div class="form-group" class="data_1">
+															<label class="font-noraml">开始日期</label>
+															<div class="input-group">
+																<span class="input-group-addon">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </span>
+																<input class="datainp form-control" id="dateinfo5" type="text" placeholder="2017-01-25 15:10:24"></div>
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="form-group" class="data_1">
+															<label class="font-noraml">结束日期</label>
+															<div class="input-group">
+																<span class="input-group-addon">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </span>
+																<input class="datainp form-control" id="dateinfo6" type="text" placeholder="2017-01-25 15:10:24"></div>
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="form-group" class="data_1">
+															<label class="font-noraml">搜索</label>
+															<div class="input-group">
+																<span class="input-group-addon"><i class="fa fa-search"></i></span>
+																<input class="form-control" type="text"></div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+								<div>
+									<a class="btn btn-prima" onclick="fnClickAddRow();" href="#">Search</a>
+								</div>
+								<div class="well center ">
+									出金总计
+									<br/>
+									<strong>$32,156.00</strong>
+								</div>
+								<div class="separator bottom center">
+									<span class="fa fa-sort-desc"></span>
+								</div>
+								<div class="well center ">
+									本月新增出金
+									<br/>
+									<strong>$122,134.00</strong>
+								</div>
+
+							</div>
+							<div class="col-xs-9">
+								<div class="ibox float-e-margins">
+
+									<div class="ibox-content">
+										<div>
+											<canvas id="lineChart2" height="140"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<br />
+		<div class="foot container-fluid">
+			网站运营及所有权归 GO Markets 高汇所有。© 2021 GO Markets。最终解释权归 GO Markets 高汇所有。
+		</div>
+
+<a href="login.html">login</a>
+		<!-- TouchSpin -->
+		<script src="js/jquery-2.1.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/plugins/dataTables/datatables.min.js"></script>
+		<script src="js/plugins/chartJs/Chart.min.js"></script>
+		<script src="js/plugins/chartJs/chartjs-demo.js"></script>
+		<script src="js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="jedate/jedate.min.js"></script>
+		<!--新增-->
+		<script src="js/common.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				jeDate({
+					dateCell: "#dateinfo",
+					isinitVal: true,
+					isTime: true, //isClear:false,
+					minDate: "2014-09-19 00:00:00"
+				});
+				jeDate({
+					dateCell: "#dateinfo1",
+					isinitVal: true,
+					isTime: true, //isClear:false,
+					minDate: "2014-09-19 00:00:00"
+				});
+				jeDate({
+					dateCell: "#dateinfo3",
+					isinitVal: true,
+					isTime: true, //isClear:false,
+					minDate: "2014-09-19 00:00:00"
+				});
+				jeDate({
+					dateCell: "#dateinfo4",
+					isinitVal: true,
+					isTime: true, //isClear:false,
+					minDate: "2014-09-19 00:00:00"
+				});
+				jeDate({
+					dateCell: "#dateinfo5",
+					isinitVal: true,
+					isTime: true, //isClear:false,
+					minDate: "2014-09-19 00:00:00"
+				});
+				jeDate({
+					dateCell: "#dateinfo6",
+					isinitVal: true,
+					isTime: true, //isClear:false,
+					minDate: "2014-09-19 00:00:00"
+				});
+
+			});
+		</script>
+	</body>
+
+</html>

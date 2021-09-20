@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<link rel="icon" href="favicon.ico">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+		<link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+		<link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+		<link href="css/style22.css" rel="stylesheet" type="text/css" />
+
+		<!--IE兼容-->
+		<!--[if lt IE 9]>
+      		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+<body >
+
+    <div class="head navbar-fixed-top container-fluid">
+
+        <a href="https://www.int.gomarkets.com/" target="_blank"><img class="imger" src="img/logo.png" alt=""></a>
+        <div class="navnn">
+            <li>
+                <a href="">Online Customer Service</a>
+                &nbsp; &nbsp; <em>|</em>
+            </li>
+            <li>
+                <a href="https://www.int.gomarkets.com/contact-us/" target="_blank">Contact Us</a>
+                &nbsp; &nbsp; <em>|</em>
+            </li>
+
+            <li>
+
+                <a href="Trader Detail_CN.html" >Chinese</a>
+            </li>
+            <li class="dropdown user">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                    <img alt="" src="img/avatar1_small.jpg" />
+
+                    <span class="username">welcome Jack</span> <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="login.html"> <i class="fa fa-sign-out"></i>
+                            Log Out
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+
+    </div>
+    <div class="container-fluid middle-box">
+        <div class="quee">
+            <div class="page-container">
+                <div class="page-sidebar">
+                    <ul class="page-sidebar-menu">
+
+                        <li class="">
+                            <a href="Home.html">
+                                <i class="fa fa-home"></i>
+                                <span class="title">IB Information</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li >
+                            <a href="Customer Information.html">
+                                <i class="fa fa-bars"></i>
+                                <span class="title">Customer Information</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li >
+                            <a href="Trader Summary.html">
+                                <i class="fa fa-edit"></i>
+                                <span class="title">Trader Summary</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="start active ">
+                            <a href="Trader Detail.html">
+                                <i class="fa fa-file-text"></i>
+                                <span class="title">Trader Detail</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="Commission Summary.html">
+                                <i class="fa fa-files-o"></i>
+                                <span class="title">Commission Summary</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="Commission Detail.html">
+                                <i class="fa fa-money"></i>
+                                <span class="title">Commission Detail</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="Customer Deposit.html">
+                                <i class="fa fa-list-alt"></i>
+                                <span class="title">Customer Deposit</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="Customer Withdrawals.html">
+                                <i class="fa fa-stack-overflow"></i>
+                                <span class="title">Customer Withdrawals</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class=" rechts">
+        	<a href="javascript:" class="fa fa-bars" id="slidetoggle"></a>
+            <div class="wrapper wrapper-content animated">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="portlet box green">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-file-text"></i>
+                                    <a href="#">Trader Detail</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="ibox">
+                                        <div class="ibox-content">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <div class="form-group" class="data_1">
+                                                        <label class="font-noraml">From Date</label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <i class="fa fa-calendar"></i>
+                                                            </span>
+                                                            <input class="datainp form-control" id="dateinfo" type="text" placeholder="2017-01-25 15:10:24"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-3">
+                                                    <div class="form-group" class="data_1">
+                                                        <label class="font-noraml">To Date</label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <i class="fa fa-calendar"></i>
+                                                            </span>
+                                                            <input class="datainp form-control" id="dateinfo1" type="text" placeholder="2017-01-25 15:10:24"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-2">
+                                                    <p>Customer Options</p>
+                                                    <select class="select2_demo_3 form-control">
+
+                                                        <option value="Bahamas">Bahamas</option>
+                                                        <option value="Bahrain">Bahrain</option>
+                                                        <option value="Bangladesh">Bangladesh</option>
+                                                        <option value="Barbados">Barbados</option>
+                                                        <option value="Belarus">Belarus</option>
+                                                        <option value="Bexsium">Bexsium</option>
+                                                        <option value="Belize">Belize</option>
+                                                        <option value="Benin">Benin</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-xs-2">
+                                                    <p>Customer Options</p>
+                                                    <select class="select2_demo_3 form-control">
+
+                                                        <option value="Bahamas">Bahamas</option>
+                                                        <option value="Bahrain">Bahrain</option>
+                                                        <option value="Bangladesh">Bangladesh</option>
+                                                        <option value="Barbados">Barbados</option>
+                                                        <option value="Belarus">Belarus</option>
+                                                        <option value="Bexsium">Bexsium</option>
+                                                        <option value="Belize">Belize</option>
+                                                        <option value="Benin">Benin</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-xs-1">
+                                                    <div class="hei">
+                                                        <a class="myaccount" onclick="fnClickAddRow();" href="#" >Search</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-1">
+                                                    <div class="hei">
+                                                        <a class="myaccount"  onclick="fnClickAddRow();" href="#" >Export</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div id="result" >
+
+                                    <table class="table-hover table-striped">
+                                        <tr >
+
+                                            <th style=" border-right:1px #ddd solid  "> <b>Ticket</b>
+                                            </th>
+                                            <th style=" border-right:1px  #ddd solid;border-left:1px  #ddd solid  "> <b>Account Number</b>
+                                            </th>
+                                            <th style="border-right:1px  #ddd solid;border-left:1px  #ddd solid  ">
+                                                <b>Account Name</b>
+                                            </th>
+                                            <th style=" border-right:1px  #ddd solid;border-left:1px  #ddd solid">
+                                                <b>Open Time</b>
+                                            </th>
+                                            <th style="border-right:1px  #ddd solid;border-left:1px  #ddd solid  ">
+                                                <b>Type</b>
+                                            </th>
+                                            <th style=" border-right:1px  #ddd solid;border-left:1px  #ddd solid  ">
+                                                <b>Trading Size</b>
+                                            </th>
+                                            <th style=" border-right:1px  #ddd solid;border-left:1px  #ddd solid">
+                                                <b>Item</b>
+                                            </th>
+                                            <th style=" border-right:1px  #ddd solid;border-left:1px  #ddd solid  ">
+                                                <b>Open Price</b>
+                                            </th>
+                                            <th style=" border-right:1px  #ddd solid;border-left:1px  #ddd solid  ">
+                                                <b>Close Time</b>
+                                            </th>
+                                            <th style=" border-right:1px  #ddd solid;border-left:1px  #ddd solid  ">
+                                                <b>Close Price</b>
+                                            </th>
+                                            <th style="border-right:1px  #ddd solid;border-left:1px  #ddd solid  ">
+                                                <b>Commission</b>
+                                            </th>
+                                            <th style=" border-right:1px  #ddd solid;border-left:1px  #ddd solid  ">
+                                                <b>Taxes</b>
+                                            </th>
+                                            <th style=" border-left:1px # #ddd solid">
+                                                <b>Swap</b>
+                                            </th>
+                                        </tr>
+                                        <tr>
+
+                                            <td >26769200</td>
+                                            <td>60001234</td>
+                                            <td>Zhang San</td>
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+                                        <tr class="gray">
+
+                                            <td>26769200</td>
+                                            <td>60001234</td>
+
+                                            <td>Zhang San</td>
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+                                        <tr>
+
+                                            <td>26769200</td>
+                                            <td>60001234</td>
+
+                                            <td>Zhang San</td>
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+                                        <tr class="gray">
+
+                                            <td>26769200</td>
+                                            <td>60001234</td>
+                                            <td>Zhang San</td>
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+                                        <tr>
+
+                                            <td>26769200</td>
+                                            <td>60001234</td>
+                                            <td>Zhang San</td>
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+                                        <tr class="gray">
+
+                                            <td>26769200</td>
+                                            <td>60001234</td>
+                                            <td>Zhang San</td>
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+                                        <tr >
+
+                                            <td>26769200</td>
+                                            <td>60001234</td>
+                                            <td>Zhang San</td>
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+                                        <tr class="gray">
+
+                                            <td>26769200</td>
+                                            <td>60001234</td>
+                                            <td>Zhang San</td>
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+                                        <tr >
+
+                                            <td>26769200</td>
+                                            <td>60001234</td>
+                                            <td>Zhang San</td>
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+                                        <tr class="gray">
+
+                                            <td>26769200</td>
+                                            <td>60001234</td>
+                                            <td>Zhang San</td>
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+                                        <tr >
+
+                                            <td>26769200</td>
+                                            <td>60001234</td>
+                                            <td>Zhang San</td>
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+                                        <tr class="gray">
+
+                                            <td>26769200</td>
+                                            <td>60001234</td>
+                                            <td>Zhang San</td>
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+                                        <tr >
+
+                                            <td>26769200</td>
+                                            <td>60001234</td>
+                                            <td>Zhang San</td>
+
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+                                        <tr class="gray">
+
+                                            <td>26769200</td>
+                                            <td>60001234</td>
+                                            <td>Zhang San</td>
+                                            <td>2015.07.01 04:54:43</td>
+                                            <td>sell</td>
+                                            <td>0.01</td>
+                                            <td>eurusd</td>
+                                            <td>1.11361</td>
+                                            <td>2015.07.01 11:44:48</td>
+                                            <td>1.11072</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+
+                                        </tr>
+
+                                    </table>
+                                    <div class="table_head">
+                                        <div class="table_head1">
+                                            <div style="float: left;line-height: 50px;margin-right:20px;" >Trading Size:0.01</div>
+                                            <div style="float: left;line-height: 50px;" >
+                                                 <span>derive：</span>
+                                            </div>
+                                            <div class="page_num2">
+                                                <select class="form-control1" style="height: 24px;  padding: 2px 2px; margin-top:5px">
+                                                    <option>PDF</option>
+                                                    <option>Word</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="page">
+                                            <div class="page_num">Next</div>
+                                            <div class="page_num">30</div>
+                                            <div class="page_num">20</div>
+                                            <div class="page_num">10</div>
+                                            <div style="float: right;">&nbsp;... &nbsp;&nbsp;</div>
+                                            <div class="page_num">5</div>
+                                            <div class="page_num">4</div>
+                                            <div class="page_num">3</div>
+                                            <div class="page_num_on">2</div>
+                                            <div class="page_num">1</div>
+
+                                            <div class="page_num1">
+                                                <select class="form-control1" style="height: 24px;  padding: 2px 2px; margin-top:5px">
+                                                    <option>10</option>
+                                                    <option>20</option>
+                                                    <option>30</option>
+                                                    <option>40</option>
+                                                    <option>50</option>
+                                                </select>
+                                            </div>
+
+                                            <div style="float: right; margin-right: 10px;line-height: 34px;" >Cols:</div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+     	<div class="foot container-fluid">
+			This website is owned and operated by GO Markets. All contents © 2021 GO Markets. All rights reserved.
+		</div>
+		<script src="js/jquery-2.1.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Clock picker -->
+		<script src="js/plugins/clockpicker/clockpicker.min.js"></script>
+
+		<!-- Select2 -->
+		<script src="js/plugins/select2/select2.full.min.js"></script>
+
+		<!-- TouchSpin -->
+		<script src="js/plugins/dataTables/datatables.min.js"></script>
+		<script type="text/javascript" src="jedate/jedate_en.min.js"></script>
+		<!--新增-->
+		<script src="js/common.js"></script>
+		
+		
+		<script>
+			$(document).ready(function() {
+				$('.clockpicker').clockpicker();
+				$(".select2_demo_1").select2();
+				$(".select2_demo_3").select2();
+
+			});
+			$(document).ready(function() {
+				$('.dataTables-example').DataTable({
+					dom: '<"html5buttons"B>lTfgitp',
+					buttons: [{
+							extend: 'copy'
+						},
+						{
+							extend: 'csv'
+						},
+						{
+							extend: 'excel',
+							title: 'ExampleFile'
+						},
+						{
+							extend: 'pdf',
+							title: 'ExampleFile'
+						},
+
+						{
+							extend: 'print',
+							customize: function(win) {
+								$(win.document.body).addClass('white-bg');
+								$(win.document.body).css('font-size', '10px');
+
+								$(win.document.body).find('table')
+									.addClass('compact')
+									.css('font-size', 'inherit');
+							}
+						}
+					]
+
+				});
+
+				/* Init DataTables */
+				var oTable = $('#editable').DataTable();
+
+				/* Apply the jEditable handlers to the table */
+
+			});
+		</script>
+		<script type="text/javascript">
+			jeDate({
+				dateCell: "#dateinfo",
+				isinitVal: true,
+				isTime: true, //isClear:false,
+				minDate: "2014-09-19 00:00:00"
+			})
+			jeDate({
+				dateCell: "#dateinfo1",
+				isinitVal: true,
+				isTime: true, //isClear:false,
+				minDate: "2014-09-19 00:00:00"
+			})
+		</script>
+	</body>
+
+</html>
