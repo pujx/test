@@ -1,4 +1,3 @@
-$(document).ready(function() {
 
 	function mouseIn(beginIn, endIn) {
 		$(function() {
@@ -86,5 +85,3 @@ $(document).ready(function() {
 	});
 
 	$('#mainRiskTip,#rankTip,#minimal-balance-tip,#multiplier,#controls').popover();
-
-});

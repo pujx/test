@@ -1,69 +1,88 @@
 var chart = Highcharts.chart('container', {
 	chart: {
-		type: 'line',
-		zoomType: 'x',
-		resetZoomButton: {
-			theme: {
-				fill: 'white',
-				stroke: '#ccc',
-				r: 4,
-				states: {
-					hover: {
-						fill: '#48cc7f',
-						style: {
-							color: 'white',
-						}
-					}
-				}
+		type: 'spline',
+		marginTop: 50
+	},
+	title: {
+		text: "",
+//		layout: 'vertical',
+//		align: 'left',
+//		verticalAlign: 'top',
+//		borderWidth: 0,
+//		style: {
+//			fontWeight: "bold",
+//			fontSize: "16",
+//			color: "#333",
+//		}
+
+	},
+	xAxis: {
+		categories: ['一月', '二月', '三月', '四月', '五月', '六月',
+			'七月', '八月', '九月', '十月', '十一月', '十二月'
+		],
+	},
+	navigation: {
+		buttonOptions: {}
+	},
+	//
+	legend: {
+		enabled: false
+	},
+	yAxis: {
+		title: {
+			text: '单位（$）'
+		},
+		labels: {
+			formatter: function() {
+				return this.value;
 			}
 		}
 	},
-	title: {
-		text: ''
-	},
 	credits: {
-		enabled: false
+		enabled: false // 禁用版权信息
 	},
-	subtitle: {
-		text: ''
-	},
-	xAxis: {
-		categories: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
-	},
-	yAxis: {
-		tickInterval: 100,
-		title: {
-			text: null
-		}
-	},
+	colors: ['#f44336', '#003b4c'],
+
 	tooltip: {
-		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-		pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-			'<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
-		footerFormat: '</table>',
-		shared: true,
-		useHTML: true
+		crosshairs: true,
+		shared: true
 	},
 	plotOptions: {
-		series: {
-			dataLabels: {
-				enabled: true, //设置柱状图显示数值
-				formatter: function() {
-					return this.point.y + '%'; // 设置柱状图显示数值并且带单位
-				},
-			},
+		spline: {
+			marker: {
+				radius: 4,
+				lineColor: '#fff',
+				lineWidth: 1
+			}
 		}
 	},
 	series: [{
-		name: 'Equity',
-		data: [-7777.0, 6000.9, 9000.5, 1.5, 1.4, 1.5, 1.2, 2060.5, 2300.3, 1080.3, 1003.9, 2009.6]
+		name: '新入金',
+		marker: {
+			symbol: 'cirel'
+		},
+		data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, {
+			y: 26.5,
+		}, 23.3, 18.3, 13.9, 9.6]
 	}, {
-		name: 'Growth',
-		data: [3000.9, 2004.2, 1050.7, 1.5, 1.9, 1.2, 1.0, 6106.6, 8104.2, 4510.3, 5226.6, 5004.8]
+		name: '总计',
+		marker: {
+			symbol: 'cirel'
+		},
+		data: [{
+			y: 3.9,
+		}, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
 	}]
 });
+
+
+
+
+
+
 var chart = Highcharts.chart('container1', {
 	chart: {
+		
 		type: 'column',
 		zoomType: 'x',
 		resetZoomButton: {
@@ -102,6 +121,7 @@ var chart = Highcharts.chart('container1', {
 			text: null
 		}
 	},
+	colors: ['#6993ff', '#003b4c','#f44336'],
 	tooltip: {
 		// head + 每个 point + footer 拼接成完整的 table
 		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
@@ -111,6 +131,7 @@ var chart = Highcharts.chart('container1', {
 		shared: true,
 		useHTML: true
 	},
+	
 	plotOptions: {
 		series: {
 			dataLabels: {
@@ -136,75 +157,80 @@ var chart = Highcharts.chart('container1', {
 var chart = Highcharts.chart('container2', {
 	chart: {
 		type: 'spline',
-		zoomType: 'x',
-		resetZoomButton: {
-			theme: {
-				fill: 'white',
-				stroke: '#ccc',
-				r: 4,
-				states: {
-					hover: {
-						fill: '#48cc7f',
-						style: {
-							color: 'white',
-						}
-					}
-				}
-			}
-		}
+		marginTop: 50
 	},
 	title: {
-		text: ''
-	},
-	credits: {
-		enabled: false
+		text: "",
+//		layout: 'vertical',
+//		align: 'left',
+//		verticalAlign: 'top',
+//		borderWidth: 0,
+//		style: {
+//			fontWeight: "bold",
+//			fontSize: "16",
+//			color: "#333",
+//		}
+
 	},
 	xAxis: {
 		categories: ['一月', '二月', '三月', '四月', '五月', '六月',
 			'七月', '八月', '九月', '十月', '十一月', '十二月'
-		]
+		],
+	},
+	navigation: {
+		buttonOptions: {}
+	},
+	//
+	legend: {
+		enabled: false
 	},
 	yAxis: {
-		tickInterval: 50,
 		title: {
-			text: null
+			text: '单位（$）'
 		},
+		labels: {
+			formatter: function() {
+				return this.value;
+			}
+		}
 	},
+	credits: {
+		enabled: false // 禁用版权信息
+	},
+	colors: ['#f44336', '#003b4c'],
+
 	tooltip: {
-		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-		pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-			'<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
-		footerFormat: '</table>',
 		crosshairs: true,
-		shared: true,
-		useHTML: true
+		shared: true
 	},
 	plotOptions: {
 		spline: {
 			marker: {
 				radius: 4,
-				lineColor: '#666666',
+				lineColor: '#fff',
 				lineWidth: 1
 			}
-		},
-		series: {
-			dataLabels: {
-				enabled: true, //设置柱状图显示数值
-				formatter: function() {
-					return this.point.y + '%'; // 设置柱状图显示数值并且带单位
-				},
-			},
 		}
 	},
-
 	series: [{
-		name: 'Profit',
+		name: '新入金',
 		marker: {
-			symbol: 'square'
+			symbol: 'cirel'
 		},
-		data: [-7757.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 23.3, 18.3, 13.9, 9000.6]
+		data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, {
+			y: 26.5,
+		}, 23.3, 18.3, 13.9, 9.6]
+	}, {
+		name: '总计',
+		marker: {
+			symbol: 'cirel'
+		},
+		data: [{
+			y: 3.9,
+		}, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
 	}]
 });
+
 
 Highcharts.chart('containerCurrencies', {
 	chart: {
@@ -303,6 +329,7 @@ var chart = Highcharts.chart('containerMonth', {
 	title: {
 		text: ''
 	},
+	colors: ['#6993ff', '#003b4c','#f44336'],
 	tooltip: {
 		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
 		pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +

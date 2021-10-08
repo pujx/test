@@ -17,14 +17,15 @@ $(function() {
 	$('#J_file_wrap').on('click', function() {
 		if(typeof FileReader == "undefined") {
 			$.confirm({
+			theme: 'Modern',
 				title: "Error!",
 				content: "您的浏览器不支持 FileReader ,请换个浏览器进行上传",
-				type: "red",
+				type: "orange",
 				typeAnimated: true,
 				buttons: {
 					tryAgain: {
-						text: "关闭",
-						btnClass: "btn-red",
+						text: "Close",
+						btnClass: "btn-orange",
 					},
 				}
 			});
@@ -38,8 +39,9 @@ $(function() {
 		that.cropBtn.click(function() {
 			if($(".previewImg img").attr("src") == null) {
 				$.confirm({
+			theme: 'Modern',
 					title: "Error!",
-					content: "图片不能为空",
+					content: "Please select an image!",
 					type: "orange",
 					typeAnimated: true,
 					buttons: {
@@ -70,7 +72,7 @@ $(function() {
 	};
 	// append images
 	PictureEdit.prototype.addPics = function() {
-		var thumb = $('<div class="item"><i class="fa fa-close"></i></div>'),
+		var thumb = $('<div class="item"><i></i></div>'),
 			key = this.getFileKey(),
 			data = '';
 		this.cropImg = this.preImg.cropper('getCroppedCanvas', {
