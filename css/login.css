@@ -1,0 +1,150 @@
+@charset "utf-8";html,body{font-family:verdana,"微软雅黑"}
+@media (min-width:1600px){.container{width:1540px}
+}a{transition:none;-webkit-transition:none;-moz-transition:none}
+.anim{position:relative;margin-bottom:0}
+label.anim a{display:inline-block;float:right}
+.agileits-login label{font-size:1em;color:#fff;font-weight:400;cursor:pointer;position:relative}
+.cbx{color:#003b4d;-webkit-user-select:none;user-select:none;cursor:pointer;padding:0 0 0 25px;border-radius:6px;overflow:hidden;transition:all 0.2s ease}
+.cbx span{float:left;vertical-align:middle}
+.cbx span:first-child{vertical-align:middle;position:relative;width:18px;height:18px;border-radius:4px;transform:scale(1);-webkit-transform:scale(1);-ms-transform:scale(1);border:2px solid #003b4d;transition:all 0.2s ease;-webkit-transition:all 0.2s ease;-moz-transition:all 0.2s ease;-ms-transition:all 0.2s ease}
+.cbx span:first-child svg{position:absolute;top:2px;left:1px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:16px;stroke-dashoffset:16px;transition:all 0.3s ease;transition-delay:0.1s;transform:translate3d(0,0,0)}
+.cbx span:last-child{padding-left:8px}
+.cbx:hover span:first-child{border-color:#003b4d}
+.inp-cbx:checked+.cbx span:first-child{background:#003b4d;border-color:#003b4d;animation:wave 0.4s ease}
+.inp-cbx:checked+.cbx span:first-child svg{stroke-dashoffset:0}
+.inline-svg{position:absolute;width:0;height:0;pointer-events:none;user-select:none}
+@-moz-keyframes wave{50%{transform:scale(0.9)}
+}@-webkit-keyframes wave{50%{transform:scale(0.9)}
+}@-o-keyframes wave{50%{transform:scale(0.9)}
+}@keyframes wave{50%{transform:scale(0.9)}
+}.password-modal .chosen-container .chosen-results::-webkit-scrollbar{width:10px;height:10px;background-color:transparent}
+.password-modal .chosen-container .chosen-results::-webkit-scrollbar-track{border-radius:10px;-webkit-border-radius:10px;-webkit-border-radius:10px;background-color:#e6e6e6}
+.password-modal .chosen-container .chosen-results::-webkit-scrollbar-thumb{height:40px;border-radius:4px;-webkit-border-radius:4px;-webkit-border-radius:4px;background-color:#003b4d}
+.password-modal .chosen-container .chosen-results{scrollbar-width:8px;scrollbar-arrow-color:#003b4d;scrollbar-face-color:#003b4d;scrollbar-3dlight-color:#f00;scrollbar-shadow-color:#003b4d;scrollbar-track-color:#e6e6e6;scrollbar-base-color:#003b4d}
+.password-modal .chosen-container-single .chosen-search{display:none}
+.password-modal .chosen-container-single .chosen-single abbr{display:none}
+.reset-password-page-modal{margin-top:90px}
+.reset-password-page-modal .password-text i{margin-right:5px;font-size:18px;color:#003b4d;vertical-align:middle}
+header{padding:25px 0}
+a{transition:none;-webkit-transition:none;-moz-transition:none;-ms-transition:none}
+header .login-language{margin-top:5px;margin-bottom:0}
+header .login-language li{position:relative}
+header .login-language li .right-bar-toogle>a>img{}
+header .login-language li .right-bar-toogle>a>i{}
+header .login-language li.right-bar-toogle>a img{width:20px;height:20px}
+.login-language .scale-up{border:1px solid #eee}
+.page-line{height:55px;background:#f9f9f9;border-style:solid;border-width:5px;border-left:0;border-top:0;border-right:0;-webkit-border-image:linear-gradient(to right,#fff,#003b4d,#fff) 20 20;-moz-border-image:linear-gradient(to right,#fff,#003b4d,#fff) 20 20;border-image:linear-gradient(to right,#fff,#003b4d,#fff) 20 20;position:relative}
+.page-line-shadow{background:url(../images/footer-box-shadow.png) repeat-x;height:12px;position:absolute;left:0;right:0;width:100%}
+.risk-box{text-align:center;margin:95px 0 40px 0;padding:0 15px}
+.risk-box a{font-size:15px}
+.risk-box em{padding:0 10px;color:#8c8c8c}
+.left-img{float:left;position:relative;width:718px;margin-left:35px}
+.right-form{float:left;width:440px;margin-left:45px}
+.IB-right-form{margin-left:65px}
+.login-container .login-title{font-family:'DIN-Regular',"微软雅黑";font-size:30px;text-align:center;margin:70px 0}
+.right-form-top{margin-bottom:25px}
+.right-form-top h4{color:#36363e;margin:0;font-family:verdana,"微软雅黑";display:inline-block;padding-left:24px;font-weight:bold;font-size:18px;border-left:2px solid #003b4d}
+.right-form-top a{float:right}
+.right-form-btm{position:relative}
+.error-box{color:#e86060;margin:0;position:absolute;left:0;top:0}
+.error-box p{height:30px;margin:0;padding-right:10px}
+.error-box p img{height:30px}
+.error-box span{display:block;width:160px;text-align:left}
+.login-button{text-align:right;margin:0}
+.login-button button{font-family:'Gotham-Light',"微软雅黑";font-size:22px;min-width:165px;height:44px;border-radius:36px;-webkit-border-radius:36px;-moz-border-radius:36px;background:#003b4d;border:2px solid #003b4d;color:#fff;padding:0 15px}
+.login-button button:hover{background:#fff;border:2px solid #003b4d;color:#003b4d}
+.login-button button i{display:inline-block;margin-right:8px}
+.input-box{margin-bottom:20px}
+.input-box label{font-size:15px;color:#36363e;float:left;width:24%;text-align:right;margin-right:20px;margin-bottom:0}
+.input-box input{border:1px solid #003b4d;border-radius:8px;-webkit-border-radius:8px;-moz-border-radius:8px;padding:14px 10px;width:71%}
+.input-box input:focus{box-shadow:0px 0px 3px 0px #003b4d !important;-webkit-box-shadow:0px 0px 3px 0px #003b4d !important}
+.check-box{margin-bottom:40px}
+.check-box p{display:inline-block;margin:0}
+.check-box a{float:right}
+@media screen and (min-width:1200px) and (max-width:1599px){.left-img{margin-left:0;width:565px;height:305px}
+.left-img img{height:305px}
+}@media screen and (min-width:992px) and (max-width:1199px){.left-img{margin-left:0;width:465px;height:305px}
+.right-form{margin-left:30px}
+.left-img img{height:305px}
+}@media screen and (max-width:991px){.risk-box a{font-size:12px}
+.risk-box em{padding:0}
+.login-container .login-title{font-size:24px;margin:45px 0}
+.left-img{margin-left:0;width:100%;float:none;margin-bottom:25px;text-align:center}
+.right-form{float:none;width:100%;margin-left:0}
+.input-box label{text-align:left;width:100%;padding-top:0;margin-bottom:5px}
+.input-box input{width:100%;padding:8px 10px;height:auto}
+.login-button{text-align:center}
+.login-button button{font-size:18px;height:36px}
+.error-box{top:-42px;width:100%}
+.error-box p{width:10%}
+.error-box span{width:89%;font-size:13px}
+.cbx{padding-left:2px}
+.risk-box{margin:90px 0 25px}
+}.login-logo{display:inline-block;height: 24px;}
+.login-logo img{width:280px}
+@media screen and(min-width:400px) and (max-width:767px){.login-logo img{width:240px}
+}@media screen and (max-width:399px){.login-logo img{width:220px}
+}.right-form-top a,.cbx span,.check-box a{font-size:12px}
+.input-box label{font-size:14px}
+}.password-modal{color:#36363e}
+.reset-password-page-modal .password-modal-title{font-size: 24px;}
+.password-modal .password-text{padding:0px 65px 45px}
+.password-modal-title{font-family:'DIN-Regular',"微软雅黑";font-size:32px;color:#494949;text-align:center;margin-bottom:30px;margin-top:35px}
+.password-modal .modal-content{border:2px solid #003b4d;-webkit-box-shadow:0 0px 2px 0 #909090;box-shadow:0 0px 2px 0 #909090}
+@media screen and (min-width:992px){.login-left-img-m{display:none}
+.IB-login-number{margin-left:-100px}
+.modal-backdrop{opacity:0 !important;filter:alpha(opacity=0) !important}
+.password-modal form .form-group .col-md-offset-4{margin-left:30%}
+.password-modal form .form-group>.col-md-4{width:28.9999%}
+.password-modal form .form-group>.col-md-5{width:42.9999%}
+}@media screen and (max-width:991px){.input-box input{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}
+.login-left-img{display:none}
+.input-box.d-flex{display:block !important}
+.password-modal .password-text{padding:0 0 30px}
+.password-modal .password-modal-title{font-size:22px;margin: 30px 0 20px;}
+.password-modal{font-size:14px}
+.reset-password-page-modal{margin-top:45px}
+}.fogot-birth-box .help-block{margin-left:-10px}
+.password-modal .forgot-btn{display:block;margin:20px 0}
+.password-modal .forgot-btn i{display:inline-block}
+.password-modal .forgot-btn span{display:inline-block;vertical-align:middle;width:92px;height:28px;border:1px solid #003b4d;border-radius:12px;-webkit-border-radius:12px;-moz-border-radius:12px;-ms-border-radius:12px;text-align:center;line-height:26px;font-family:'DIN-Regular',"微软雅黑";font-size:14px;transition:all .5s;-webkit-transition:all .5s;-moz-transition:all .5s}
+.password-modal .cancel-btn span{margin-left:2px}
+.password-modal .forgot-btn button{color:#003b4d;background:#fff;display:inline-block;vertical-align:middle;width:92px;height:28px;border:1px solid #003b4d;border-radius:12px;-webkit-border-radius:12px;-moz-border-radius:12px;-ms-border-radius:12px;text-align:center;line-height:26px;font-family:'DIN-Regular',"微软雅黑";font-size:14px;transition:all .5s;-webkit-transition:all .5s;-moz-transition:all .5s}
+.password-modal .cancel-btn:hover span{background:#003b4d;color:#fff}
+.password-modal .forgot-btn button:hover{background:#003b4d;color:#fff}
+.password-modal .submit-btn{text-align:right}
+.password-modal .submit-btn:hover span{border:1px solid #000}
+.password-modal .submit-btn:hover span em{background:#000}
+.password-modal .submit-btn span{margin-right:2px}
+.password-modal .submit-btn span em{font-style:normal;display:block;border:1px solid #f7f7f7;border-radius:12px;-webkit-border-radius:12px;-moz-border-radius:12px;-ms-border-radius:12px;height:26px;line-height:24px;transition:all .5s;-webkit-transition:all .5s;-moz-transition:all .5s}
+.password-modal .form-control{border:1px solid #003b4d;padding-left:10px}
+.password-modal .form-control:focus{box-shadow:0px 0px 3px 0px #003b4d !important;-webkit-box-shadow:0px 0px 3px 0px #003b4d !important}
+.password-modal .chosen-container-active.chosen-with-drop .chosen-single,.password-modal .chosen-container .chosen-drop,.password-modal .chosen-container-active .chosen-single{border:1px solid #003b4d;box-shadow:0px 0px 3px 0px #003b4d !important;-webkit-box-shadow:0px 0px 3px 0px #003b4d !important}
+.fogot-password .col-lg-41,.fogot-password .col-lg-42,.fogot-password .col-lg-43{padding-right:0}
+.fogot-password .col-lg-42,.fogot-password .col-lg-43{padding-left:5px;width:26.9999%}
+.fogot-password .col-lg-41{width:41%}
+.password-modal .chosen-container-single .chosen-single{border:1px solid #003b4d}
+.password-modal .chosen-drop{padding:10px;border-radius:8px !important;-webkit-border-radius:8px !important;-moz-border-radius:8px !important}
+.password-modal .chosen-container .chosen-results{padding-right:8px}
+.password-modal .chosen-container .chosen-results li{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;padding:2px 12px}
+.password-modal .chosen-single{padding-left:10px !important}
+.password-modal .chosen-container-active.chosen-with-drop .chosen-single{border-radius:8px !important;-webkit-border-radius:8px !important;-moz-border-radius:8px !important}
+.password-modal .chosen-container-single .chosen-single{line-height:48px}
+.password-modal .chosen-container-active.chosen-with-drop .chosen-single div:after{background-image:url(../images/chosen-up.png);width:15px;height:10px;background-size:100%;top:0}
+.password-modal .chosen-container-single .chosen-single div{top:0}
+.password-modal .chosen-container-single .chosen-single div:after{background-image:url(../images/chosen-down.png);width:15px;height:10px;background-size:100%;top:0}
+.password-modal .help-block{margin-top:12px}
+@media screen and (max-width:1199px){.fogot-birth-box .help-block{margin-left:0}
+}@media screen and (max-width:991px){.password-modal .forgot-btn{text-align:center}
+.password-modal .form-group{margin-bottom:15px}
+.password-modal .form-control{padding:10px;height:auto}
+.password-modal .chosen-container-single .chosen-single{line-height:38px}
+.password-modal .chosen-container-active.chosen-with-drop .chosen-single
+.password-modal .chosen-container-single .chosen-single,.input-box input,.password-modal .form-control{border-radius:4px !important;-webkit-border-radius:4px !important;-moz-border-radius:4px !important}
+.chosen-container-single .chosen-single{height:auto !important}
+.fogot-password .col-lg-42,.fogot-password .col-lg-43{width:29.499999%}
+.fogot-password .col-lg-41,.fogot-password .col-lg-42,.fogot-password .col-lg-43{padding-right:15px}
+}@media (min-width:992px){.password-modal .modal-lg{width:810px}
+}footer{position:relative}
+footer .footer-box-shadow{background:url(../images/footer-box-shadow.png) repeat-x;height:12px;position:absolute;left:0;right:0;width:100%}
+.footer-text{color:#8da0aa;padding:25px 0 15px}
