@@ -9,18 +9,20 @@
    	src: 
    		url('../fonts/Gotham/Gotham-Light.otf'); 
    } 
+     @font-face {
+	font-family: 'Gotham-Book'; 
+   	src: 
+   		url('../fonts/Gotham/Gotham-Book.otf'); 
+   } 
+   
 @font-face {
 	font-family: 'DIN-Regular'; 
    	src: 
    		url('../fonts/Din/DIN-Regular.otf'); 
    }
    
-  @font-face {
-	font-family: 'DIN-Bold'; 
+@font-face {
+	font-family: 'Gotham-Thin'; 
    	src: 
-   		url('../fonts/Din/DIN-Bold.otf'); 
-   } 
-   
-body,button,.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-	font-family:"Lato Regular","微软雅黑";
-}
+   		url('../fonts/Gotham/Gotham-Thin.otf'); 
+   }
