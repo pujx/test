@@ -36,7 +36,7 @@ li{list-style:none}
 .chosen-container .chosen-results{scrollbar-width:8px;scrollbar-arrow-color:#003b4d;scrollbar-face-color:#003b4d;scrollbar-3dlight-color:#f00;scrollbar-shadow-color:#003b4d;scrollbar-track-color:#e6e6e6;scrollbar-base-color:#003b4d}
 .chosen-container-single .chosen-search{display:none;padding:.5rem 0}
 .has-chosen-search .chosen-container-single .chosen-search{display:block}
-.chosen-container-single .chosen-single abbr{display:none}
+.chosen-container-single .chosen-single abbr{display:none;background-image: none !important;}
 header{padding:20px 0;background:#fff}
 header .login-language{margin-bottom:0}
 header .login-language li{position:relative}
