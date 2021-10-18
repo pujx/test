@@ -94,7 +94,7 @@ select::-ms-expand{display:none}
 textarea{resize:none}
 button{transition:all 0.5s ease;-moz-transition:all 0.5s ease;-ms-transition:all 0.5s ease;-webkit-transition:all 0.5s ease;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none;border:none}
 .form-control{box-shadow:none !important;-webkit-box-shadow:none !important;-ms-box-shadow:none;border-color:#003b4d;height:42px;color:#585963;padding:6px 10px;padding-left:20px;text-transform:none;appearance:none;-webkit-appearance:none;-moz-appearance:none}
-.form-control[disabled],fieldset[disabled] .form-control{background:#e3e9ed;color:#999}
+.form-control[disabled],fieldset[disabled] .form-control{background-color:#e3e9ed;color:#999}
 .form-control[readonly]{background:#fff;color:#585963}
 form .form-control:focus{box-shadow:0px 0px 3px 0px #003b4d !important;-webkit-box-shadow:0px 0px 3px 0px #003b4d !important}
 input:focus,select:focus,textarea:focus{box-shadow:none !important;-webkit-box-shadow:none !important;-moz-box-shadow:none !important;border-color:#000 !important;transition:border-color .8s;-webkit-transition:border-color .8s;-moz-transition:border-color .8s;-ms-transition:border-color .8s}
