@@ -116,6 +116,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#b2b2b2 !import
 .chosen-container-single .chosen-single div:after{background-image:url(../images/chosen-down.png);width:15px;height:10px;background-size:100%;top:0;
     background-repeat: no-repeat;}
 @media screen and (max-width:991px){.common-btn{text-align:center}
+.chosen-container-single .chosen-single div:after{background: none !important;}
 form .help-block{height:0}
 form .help-block img{position: absolute;
     right:20px;
