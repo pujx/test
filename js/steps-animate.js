@@ -53,16 +53,21 @@ SetStep.prototype.init = function(arg) {
 		this.prevBtn = this.content.find(this.opt.prevBtn)
 		this.nextBtn = this.content.find(this.opt.nextBtn)
 		this.prevBtn.on('click', function() {
+			$(this).children("span").html(" "+ "<i class='fa fa-spinner fa-spin'></i>"+ ''+ "PREVIOUS");
+			$(".nextBtn").children("span").children("em").html("next");
 			if($(_that).attr('disabled') || _that.opt.animating) {
 				return false;
 			} else {
 				_that.opt.animating = true;
 				_that.opt.curStep--;
-				_that.setProgress(_that.stepContainer, _that.opt.curStep, _that.opt.stepCounts)
+				_that.setProgress(_that.stepContainer, _that.opt.curStep, _that.opt.stepCounts);
+				
 			}
 		});
 
 		this.nextBtn.on('click', function() {
+				$(".prevBtn").children("span").html(" PREVIOUS");
+				$(this).children("span").children("em").html("<i class='fa fa-spinner fa-spin'></i>"+ ' '+ "NEXT");
 			//		 表单验证样式 示例
 			var familyname = $('#familyname').val();
 			if(familyname == "") {
@@ -79,7 +84,6 @@ SetStep.prototype.init = function(arg) {
 				_that.opt.animating = true;
 				_that.opt.curStep++;
 				_that.setProgress(_that.stepContainer, _that.opt.curStep, _that.opt.stepCounts);
-
 			}
 
 		})
@@ -119,7 +123,7 @@ SetStep.prototype.setProgress = function(n, curIndex, stepsLen) {
 									$('#num').text(count);
 									jump(count);
 								} else {
-									location.href = "http://14.192.67.34:2001/";
+									location.href = "https://my.radexmarkets.com/";
 								}
 							}, 1000);
 						}
