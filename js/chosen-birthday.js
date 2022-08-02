@@ -1,17 +1,12 @@
-
 function YYYYMMDDstart() {
-	$(".birthday-box select").children("option").remove();
-	$(".birthday-box .form-control-chosen").trigger("chosen:updated");
-	
 	MonHead = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 	var y = new Date().getFullYear();
 	for(var i = (y - 80); i < (y + 1); i++) {
 		document.reg_testdate.YYYY.options.add(new Option(" " + i, i))
 	}
 	$(".form-control-chosen").trigger("chosen:updated");
-	
-	var arr=new Array();
-	arr=[" ","JAN.","FEB.","MAR.","APR.","MAY.","JUN.","JUL.","AUG.","SEP.","OCT.","NOV.","DEC."];
+	var arr = new Array();
+	arr = [" ", "JAN.", "FEB.", "MAR.", "APR.", "MAY.", "JUN.", "JUL.", "AUG.", "SEP.", "OCT.", "NOV.", "DEC."];
 	for(var i = 1; i < arr.length; i++) {
 		document.reg_testdate.MM.options.add(new Option(" " + arr[i], i));
 	}

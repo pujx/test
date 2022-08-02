@@ -1,7 +1,4 @@
-function selCountry() {
-	var sel = $("#country option:selected").attr("title");
-	$("#CountryNumber").val(sel)
-}
+function selCountry() {var sel = $("#country option:selected").attr("title");$("#CountryNumber").val(sel)}
 //login out
 $('.right-bar-toogle').on('click', function() {
 	$(this).toggleClass("right-bar-active").siblings().removeClass("right-bar-active");
@@ -25,16 +22,14 @@ $(document).click(function(e) {
 $(function() {
 	var year = new Date();
 	var footYear = year.getFullYear();
-	$("#footer-year").text(footYear)
+	$("#footer-year,.footer-year").text(footYear)
 });
 //上传证明切换
 function identity(question) {
 	if(question.value == "2") {
 		$(".select-id").css("display", "block").siblings().css('display', 'none');
-		$(question).css("border-color", "#ddd");
 	} else if(question.value == "1") {
 		$(".select-passport").css("display", "block").siblings().css('display', "none");
-		$(question).css("border-color", "#ddd");
 	}
 };
 

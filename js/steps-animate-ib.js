@@ -14,9 +14,9 @@ function SetStep(arg) {
 		stepContainerMar: 20,
 		nextBtn: '.nextBtn',
 		prevBtn: '.prevBtn',
-		steps: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'],
-		stepCounts: 11,
-		curStep: 1,
+		steps: ['1', '2', '3', '4', '5', '6'],
+		stepCounts: 6,
+		curStep:1,
 		animating: false,
 		showBtn: true,
 		onLoad: function() {}
@@ -24,19 +24,8 @@ function SetStep(arg) {
 	this.init(arg)
 }
 
-function goTop() {
-	let currentPosition, timer;
-	timer = setInterval(function() {
-		currentPosition = document.documentElement.scrollTop || document.body.scrollTop /* 浏览器兼容处理  */
-		currentPosition -= 10
-		if(currentPosition > 0) {
-			window.scrollTo(0, currentPosition)
-		} else {
-			window.scrollTo(0, 0)
-			clearInterval(timer)
-		}
-	}, 1)
-};
+//console.log(opt.steps.length);
+
 SetStep.prototype.init = function(arg) {
 	var _that = this;
 	extend(this.opt, arg);
@@ -67,7 +56,7 @@ SetStep.prototype.init = function(arg) {
 		this.prevBtn = this.content.find(this.opt.prevBtn)
 		this.nextBtn = this.content.find(this.opt.nextBtn)
 		this.prevBtn.on('click', function() {
-			$(this).children("span").children("em").html(" " + "<i class='fa fa-spinner fa-spin'></i>" + ' ' + "PREVIOUS");
+			$(this).children("span").children("em").html(" "+ "<i class='fa fa-spinner fa-spin'></i>"+ ' '+ "PREVIOUS");
 			$(".nextBtn").children("span").children("em").html("next");
 			if($(_that).attr('disabled') || _that.opt.animating) {
 				return false;
@@ -75,23 +64,23 @@ SetStep.prototype.init = function(arg) {
 				_that.opt.animating = true;
 				_that.opt.curStep--;
 				_that.setProgress(_that.stepContainer, _that.opt.curStep, _that.opt.stepCounts);
-
+				
 			}
 		});
 
 		this.nextBtn.on('click', function() {
-			$(".prevBtn").children("span").children("em").html("PREVIOUS");
-			$(this).children("span").children("em").html("<i class='fa fa-spinner fa-spin'></i>" + ' ' + "NEXT");
-
-			//			var familyname = $('#familyname').val();
-			//			if(familyname == "") {
-			//				$.DialogByZ.Autofade({
-			//					Content: "Family name is empty!"
-			//				});
-			//				$('#familyname').css("border-color", "#e86060");
-			//				return false;
-			//			};
-
+				$(".prevBtn").children("span").children("em").html("PREVIOUS");
+				$(this).children("span").children("em").html("<i class='fa fa-spinner fa-spin'></i>"+ ' '+ "NEXT");
+		
+//			var familyname = $('#familyname').val();
+//			if(familyname == "") {
+//				$.DialogByZ.Autofade({
+//					Content: "Family name is empty!"
+//				});
+//				$('#familyname').css("border-color", "#e86060");
+//				return false;
+//			};
+			
 			if($(_that).attr('disabled') || _that.opt.animating) {
 				return false;
 			} else {
@@ -148,10 +137,9 @@ SetStep.prototype.checkPage = function(pageCont, curStep, steps) {
 		if(i === curStep) {
 			var findPageCont = pageCont.find('#page' + i)
 			if($(this.body).width() <= 991) {
-				this.content.css("height", findPageCont.children('.step' + i)[0].scrollHeight + 70);
+				this.content.css("height", findPageCont.children('.step' + i)[0].scrollHeight + 70)
 			}
 			findPageCont.css("left", "0");
-			goTop();
 		} else if(curStep > i) {
 			pageCont.find('#page' + i).css("left", "-200vw");
 		} else {

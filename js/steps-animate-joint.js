@@ -4,6 +4,7 @@ function extend(obj1, obj2) {
 	}
 }
 
+
 function SetStep(arg) {
 	this.body = document.body;
 	this.opt = {
@@ -14,8 +15,8 @@ function SetStep(arg) {
 		stepContainerMar: 20,
 		nextBtn: '.nextBtn',
 		prevBtn: '.prevBtn',
-		steps: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'],
-		stepCounts: 11,
+		steps: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'],
+		stepCounts:13,
 		curStep: 1,
 		animating: false,
 		showBtn: true,
@@ -24,19 +25,6 @@ function SetStep(arg) {
 	this.init(arg)
 }
 
-function goTop() {
-	let currentPosition, timer;
-	timer = setInterval(function() {
-		currentPosition = document.documentElement.scrollTop || document.body.scrollTop /* 浏览器兼容处理  */
-		currentPosition -= 10
-		if(currentPosition > 0) {
-			window.scrollTo(0, currentPosition)
-		} else {
-			window.scrollTo(0, 0)
-			clearInterval(timer)
-		}
-	}, 1)
-};
 SetStep.prototype.init = function(arg) {
 	var _that = this;
 	extend(this.opt, arg);
@@ -148,10 +136,9 @@ SetStep.prototype.checkPage = function(pageCont, curStep, steps) {
 		if(i === curStep) {
 			var findPageCont = pageCont.find('#page' + i)
 			if($(this.body).width() <= 991) {
-				this.content.css("height", findPageCont.children('.step' + i)[0].scrollHeight + 70);
+				this.content.css("height", findPageCont.children('.step' + i)[0].scrollHeight + 70)
 			}
 			findPageCont.css("left", "0");
-			goTop();
 		} else if(curStep > i) {
 			pageCont.find('#page' + i).css("left", "-200vw");
 		} else {

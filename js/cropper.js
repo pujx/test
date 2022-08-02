@@ -30,19 +30,31 @@ $(function() {
 		}
 	});
 
-	$("#J_file").on("click", function() {
-		var listl_len1 = $("#J_upload_box .item").length;
+//	$("#J_file").on("click", function() {
+//		var listl_len1 = $("#J_upload_box .item").length;
+//		if(listl_len1 >= 4) {
+//			$.DialogByZ.Autofade({Content: "最多上传4张图片~"});
+//			return false;
+//		}
+//	});
+	
+	$(".upload-click").on("click", function() {
+		var listl_len1 = $(this).parent().children(".upload-img-box .item").length;
 		if(listl_len1 >= 4) {
-			$.DialogByZ.Autofade({Content: "最多上传4张图片~"});
+			$.DialogByZ.Autofade({Content: "Upload up to 4 pictures"});
 			return false;
+		}else{
+			$('#cropperModal').modal('show');
 		}
 	});
+	
+	
 	//add
 	PictureEdit.prototype.crop = function() {
 		var that = this;
 		that.cropBtn.click(function() {
 			if($(".previewImg img").attr("src") == null) {
-			$.DialogByZ.Autofade({Content: "图片不能为空!"});
+			$.DialogByZ.Autofade({Content: "尚未上传身份证，你之后可以在My RM上传证件，或email至newaccounts@radexmarkets.com"});
 				return false;
 			} else {
 				that.addPics();
@@ -52,6 +64,7 @@ $(function() {
 				$("#J_file").attr("type", "text");
 				$("#J_file_box_img").attr("src", "");
 				$("#pop-upload-bg").show();
+			$('#cropperModal').modal('hide');
 			}
 		});
 	};
