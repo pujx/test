@@ -1,10 +1,15 @@
 @charset "utf-8";
-@media screen and (min-width: 992px){
-.step6 .common-btn {
-    margin-top: 8px;
+.page-title{font-size: 16px;}
+.bottom-progress-text {font-size: 16px;}
+/*.step-name {font-size: 24px;}*/
+/*.step5 .form-group .col-md-7{width: 33.333333%;}*/
+.success-item .item-right h4 {font-size: 18px;}
+@media screen and (min-width: 1600px){
+/*.step3 form .col-md-6 .col-md-4 {width: 33.333333%;}*/
+/*.page-title { margin-left: 215px;}*/
 }
-
+@media screen and (min-width:992px) {
+	/*.step6 .common-btn {margin-top: 8px;}*/
+	/*.col-md-7 {width: 53.333333%;}*/
+/*.success-r-box{margin-top: 150px;}*/
 }
-.bottom-progress-text{font-size: 15px;}
-.step1-name,.step8 .step8-name{font-size: 24px;}
-.step8-item .item-right h4{font-size: 18px;}
