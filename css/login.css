@@ -196,7 +196,7 @@ button {
 	-ms-user-select: none;
 	user-select: none;
 	outline: none;
-	border: none
+	border: none;
 }
 
 .buttons {
@@ -264,8 +264,8 @@ button {
 }
 
 .left-box-logo img {
-	width: 253.07px;
-	height: 23.38px
+width: 280px;
+    height: 26px;
 }
 
 .right-box {
@@ -299,25 +299,6 @@ button {
 	box-shadow: inset 39.8333px -39.8333px 39.8333px rgba(7, 24, 33, 0.1), inset -39.8333px 39.8333px 39.8333px rgba(255, 255, 255, 0.1);
 	-webkit-box-shadow: inset 39.8333px -39.8333px 39.8333px rgba(7, 24, 33, 0.1), inset -39.8333px 39.8333px 39.8333px rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(39.8333px);
-	filter: blur(39.8333px);
-	-ms-filter: opacity(39.333px)
-}
-.right-box .right-form::before{
-		display: block;
-	content: "";
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	border-radius: 20px;
-	padding: 0px 20px;
-	background: rgba(9, 31, 44, 0.5);
-	box-shadow: inset 39.8333px -39.8333px 39.8333px rgba(7, 24, 33, 0.1), inset -39.8333px 39.8333px 39.8333px rgba(255, 255, 255, 0.1);
-	-webkit-box-shadow: inset 39.8333px -39.8333px 39.8333px rgba(7, 24, 33, 0.1), inset -39.8333px 39.8333px 39.8333px rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(39.8333px);
-	filter: blur(39.8333px);
-	-ms-filter: opacity(39.333)
 }
 .right-box .right-form-top {
 	text-transform: capitalize;
@@ -513,36 +494,6 @@ button {
 	position: absolute;
 	right: 0
 }
-
-.demo-button {
-	float: right;
-	width: 45%;
-	height: 68px;
-	padding: 3px;
-	border: 1px solid #48CC7F;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px
-}
-
-.demo-button button {
-	font-size: 22px;
-	width: 100%;
-	height: 60px;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	background: #48CC7F;
-	border: 1px solid #48CC7F;
-	color: #fff
-}
-
-.demo-button button:hover {
-	background: #fff;
-	border: 1px solid #48CC7F;
-	color: #48CC7F
-}
-
 .buttons.buttons-success {
 	background: #48CC7F;
 	color: #fff;
@@ -553,7 +504,7 @@ button {
 	box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
 	-webkit-box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
 }
-
+.buttons.buttons-white{background: #fff;}
 .right-box .forgot-pwd {
 	text-align: right;
 	margin-bottom: 50px
