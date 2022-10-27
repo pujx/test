@@ -276,6 +276,7 @@ width: 270px;
 	color: #fff;
 	margin: 5% auto;
 	border-radius: 20px;
+	overflow: hidden;
 }
 
 .p-reletive {
@@ -290,13 +291,22 @@ width: 270px;
 	position: absolute;
 	top: 0;
 	right: 0;
+	bottom: 0;
+	left: 0;
 	border-radius: 20px;
 	padding: 0px 20px;
 	background: rgba(9, 31, 44, 0.5);
 	box-shadow: inset 39.8333px -39.8333px 39.8333px rgba(7, 24, 33, 0.1), inset -39.8333px 39.8333px 39.8333px rgba(255, 255, 255, 0.1);
 	-webkit-box-shadow: inset 39.8333px -39.8333px 39.8333px rgba(7, 24, 33, 0.1), inset -39.8333px 39.8333px 39.8333px rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(39.8333px);
+
+backdrop-filter: blur(39.8333px);
 }
+
+.right-box .right-form:after{
+	
+}
+
+
 .right-box .right-form-top {
 	text-transform: capitalize;
 	margin-bottom: 105px;
@@ -489,7 +499,7 @@ width: 270px;
 .right-box .right-form .help-block {
 	color: #E52431;
 	position: absolute;
-	right: 0
+	right: 0;    line-height: 14px;
 }
 .buttons.buttons-success {
 	background: #48CC7F;
@@ -501,7 +511,10 @@ width: 270px;
 	box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
 	-webkit-box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
 }
+
 .buttons.buttons-white{background-color: #fff;}
+
+
 .right-box .forgot-pwd {
 	text-align: right;
 	margin-bottom: 50px
