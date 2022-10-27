@@ -142,6 +142,7 @@ a.buttons[disabled]:hover {
 	height: 34px;
 	font-size: 12px;
 	caret-color: #fff;
+	text-transform: capitalize
 }
 
 .form-control:focus {
@@ -157,22 +158,18 @@ a.buttons[disabled]:hover {
 
 input::-webkit-input-placeholder {
 	color: rgba(255, 255, 255, .5);
-	text-transform: capitalize
 }
 
 input:-moz-placeholder {
 	color: rgba(255, 255, 255, .5);
-	text-transform: capitalize
 }
 
 input::-moz-placeholder {
 	color: rgba(255, 255, 255, .5);
-	text-transform: capitalize
 }
 
 input:-ms-input-placeholder {
 	color: rgba(255, 255, 255, .5);
-	text-transform: capitalize
 }
 
 input:-internal-autofill-previewed,
@@ -264,8 +261,8 @@ button {
 }
 
 .left-box-logo img {
-width: 280px;
-    height: 26px;
+width: 270px;
+    height: 24px;
 }
 
 .right-box {
@@ -504,7 +501,7 @@ width: 280px;
 	box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
 	-webkit-box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
 }
-.buttons.buttons-white{background: #fff;}
+.buttons.buttons-white{background-color: #fff;}
 .right-box .forgot-pwd {
 	text-align: right;
 	margin-bottom: 50px
