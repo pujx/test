@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="favicon.ico">
+		<title>GO Markets | Analysis</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/loading.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<aside class="main-sidebar noselect">
+				<section class="sidebar">
+					<div class="sidebar-logo">
+						<a href="index.html"><img src="images/logo.svg" /></a>
+					</div>
+					<div class="sidebar-account">
+						<p>
+							<img src="images/menu-head-img.svg" alt="" />
+						</p>
+						<!--if not verified-->
+						<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="red">not verified</span>
+							<a href="">click here to verify</a>
+						</div>
+						<!--if verified-->
+						<!--<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="green">verified</span>
+						</div>-->
+					</div>
+					<div class="sidebar-menu">
+						<h5>Dashboard</h5>
+						<ul>
+							<li>
+								<a href="javascript:">
+									<i><img src="images/menu-account-status.svg" alt="" /></i>
+									<span>account status</span>
+								</a>
+							</li>
+							<li class="active">
+								<a href="index.html">
+									<i><img src="images/menu-profile.svg" alt="" /></i>
+									<span>account profile</span>
+								</a>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-management.svg" alt="" /></i>
+									<span>acount management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="online-deposit.html">change password</a>
+									</li>
+									<li>
+										<a href="withdrawal.html">change leverage</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">open additional account</a>
+									</li>
+									<li>
+										<a href="withdrawal.html">link account</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">trading history</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">subscribe to share cfd</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:">
+									<i><img src="images/menu-fund.svg" alt="" /></i>
+									<span>fund management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="download-centre.html">deposit</a>
+									</li>
+									<li>
+										<a href="trading-central.html">withdrawal</a>
+									</li>
+									<li>
+										<a href="promotion.html">internal transfer</a>
+									</li>
+									<li>
+										<a href="promotion.html">account record</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-tools.svg" alt="" /></i>
+									<span>useful tools</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="my-trading-accounts.html">upload files</a><i></i>
+									</li>
+									<li>
+										<a href="apply-sub-account.html">mt4&mt5 genesis</a>
+									</li>
+									<li>
+										<a href="link-existing-account.html">trading central</a>
+									</li>
+									<li>
+										<a href="trading-history.html">download center</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-copy-trade.svg" alt="" /></i>
+									<span>copy trade</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="my-profile.html">my accounts</a>
+									</li>
+									<li>
+										<a href="upload-documents.html">gaia fund list</a>
+									</li>
+									<li>
+										<a href="change-leverage.html">my follower list</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-sign-out">
+								<a href="login.html">
+									<i><img src="images/menu-sign-out.svg" alt="" /></i>
+									<span>log out</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="sidebar-action">
+						<h5>quick action <a href="quick-action.html" id="open-tools-modal"><img src="images/menu-quick-action.svg"/></a></h5>
+						<div class="tools-item-box">
+							<ul id="page-tools-box">
+								<li>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-deposit.svg" alt="" /></i>
+											<span>Deposit</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-withdrawal.svg" alt="" /></i>
+											<span>withdrawl</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-internal-transfer.svg" alt="" /></i>
+											<span>internal transfer</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-openaccount.svg" alt="" /></i>
+											<span>open account</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-instruction.svg" alt="" /></i>
+											<span>instructions</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<!--<span id="open-tools-modal">
+									<div class="tools-item">
+										<p><img src="../Common/Static/images/add-tools.svg" alt="" /></p>
+									</div>
+								</span>-->
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sidebar-contact">
+						<h5>contact</h5>
+						<div class="sidebar-contact-box">
+							<a href="javascript:"><img src="images/menu-mail.svg" alt="" /></a>
+							<a href="javascript:"><img src="images/menu-callback.svg" alt="" /></a>
+						</div>
+					</div>
+				</section>
+			</aside>
+
+			<header class="main-header">
+				<div class="h-box">
+					<div class="h-logo">
+						<a href="javascript:"><img src="images/logo.svg" /></a>
+					</div>
+					<a href="login.html" class="h-welcome">
+						<img src="images/welcome-smile.svg" alt="" />
+						<span>welcome!</span>
+						<img src="images/welcome-pong.svg" alt="" />
+					</a>
+					<a href="javascript:" class="h-tips">
+						<img src="images/header-tips.svg" width="22" />
+						<span>New contest next month!</span>
+					</a>
+					<a href="login.html" class="h-signout">
+						<i><img src="images/menu-sign-out.svg" alt="" width="14"/></i>
+						<span>log out</span>
+					</a>
+					<div class="c-hamburger c-hamburger--htla noselect sidebar-toggle" data-toggle="push-menu">
+						<span></span>
+					</div>
+
+				</div>
+			</header>
+
+			<div class="content-wrapper">
+				<div class="box">
+					<div class="box-title">
+						<span class="title-checked">Account analysis</span>
+						<div class="right-group right-link">
+							<a href="my-accounts.html" class="right-link">back</a>
+						</div>
+					</div>
+					<div class="box-body">
+						
+						<div class="autotrade-wrap">
+							<div class="row">
+								<div class="col">
+									<nav class="gaia-d-tabs">
+										<div class="nav" id="nav-tab" role="tablist">
+											<a class="buttons bor5 active" id="gain-tab" data-toggle="tab" href="#gain" role="tab" aria-controls="gain" aria-selected="true">gain: 31.00 %</a>
+											<a class="buttons bor5" id="profit-tab" data-toggle="tab" href="#profit" role="tab" aria-controls="profit" aria-selected="false">profit: $ 333.97</a>
+										</div>
+									</nav>
+									<div class="tab-content" id="nav-tabContent">
+										<div class="tab-pane fade show active" id="gain" role="tabpanel" aria-labelledby="gain-tab">
+											<div class="portlet">
+												<div class="portlet-title">
+													<div class="caption">
+														<span class="caption-subject">GAIN CHART</span>
+													</div>
+												</div>
+												<div class="porlet-body">
+													<div id="gain-chart" style="height:400px; margin: 0 auto"></div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="profit" role="tabpanel" aria-labelledby="profit-tab">
+											<div class="portlet">
+												<div class="portlet-title">
+													<div class="caption">
+														<span class="caption-subject">profit CHART</span>
+													</div>
+												</div>
+												<div class="porlet-body">
+													<div id="profit-chart" style="height:400px; margin: 0 auto"></div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="portlet">
+										<div class="portlet-title">
+											<div class="caption">
+												<span class="caption-subject">ADVANCED STATISTICS</span>
+												<div class="float-right">
+													1 minute ago
+												</div>
+											</div>
+										</div>
+										<div class="portlet-body">
+											<ul class="nav nav-tabs" role="tablist">
+												<li role="presentation" class="nav-item">
+													<a class="nav-link active" href="#generalTab" aria-controls="home" role="tab" data-toggle="tab">General</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div role="tabpanel" class="tab-pane fade show active" id="generalTab">
+													<div class="row">
+														<div class="col-md-4">
+															<ul class="list-group">
+																<li class="list-group-item">
+																	Balance:<span class="float-right">&#128;1,141.15</span>
+																</li>
+																<li class="list-group-item" style="background:#f9f9f9">
+																	Equity:
+																	<span class="float-right"><span class="font10">(100.07%)</span> &#128;1,141.9 </span>
+																</li>
+																<li class="list-group-item">
+																	Floating PL:<span class="float-right">-&#128;1.1</span>
+																</li>
+																<li class="list-group-item" style="background:#f9f9f9">
+																	Deposits: <span class="float-right">&#128;1,005</span>
+																</li>
+																<li class="list-group-item">
+																	Withdrawals:<span class="float-right">&#128;0</span>
+																</li>
+															</ul>
+														</div>
+
+														<div class=" col-md-4">
+															<ul class="list-group">
+																<li class="list-group-item">
+																	Trades:<span class="float-right">410</span>
+																</li>
+																<li class="list-group-item gray-background">
+																	Pips: <span class="float-right">,498.5</span>
+																</li>
+																<li class="list-group-item">
+																	Won:<span class="float-right">62% </span>
+																</li>
+																<li class="list-group-item gray-background">
+																	Avg. Trade Time:<span class="float-right">9h 51m</span>
+																</li>
+																<li class="list-group-item">
+																	Lots:<span class="float-right">5.49</span>
+																</li>
+															</ul>
+														</div>
+
+														<div class=" col-md-4">
+															<ul class="list-group">
+																<li class="list-group-item">
+																	Profit Factor: <span class="float-right">1.26</span>
+																</li>
+																<li class="list-group-item gray-background">
+																	Daily:<span class="float-right">0.06%</span>
+																</li>
+																<li class="list-group-item">
+																	Monthly: <span class="float-right">1.95%</span>
+																</li>
+																<li class="list-group-item gray-background">
+																	Trades Per Month<span class="float-right">68</span>
+																</li>
+																<li class="list-group-item">
+																	Expectancy:<span class="float-right">3.7 Pips / &#128;0.32</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-7">
+									<div class="portlet">
+										<div class="portlet-title">
+											<div class="caption">
+												<span class="caption-subject">MONTHLY</span>
+												<span class="caption-small">Select a month to analyze</span>
+											</div>
+										</div>
+										<div class="portlet-body">
+											<div id="containerMonth" style="height:300px; margin: 0 auto"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="portlet light">
+										<div class="portlet-title">
+											<div class="caption">
+												<span class="caption-subject">Symbols</span>
+												<span class="caption-small">(JUL 2022)</span>
+											</div>
+										</div>
+										<div class="portlet-body">
+											<div id="containerCurrencies" style="height: 300px; margin: 0 auto"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="portlet light">
+										<div class="portlet-title">
+											<div class="caption">
+												<span class="caption-subject">ACTIVITY</span>
+											</div>
+											<div class="tools">
+												<button type="button" class="buttons buttons-orange xs-buttons">Export to CSV</button>
+											</div>
+										</div>
+										<div class="portlet-body">
+											<ul class="nav nav-tabs" role="tablist">
+												<li role="presentation" class="nav-item">
+													<a class="nav-link active" href="#open-trades" aria-controls="home" role="tab" data-toggle="tab">Open Trades (2)</a>
+												</li>
+												<li role="presentation" class="nav-item">
+													<a class="nav-link" href="#open-orders" aria-controls="home" role="tab" data-toggle="tab">Open Orders (2)</a>
+												</li>
+												<li role="presentation" class="nav-item">
+													<a class="nav-link" href="#history" aria-controls="home" role="tab" data-toggle="tab">History (6)</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div role="tabpanel" class="tab-pane fade show active activity-box" id="open-trades">
+													<div class="table-responsive">
+														<table id="openTradesTable" class="table table-borderless">
+															<thead>
+																<tr>
+																	<th>Open Date</th>
+																	<th>Symbol</th>
+																	<th>Action</th>
+																	<th>Lots</th>
+																	<th>Open Price</th>
+																	<th>SL</th>
+																	<th>TP</th>
+																	<th>Profit (USD)</th>
+																	<th>Pips</th>
+																	<th>Swap</th>
+																	<th>Gain</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>2019-12-12</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td>&nbsp;</td>
+																	<td>
+																		<span class='green'>+0.03%</span>
+																	</td>
+																</tr>
+																<tr>
+																	<td>2019-12-12</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td>&nbsp;</td>
+																	<td>
+																		<span class='green'>+0.03%</span>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+
+												</div>
+												<div role="tabpanel" class="tab-pane fade show  activity-box" id="open-orders">
+													<div class="table-responsive">
+														<table id="openOrdersTable" class="table table-borderless">
+															<thead>
+																<tr>
+																	<th width="12%">Open Date</th>
+																	<th width="12%">Symbol</th>
+																	<th width="12%">Action</th>
+																	<th width="12%">Lots</th>
+																	<th width="12%">Open Price</th>
+																	<th width="12%">SL</th>
+																	<th width="12%">TP</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>2020-07-21 12:25</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																</tr>
+																<tr>
+																	<td>2020-07-21 12:25</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+												<div role="tabpanel" class="tab-pane fade show activity-box" id="history">
+													<div class="table-responsive">
+														<table id="openTradesTable" class="table table-borderless">
+															<thead>
+																<tr>
+																	<th>Open Date</th>
+																	<th>Close date</th>
+																	<th>Symbol</th>
+																	<th>Action</th>
+																	<th>Lots</th>
+																	<th>SL</th>
+																	<th>TP</th>
+																	<th>Open</th>
+																	<th>Close</th>
+																	<th>Pips</th>
+																	<th>Profit</th>
+																	<th>Duration</th>
+																	<th>Gain</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>2020-07-21 12:25</td>
+																	<td>2020-07-21 12:25</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td>0.06</td>
+																	<td>1.11284</td>
+																	<td>1.13819</td>
+																	<td>1.13284</td>
+																	<td>1.13568</td>
+																	<td>28.4</td>
+																	<td>15.82</td>
+																	<td>14h 1m</td>
+																	<td>+0.59%</td>
+																</tr>
+																<tr>
+																	<td>2020-07-21 12:25</td>
+																	<td>2020-07-21 12:25</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td>0.06</td>
+																	<td>1.11284</td>
+																	<td>1.13819</td>
+																	<td>1.13284</td>
+																	<td>1.13568</td>
+																	<td>28.4</td>
+																	<td>15.82</td>
+																	<td>14h 1m</td>
+																	<td>+0.59%</td>
+																</tr>
+																<tr>
+																	<td>2020-07-21 12:25</td>
+																	<td>2020-07-21 12:25</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td>0.06</td>
+																	<td>1.11284</td>
+																	<td>1.13819</td>
+																	<td>1.13284</td>
+																	<td>1.13568</td>
+																	<td>-38.0</td>
+																	<td>15.82</td>
+																	<td>5h 30m</td>
+																	<td>+0.59%</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="footer-box">
+					<div class="footer-link">
+						<a href="" target="_blank">privacy policy</a> <b></b>
+						<a href="" target="_blank">Product Disclosure Statement</a>
+					</div>
+					<div class="footer-text">
+						<p>GO Markets brand is authorized and regulated in various jurisdictions.</p>
+						<p>Risk Warning: Trading Forex and Derivatives carries a high level of risk, including the risk of losing substantially more than your initial deposit. Leverage magnifies both gains and losses. You should only trade in risk capital (capital you can afford to lose). Trading leveraged products may not be suitable for all investors, please ensure that you fully understand the risks involved, and take into consideration your level of experience, investment objectives and seek independent advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to use the services provided by GO Markets based on the legal requirements in his/her country of residence. Before you start to trade, please take some to fully read our
+							<a href="" target="_blank">Product Disclosure Statement(PDS)</a>.</p>
+						<p>This website is owned and operated by GO Markets. All contents © <span class="footer-year"></span> GO Markets. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/highcharts.js"></script>
+        <script src="js/hignchartEdit.js"></script>
+		<script src="js/NProgress.min.js"></script>
+		<script src="js/loading.js"></script>
+		<script src="js/sidebar.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>

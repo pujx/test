@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="favicon.ico">
+		<title>GO Markets | Fund Information</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/loading.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<aside class="main-sidebar noselect">
+				<section class="sidebar">
+					<div class="sidebar-logo">
+						<a href="index.html"><img src="images/logo.svg" /></a>
+					</div>
+					<div class="sidebar-account">
+						<p>
+							<img src="images/menu-head-img.svg" alt="" />
+						</p>
+						<!--if not verified-->
+						<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="red">not verified</span>
+							<a href="">click here to verify</a>
+						</div>
+						<!--if verified-->
+						<!--<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="green">verified</span>
+						</div>-->
+					</div>
+					<div class="sidebar-menu">
+						<h5>Dashboard</h5>
+						<ul>
+							<li>
+								<a href="javascript:">
+									<i><img src="images/menu-account-status.svg" alt="" /></i>
+									<span>account status</span>
+								</a>
+							</li>
+							<li class="active">
+								<a href="index.html">
+									<i><img src="images/menu-profile.svg" alt="" /></i>
+									<span>account profile</span>
+								</a>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-management.svg" alt="" /></i>
+									<span>acount management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="online-deposit.html">change password</a>
+									</li>
+									<li>
+										<a href="withdrawal.html">change leverage</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">open additional account</a>
+									</li>
+									<li>
+										<a href="withdrawal.html">link account</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">trading history</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">subscribe to share cfd</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:">
+									<i><img src="images/menu-fund.svg" alt="" /></i>
+									<span>fund management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="download-centre.html">deposit</a>
+									</li>
+									<li>
+										<a href="trading-central.html">withdrawal</a>
+									</li>
+									<li>
+										<a href="promotion.html">internal transfer</a>
+									</li>
+									<li>
+										<a href="promotion.html">account record</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-tools.svg" alt="" /></i>
+									<span>useful tools</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="my-trading-accounts.html">upload files</a><i></i>
+									</li>
+									<li>
+										<a href="apply-sub-account.html">mt4&mt5 genesis</a>
+									</li>
+									<li>
+										<a href="link-existing-account.html">trading central</a>
+									</li>
+									<li>
+										<a href="trading-history.html">download center</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-copy-trade.svg" alt="" /></i>
+									<span>copy trade</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="my-profile.html">my accounts</a>
+									</li>
+									<li>
+										<a href="upload-documents.html">gaia fund list</a>
+									</li>
+									<li>
+										<a href="change-leverage.html">my follower list</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-sign-out">
+								<a href="login.html">
+									<i><img src="images/menu-sign-out.svg" alt="" /></i>
+									<span>log out</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="sidebar-action">
+						<h5>quick action <a href="quick-action.html" id="open-tools-modal"><img src="images/menu-quick-action.svg"/></a></h5>
+						<div class="tools-item-box">
+							<ul id="page-tools-box">
+								<li>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-deposit.svg" alt="" /></i>
+											<span>Deposit</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-withdrawal.svg" alt="" /></i>
+											<span>withdrawl</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-internal-transfer.svg" alt="" /></i>
+											<span>internal transfer</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-openaccount.svg" alt="" /></i>
+											<span>open account</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-instruction.svg" alt="" /></i>
+											<span>instructions</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<!--<span id="open-tools-modal">
+									<div class="tools-item">
+										<p><img src="../Common/Static/images/add-tools.svg" alt="" /></p>
+									</div>
+								</span>-->
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sidebar-contact">
+						<h5>contact</h5>
+						<div class="sidebar-contact-box">
+							<a href="javascript:"><img src="images/menu-mail.svg" alt="" /></a>
+							<a href="javascript:"><img src="images/menu-callback.svg" alt="" /></a>
+						</div>
+					</div>
+				</section>
+			</aside>
+
+			<header class="main-header">
+				<div class="h-box">
+					<div class="h-logo">
+						<a href="javascript:"><img src="images/logo.svg" /></a>
+					</div>
+					<a href="login.html" class="h-welcome">
+						<img src="images/welcome-smile.svg" alt="" />
+						<span>welcome!</span>
+						<img src="images/welcome-pong.svg" alt="" />
+					</a>
+					<a href="javascript:" class="h-tips">
+						<img src="images/header-tips.svg" width="22" />
+						<span>New contest next month!</span>
+					</a>
+					<a href="login.html" class="h-signout">
+						<i><img src="images/menu-sign-out.svg" alt="" width="14"/></i>
+						<span>log out</span>
+					</a>
+					<div class="c-hamburger c-hamburger--htla noselect sidebar-toggle" data-toggle="push-menu">
+						<span></span>
+					</div>
+
+				</div>
+			</header>
+
+			<div class="content-wrapper">
+				<div class="box">
+					<div class="box-title">
+						<span class="title-checked">fund information</span>
+						<div class="right-group right-link">
+							<a href="gaiafund.html" class="right-link">back</a>
+						</div>
+						<div class="right-group right-btn">
+							<button type="button" class="buttons buttons-orange" data-toggle="modal" data-target="#subscribeFund-modal">subscribe to fund</button>
+						</div>
+					</div>
+					<div class="box-body">
+						<div class="record-box">
+							<div class="table-responsive">
+								<table class="table table-borderless">
+									<thead>
+										<tr>
+											<th scope="col">fund name</th>
+											<th scope="col">base currency</th>
+											<th scope="col">leverage</th>
+											<th scope="col">performance fee</th>
+											<th scope="col">fund lock-in period </th>
+											<th scope="col">the early redemption fee</th>
+											<th scope="col">minimum balance</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>GFI STD Fund 001</td>
+											<td>USD</td>
+											<td>1:500</td>
+											<td>30.00% </td>
+											<td>15</td>
+											<td>10.00 %</td>
+											<td>$ 1000.00</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="gaia-tips bor5">
+							You control your funds. Start following now and stop any time you want. Make a decision and be in control of your income, your life.
+						</div>
+						<div class="autotrade-wrap">
+							<div class="row">
+								<div class="col">
+
+									<nav class="gaia-d-tabs">
+										<div class="nav" id="nav-tab" role="tablist">
+											<a class="buttons bor5 active" id="gain-tab" data-toggle="tab" href="#gain" role="tab" aria-controls="gain" aria-selected="true">gain: 31.00 %</a>
+											<a class="buttons bor5" id="profit-tab" data-toggle="tab" href="#profit" role="tab" aria-controls="profit" aria-selected="false">profit: $ 333.97</a>
+										</div>
+									</nav>
+									<div class="tab-content" id="nav-tabContent">
+										<div class="tab-pane fade show active" id="gain" role="tabpanel" aria-labelledby="gain-tab">
+											<div class="portlet">
+												<div class="portlet-title">
+													<div class="caption">
+														<span class="caption-subject">GAIN CHART</span>
+													</div>
+												</div>
+												<div class="porlet-body">
+													<div id="gain-chart" style="height:400px; margin: 0 auto"></div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="profit" role="tabpanel" aria-labelledby="profit-tab">
+											<div class="portlet">
+												<div class="portlet-title">
+													<div class="caption">
+														<span class="caption-subject">profit CHART</span>
+													</div>
+												</div>
+												<div class="porlet-body">
+													<div id="profit-chart" style="height:400px; margin: 0 auto"></div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="portlet">
+										<div class="portlet-title">
+											<div class="caption">
+												<span class="caption-subject">ADVANCED STATISTICS</span>
+												<div class="float-right">
+													1 minute ago
+												</div>
+											</div>
+										</div>
+										<div class="portlet-body">
+											<ul class="nav nav-tabs" role="tablist">
+												<li role="presentation" class="nav-item">
+													<a class="nav-link active" href="#generalTab" aria-controls="home" role="tab" data-toggle="tab">General</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div role="tabpanel" class="tab-pane fade show active" id="generalTab">
+													<div class="row">
+														<div class="col-md-4">
+															<ul class="list-group">
+																<li class="list-group-item">
+																	Balance:<span class="float-right">&#128;1,141.15</span>
+																</li>
+																<li class="list-group-item" style="background:#f9f9f9">
+																	Equity:
+																	<span class="float-right"><span class="font10">(100.07%)</span> &#128;1,141.9 </span>
+																</li>
+																<li class="list-group-item">
+																	Floating PL:<span class="float-right">-&#128;1.1</span>
+																</li>
+																<li class="list-group-item" style="background:#f9f9f9">
+																	Deposits: <span class="float-right">&#128;1,005</span>
+																</li>
+																<li class="list-group-item">
+																	Withdrawals:<span class="float-right">&#128;0</span>
+																</li>
+															</ul>
+														</div>
+
+														<div class=" col-md-4">
+															<ul class="list-group">
+																<li class="list-group-item">
+																	Trades:<span class="float-right">410</span>
+																</li>
+																<li class="list-group-item gray-background">
+																	Pips: <span class="float-right">,498.5</span>
+																</li>
+																<li class="list-group-item">
+																	Won:<span class="float-right">62% </span>
+																</li>
+																<li class="list-group-item gray-background">
+																	Avg. Trade Time:<span class="float-right">9h 51m</span>
+																</li>
+																<li class="list-group-item">
+																	Lots:<span class="float-right">5.49</span>
+																</li>
+															</ul>
+														</div>
+
+														<div class=" col-md-4">
+															<ul class="list-group">
+																<li class="list-group-item">
+																	Profit Factor: <span class="float-right">1.26</span>
+																</li>
+																<li class="list-group-item gray-background">
+																	Daily:<span class="float-right">0.06%</span>
+																</li>
+																<li class="list-group-item">
+																	Monthly: <span class="float-right">1.95%</span>
+																</li>
+																<li class="list-group-item gray-background">
+																	Trades Per Month<span class="float-right">68</span>
+																</li>
+																<li class="list-group-item">
+																	Expectancy:<span class="float-right">3.7 Pips / &#128;0.32</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-7">
+									<div class="portlet">
+										<div class="portlet-title">
+											<div class="caption">
+												<span class="caption-subject">MONTHLY</span>
+												<span class="caption-small">Select a month to analyze</span>
+											</div>
+										</div>
+										<div class="portlet-body">
+											<div id="containerMonth" style="height:300px; margin: 0 auto"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="portlet light">
+										<div class="portlet-title">
+											<div class="caption">
+												<span class="caption-subject">Symbols</span>
+												<span class="caption-small">(JUL 2022)</span>
+											</div>
+										</div>
+										<div class="portlet-body">
+											<div id="containerCurrencies" style="height: 300px; margin: 0 auto"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="portlet light">
+										<div class="portlet-title">
+											<div class="caption">
+												<span class="caption-subject">ACTIVITY</span>
+											</div>
+											<div class="tools">
+												<button type="button" class="buttons buttons-orange xs-buttons">Export to CSV</button>
+											</div>
+										</div>
+										<div class="portlet-body">
+											<ul class="nav nav-tabs" role="tablist">
+												<li role="presentation" class="nav-item">
+													<a class="nav-link active" href="#open-trades" aria-controls="home" role="tab" data-toggle="tab">Open Trades (2)</a>
+												</li>
+												<li role="presentation" class="nav-item">
+													<a class="nav-link" href="#open-orders" aria-controls="home" role="tab" data-toggle="tab">Open Orders (2)</a>
+												</li>
+												<li role="presentation" class="nav-item">
+													<a class="nav-link" href="#history" aria-controls="home" role="tab" data-toggle="tab">History (6)</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div role="tabpanel" class="tab-pane fade show active activity-box" id="open-trades">
+													<div class="table-responsive">
+														<table id="openTradesTable" class="table table-borderless">
+															<thead>
+																<tr>
+																	<th>Open Date</th>
+																	<th>Symbol</th>
+																	<th>Action</th>
+																	<th>Lots</th>
+																	<th>Open Price</th>
+																	<th>SL</th>
+																	<th>TP</th>
+																	<th>Profit (USD)</th>
+																	<th>Pips</th>
+																	<th>Swap</th>
+																	<th>Gain</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>2019-12-12</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td>&nbsp;</td>
+																	<td>
+																		<span class='green'>+0.03%</span>
+																	</td>
+																</tr>
+																<tr>
+																	<td>2019-12-12</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td>&nbsp;</td>
+																	<td>
+																		<span class='green'>+0.03%</span>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+
+												</div>
+												<div role="tabpanel" class="tab-pane fade show  activity-box" id="open-orders">
+													<div class="table-responsive">
+														<table id="openOrdersTable" class="table table-borderless">
+															<thead>
+																<tr>
+																	<th width="12%">Open Date</th>
+																	<th width="12%">Symbol</th>
+																	<th width="12%">Action</th>
+																	<th width="12%">Lots</th>
+																	<th width="12%">Open Price</th>
+																	<th width="12%">SL</th>
+																	<th width="12%">TP</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>2020-07-21 12:25</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																</tr>
+																<tr>
+																	<td>2020-07-21 12:25</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																	<td><img src="images/lock.svg" alt="" /></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+												<div role="tabpanel" class="tab-pane fade show activity-box" id="history">
+													<div class="table-responsive">
+														<table id="openTradesTable" class="table table-borderless">
+															<thead>
+																<tr>
+																	<th>Open Date</th>
+																	<th>Close date</th>
+																	<th>Symbol</th>
+																	<th>Action</th>
+																	<th>Lots</th>
+																	<th>SL</th>
+																	<th>TP</th>
+																	<th>Open</th>
+																	<th>Close</th>
+																	<th>Pips</th>
+																	<th>Profit</th>
+																	<th>Duration</th>
+																	<th>Gain</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>2020-07-21 12:25</td>
+																	<td>2020-07-21 12:25</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td>0.06</td>
+																	<td>1.11284</td>
+																	<td>1.13819</td>
+																	<td>1.13284</td>
+																	<td>1.13568</td>
+																	<td>28.4</td>
+																	<td>15.82</td>
+																	<td>14h 1m</td>
+																	<td>+0.59%</td>
+																</tr>
+																<tr>
+																	<td>2020-07-21 12:25</td>
+																	<td>2020-07-21 12:25</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td>0.06</td>
+																	<td>1.11284</td>
+																	<td>1.13819</td>
+																	<td>1.13284</td>
+																	<td>1.13568</td>
+																	<td>28.4</td>
+																	<td>15.82</td>
+																	<td>14h 1m</td>
+																	<td>+0.59%</td>
+																</tr>
+																<tr>
+																	<td>2020-07-21 12:25</td>
+																	<td>2020-07-21 12:25</td>
+																	<td>EURUSD</td>
+																	<td>Buy</td>
+																	<td>0.06</td>
+																	<td>1.11284</td>
+																	<td>1.13819</td>
+																	<td>1.13284</td>
+																	<td>1.13568</td>
+																	<td>-38.0</td>
+																	<td>15.82</td>
+																	<td>5h 30m</td>
+																	<td>+0.59%</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="footer-box">
+					<div class="footer-link">
+						<a href="" target="_blank">privacy policy</a> <b></b>
+						<a href="" target="_blank">Product Disclosure Statement</a>
+					</div>
+					<div class="footer-text">
+						<p>GO Markets brand is authorized and regulated in various jurisdictions.</p>
+						<p>Risk Warning: Trading Forex and Derivatives carries a high level of risk, including the risk of losing substantially more than your initial deposit. Leverage magnifies both gains and losses. You should only trade in risk capital (capital you can afford to lose). Trading leveraged products may not be suitable for all investors, please ensure that you fully understand the risks involved, and take into consideration your level of experience, investment objectives and seek independent advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to use the services provided by GO Markets based on the legal requirements in his/her country of residence. Before you start to trade, please take some to fully read our
+							<a href="" target="_blank">Product Disclosure Statement(PDS)</a>.</p>
+						<p>This website is owned and operated by GO Markets. All contents © <span class="footer-year"></span> GO Markets. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="modal fade subscribeFund-modal content-modal" id="subscribeFund-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
+						<p><span class="title-checked">subscribe to fund</span></p>
+						<form>
+							<div class="form-group">
+								<label for="">new account</label>
+								<select id="" class="form-control form-control-chosen">
+									<option selected>67896</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="">amount <i>*</i></label>
+								<input type="text" class="form-control" value="$ 499.87">
+							</div>
+							<div class="form-group">
+								<label for="">performance fee <i>*</i></label>
+								<input type="text" class="form-control" value="30.00 %">
+							</div>
+							<div class="form-group">
+								<label for="">fund lock-in Period <i>*</i></label>
+								<input type="text" class="form-control" value="15">
+							</div>
+							<div class="form-group">
+								<label for="">the early redemption fee <i>*</i></label>
+								<input type="text" class="form-control" value="10.00 %">
+							</div>
+							<div class="form-group">
+								<label for="">minimum balance <i>*</i></label>
+								<input type="text" class="form-control" value="$ 10000.00">
+							</div>
+						</form>
+
+						<p>
+							<b>TERMS AND CONDITIONS</b>
+						</p>
+						<div class="content-modal-text">
+							<p>Please read the terms and conditions of this Agreement carefully before continuing with the use of the AutoTrade service. If you continue to browse and use this website you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern AutoTrade's relationship with you in relation to this website.
+								<br />Each time you use the website, the current version of the Terms and Conditions will apply.
+							</p>
+							<p>AutoTrade is an automated platform to copy trades from one account to another based on the client's settings.</p>
+							<p>The term AutoTrade or "us" or "we" refers to the owner of the website. The term "you", "client" refers to the user or viewer of our website.
+								<br />The use of this website is subject to the following terms of use:
+							</p>
+							<p>The section headings contained in this agreement are for reference purposes only and shall not affect the meaning or interpretation of this agreement.</p>
+							<p><b>1. Risk Of Loss</b>
+								<br /> (a) All performance claims found on AutoTrade about trading systems or strategies must be regarded as hypothetical. Use of AutoTrade to offer or subscribe to a trading system or strategy indicates you agree to our Terms and Conditions. Before using any systems or strategies listed on AutoTrade you should be aware that there is often a vast difference between hypothetical results and real-life trading results achievable in a real brokerage account, and real-live results are almost always vastly worse than hypothetical results. Performance results for systems and strategies listed on AutoTrade do not take into account fees, spreads and/or trading commissions that may be charged by your broker. Please consult with your broker for information on these costs. Additional information on how AutoTrade calculates performance data can be found on the AutoTrade Help page.
+							</p>
+							<p>(b) HYPOTHETICAL PERFORMANCE RESULTS HAVE MANY INHERENT LIMITATIONS, SOME OF WHICH ARE DESCRIBED BELOW. NO REPRESENTATION IS BEING MADE THAT ANY ACCOUNT WILL OR IS LIKELY TO ACHIEVE PROFITS OR LOSSES SIMILAR TO THOSE SHOWN. IN FACT, THERE ARE FREQUENTLY SHARP DIFFERENCES BETWEEN HYPOTHETICAL PERFORMANCE RESULTS AND THE ACTUAL RESULTS SUBSEQUENTLY ACHIEVED BY ANY PARTICULAR TRADING PROGRAM. ONE OF THE LIMITATIONS OF HYPOTHETICAL PERFORMANCE RESULTS IS THAT THEY ARE GENERALLY PREPARED WITH THE BENEFIT OF HINDSIGHT. IN ADDITION, HYPOTHETICAL TRADING DOES NOT INVOLVE FINANCIAL RISK, AND NO HYPOTHETICAL TRADING RECORD CAN COMPLETELY ACCOUNT FOR THE IMPACT OF FINANCIAL RISK IN ACTUAL TRADING. FOR EXAMPLE, THE ABILITY TO WITHSTAND LOSSES OR ADHERE TO A PARTICULAR TRADING PROGRAM IN SPITE OF TRADING LOSSES ARE MATERIAL POINTS WHICH CAN ALSO ADVERSELY AFFECT ACTUAL TRADING RESULTS. THERE ARE NUMEROUS OTHER FACTORS RELATED TO THE MARKETS IN GENERAL OR TO THE IMPLEMENTATION OF ANY SPECIFIC TRADING PROGRAM WHICH CANNOT BE FULLY ACCOUNTED FOR IN THE PREPARATION OF HYPOTHETICAL PERFORMANCE RESULTS AND ALL OF WHICH CAN ADVERSELY AFFECT ACTUAL TRADING RESULTS.</p>
+							<p>(c) Trading is never without risk and you are urged to carefully read and consider the following before utilizing any or all of our services:
+								<br /> (1) No aspect of the Site is intended to provide, or should be construed as providing, any investment, tax or other financial related advice of any kind. You should not consider any content on the Site to be a substitute for professional financial advice. While individual participants may offer investment advice or opinions and/or effect a transaction which may be subsequently copied by another trader, such advice, opinions, or trades amount to nothing more than exchanges between persons who may be anonymous or unidentifiable or simply the execution of a trade by such traders. AutoTrade does not provide investment advice directly, indirectly, implicitly, or in any manner whatsoever by making such information and/or features available to you. You should use any information gathered from here and/or utilize the AutoTrade features only as a starting point for your own independent research.
+							</p>
+							<p>(2) The Site, Services, and AutoTrade features are provided by AutoTrade solely for informational purposes. AutoTrade and/or any on its behalf, including its affiliates and their employees and agents are not investment or financial advisers.</p>
+							<p>ANY INVESTMENT DECISIONS YOU MAY MAKE IN RELIANCE ON INFORMATION WHICH IS AVAILABLE ON OUR WEBSITE OR AS A RESULT OF THE USE OF THE AutoTrade TRADING FEATURES, ARE AT YOUR OWN RISK AND AutoTrade, AND ITS PARTNERS, AFFILIATES, EMPLOYEES AND AGENTS WILL NOT BE LIABLE FOR ANY LOSSES THAT YOU MAY SUSTAIN. YOU ARE SOLELY AND EXCLUSIVELY RESPONSIBLE FOR DETERMINING WHETHER ANY INVESTMENT, OR STRATEGY, OR ANY OTHER PRODUCT OR SERVICE IS APPROPRIATE OR SUITABLE FOR YOU BASED ON YOUR INVESTMENT OBJECTIVES AND PERSONAL AND FINANCIAL SITUATION.</p>
+							<p>(3) If you choose to copy specific traders and/or trades and/or to engage in transactions based on content on the Site, then such decision and transactions and any consequences flowing there-from are your sole responsibility.</p>
+							<p>(5) You may achieve a materially different result than the AutoTrade system that you followed, especially if you place additional trades in your account or you modify or cancel an order generated by the AutoTrade system.</p>
+							<p>(6) Any past performance indicated on this Site is not indicative of future results. Anyone investing should be able and prepared to bear a loss of his or her entire investment. You are fully responsible for any losses you may sustain as a result of our automatic execution of instructions generated as a result of the utilization of any of the AutoTrade trading Features.</p>
+							<p>
+								<b>2. No Advice or Solicitation</b>
+								<br /> (a) Any comments/opinions or market advice found on the website are not necessarily the opinions of AutoTrade or its affiliates and should not be construed as a solicitation or recommendation. The comments/opinions posted are of traders who may or may not be experienced. The comments/opinions are not reviewed or researched by AutoTrade or its affiliates. If you chose to make decisions or place trades based upon the comments, you are doing so at your own risk. AutoTrade and its affiliates are not responsible for any losses incurred due to the use of the content on AutoTrade.
+							</p>
+							<p>(b) AutoTrade is not providing exchange, investment, tax or legal advice, acting as a fiduciary or endorsing any company, property, product, service, exchange, security, instrument, or any other matter by posting any participant submitted information on the website.</p>
+							<p>(c) AutoTrade is not disposing analysis, exchange, trading, brokers, or investment advisory services on this website. We do not purport to tell people, or suggest to people what they should buy or sell for themselves or who can guide them so. Neither AutoTrade nor anyone affiliated with AutoTrade is responsible for any exchange, trading, or investment decision made by participants on the basis of using this website. Participants should always read the corresponding prospectus and other relevant material, check with their licensed financial advisor and their tax advisor to determine the suitability of any exchange or investment.</p>
+							<p><b>3. Services</b>
+								<br /> (a) You acknowledge that there is a risk that the website may knowingly contain incomplete, incorrect, inaccurate, misleading and/or false information.</p>
+							<p>(b) The information on this website is not verified in any way.</p>
+							<p>(c) The content of the pages of the website is for your general information only with no responsibility or liability regarding this information or resulting from it. The content is subject to change without notice.</p>
+							<p>(d) Neither we nor any third parties provide any warranty or guarantee regarding the information on the website, including, but not limited to, the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on the website for any purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</p>
+
+							<p>(e) Your use of any information or materials on the website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through the website meet your specific requirements.</p>
+							<p>(f) The information posted on the website should not be used by others in connection with any sale, offer for sale or solicitation of an offer to sale or buy foreign currency, securities or any other investments, and is not a recommendation or opinion for you to participate in any transaction.</p>
+							<p>(g) This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance, graphics and any information or materials, includes, but is not limited to any information or materials provided by you. We shall be free to use, for any purpose, any and all ideas, concepts, know-how, techniques or other information provided by you to the website. Reproduction is prohibited by law.</p>
+							<p>(h) All trademarks reproduced in this website, which are not the property of, or licensed to the operator, are acknowledged on the website.</p>
+							<p><b>4. Fees</b>
+								<br /> AutoTrade is compensated for the service through the Spread (1 pip) which is also used to pay out the system providers of AutoTrade. System providers are compensated with 0.5 pip (or $5/lot depending on the broker) per each profitable trade in the follower account which was initiated by their system.
+								<br />Some brokers can pay us from their exising spread and some require markup to match it. You should check with your broker to understand the markup amount, if any.
+								<br />You are responsible for all taxes (if any) associated with the service. All payments to you in relation to the service will be treated as inclusive of tax (if applicable) and will not be adjusted.</p>
+							<p><b>5. Confidentiality</b><br /> (a) AutoTrade shall have no duty of confidentiality regarding personal or other information submitted on the website. We shall act as provided in an applicable privacy policy, or as otherwise required by law, with respect to the disclosure of personal information, includes, but is not limited to names, address, or email address submitted to us. If you would like to protect any information submitted by you, please submit it to us under the bolded statement that the following information is personal and confidential and do not submit it to us as all or part of a web posting. We expressly disclaim any responsibility for reviewing or evaluating any information submitted to us as part of a web posting.</p>
+							<p>(b) You agree and understand that you are responsible for maintaining the confidentiality of your password which, together with your login e-mail address, allows you to access certain portions of the website.</p>
+							<p>(c) By providing us with your e-mail address, you agree to receive all required notices electronically, to that e-mail address. It is your responsibility to update or change that address, as appropriate.</p>
+							<p>(d) You hereby waive any rights or requirements under the laws or regulations of any jurisdiction which require an original non-electronic signature or delivery or retention of non-electronic records, to the extent permitted by applicable mandatory law.</p>
+							<p><b>6. Website Usage</b> <br />(a) You must be 18 years of age or older to use the website. You represent and warrant that you are 18 years of age or older and are fully able and competent to enter into, and abide by, the contract created by the Terms and Conditions.</p>
+							<p>(b) You represent that only your own proprietary capital is being used to fund your account. If this is not the case, you represent that you are properly registered or licensed in the jurisdiction where you are located, or exempt from such registration or licensure. You agree to immediately inform us in the event that the foregoing representation is no longer accurate.</p>
+
+							<p>(c) You may open a free demo account which simulates a live AutoTrade account. Such an account will expire after 30 days.
+								<br />Although a demo account will have the same functionality as a live account, it will never perform identically to a live account with the same settings due to the inherent differences (slippage,spread,etc').</p>
+							<p>(d) Unauthorized use of this website may lead to a claim for damages and/or be a criminal offence.</p>
+							<p>(e) If you become aware of any unauthorized use of your registration information, you agree to notify AutoTrade immediately.</p>
+							<p>(f) From time to time this website may also include links to other websites. These links may be provided by us or 3rd parties for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).</p>
+							<p>(g) Any material downloaded or otherwise obtained through the use of the website is done at your own discretion and risk and you are solely responsible for any damage to your computer system or loss of any data that results from the download of any such material.</p>
+							<p>(h) In order to make use of the AutoTrade service, a client must apply and maintain an account balance of $1000 or its equivalent. In case the balance decreases below $500 (or its equivalent), AutoTrade may terminate access to the service with a notification to the client, so the account can be funded again and reapplied for the service.</p>
+							<p>(i) AutoTrade reserves the right to, and may, terminate or temporarily suspend your access to all or any part of the website, without notice, for conduct that AutoTrade believes violates these Terms and Conditions or any of its policies or guidelines, or for any other reason in its sole discretion. AutoTrade will bear no responsibility or liability from such action.</p>
+							<p>(j) When using the website, you must comply with all applicable laws, any applicable foreign or domestic regulatory body, national or other securities exchanges, including rules against making false or misleading statements to manipulate the price of a foreign currency or any security.</p>
+							<p>(k) In the event that any provision of these Terms and Conditions is held unenforceable, the validity or enforceability of the remaining provisions will not be affected, and the unenforceable provision will be replaced with an enforceable provision that comes closest to the intention underlying the unenforceable provision.</p>
+							<p><b>7. AutoTrade Refund Policy</b>
+								<br />(a) AutoTrade will issue a refund to a client for losses caused by Platform Errors (covering only the erroneous part of the loss), limited to the total rebates AutoTrade recieved from the client's broker for the client's account for the past 3 months prior to the error, if the client provides timely notice of the error to AutoTrade as described below. A Platform Error occurs if a trading signal that should have been rejected according to the client's account settings is accepted by AutoTrade and submitted to the client's broker, or if a trading signal that should have been accepted according to the client's account settings is rejected by AutoTrade and not submitted to the client's broker. AutoTrade shall not be responsible for refunding lost profits resulting from Platform Errors under any circumstances.
+							</p>
+							<p>(b) Errors of third party signal providers or brokers shall not be considered Platform Errors, and AutoTrade shall not be responsible for refunding losses or lost profits resulting from such errors under any circumstances.</p>
+							<p>(c) In order to receive a refund of losses caused by Platform Errors, you must notify AutoTrade in writing of your potential claim. You must deliver the written notice to AutoTrade as soon as you knew, or should have known, of the Platform Error, but in any event, no later than 24 hours after the Platform Error occurred. If AutoTrade does not receive such notice from you within 24 hours after the Platform Error occurred, it will not be liable for any losses resulting from the Platform Error.</p>
+							<p>(d) If AutoTrade confirms that a Platform Error occurred with respect to your account, and you provided the required notice to AutoTrade within 24 hours, you will receive a refund of your losses caused by the Platform Error (not including lost profits).</p>
+							<p>(e) You are required to review your account statements and monitor your account status at least daily to ensure that the trades you ordered were placed, and that all trades that were made on your account were authorized by you. You are also required to check your account after disconnecting from the AutoTrade service and manually manage any trades opened by AutoTrade which were left open, if any.</p>
+
+							<p>(f) Except as expressly provided by this refund policy, neither AutoTrade, nor our officers, principals, employees or agents shall be liable to any person for any losses, damages, costs or expenses (including, but not limited to, loss of profits, loss of use, direct, indirect, incidental or consequential damages) resulting from any errors in the AutoTrade platform.</p>
+							<p><b>8. Limitation of Liability</b>
+								<br /> (a) To the maximum extent permitted by applicable law, in no event shall AutoTrade, its affiliates, or their respective officers, directors, shareholders, employees and agents be liable for any damages, liability, claims, expenses and costs, incurred by you as a result of your use of the site or the information. Without limitation, they shall not be liable for any lost profits, lost savings or any consequential, incidental, direct, indirect, special, punitive or other damages whatsoever, including, without limitation, damages for loss of business profits, business interruption, loss of business information, costs associated with recreating lost data, the cost of any substitute program or other pecuniary loss, arising out of this agreement or the use of or inability to use the site or the information, whether resulting from impaired or lost data, or any other cause, even if AutoTrade has been advised of the possibility of such damages.
+							</p>
+							<p>(b) No Warranties. You agree that AutoTrade has made no express warranties regarding the AutoTrade service which is being provided "as is" without warranty of any kind; AutoTrade hereby disclaims all warranties, conditions or representations with respect to AutoTrade whether express, implied or statutory, including, but not limited to, any warranties or conditions of quality, performance, non-infringement, merchantability or of fitness for a particular purpose. AutoTrade further does not represent or warrant that its service will always be available and accessible, that its operation will be uninterrupted, timely, secure and error-free or that any communication will be complete and accurate. nor does AutoTrade warrant any connection to or transmission of data from the internet, made through AutoTrade.</p>
+							<p><b>9. Indemnification</b>
+								<br />You agree to protect and fully compensate AutoTrade and their affiliates from any and all third party claims, liability, damages, expenses and costs, including, but not limited to, reasonable attorneys fees, caused by or arising from your use of the service, your violation of these terms or your infringement, or infringement by any other user of your account, of any intellectual property or other right of anyone.
+							</p>
+							<p><b>10. Jurisdiction</b>
+								<br /> AutoTrade is brand of Myfxbook, a company registered in Israel, therefore your access to and use of this website, and these Terms and Conditions, are governed by and will be construed solely in accordance with the laws of the State of Israel, without giving effect to any law or rule that would cause the laws of any jurisdiction other than Israel to be applied. Any action arising out of these Terms and Conditions or this website shall be litigated in, and only in, courts located in Israel, and you agree to submit to the exclusive jurisdiction of those courts, and further agree that they are a convenient forum for you.
+							</p>
+						</div>
+						<br />
+						<div class="form-group radio-group">
+							<span class="fund-piaochecked piaochecked yes">
+									<em class=""></em>
+									<label for="" class="noselect">I have read and agree with the terms and conditions</label>
+								</span>
+						</div>
+						<div class="form-row">
+							<div class="col-6">
+								<button type="button" class="buttons buttons-lightgray" data-dismiss="modal">Return</button>
+							</div>
+							<div class="col-6">
+								<button type="button" class="buttons buttons-success" disabled="disabled" id="apply-next">Apply</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/highcharts.js"></script>
+        <script src="js/hignchartEdit.js"></script>
+		<script src="js/chosen-1.1.8.min.js"></script>
+		<script src="js/chosen.js"></script>
+		<script src="js/NProgress.min.js"></script>
+		<script src="js/loading.js"></script>
+		<script src="js/sidebar.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>

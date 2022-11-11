@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="favicon.ico">
+		<title>GO Markets | My Accounts</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/loading.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<aside class="main-sidebar noselect">
+				<section class="sidebar">
+					<div class="sidebar-logo">
+						<a href="index.html"><img src="images/logo.svg" /></a>
+					</div>
+					<div class="sidebar-account">
+						<p>
+							<img src="images/menu-head-img.svg" alt="" />
+						</p>
+						<!--if not verified-->
+						<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="red">not verified</span>
+							<a href="">click here to verify</a>
+						</div>
+						<!--if verified-->
+						<!--<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="green">verified</span>
+						</div>-->
+					</div>
+					<div class="sidebar-menu">
+						<h5>Dashboard</h5>
+						<ul>
+							<li>
+								<a href="javascript:">
+									<i><img src="images/menu-account-status.svg" alt="" /></i>
+									<span>account status</span>
+								</a>
+							</li>
+							<li class="active">
+								<a href="index.html">
+									<i><img src="images/menu-profile.svg" alt="" /></i>
+									<span>account profile</span>
+								</a>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-management.svg" alt="" /></i>
+									<span>acount management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="online-deposit.html">change password</a>
+									</li>
+									<li>
+										<a href="withdrawal.html">change leverage</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">open additional account</a>
+									</li>
+									<li>
+										<a href="withdrawal.html">link account</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">trading history</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">subscribe to share cfd</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:">
+									<i><img src="images/menu-fund.svg" alt="" /></i>
+									<span>fund management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="download-centre.html">deposit</a>
+									</li>
+									<li>
+										<a href="trading-central.html">withdrawal</a>
+									</li>
+									<li>
+										<a href="promotion.html">internal transfer</a>
+									</li>
+									<li>
+										<a href="promotion.html">account record</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-tools.svg" alt="" /></i>
+									<span>useful tools</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="my-trading-accounts.html">upload files</a><i></i>
+									</li>
+									<li>
+										<a href="apply-sub-account.html">mt4&mt5 genesis</a>
+									</li>
+									<li>
+										<a href="link-existing-account.html">trading central</a>
+									</li>
+									<li>
+										<a href="trading-history.html">download center</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-copy-trade.svg" alt="" /></i>
+									<span>copy trade</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="my-profile.html">my accounts</a>
+									</li>
+									<li>
+										<a href="upload-documents.html">gaia fund list</a>
+									</li>
+									<li>
+										<a href="change-leverage.html">my follower list</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-sign-out">
+								<a href="login.html">
+									<i><img src="images/menu-sign-out.svg" alt="" /></i>
+									<span>log out</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="sidebar-action">
+						<h5>quick action <a href="quick-action.html" id="open-tools-modal"><img src="images/menu-quick-action.svg"/></a></h5>
+						<div class="tools-item-box">
+							<ul id="page-tools-box">
+								<li>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-deposit.svg" alt="" /></i>
+											<span>Deposit</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-withdrawal.svg" alt="" /></i>
+											<span>withdrawl</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-internal-transfer.svg" alt="" /></i>
+											<span>internal transfer</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-openaccount.svg" alt="" /></i>
+											<span>open account</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-instruction.svg" alt="" /></i>
+											<span>instructions</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<!--<span id="open-tools-modal">
+									<div class="tools-item">
+										<p><img src="../Common/Static/images/add-tools.svg" alt="" /></p>
+									</div>
+								</span>-->
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sidebar-contact">
+						<h5>contact</h5>
+						<div class="sidebar-contact-box">
+							<a href="javascript:"><img src="images/menu-mail.svg" alt="" /></a>
+							<a href="javascript:"><img src="images/menu-callback.svg" alt="" /></a>
+						</div>
+					</div>
+				</section>
+			</aside>
+
+			<header class="main-header">
+				<div class="h-box">
+					<div class="h-logo">
+						<a href="javascript:"><img src="images/logo.svg" /></a>
+					</div>
+					<a href="login.html" class="h-welcome">
+						<img src="images/welcome-smile.svg" alt="" />
+						<span>welcome!</span>
+						<img src="images/welcome-pong.svg" alt="" />
+					</a>
+					<a href="javascript:" class="h-tips">
+						<img src="images/header-tips.svg" width="22" />
+						<span>New contest next month!</span>
+					</a>
+					<a href="login.html" class="h-signout">
+						<i><img src="images/menu-sign-out.svg" alt="" width="14"/></i>
+						<span>log out</span>
+					</a>
+					<div class="c-hamburger c-hamburger--htla noselect sidebar-toggle" data-toggle="push-menu">
+						<span></span>
+					</div>
+
+				</div>
+			</header>
+
+			<div class="content-wrapper">
+				<div class="box">
+					<div class="box-title">
+						<span class="title-checked">my accounts</span>
+					</div>
+					<div class="box-body">
+						<div class="myaccount-box">
+							<div class="table-responsive">
+								<table class="table table-borderless">
+									<thead>
+										<tr>
+											<th scope="col">mode</th>
+											<th scope="col">name</th>
+											<th scope="col">account number</th>
+											<th scope="col">balance</th>
+											<th scope="col">equity</th>
+											<th scope="col">status</th>
+											<th scope="col">action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><span class="label label-primary">follower</span></td>
+											<td>test tran nguyen thi (9th account)</td>
+											<td>697098 </td>
+											<td>$ 15331.97</td>
+											<td>$ 15331.97</td>
+											<td><span class="label label-success">approved</span></td>
+											<td>
+												<button type="button" class="buttons2 m-buttons buttons2-orange" onclick="window.open('manage.html')">manage</button>
+												<button type="button" class="buttons2 m-buttons buttons2-primary" onclick="window.open('analysis.html')">analysis</button>
+											</td>
+										</tr>
+										<tr>
+											<td><span class="label label-primary">follower</span></td>
+											<td>test tran nguyen thi (9th account)</td>
+											<td>697098 </td>
+											<td>$ 15331.97</td>
+											<td>$ 15331.97</td>
+											<td><span class="label label-success">approved</span></td>
+											<td>
+												<button type="button" class="buttons2 m-buttons buttons2-orange" onclick="window.open('manage.html')">manage</button>
+												<button type="button" class="buttons2 m-buttons buttons2-primary" onclick="window.open('analysis.html')">analysis</button>
+											</td>
+										</tr>
+										<tr>
+											<td><span class="label label-primary">follower</span></td>
+											<td>test tran nguyen thi (9th account)</td>
+											<td>697098 </td>
+											<td>$ 15331.97</td>
+											<td>$ 15331.97</td>
+											<td><span class="label label-success">approved</span></td>
+											<td>
+												<button type="button" class="buttons2 m-buttons buttons2-orange" onclick="window.open('manage.html')">manage</button>
+												<button type="button" class="buttons2 m-buttons buttons2-primary" onclick="window.open('analysis.html')">analysis</button>
+											</td>
+										</tr>
+										<tr>
+											<td><span class="label label-primary">follower</span></td>
+											<td>test tran nguyen thi (9th account)</td>
+											<td>697098 </td>
+											<td>$ 15331.97</td>
+											<td>$ 15331.97</td>
+											<td><span class="label label-success">approved</span></td>
+											<td>
+												<button type="button" class="buttons2 m-buttons buttons2-orange" onclick="window.open('manage.html')">manage</button>
+												<button type="button" class="buttons2 m-buttons buttons2-primary" onclick="window.open('analysis.html')">analysis</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<nav class="nav-box">  
+								<span class="table-total">100 entries in total</span>
+								<ul class="pagination justify-content-end">
+									<!--<li class="disabled prev">
+										<a href="#"><img src="images/next-icon.svg" alt="" /></a>
+									</li>-->
+									<li class="current">
+										<a href="javascript:">1</a>
+									</li>
+									<li>
+										<a href="javascript:">2</a>
+									</li>
+									<li>
+										<a href="javascript:">3</a>
+									</li>
+									<li class="next">
+										<a href="javascript:"><img src="images/next-icon.svg" alt="" /></a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+
+					</div>
+				</div>
+				<div class="footer-box">
+					<div class="footer-link">
+						<a href="" target="_blank">privacy policy</a> <b></b>
+						<a href="" target="_blank">Product Disclosure Statement</a>
+					</div>
+					<div class="footer-text">
+						<p>GO Markets brand is authorized and regulated in various jurisdictions.</p>
+						<p>Risk Warning: Trading Forex and Derivatives carries a high level of risk, including the risk of losing substantially more than your initial deposit. Leverage magnifies both gains and losses. You should only trade in risk capital (capital you can afford to lose). Trading leveraged products may not be suitable for all investors, please ensure that you fully understand the risks involved, and take into consideration your level of experience, investment objectives and seek independent advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to use the services provided by GO Markets based on the legal requirements in his/her country of residence. Before you start to trade, please take some to fully read our
+							<a href="" target="_blank">Product Disclosure Statement(PDS)</a>.</p>
+						<p>This website is owned and operated by GO Markets. All contents © <span class="footer-year"></span> GO Markets. All rights reserved.</p>
+					</div>
+
+				</div>
+
+			</div>
+</div>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/NProgress.min.js"></script>
+			<script src="js/loading.js"></script>
+			<script src="js/sidebar.js"></script>
+			<script src="js/index.js"></script>
+
+	</body>
+
+</html>

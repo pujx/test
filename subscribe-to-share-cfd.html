@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="favicon.ico">
+		<title>GO Markets | Subscribe To Share CFD</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/loading.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<aside class="main-sidebar noselect">
+				<section class="sidebar">
+					<div class="sidebar-logo">
+						<a href="index.html"><img src="images/logo.svg" /></a>
+					</div>
+					<div class="sidebar-account">
+						<p>
+							<img src="images/menu-head-img.svg" alt="" />
+						</p>
+						<!--if not verified-->
+						<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="red">not verified</span>
+							<a href="">click here to verify</a>
+						</div>
+						<!--if verified-->
+						<!--<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="green">verified</span>
+						</div>-->
+					</div>
+					<div class="sidebar-menu">
+						<h5>Dashboard</h5>
+						<ul>
+							<li>
+								<a href="javascript:">
+									<i><img src="images/menu-account-status.svg" alt="" /></i>
+									<span>account status</span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html">
+									<i><img src="images/menu-profile.svg" alt="" /></i>
+									<span>account profile</span>
+								</a>
+							</li>
+							<li class="treeview active menu-open menu-icon-down">
+								<a href="javascript:">
+									<i><img src="images/menu-management.svg" alt="" /></i>
+									<span>acount management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="online-deposit.html" class="linkChecked">change password</a>
+									</li>
+									<li>
+										<a href="withdrawal.html">change leverage</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">open additional account</a>
+									</li>
+									<li>
+										<a href="withdrawal.html">link account</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">trading history</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">subscribe to share cfd</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:">
+									<i><img src="images/menu-fund.svg" alt="" /></i>
+									<span>fund management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="download-centre.html">deposit</a>
+									</li>
+									<li>
+										<a href="trading-central.html">withdrawal</a>
+									</li>
+									<li>
+										<a href="promotion.html">internal transfer</a>
+									</li>
+									<li>
+										<a href="promotion.html">account record</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-tools.svg" alt="" /></i>
+									<span>useful tools</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="my-trading-accounts.html">upload files</a><i></i>
+									</li>
+									<li>
+										<a href="apply-sub-account.html">mt4&mt5 genesis</a>
+									</li>
+									<li>
+										<a href="link-existing-account.html">trading central</a>
+									</li>
+									<li>
+										<a href="trading-history.html">download center</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-copy-trade.svg" alt="" /></i>
+									<span>copy trade</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="my-profile.html">my accounts</a>
+									</li>
+									<li>
+										<a href="upload-documents.html">gaia fund list</a>
+									</li>
+									<li>
+										<a href="change-leverage.html">my follower list</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-sign-out">
+								<a href="login.html">
+									<i><img src="images/menu-sign-out.svg" alt="" /></i>
+									<span>log out</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="sidebar-action">
+						<h5>quick action <a href="quick-action.html" id="open-tools-modal"><img src="images/menu-quick-action.svg"/></a></h5>
+						<div class="tools-item-box">
+							<ul id="page-tools-box">
+								<li>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-deposit.svg" alt="" /></i>
+											<span>Deposit</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-withdrawal.svg" alt="" /></i>
+											<span>withdrawl</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-internal-transfer.svg" alt="" /></i>
+											<span>internal transfer</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-openaccount.svg" alt="" /></i>
+											<span>open account</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-instruction.svg" alt="" /></i>
+											<span>instructions</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<!--<span id="open-tools-modal">
+									<div class="tools-item">
+										<p><img src="../Common/Static/images/add-tools.svg" alt="" /></p>
+									</div>
+								</span>-->
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sidebar-contact">
+						<h5>contact</h5>
+						<div class="sidebar-contact-box">
+							<a href="javascript:"><img src="images/menu-mail.svg" alt="" /></a>
+							<a href="javascript:"><img src="images/menu-callback.svg" alt="" /></a>
+						</div>
+					</div>
+				</section>
+			</aside>
+
+			<header class="main-header">
+				<div class="h-box">
+					<div class="h-logo">
+						<a href="javascript:"><img src="images/logo.svg" /></a>
+					</div>
+					<a href="login.html" class="h-welcome">
+						<img src="images/welcome-smile.svg" alt="" />
+						<span>welcome!</span>
+						<img src="images/welcome-pong.svg" alt="" />
+					</a>
+					<a href="javascript:" class="h-tips">
+						<img src="images/header-tips.svg" width="22" />
+						<span>New contest next month!</span>
+					</a>
+					<a href="login.html" class="h-signout">
+						<i><img src="images/menu-sign-out.svg" alt="" width="14"/></i>
+						<span>log out</span>
+					</a>
+					<div class="c-hamburger c-hamburger--htla noselect sidebar-toggle" data-toggle="push-menu">
+						<span></span>
+					</div>
+
+				</div>
+			</header>
+
+			<div class="content-wrapper">
+				<div class="box">
+					<div class="box-title">
+						<span class="title-checked">subscribe to share cfd</span>
+					</div>
+					<div class="box-body">
+						<div class="share-cfd-box">
+							<div class="share-cfd-top bor5">
+								<b>Trade on U.S. , Australian Share Markets at GO Markets</b>
+								<b>Open an account and trade popular shares including Apple, Google, Meta, all under one roof. </b>
+							</div>
+							<div class="share-cfd-table">
+								<p>A breakdown of the costs associated with Share CFD trading with GO Markets is provided in the table below : </p>
+								<div class="table-responsive">
+									<table class="table table-bordered table-hover table-striped">
+										<thead>
+											<tr>
+												<th>Markets</th>
+												<th>Subscription Fee</th>
+												<th>Rebate Requirement</th>
+												<th>Commission Per Side</th>
+												<th>Status</th>
+												<th>Subscribe</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Australia</td>
+												<td>AUD $22.00</td>
+												<td>4 Trades</td>
+												<td>0.08%</td>
+												<td>N / A</td>
+												<td>
+													<button type="button" class="buttons buttons-success">Subscribe</button>
+												</td>
+											</tr>
+											<tr>
+												<td>USA</td>
+												<td>USD $0.00</td>
+												<td>0 Trades</td>
+												<td>US $0.02 per share</td>
+												<td>Subscribed</td>
+												<td>
+													<button type="button" class="buttons buttons-danger">Unsubscribe</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+							<div class="share-cfd-foot">
+								<div class="share-cfd-example">
+									<b>Example:</b>
+									<p><i>Commission on trading Australian Share CFDs for one side: </i>Volume*Open price*0.08% </p>
+									<p>&nbsp;&nbsp;&nbsp;volume = 100 shares</p>
+									<p>&nbsp;&nbsp;&nbsp;open price = AUD $3.490</p>
+									<br />
+									<p>Commission = 100*3.490*0.08% = AUD $0.27 => ~US $0.20 per one side </p>
+									<p><i>Commission on trading U.S. Share CFDs for one side: </i>Volume * US $0.12</p>
+									<p>&nbsp;&nbsp;&nbsp;volume = 9 shares</p>
+									<p>Commission = 9*$0.12= US $1.08 per one side </p>
+								</div>
+								<div class="share-cfd-note">
+									<b>Note:</b>
+									<p><em>*</em> Share CFD trading implements a T+0 settlement schedule. Shares bought on the same day can be sold on the same day.</p>
+									<p><em>*</em> Please note, there is no limit up and limit down in trading Share CFDs; please be aware that the investment risk is high.</p>
+									<p><em>*</em> You must have a minimum balance of 100 in the selected base currency on your account to subscribe to AU Shares.</p>
+									<p><em>*</em> The subscription fee will be automatically charged from your account at the end of each calendar month or when you unsubscribe. When you trade Australian Shares 4 times (one side) within one month, you can request for the subscription fee to be reimbursed.</p>
+									<p><em>*</em> Share CFDs’ product offering may vary based on the market condition. GO Markets reserves the right to adjust the products without prior notice.</p>
+									<p><em>*</em> The maximum leverage available for US Share CFDs is up to 1:20, and 1:10 for AU Share CFDs. All trading conditions will be subject to the information specified in the "Details" section on MT5.</p>
+									<p><em>*</em> Please note that the swap for Share CFD will be charged 3 times every Friday.</p>
+									<p><em>*</em> To avoid unnecessary financial losses, please fully understand relevant trading rules and potential risks involved in trading Share CFDs before start trading. </p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="footer-box">
+					<div class="footer-link">
+						<a href="" target="_blank">privacy policy</a> <b></b>
+						<a href="" target="_blank">Product Disclosure Statement</a>
+					</div>
+					<div class="footer-text">
+						<p>GO Markets brand is authorized and regulated in various jurisdictions.</p>
+						<p>Risk Warning: Trading Forex and Derivatives carries a high level of risk, including the risk of losing substantially more than your initial deposit. Leverage magnifies both gains and losses. You should only trade in risk capital (capital you can afford to lose). Trading leveraged products may not be suitable for all investors, please ensure that you fully understand the risks involved, and take into consideration your level of experience, investment objectives and seek independent advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to use the services provided by GO Markets based on the legal requirements in his/her country of residence. Before you start to trade, please take some to fully read our
+							<a href="" target="_blank">Product Disclosure Statement(PDS)</a>.</p>
+						<p>This website is owned and operated by GO Markets. All contents © <span class="footer-year"></span> GO Markets. All rights reserved.</p>
+					</div>
+
+				</div>
+			</div>
+</div>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/NProgress.min.js"></script>
+			<script src="js/loading.js"></script>
+			<script src="js/sidebar.js"></script>
+			<script src="js/index.js"></script>
+	</body>
+
+</html>

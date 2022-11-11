@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="favicon.ico">
+		<title>GO Markets | Internal Transfer</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/loading.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<aside class="main-sidebar noselect">
+				<section class="sidebar">
+					<div class="sidebar-logo">
+						<a href="index.html"><img src="images/logo.svg" /></a>
+					</div>
+					<div class="sidebar-account">
+						<p>
+							<img src="images/menu-head-img.svg" alt="" />
+						</p>
+						<!--if not verified-->
+						<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="red">not verified</span>
+							<a href="">click here to verify</a>
+						</div>
+						<!--if verified-->
+						<!--<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="green">verified</span>
+						</div>-->
+					</div>
+					<div class="sidebar-menu">
+						<h5>Dashboard</h5>
+						<ul>
+							<li>
+								<a href="javascript:">
+									<i><img src="images/menu-account-status.svg" alt="" /></i>
+									<span>account status</span>
+								</a>
+							</li>
+							<li class="active">
+								<a href="index.html">
+									<i><img src="images/menu-profile.svg" alt="" /></i>
+									<span>account profile</span>
+								</a>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-management.svg" alt="" /></i>
+									<span>acount management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="online-deposit.html">change password</a>
+									</li>
+									<li>
+										<a href="withdrawal.html">change leverage</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">open additional account</a>
+									</li>
+									<li>
+										<a href="withdrawal.html">link account</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">trading history</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">subscribe to share cfd</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:">
+									<i><img src="images/menu-fund.svg" alt="" /></i>
+									<span>fund management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="download-centre.html">deposit</a>
+									</li>
+									<li>
+										<a href="trading-central.html">withdrawal</a>
+									</li>
+									<li>
+										<a href="promotion.html">internal transfer</a>
+									</li>
+									<li>
+										<a href="promotion.html">account record</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-tools.svg" alt="" /></i>
+									<span>useful tools</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="my-trading-accounts.html">upload files</a><i></i>
+									</li>
+									<li>
+										<a href="apply-sub-account.html">mt4&mt5 genesis</a>
+									</li>
+									<li>
+										<a href="link-existing-account.html">trading central</a>
+									</li>
+									<li>
+										<a href="trading-history.html">download center</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-copy-trade.svg" alt="" /></i>
+									<span>copy trade</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="my-profile.html">my accounts</a>
+									</li>
+									<li>
+										<a href="upload-documents.html">gaia fund list</a>
+									</li>
+									<li>
+										<a href="change-leverage.html">my follower list</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-sign-out">
+								<a href="login.html">
+									<i><img src="images/menu-sign-out.svg" alt="" /></i>
+									<span>log out</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="sidebar-action">
+						<h5>quick action <a href="quick-action.html" id="open-tools-modal"><img src="images/menu-quick-action.svg"/></a></h5>
+						<div class="tools-item-box">
+							<ul id="page-tools-box">
+								<li>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-deposit.svg" alt="" /></i>
+											<span>Deposit</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-withdrawal.svg" alt="" /></i>
+											<span>withdrawl</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-internal-transfer.svg" alt="" /></i>
+											<span>internal transfer</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-openaccount.svg" alt="" /></i>
+											<span>open account</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-instruction.svg" alt="" /></i>
+											<span>instructions</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<!--<span id="open-tools-modal">
+									<div class="tools-item">
+										<p><img src="../Common/Static/images/add-tools.svg" alt="" /></p>
+									</div>
+								</span>-->
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sidebar-contact">
+						<h5>contact</h5>
+						<div class="sidebar-contact-box">
+							<a href="javascript:"><img src="images/menu-mail.svg" alt="" /></a>
+							<a href="javascript:"><img src="images/menu-callback.svg" alt="" /></a>
+						</div>
+					</div>
+				</section>
+			</aside>
+
+			<header class="main-header">
+				<div class="h-box">
+					<div class="h-logo">
+						<a href="javascript:"><img src="images/logo.svg" /></a>
+					</div>
+					<a href="login.html" class="h-welcome">
+						<img src="images/welcome-smile.svg" alt="" />
+						<span>welcome!</span>
+						<img src="images/welcome-pong.svg" alt="" />
+					</a>
+					<a href="javascript:" class="h-tips">
+						<img src="images/header-tips.svg" width="22" />
+						<span>New contest next month!</span>
+					</a>
+					<a href="login.html" class="h-signout">
+						<i><img src="images/menu-sign-out.svg" alt="" width="14"/></i>
+						<span>log out</span>
+					</a>
+					<div class="c-hamburger c-hamburger--htla noselect sidebar-toggle" data-toggle="push-menu">
+						<span></span>
+					</div>
+
+				</div>
+			</header>
+
+			<div class="content-wrapper">
+				<div class="box">
+					<div class="box-title">
+						<span class="title-checked">internal transfer</span>
+					</div>
+					<div class="box-body">
+						<div class="fund-text bg-yellow bor5">
+							<p><b>Please be advised!</b></p>
+							<p>* To avoid your account being stopped out, we recommend you close all positions before submitting your transfer application;</p>
+							<p>* If your transfer-out account has open positions, or if the remaining margin level of your transfer-out account is higher than 300% after transferring funds, the system will automatically compete your transfer application;</p>
+							<p>* We allow transfer application for a trading account that has open positions. However, to ensure the security of the open positions of the transfer-out account, we will have the following restrictions:</p>
+							<p>
+								&nbsp;&nbsp;&nbsp;1: If your account's margin level becomes lower than 300% after the transfer, your request will not be processed;
+								<br /> &nbsp;&nbsp;&nbsp;2: The formula of margin level calculation: (Equity – Credit)/Margin * 100%;
+							</p>
+
+							<p class="mb15">* If you participate in a credit bonus promotion, your bonus will be deducted accordingly.</p>
+						</div><br /><br /><br />
+						<div class="row justify-content-xl-center">
+							<div class="col-xl-6 fund-box">
+								<form>
+									<div class="form-group">
+										<label for="">account name <i>*</i></label>
+										<input type="text" class="form-control" id="" placeholder="Tran Nguyen Thi - (12th Account)- 2nd Fund Manager">
+									</div>
+									<div class="form-group">
+										<label for="">transfer from account <i>*</i></label>
+										<select id="" class="form-control form-control-chosen">
+											<option selected>637516</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="">available equity before transfer <i>*</i></label>
+										<input type="text" class="form-control" id="" value="$ 1490.00" readonly="readonly">
+									</div>
+									<div class="form-group">
+										<label for="">transfer-in account <i>*</i></label>
+										<select id="" class="form-control form-control-chosen">
+											<option selected>637526</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="">account balance after transfer</label>
+										<input type="text" class="form-control" id="" value="$ 506.00" readonly="readonly">
+									</div>
+									<div class="form-group">
+										<label for="">transfer amount <i>*</i></label>
+										<input type="text" class="form-control" id="" placeholder="$ 10000.00">
+										<p class="mt5">If you trade in the transfer-out account and there is an unclosed position during the transfer, you will be responsible for the risks of the account being stopped out due to the transfer.</p>
+									</div>
+									<div class="form-group">
+										<label for="">note</label>
+										<input type="text" class="form-control" id="" placeholder="type your note here">
+									</div>
+									<div class="form-row justify-content-xl-end">
+										<div class="col-12 col-xl-5">
+											<button type="button" class="buttons buttons-success">Submit</button>
+										</div>
+									</div>
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="box-title">
+						<span class="title-checked">Withdrawal specification</span>
+					</div>
+					<div class="box-body">
+						<div class="fund-btm-box">
+							<div>
+								<p>Important Information</p>
+								<p>• GO Markets strictly prohibits third-party payments. All funds deposited into your trading account must come from a source that bears the account holder’s name. Equally, all withdrawals must be returned to a bank account in the same name as your GO Markets account due to third party transaction regulations.</p>
+								<p>• GO Markets will NOT be responsible for any delays/errors caused by payment systems, or caused by clients and/or a third party providing incorrect information.</p>
+								<p>• The name of the beneficiary bank account must be the same as the GO Markets trading account holder name. Otherwise, your withdrawal request will be rejected by GO Markets as a third party withdrawal.</p>
+								<p>• When you submit a withdrawal request, please make sure the amount of usable margin in your trading account is sufficient. Your withdrawal request will be revoked if the amount of your withdrawal request is inconsistent due to the fluctuation of your usable margin. If you have an open position in your trading account, be aware that the amount you withdraw may result in the closing of your position due to insufficient margin balance.</p>
+								<p>• If your remaining margin ratio after withdrawal is less than 300%, the withdrawal application will not be accepted.</p>
+								<p>Processing Timeframe</p>
+								<p>The withdrawal application for Live accounts normally will be processed within 1-2 working days.</p>
+								<p>
+									Minimum withdrawal amount is 50 USD
+									<br /> IB minimum withdrawal amount is 150 USD
+								</p>
+								<p>According to the anti-money laundering policy, account that have not completed with require volume will subject to an additional 4.2% via Neteller and 3% via other channels commission on withdrawal.</p>
+							</div>
+
+							<div>
+								<p><b>Minimum trading requirement</b></p>
+								<div class="table-responsive">
+									<table class="table table-borderless common-table">
+										<thead>
+											<tr>
+												<th scope="col" width="33.333%">vND Deposit</th>
+												<th scope="col" width="33.333%">Standard</th>
+												<th scope="col" width="33.333%">Pro/ Plus</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Forex / Metals</td>
+												<td>Deposit/1000 </td>
+												<td>Deposit/500</td>
+											</tr>
+											<tr>
+												<td>Oil / Indices</td>
+												<td>Deposit/100</td>
+												<td>Deposit/100</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-borderless common-table">
+										<thead>
+											<tr>
+												<th scope="col" width="33.333%">Neteller Deposit</th>
+												<th scope="col" width="33.333%">Standard</th>
+												<th scope="col" width="33.333%">Pro/ Plus</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Forex / Metals</td>
+												<td>Deposit/100</td>
+												<td>Deposit/80</td>
+											</tr>
+											<tr>
+												<td>Oil / Indices</td>
+												<td>Deposit/50</td>
+												<td>Deposit/50</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+
+							<p>Example:
+
+								<br /> • Standard account
+								<br /> • Deposited 1000 USD
+							</p>
+							<p>
+								Minimum lot require for trading Forex/ Metals only: 1000/1000 = 1 lot
+								<br /> Minimum lot require for trading Oil/ Indices only: 1000/100 = 10 lots
+							</p>
+							<p>
+								Note: Share trading does not count towards minimum trading lots
+							</p>
+							<p class="c-red">
+								*If your Neteller account has been closed, your withdrawal transaction will incur an administration fee of 3.5%.
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="footer-box">
+					<div class="footer-link">
+						<a href="" target="_blank">privacy policy</a> <b></b>
+						<a href="" target="_blank">Product Disclosure Statement</a>
+					</div>
+					<div class="footer-text">
+						<p>GO Markets brand is authorized and regulated in various jurisdictions.</p>
+						<p>Risk Warning: Trading Forex and Derivatives carries a high level of risk, including the risk of losing substantially more than your initial deposit. Leverage magnifies both gains and losses. You should only trade in risk capital (capital you can afford to lose). Trading leveraged products may not be suitable for all investors, please ensure that you fully understand the risks involved, and take into consideration your level of experience, investment objectives and seek independent advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to use the services provided by GO Markets based on the legal requirements in his/her country of residence. Before you start to trade, please take some to fully read our
+							<a href="" target="_blank">Product Disclosure Statement(PDS)</a>.</p>
+						<p>This website is owned and operated by GO Markets. All contents © <span class="footer-year"></span> GO Markets. All rights reserved.</p>
+					</div>
+
+				</div>
+			</div>
+</div>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/chosen-1.1.8.min.js"></script>
+			<script src="js/chosen.js"></script>
+			<script src="js/NProgress.min.js"></script>
+			<script src="js/loading.js"></script>
+			<script src="js/sidebar.js"></script>
+			<script src="js/index.js"></script>
+	</body>
+
+</html>

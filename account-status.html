@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="favicon.ico">
+		<title>GO Markets | Account Status</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/owl.carousel.css" />
+		<link rel="stylesheet" href="css/jquery-confirm.min.css" />
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/loading.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<aside class="main-sidebar noselect">
+				<section class="sidebar">
+					<div class="sidebar-logo">
+						<a href="index.html"><img src="images/logo.svg" /></a>
+					</div>
+					<div class="sidebar-account">
+						<p>
+							<img src="images/menu-head-img.svg" alt="" />
+						</p>
+						<!--if not verified-->
+						<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="red">not verified</span>
+							<a href="">click here to verify</a>
+						</div>
+						<!--if verified-->
+						<!--<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="green">verified</span>
+						</div>-->
+					</div>
+					<div class="sidebar-menu">
+						<h5>Dashboard</h5>
+						<ul>
+							<li class="active">
+								<a href="javascript:">
+									<i><img src="images/menu-account-status.svg" alt="" /></i>
+									<span>account status</span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html">
+									<i><img src="images/menu-profile.svg" alt="" /></i>
+									<span>account profile</span>
+								</a>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-management.svg" alt="" /></i>
+									<span>acount management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="online-deposit.html">change password</a>
+									</li>
+									<li>
+										<a href="withdrawal.html">change leverage</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">open additional account</a>
+									</li>
+									<li>
+										<a href="withdrawal.html">link account</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">trading history</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">subscribe to share cfd</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:">
+									<i><img src="images/menu-fund.svg" alt="" /></i>
+									<span>fund management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="download-centre.html">deposit</a>
+									</li>
+									<li>
+										<a href="trading-central.html">withdrawal</a>
+									</li>
+									<li>
+										<a href="promotion.html">internal transfer</a>
+									</li>
+									<li>
+										<a href="promotion.html">account record</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-tools.svg" alt="" /></i>
+									<span>useful tools</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="my-trading-accounts.html">upload files</a><i></i>
+									</li>
+									<li>
+										<a href="apply-sub-account.html">mt4&mt5 genesis</a>
+									</li>
+									<li>
+										<a href="link-existing-account.html">trading central</a>
+									</li>
+									<li>
+										<a href="trading-history.html">download center</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-copy-trade.svg" alt="" /></i>
+									<span>copy trade</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="my-profile.html">my accounts</a>
+									</li>
+									<li>
+										<a href="upload-documents.html">gaia fund list</a>
+									</li>
+									<li>
+										<a href="change-leverage.html">my follower list</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-sign-out">
+								<a href="login.html">
+									<i><img src="images/menu-sign-out.svg" alt="" /></i>
+									<span>log out</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="sidebar-action">
+						<h5>quick action <a href="quick-action.html" id="open-tools-modal"><img src="images/menu-quick-action.svg"/></a></h5>
+						<div class="tools-item-box">
+							<ul id="page-tools-box">
+								<li>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-deposit.svg" alt="" /></i>
+											<span>Deposit</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-withdrawal.svg" alt="" /></i>
+											<span>withdrawl</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-internal-transfer.svg" alt="" /></i>
+											<span>internal transfer</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-openaccount.svg" alt="" /></i>
+											<span>open account</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<a href="" data-box="lList1">
+										<div class="tools-item">
+											<i><img src="images/tools-instruction.svg" alt="" /></i>
+											<span>instructions</span>
+											<p><img src="images/action-close.svg" alt="" width="15" /></p>
+										</div>
+									</a>
+									<!--<span id="open-tools-modal">
+									<div class="tools-item">
+										<p><img src="../Common/Static/images/add-tools.svg" alt="" /></p>
+									</div>
+								</span>-->
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sidebar-contact">
+						<h5>contact</h5>
+						<div class="sidebar-contact-box">
+							<a href="javascript:"><img src="images/menu-mail.svg" alt="" /></a>
+							<a href="javascript:"><img src="images/menu-callback.svg" alt="" /></a>
+						</div>
+					</div>
+				</section>
+			</aside>
+
+			<header class="main-header">
+				<div class="h-box">
+					<div class="h-logo">
+						<a href="javascript:"><img src="images/logo.svg" /></a>
+					</div>
+					<a href="login.html" class="h-welcome">
+						<img src="images/welcome-smile.svg" alt="" />
+						<span>welcome!</span>
+						<img src="images/welcome-pong.svg" alt="" />
+					</a>
+					<a href="javascript:" class="h-tips">
+						<img src="images/header-tips.svg" width="22" />
+						<span>New contest next month!</span>
+					</a>
+					<a href="login.html" class="h-signout">
+						<i><img src="images/menu-sign-out.svg" alt="" width="14"/></i>
+						<span>log out</span>
+					</a>
+					<div class="c-hamburger c-hamburger--htla noselect sidebar-toggle" data-toggle="push-menu">
+						<span></span>
+					</div>
+
+				</div>
+				<div class="h-verify-tips bor10">
+					your account is not verified. Please
+					<a href="javascript:">verify your account</a> to take full advantage of our services!
+				</div>
+			</header>
+
+			<div class="content-wrapper">
+				<div class="box">
+					<div class="container-fluid">
+						<div class="row">
+
+							<style>
+								.info-box {
+									display: block;
+									font-size: 24px;
+									font-weight: bold;
+									text-transform: uppercase;
+									position: relative;
+									padding: 42px 20px;
+									text-align: center;
+									color: #fff;
+									overflow: hidden;
+									transition: all .5s
+								}
+								
+								.info-box .info-box-text {
+									position: relative;
+									z-index: 1;
+									transition: all .5s
+								}
+								
+								.info-bg {
+									transition: all .5s
+								}
+								
+								.info-box:hover .info-bg {
+									transform: skew(5deg, 0deg);
+									transition: all .5s
+								}
+								
+								.info-bg {
+									width: 100%;
+									height: 100%;
+									position: absolute;
+									left: 0;
+									top: 0;
+									bottom: 0;
+									right: 0;
+									transition: all .5s
+								}
+								
+								.info-box i {}
+								
+								.info-box b {}
+								
+								.info-box:hover {
+									color: #fff;
+									transition: all .5s
+								}
+								
+								.info-box.info-deposit {
+									-webkit-transition: all .5s;
+									background: linear-gradient(92.07deg, #48CC7F 0%, #00481E 100%);
+									transition: all .5s
+								}
+								
+								.info-box.info-deposit:hover {
+									transition: all .5s;
+									background: linear-gradient(92.07deg, #48CC7F 0%, #008939 100%);
+									transition: all .5s
+								}
+								
+								.info-box.info-withdrawal {
+									background: linear-gradient(92.07deg, #1F6DCA 0%, #00244F 100%);
+									transition: all .5s
+								}
+								
+								.info-box.info-withdrawal:hover {
+									background: linear-gradient(92.07deg, #1F6DCA 0%, #003C84 100%);
+									transition: all .5s
+								}
+								
+								.info-box.info-transfer {
+									background: linear-gradient(92.07deg, #F26B3E 0%, #441100 100%);
+									transition: all .5s
+								}
+								
+								.info-box.info-transfer:hover {
+									background: linear-gradient(92.07deg, #F26B3E 0%, #812000 100%);
+									transition: all .5s
+								}
+								
+								@media only screen and (max-width:1199px) {
+									.info-box {
+										font-size: 16px;
+										padding: 20px;
+										margin: 5px 0
+									}
+								}
+								
+								@media only screen and (max-width:991px) {
+									.box {
+										margin: 10px
+									}
+								}
+							</style>
+
+							<div class="col-xl-4">
+								<a href="javascript:" class="info-box info-deposit bor5">
+									<img src="images/info-green-bg.png" alt="" class="info-bg" />
+									<div class="info-box-text">
+										<i><img src="images/tools-deposit.svg"/></i>
+										<b>deposit</b>
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-4">
+								<a href="javascript:" class="info-box info-withdrawal bor5">
+									<img src="images/info-blue-bg.png" alt="" class="info-bg" />
+									<div class="info-box-text">
+										<i><img src="images/tools-withdrawal.svg"/></i>
+										<b>withdrawal</b>
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-4">
+								<a href="javascript:" class="info-box info-transfer bor5">
+									<img src="images/info-orange-bg.png" alt="" class="info-bg" />
+									<div class="info-box-text">
+										<i><img src="images/tools-internal-transfer.svg"/></i>
+										<b>internal transfer</b>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="box-body">
+						<div class="tab-box">
+							<div class="form-group">
+								<div class="form-row tab-box">
+									<div class="">
+										<a href="javascript:" class="on">
+											standard account
+										</a>
+									</div>
+									<div class="">
+										<a href="javascript:">
+											pro account
+										</a>
+									</div>
+<img src="images/icon-check.svg" alt="" />
+
+<img src="images/icon-toogle.svg" alt="" />
+								<img src="images/icon-faster-w.svg" alt="" />
+								
+								<style>
+										.open-account-link>div {
+											position: relative;
+										}
+										
+										.open-account-link>div span {
+											position: absolute;
+											left: -95px;
+											top: 0;
+											width: 82px;
+											display: block;
+											background: #fff;
+											padding: 5px;
+											z-index: 1;
+											box-shadow: 2px 2px 7px -1px #595757;
+											-webkit-box-shadow: 2px 2px 7px -1px #595757;
+											-moz-box-shadow: 0 1px 3px 0px #595757;
+											border: 1px solid #eee;
+											text-align: center;
+											border-radius: 4px;
+											-webkit-border-radius: 4px;
+											-moz-border-radius: 4px;
+											-ms-border-radius: 4px;
+											visibility: hidden;
+											opacity: 0;
+											transform: translateX(-10px);
+											-moz-transform: translateX(-10px);
+											-ms-transform: translateX(-10px);
+											-webkit-transition: all 0.5s ease-in-out;
+											-moz-transition: all 0.5s ease-in-out;
+											-ms-transition: all 0.5s ease-in-out;
+											transition: all 0.5s ease-in-out;
+										}
+										
+										.open-account-link>div span:after {
+											position: absolute;
+											width: 0;
+											height: 0;
+											border-left: 8px solid #ffffff;
+											border-right: 8px solid transparent;
+											border-bottom: 8px solid transparent;
+											border-top: 8px solid transparent;
+											top: 7px;
+											right: -15px;
+											content: "";
+											display: block;
+											clear: both;
+										}
+										
+										.open-account-link a {
+											display: block;
+											margin: 20px 5px;
+											height: 30px;
+										}
+										
+										.open-account-link>div:hover span {
+											visibility: visible;
+											opacity: 1;
+											transform: translateX(0px);
+											-moz-transform: translateX(0px);
+											-ms-transform: translateX(0px)
+										}
+									</style>
+									<div class="open-account-link">
+										<div>
+											<a href=""><img src="images/plus.svg" alt="" /><span>open account</span></a>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="form-row tab-box">
+									<div class="">
+										<a href="javascript:" class="on">
+											mt4
+										</a>
+									</div>
+									<div class="">
+										<a href="javascript:">
+											mt5
+										</a>
+									</div>
+								</div>
+							</div>
+							<a href="javascript:">live account</a>
+						</div>
+
+						<div>
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </button>
+      </h2>
+									</div>
+
+									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+										<div class="card-body">
+											Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingTwo">
+										<h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </button>
+      </h2>
+									</div>
+									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+										<div class="card-body">
+											Some placeholder content for the second accordion panel. This panel is hidden by default.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingThree">
+										<h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </button>
+      </h2>
+									</div>
+									<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div class="card-body">
+											And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-title">
+						<span class="title-checked">Promotions</span>
+					</div>
+					<div class="box-body">
+						<div class="bonus-slider">
+							<figure>
+								<div>
+									<a href="javascript:" data-target="#creditBonus-modal" data-toggle="modal"><img src="images/pro-lg-banner1.jpg" class="d-block w-100"></a>
+								</div>
+							</figure>
+							<figure>
+								<div>
+									<a href="javascript:" data-target="#tradingBonus-modal" data-toggle="modal"><img src="images/pro-lg-banner2.jpg" class="d-block w-100"></a>
+								</div>
+							</figure>
+							<figure>
+								<div>
+									<a href="javascript:" data-target="#contestBonus-modal" data-toggle="modal"><img src="images/pro-lg-banner3.jpg" class="d-block w-100"></a>
+								</div>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="box-title">
+						<span class="title-checked">announcements</span>
+					</div>
+					<div class="box-body">
+						<div class="table-responsive">
+							<table class="table table-borderless announcements-table">
+								<thead>
+									<tr>
+										<th class="text-left" scope="col">Titles</th>
+										<th width="150" scope="col" class="text-center">Date</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="text-left">
+											<a href="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</a>
+										</td>
+										<td width="150">2022-02-10 08:02:37</td>
+									</tr>
+									<tr>
+										<td class="text-left">
+											<a href="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</a>
+										</td>
+										<td width="150">2022-02-10 08:02:37</td>
+									</tr>
+									<tr>
+										<td class="text-left">
+											<a href="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</a>
+										</td>
+										<td width="150">2022-02-10 08:02:37</td>
+									</tr>
+									<tr>
+										<td class="text-left">
+											<a href="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</a>
+										</td>
+										<td width="150">2022-02-10 08:02:37</td>
+									</tr>
+									<tr>
+										<td class="text-left">
+											<a href="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</a>
+										</td>
+										<td width="150">2022-02-10 08:02:37</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="footer-box">
+					<div class="footer-link">
+						<a href="" target="_blank">privacy policy</a> <b></b>
+						<a href="" target="_blank">Product Disclosure Statement</a>
+					</div>
+					<div class="footer-text">
+						<p>GO Markets brand is authorized and regulated in various jurisdictions.</p>
+						<p>Risk Warning: Trading Forex and Derivatives carries a high level of risk, including the risk of losing substantially more than your initial deposit. Leverage magnifies both gains and losses. You should only trade in risk capital (capital you can afford to lose). Trading leveraged products may not be suitable for all investors, please ensure that you fully understand the risks involved, and take into consideration your level of experience, investment objectives and seek independent advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to use the services provided by GO Markets based on the legal requirements in his/her country of residence. Before you start to trade, please take some to fully read our
+							<a href="" target="_blank">Product Disclosure Statement(PDS)</a>.</p>
+						<p>This website is owned and operated by GO Markets. All contents © <span class="footer-year"></span> GO Markets. All rights reserved.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="modal fade bonus-modal content-modal" id="creditBonus-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="bonus-modal-img">
+							<img src="images/bonusCredit.jpg" alt="" class="w-100" />
+						</div>
+						<p class="bonus-modal-date">
+							<span>5/27/2022</span>
+						</p>
+						<p><b>TERMS AND CONDITIONS</b></p>
+						<div class="content-modal-text">
+							<p>Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet, augue eros luctus sapien, ut euismod leo tortor ac enim. In hac habitasse platea dictumst. Sed cursus venenatis tellus, non lobortis diam volutpat sit amet. Sed tellus augue, hendrerit eu rutrum in, porttitor at metus. Mauris ac hendrerit metus. Phasellus mattis lectus commodo felis egestas, id accumsan justo ultrices. Phasellus aliquet, sem a placerat dapibus, enim purus dictum lacus, nec ultrices ante dui ac ante. Phasellus placerat, urna.
+							</p>
+							<p><b>$ 10,000.00</b></p>
+							<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+							<p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
+							<p>In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat. Curabitur fringilla in purus eget egestas. Etiam quis.</p>
+
+						</div>
+						<br />
+						<div class="form-group radio-group">
+							<span class="fund-piaochecked piaochecked white-piaochecked yes">
+									<em class=""></em>
+									<label for="" class="noselect">I have read and agree with the terms and conditions</a></label>
+								</span>
+						</div>
+						<div class="form-row">
+							<div class="col-6">
+								<button type="button" class="buttons buttons-lightgray" data-dismiss="modal">Return</button>
+							</div>
+							<div class="col-6">
+								<button type="button" class="buttons buttons-success apply-next" id="apply-next" disabled="disabled">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal bonus-modal content-modal" id="tradingBonus-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="bonus-modal-img">
+							<img src="images/bonusTrading.jpg" alt="" class="w-100" />
+						</div>
+						<p class="bonus-modal-date">
+							<span>5/27/2022</span>
+						</p>
+						<p><b>TERMS AND CONDITIONS</b></p>
+						<div class="content-modal-text">
+							<p>Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet, augue eros luctus sapien, ut euismod leo tortor ac enim. In hac habitasse platea dictumst. Sed cursus venenatis tellus, non lobortis diam volutpat sit amet. Sed tellus augue, hendrerit eu rutrum in, porttitor at metus. Mauris ac hendrerit metus. Phasellus mattis lectus commodo felis egestas, id accumsan justo ultrices. Phasellus aliquet, sem a placerat dapibus, enim purus dictum lacus, nec ultrices ante dui ac ante. Phasellus placerat, urna.
+							</p>
+							<p><b>$ 10,000.00</b></p>
+							<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+							<p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
+							<p>In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat. Curabitur fringilla in purus eget egestas. Etiam quis.</p>
+
+						</div>
+						<br />
+						<div class="form-group radio-group">
+							<span class="fund-piaochecked piaochecked white-piaochecked yes">
+									<em class=""></em>
+									<label for="" class="noselect">I have read and agree with the terms and conditions</label>
+								</span>
+						</div>
+						<div class="form-row">
+							<div class="col-6">
+								<button type="button" class="buttons buttons-lightgray" data-dismiss="modal">Return</button>
+							</div>
+							<div class="col-6">
+								<button type="button" class="buttons buttons-success apply-next" id="apply-next" disabled="disabled">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade bonus-modal content-modal" id="contestBonus-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="bonus-modal-img">
+							<img src="images/bonusContest.jpg" alt="" class="w-100" />
+						</div>
+						<p class="bonus-modal-date">
+							<span>5/27/2022</span>
+						</p>
+						<p><b>TERMS AND CONDITIONS</b></p>
+						<div class="content-modal-text">
+							<p>Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet, augue eros luctus sapien, ut euismod leo tortor ac enim. In hac habitasse platea dictumst. Sed cursus venenatis tellus, non lobortis diam volutpat sit amet. Sed tellus augue, hendrerit eu rutrum in, porttitor at metus. Mauris ac hendrerit metus. Phasellus mattis lectus commodo felis egestas, id accumsan justo ultrices. Phasellus aliquet, sem a placerat dapibus, enim purus dictum lacus, nec ultrices ante dui ac ante. Phasellus placerat, urna.
+							</p>
+							<p><b>$ 10,000.00</b></p>
+							<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+							<p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
+							<p>In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat. Curabitur fringilla in purus eget egestas. Etiam quis.</p>
+
+						</div>
+						<br />
+						<div class="form-group radio-group">
+							<span class="fund-piaochecked piaochecked white-piaochecked yes">
+									<em class=""></em>
+									<label for="" class="noselect">I have read and agree with the terms and conditions</label>
+								</span>
+						</div>
+						<div class="form-row">
+							<div class="col-6">
+								<button type="button" class="buttons buttons-lightgray" data-dismiss="modal">Return</button>
+							</div>
+							<div class="col-6">
+								<button type="button" class="buttons buttons-success apply-next" id="apply-next" disabled="disabled">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-confirm.min.js"></script>
+		<script src="js/NProgress.min.js"></script>
+		<script src="js/loading.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/sidebar.js"></script>
+		<script src="js/add-tools.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/account-status.js"></script>
+		<script>
+			$(function(){
+				
+			$(".email").click(function() {
+				$.confirm({
+					theme: 'Modern',
+					icon: "fa fa-smile-o",
+					title: "Success!",
+					content: "操作成功！正在处理中...",
+					type: 'orange',
+					typeAnimated: true,
+					buttons: {
+						OK: {
+							btnClass: 'btn-orange',
+						},
+					}
+				});
+			});
+			});
+		</script>
+	</body>
+
+</html>
