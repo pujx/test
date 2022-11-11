@@ -4,14 +4,6 @@ a {
 	transition: all .5s
 }
 
-a.linked {
-	border-bottom: 1px solid #48CC7F
-}
-
-a.linked:hover {
-	border-bottom: 1px solid #48CC7F
-}
-
 *:focus {
 	outline: none!important
 }
@@ -33,12 +25,6 @@ a:hover {
 	user-select: none
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
 body,
 h1,
 h2,
@@ -142,7 +128,8 @@ a.buttons[disabled]:hover {
 	height: 34px;
 	font-size: 12px;
 	caret-color: #fff;
-	text-transform: capitalize
+	text-transform: capitalize;
+	font-family: "Roboto", "微软雅黑";
 }
 
 .form-control:focus {
@@ -157,19 +144,19 @@ a.buttons[disabled]:hover {
 }
 
 input::-webkit-input-placeholder {
-	color: rgba(255, 255, 255, .5);
+	color: rgba(255, 255, 255, .4);
 }
 
 input:-moz-placeholder {
-	color: rgba(255, 255, 255, .5);
+	color: rgba(255, 255, 255, .4);
 }
 
 input::-moz-placeholder {
-	color: rgba(255, 255, 255, .5);
+	color: rgba(255, 255, 255, .4);
 }
 
 input:-ms-input-placeholder {
-	color: rgba(255, 255, 255, .5);
+	color: rgba(255, 255, 255, .4);
 }
 
 input:-internal-autofill-previewed,
@@ -194,19 +181,7 @@ button {
 	user-select: none;
 	outline: none;
 	border: none;
-}
-
-.buttons {
-	color: #091F2C;
-	font-weight: bold;
-	text-transform: uppercase;
-	width: 100%;
-	padding: 8px 4px
-}
-
-.buttons i {
-	margin-right: 5px;
-	display: none;
+	font-family: "Roboto", "微软雅黑";
 }
 
 .login_box {
@@ -229,8 +204,6 @@ button {
 	position: fixed;
 	margin: 0 auto;
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center top;
 }
 
 .login-container {
@@ -261,8 +234,8 @@ button {
 }
 
 .left-box-logo img {
-width: 270px;
-    height: 24px;
+	width: 270px;
+	height: 24px;
 }
 
 .right-box {
@@ -298,14 +271,8 @@ width: 270px;
 	background: rgba(9, 31, 44, 0.5);
 	box-shadow: inset 39.8333px -39.8333px 39.8333px rgba(7, 24, 33, 0.1), inset -39.8333px 39.8333px 39.8333px rgba(255, 255, 255, 0.1);
 	-webkit-box-shadow: inset 39.8333px -39.8333px 39.8333px rgba(7, 24, 33, 0.1), inset -39.8333px 39.8333px 39.8333px rgba(255, 255, 255, 0.1);
-
-backdrop-filter: blur(39.8333px);
+	backdrop-filter: blur(39.8333px);
 }
-
-.right-box .right-form:after{
-	
-}
-
 
 .right-box .right-form-top {
 	text-transform: capitalize;
@@ -420,7 +387,7 @@ backdrop-filter: blur(39.8333px);
 	content: ""
 }
 
-.c-hamburger--htla span::before {
+.c-hamburger--htla span::before,.c-hamburger--htla span::after {
 	transform-origin: center;
 	-webkit-transform-origin: center;
 	-moz-transform-origin: center;
@@ -431,37 +398,19 @@ backdrop-filter: blur(39.8333px);
 	-moz-transition: transform .5s, width .5s, top .5s;
 	-ms-transition: transform .5s, width .5s, top .5s;
 	-o-transition: transform .5s, width .5s, top .5s;
-}
-
-.c-hamburger--htla span::after {
-	transform-origin: center;
-	-webkit-transform-origin: center;
-	-moz-transform-origin: center;
-	-ms-transform-origin: center;
-	-o-transform-origin: center;
-	transition: transform .5s, width .5s, bottom .5s;
-	-webkit-transition: transform .5s, width .5s, top .5s;
-	-moz-transition: transform .5s, width .5s, top .5s;
-	-ms-transition: transform .5s, width .5s, top .5s;
-	-o-transition: transform .5s, width .5s, top .5s;
+	transform: none;
+	-webkit-transform: none;
+	-ms-transform: none;
+	-moz-transform: none;
+	-o-transform: none
 }
 
 .c-hamburger--htla span::before {
 	top: -8px;
-	transform: none;
-	-webkit-transform: none;
-	-ms-transform: none;
-	-moz-transform: none;
-	-o-transform: none
 }
 
 .c-hamburger--htla span::after {
 	top: -4px;
-	transform: none;
-	-webkit-transform: none;
-	-ms-transform: none;
-	-moz-transform: none;
-	-o-transform: none
 }
 
 .language-active .c-hamburger--htla span {
@@ -499,8 +448,28 @@ backdrop-filter: blur(39.8333px);
 .right-box .right-form .help-block {
 	color: #E52431;
 	position: absolute;
-	right: 0;    line-height: 14px;
+	line-height: 12px;
+	top: 35px;
 }
+
+.buttons {
+	color: #091F2C;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 100%;
+	padding: 8px 4px
+}
+
+.buttons:hover {
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+}
+
+.buttons i {
+	margin-right: 5px;
+	display: none;
+}
+
 .buttons.buttons-success {
 	background: #48CC7F;
 	color: #fff;
@@ -508,12 +477,16 @@ backdrop-filter: blur(39.8333px);
 
 .buttons.buttons-success:hover {
 	color: #091F2C;
-	box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
-	-webkit-box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
 }
 
-.buttons.buttons-white{background-color: #fff;}
+.buttons.buttons-white {
+	background-color: #fff;
+}
 
+.buttons.buttons-white:hover {
+	background: #48CC7F;
+	color: #fff;
+}
 
 .right-box .forgot-pwd {
 	text-align: right;
@@ -578,8 +551,6 @@ backdrop-filter: blur(39.8333px);
 		background: rgba(9, 31, 44, 0.85);
 	}
 }
-
-@media screen and (min-width:768px) and (max-width:991px) {}
 
 @media screen and (max-width:991px) {
 	.right-box,
