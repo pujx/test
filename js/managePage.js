@@ -1,15 +1,19 @@
-
-	function mouseIn(beginIn, endIn) {
-		$(function() {
-			$(beginIn).mouseover(function() {
-				$(endIn).stop().fadeIn();
-			}).mouseleave(function() {
-				$(endIn).stop().fadeOut();
-			});
-		});
-	}
-	mouseIn("#minimalBalanceTitle", "#pop-minimal-balance");
-    mouseIn("#mainRiskTip","#pop-mainRiskTip");
+$(document).ready(function() {
+//	function mouseIn(beginIn, endIn) {
+//		$(function() {
+//			$(beginIn).mouseover(function() {
+//				$(endIn).stop().fadeIn();
+//			}).mouseleave(function() {
+//				$(endIn).stop().fadeOut();
+//			});
+//		});
+//	}
+//	mouseIn("#minimalBalanceTitle", "#pop-minimal-balance");
+//  mouseIn("#mainRiskTip","#pop-mainRiskTip");
+//	$('#mainRiskTip,#rankTip,#minimal-balance-tip,#multiplier,#controls').popover();
+    
+    
+    
 	// 公共配置
 	Highcharts.setOptions({
 		chart: {
@@ -33,9 +37,9 @@
 		},
 		yAxis: {
 			stops: [
-				[0.1, '#55BF3B'], // green
-				[0.5, '#DDDF0D'], // yellow
-				[0.9, '#DF5353'] // red
+				[0.1, '#55BF3B'],
+				[0.5, '#DDDF0D'],
+				[0.9, '#DF5353']
 			],
 			lineWidth: 0,
 			minorTickInterval: null,
@@ -58,7 +62,6 @@
 			}
 		}
 	});
-	// 速度仪表
 	var chart1 = Highcharts.chart('recommendedBalance', {
 		yAxis: {
 			min: 0,
@@ -71,7 +74,7 @@
 			enabled: false
 		},
 		series: [{
-			name: '速度',
+			name: '',
 			data: [80],
 			dataLabels: {
 				format: '<div style="text-align:center"><span style="font-size:25px;color:' +
@@ -79,9 +82,10 @@
 					'%'
 			},
 			tooltip: {
-				valueSuffix: ' km/h'
+				valueSuffix: ''
 			}
 		}]
 	});
+	
 
-	$('#mainRiskTip,#rankTip,#minimal-balance-tip,#multiplier,#controls').popover();
+});
