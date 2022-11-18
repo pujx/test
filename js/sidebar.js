@@ -6,9 +6,9 @@
 	};
 	var Selector = {
 		wrapper: ".wrapper",
-		contentWrapper: ".content-wrapper",
+//		contentWrapper: ".content-wrapper",
 		layoutBoxed: ".layout-boxed",
-		mainFooter: ".main-footer",
+//		mainFooter: ".main-footer",
 		mainHeader: ".main-header",
 		sidebar: ".sidebar",
 		controlSidebar: ".control-sidebar",

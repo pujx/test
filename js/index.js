@@ -33,10 +33,8 @@ $(function() {
 
 $(function() {
 	$(".treeview>a").click(function() {
-		if($("body").hasClass("main-sidebar-open")) {
-
-		} else {
-			$(this).parent().toggleClass("active");
+		if($("body").hasClass("main-sidebar-open")) {} else {
+//			$(this).parent().toggleClass("active");
 			$(this).siblings().stop().slideToggle().parent().siblings().children("ul").slideUp();
 			$(this).parent().stop().toggleClass("menu-icon-down");
 			$(this).parent().siblings().removeClass("menu-icon-down");
@@ -66,10 +64,7 @@ $(function() {
 			$(this).parents().siblings(".form-row").find("#apply-next").attr("disabled", true);
 		}
 	})
-	
-	
-	
-	
+
 	$(".radiospan").bind("click", function() {
 		$(this).addClass("on").siblings().removeClass("on");
 	});
@@ -79,5 +74,25 @@ $(function() {
 		} else {
 			$(this).addClass("on");
 		}
+	});
+});
+$(function() {
+	$(".editProfile").click(function() {
+		$.confirm({
+			theme: 'Modern',
+			icon: "modal-icon-warning",
+			title: "",
+			content: '<p>Please ensure you provide authentic and accurate information. GO Markets reserves the right but has no obligation to confirm the accuracy of this information or to contact account holders, Banks, Futures traders and others if deemed necessary. Providing falsified information can lead to litigation and legal sanctions.</p>  <p>By clicking the "Submit" button, you authorise to make the changes. You understand that the changes may cause the information related to the account to be different from the previous information. If there is any dispute, you agree not to pursue any responsibility from GO Markets.</p>',
+			animation: 'zoom',
+			closeAnimation: 'scale',
+			buttons: {
+				Cancel: {
+					btnClass: 'buttons buttons-trans',
+				},
+				OK: {
+					btnClass: 'buttons buttons-success',
+				},
+			}
+		});
 	});
 });

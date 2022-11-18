@@ -1,16 +1,15 @@
 $(document).ready(function() {
-//	function mouseIn(beginIn, endIn) {
-//		$(function() {
-//			$(beginIn).mouseover(function() {
-//				$(endIn).stop().fadeIn();
-//			}).mouseleave(function() {
-//				$(endIn).stop().fadeOut();
-//			});
-//		});
-//	}
-//	mouseIn("#minimalBalanceTitle", "#pop-minimal-balance");
-//  mouseIn("#mainRiskTip","#pop-mainRiskTip");
-//	$('#mainRiskTip,#rankTip,#minimal-balance-tip,#multiplier,#controls').popover();
+	function mouseIn(beginIn, endIn) {
+		$(function() {
+			$(beginIn).mouseover(function() {
+				$(endIn).stop().fadeIn();
+			}).mouseleave(function() {
+				$(endIn).stop().fadeOut();
+			});
+		});
+	}
+	mouseIn("#minimalBalanceTitle", "#pop-minimal-balance");
+    mouseIn("#mainRiskTip","#pop-mainRiskTip");
     
     
     
