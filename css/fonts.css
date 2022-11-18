@@ -1,0 +1,28 @@
+﻿@charset "utf-8";
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+/*@font-face {
+    font-family: 'Gotham-Light';
+    src: url('../Static/fonts/Gotham/Gotham-Light.otf');
+}@font-face {
+    font-family: 'Gotham-Book';
+    src: url('../Static/fonts/Gotham/Gotham-Book.otf');
+}
+@font-face {
+    font-family: 'DIN-Regular';
+    src: url('../Static/fonts/Din/DIN-Regular.otf');
+}
+
+@font-face {
+    font-family: 'DIN-Bold';
+    src: url('../Static/fonts/Din/DIN-Bold.otf');
+}
+@font-face {
+    font-family: 'baskerville-old-face';
+    src: url('../Static/fonts/baskerville/baskerville-old-face.ttf');
+}*/
+body,button,.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-family:"poppins","微软雅黑";
+}
