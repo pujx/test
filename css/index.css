@@ -437,7 +437,8 @@ p{line-height: 14px;}
 	
 }
 @media only screen and (max-width:767px){
-.upload-box .nav-item{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}
+.upload-box .upload-type .nav-item{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}
+.upload-box .upload-files-box .nav-item{margin-bottom: 5px;}
 .upload-box .nav-link,.hl-tab .hl-tab-btn a{margin-right:0}
 
 }
