@@ -10,7 +10,6 @@
 		<title>GO Markets | Account Status</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/owl.carousel.css" />
-		<link rel="stylesheet" href="css/jquery-confirm.min.css" />
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/loading.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -24,7 +23,7 @@
 			<aside class="main-sidebar noselect">
 				<section class="sidebar">
 					<div class="sidebar-logo">
-						<a href="index.html"><img src="images/logo.svg" /></a>
+						<a href="https://gmsc.gomarkets.com/" target="_blank"><img src="images/logo.svg" /></a>
 					</div>
 					<div class="sidebar-account">
 						<p>
@@ -42,6 +41,7 @@
 							<span class="green">verified</span>
 						</div>-->
 					</div>
+				
 					<div class="sidebar-menu">
 						<h5>Dashboard</h5>
 						<ul>
@@ -52,7 +52,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="index.html">
+								<a href="account-profile.html">
 									<i><img src="images/menu-profile.svg" alt="" /></i>
 									<span>account profile</span>
 								</a>
@@ -64,42 +64,42 @@
 								</a>
 								<ul class="treeview-menu">
 									<li>
-										<a href="online-deposit.html">change password</a>
+										<a href="change-password.html">change password</a>
 									</li>
 									<li>
-										<a href="withdrawal.html">change leverage</a>
+										<a href="change-leverage.html">change leverage</a>
 									</li>
 									<li>
-										<a href="internal-transfer.html">open additional account</a>
+										<a href="open-additional-account.html">open additional account</a>
 									</li>
 									<li>
-										<a href="withdrawal.html">link account</a>
+										<a href="link-account.html">link account</a>
 									</li>
 									<li>
-										<a href="internal-transfer.html">trading history</a>
+										<a href="trading-history.html">trading history</a>
 									</li>
 									<li>
-										<a href="internal-transfer.html">subscribe to share cfd</a>
+										<a href="subscribe-to-share-cfd.html">subscribe to share cfd</a>
 									</li>
 								</ul>
 							</li>
-							<li>
+							<li class="treeview">
 								<a href="javascript:">
 									<i><img src="images/menu-fund.svg" alt="" /></i>
 									<span>fund management</span>
 								</a>
 								<ul class="treeview-menu">
 									<li>
-										<a href="download-centre.html">deposit</a>
+										<a href="deposit.html">deposit</a>
 									</li>
 									<li>
-										<a href="trading-central.html">withdrawal</a>
+										<a href="withdrawal.html">withdrawal</a>
 									</li>
 									<li>
-										<a href="promotion.html">internal transfer</a>
+										<a href="internal-transfer.html">internal transfer</a>
 									</li>
 									<li>
-										<a href="promotion.html">account record</a>
+										<a href="account-record.html">account record</a>
 									</li>
 								</ul>
 							</li>
@@ -110,16 +110,16 @@
 								</a>
 								<ul class="treeview-menu">
 									<li>
-										<a href="my-trading-accounts.html">upload files</a><i></i>
+										<a href="upload-files.html">upload files</a><i></i>
 									</li>
 									<li>
-										<a href="apply-sub-account.html">mt4&mt5 genesis</a>
+										<a href="MT4&5-genesis.html">mt4&mt5 genesis</a>
 									</li>
 									<li>
-										<a href="link-existing-account.html">trading central</a>
+										<a href="trading-central.html">trading central</a>
 									</li>
 									<li>
-										<a href="trading-history.html">download center</a>
+										<a href="download-center.html">download center</a>
 									</li>
 								</ul>
 							</li>
@@ -130,73 +130,66 @@
 								</a>
 								<ul class="treeview-menu">
 									<li>
-										<a href="my-profile.html">my accounts</a>
+										<a href="my-accounts.html">my accounts</a>
 									</li>
 									<li>
-										<a href="upload-documents.html">gaia fund list</a>
+										<a href="gaiafund.html">gaia fund list</a>
 									</li>
 									<li>
-										<a href="change-leverage.html">my follower list</a>
+										<a href="my-follow-list.html">my follower list</a>
 									</li>
 								</ul>
 							</li>
 							<li class="menu-sign-out">
-								<a href="login.html">
+								<a href="login.html" data-target="#logOut-modal" data-toggle="modal">
 									<i><img src="images/menu-sign-out.svg" alt="" /></i>
 									<span>log out</span>
 								</a>
 							</li>
 						</ul>
 					</div>
-
 					<div class="sidebar-action">
 						<h5>quick action <a href="quick-action.html" id="open-tools-modal"><img src="images/menu-quick-action.svg"/></a></h5>
-						<div class="tools-item-box">
-							<ul id="page-tools-box">
-								<li>
-									<a href="" data-box="lList1">
-										<div class="tools-item">
-											<i><img src="images/tools-deposit.svg" alt="" /></i>
-											<span>Deposit</span>
-											<p><img src="images/action-close.svg" alt="" width="15" /></p>
-										</div>
-									</a>
-									<a href="" data-box="lList1">
-										<div class="tools-item">
-											<i><img src="images/tools-withdrawal.svg" alt="" /></i>
-											<span>withdrawl</span>
-											<p><img src="images/action-close.svg" alt="" width="15" /></p>
-										</div>
-									</a>
-									<a href="" data-box="lList1">
-										<div class="tools-item">
-											<i><img src="images/tools-internal-transfer.svg" alt="" /></i>
-											<span>internal transfer</span>
-											<p><img src="images/action-close.svg" alt="" width="15" /></p>
-										</div>
-									</a>
-									<a href="" data-box="lList1">
-										<div class="tools-item">
-											<i><img src="images/tools-openaccount.svg" alt="" /></i>
-											<span>open account</span>
-											<p><img src="images/action-close.svg" alt="" width="15" /></p>
-										</div>
-									</a>
-									<a href="" data-box="lList1">
-										<div class="tools-item">
-											<i><img src="images/tools-instruction.svg" alt="" /></i>
-											<span>instructions</span>
-											<p><img src="images/action-close.svg" alt="" width="15" /></p>
-										</div>
-									</a>
-									<!--<span id="open-tools-modal">
+						<ul id="page-tools-box">
+							<li>
+								<a href="deposit.html" data-box="lList1">
 									<div class="tools-item">
-										<p><img src="../Common/Static/images/add-tools.svg" alt="" /></p>
+										<i><img src="images/tools-deposit.svg" alt="" /></i>
+										<span>Deposit</span>
+										<p><img src="images/action-close.svg" alt="" width="15" /></p>
 									</div>
-								</span>-->
-								</li>
-							</ul>
-						</div>
+								</a>
+								<a href="withdrawal.html" data-box="lList1">
+									<div class="tools-item">
+										<i><img src="images/tools-withdrawal.svg" alt="" /></i>
+										<span>withdrawl</span>
+										<p><img src="images/action-close.svg" alt="" width="15" /></p>
+									</div>
+								</a>
+								<a href="internal-transfer.html" data-box="lList1">
+									<div class="tools-item">
+										<i><img src="images/tools-internal-transfer.svg" alt="" /></i>
+										<span>internal transfer</span>
+										<p><img src="images/action-close.svg" alt="" width="15" /></p>
+									</div>
+								</a>
+								<a href="open-additional-account.html" data-box="lList1">
+									<div class="tools-item">
+										<i><img src="images/tools-openaccount.svg" alt="" /></i>
+										<span>open account</span>
+										<p><img src="images/action-close.svg" alt="" width="15" /></p>
+									</div>
+								</a>
+								<a href="" data-box="lList1">
+									<div class="tools-item">
+										<i><img src="images/tools-instruction.svg" alt="" /></i>
+										<span>instructions</span>
+										<p><img src="images/action-close.svg" alt="" width="15" /></p>
+									</div>
+								</a>
+							</li>
+						</ul>
+
 					</div>
 					<div class="sidebar-contact">
 						<h5>contact</h5>
@@ -222,7 +215,7 @@
 						<img src="images/header-tips.svg" width="22" />
 						<span>New contest next month!</span>
 					</a>
-					<a href="login.html" class="h-signout">
+					<a href="login.html" class="h-signout" data-target="#logOut-modal" data-toggle="modal">
 						<i><img src="images/menu-sign-out.svg" alt="" width="14"/></i>
 						<span>log out</span>
 					</a>
@@ -239,258 +232,211 @@
 
 			<div class="content-wrapper">
 				<div class="box">
-					<div class="container-fluid">
-						<div class="row">
+					<div class="row">
 
-							<style>
+						<style>
+							.info-box {
+								display: block;
+								font-size: 24px;
+								font-weight: bold;
+								text-transform: uppercase;
+								position: relative;
+								padding: 42px 20px;
+								text-align: center;
+								color: #fff;
+								overflow: hidden;
+								transition: all .5s
+							}
+							
+							.info-box .info-box-text {
+								position: relative;
+								z-index: 1;
+								transition: all .5s
+							}
+							
+							.info-bg {
+								transition: all .5s
+							}
+							
+							.info-box:hover .info-bg {
+								transform: skew(5deg, 0deg);
+								transition: all .5s
+							}
+							
+							.info-bg {
+								width: 100%;
+								height: 100%;
+								position: absolute;
+								left: 0;
+								top: 0;
+								bottom: 0;
+								right: 0;
+								transition: all .5s
+							}
+							
+							.info-box i {}
+							
+							.info-box b {}
+							
+							.info-box:hover {
+								color: #fff;
+								transition: all .5s
+							}
+							
+							.info-box.info-deposit {
+								-webkit-transition: all .5s;
+								background: linear-gradient(92.07deg, #48CC7F 0%, #00481E 100%);
+								transition: all .5s
+							}
+							
+							.info-box.info-deposit:hover {
+								transition: all .5s;
+								background: linear-gradient(92.07deg, #48CC7F 0%, #008939 100%);
+								transition: all .5s
+							}
+							
+							.info-box.info-withdrawal {
+								background: linear-gradient(92.07deg, #1F6DCA 0%, #00244F 100%);
+								transition: all .5s
+							}
+							
+							.info-box.info-withdrawal:hover {
+								background: linear-gradient(92.07deg, #1F6DCA 0%, #003C84 100%);
+								transition: all .5s
+							}
+							
+							.info-box.info-transfer {
+								background: linear-gradient(92.07deg, #F26B3E 0%, #441100 100%);
+								transition: all .5s
+							}
+							
+							.info-box.info-transfer:hover {
+								background: linear-gradient(92.07deg, #F26B3E 0%, #812000 100%);
+								transition: all .5s
+							}
+							
+							@media only screen and (max-width:1199px) {
 								.info-box {
-									display: block;
-									font-size: 24px;
-									font-weight: bold;
-									text-transform: uppercase;
-									position: relative;
-									padding: 42px 20px;
-									text-align: center;
-									color: #fff;
-									overflow: hidden;
-									transition: all .5s
+									font-size: 16px;
+									padding: 20px;
+									margin: 5px 0
 								}
-								
-								.info-box .info-box-text {
-									position: relative;
-									z-index: 1;
-									transition: all .5s
+							}
+							
+							@media only screen and (max-width:991px) {
+								.box {
+									margin: 10px
 								}
-								
-								.info-bg {
-									transition: all .5s
-								}
-								
-								.info-box:hover .info-bg {
-									transform: skew(5deg, 0deg);
-									transition: all .5s
-								}
-								
-								.info-bg {
-									width: 100%;
-									height: 100%;
-									position: absolute;
-									left: 0;
-									top: 0;
-									bottom: 0;
-									right: 0;
-									transition: all .5s
-								}
-								
-								.info-box i {}
-								
-								.info-box b {}
-								
-								.info-box:hover {
-									color: #fff;
-									transition: all .5s
-								}
-								
-								.info-box.info-deposit {
-									-webkit-transition: all .5s;
-									background: linear-gradient(92.07deg, #48CC7F 0%, #00481E 100%);
-									transition: all .5s
-								}
-								
-								.info-box.info-deposit:hover {
-									transition: all .5s;
-									background: linear-gradient(92.07deg, #48CC7F 0%, #008939 100%);
-									transition: all .5s
-								}
-								
-								.info-box.info-withdrawal {
-									background: linear-gradient(92.07deg, #1F6DCA 0%, #00244F 100%);
-									transition: all .5s
-								}
-								
-								.info-box.info-withdrawal:hover {
-									background: linear-gradient(92.07deg, #1F6DCA 0%, #003C84 100%);
-									transition: all .5s
-								}
-								
-								.info-box.info-transfer {
-									background: linear-gradient(92.07deg, #F26B3E 0%, #441100 100%);
-									transition: all .5s
-								}
-								
-								.info-box.info-transfer:hover {
-									background: linear-gradient(92.07deg, #F26B3E 0%, #812000 100%);
-									transition: all .5s
-								}
-								
-								@media only screen and (max-width:1199px) {
-									.info-box {
-										font-size: 16px;
-										padding: 20px;
-										margin: 5px 0
-									}
-								}
-								
-								@media only screen and (max-width:991px) {
-									.box {
-										margin: 10px
-									}
-								}
-							</style>
+							}
+						</style>
 
-							<div class="col-xl-4">
-								<a href="javascript:" class="info-box info-deposit bor5">
-									<img src="images/info-green-bg.png" alt="" class="info-bg" />
-									<div class="info-box-text">
-										<i><img src="images/tools-deposit.svg"/></i>
-										<b>deposit</b>
-									</div>
-								</a>
-							</div>
-							<div class="col-xl-4">
-								<a href="javascript:" class="info-box info-withdrawal bor5">
-									<img src="images/info-blue-bg.png" alt="" class="info-bg" />
-									<div class="info-box-text">
-										<i><img src="images/tools-withdrawal.svg"/></i>
-										<b>withdrawal</b>
-									</div>
-								</a>
-							</div>
-							<div class="col-xl-4">
-								<a href="javascript:" class="info-box info-transfer bor5">
-									<img src="images/info-orange-bg.png" alt="" class="info-bg" />
-									<div class="info-box-text">
-										<i><img src="images/tools-internal-transfer.svg"/></i>
-										<b>internal transfer</b>
-									</div>
-								</a>
-							</div>
+						<div class="col-xl-4">
+							<a href="javascript:" class="info-box info-deposit bor5">
+								<img src="images/info-green-bg.png" alt="" class="info-bg" />
+								<div class="info-box-text">
+									<i><img src="images/tools-deposit.svg"/></i>
+									<b>deposit</b>
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-4">
+							<a href="javascript:" class="info-box info-withdrawal bor5">
+								<img src="images/info-blue-bg.png" alt="" class="info-bg" />
+								<div class="info-box-text">
+									<i><img src="images/tools-withdrawal.svg"/></i>
+									<b>withdrawal</b>
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-4">
+							<a href="javascript:" class="info-box info-transfer bor5">
+								<img src="images/info-orange-bg.png" alt="" class="info-bg" />
+								<div class="info-box-text">
+									<i><img src="images/tools-internal-transfer.svg"/></i>
+									<b>internal transfer</b>
+								</div>
+							</a>
 						</div>
 					</div>
+
 				</div>
 				<div class="box">
 					<div class="box-body">
-						<div class="tab-box">
-							<div class="form-group">
-								<div class="form-row tab-box">
-									<div class="">
-										<a href="javascript:" class="on">
-											standard account
-										</a>
-									</div>
-									<div class="">
-										<a href="javascript:">
-											pro account
-										</a>
-									</div>
-<img src="images/icon-check.svg" alt="" />
+						<div class="hl-box">
+							<a href="javascript:" class="live-account">live account</a>
 
-<img src="images/icon-toogle.svg" alt="" />
-								<img src="images/icon-faster-w.svg" alt="" />
-								
-								<style>
-										.open-account-link>div {
-											position: relative;
-										}
-										
-										.open-account-link>div span {
-											position: absolute;
-											left: -95px;
-											top: 0;
-											width: 82px;
-											display: block;
-											background: #fff;
-											padding: 5px;
-											z-index: 1;
-											box-shadow: 2px 2px 7px -1px #595757;
-											-webkit-box-shadow: 2px 2px 7px -1px #595757;
-											-moz-box-shadow: 0 1px 3px 0px #595757;
-											border: 1px solid #eee;
-											text-align: center;
-											border-radius: 4px;
-											-webkit-border-radius: 4px;
-											-moz-border-radius: 4px;
-											-ms-border-radius: 4px;
-											visibility: hidden;
-											opacity: 0;
-											transform: translateX(-10px);
-											-moz-transform: translateX(-10px);
-											-ms-transform: translateX(-10px);
-											-webkit-transition: all 0.5s ease-in-out;
-											-moz-transition: all 0.5s ease-in-out;
-											-ms-transition: all 0.5s ease-in-out;
-											transition: all 0.5s ease-in-out;
-										}
-										
-										.open-account-link>div span:after {
-											position: absolute;
-											width: 0;
-											height: 0;
-											border-left: 8px solid #ffffff;
-											border-right: 8px solid transparent;
-											border-bottom: 8px solid transparent;
-											border-top: 8px solid transparent;
-											top: 7px;
-											right: -15px;
-											content: "";
-											display: block;
-											clear: both;
-										}
-										
-										.open-account-link a {
-											display: block;
-											margin: 20px 5px;
-											height: 30px;
-										}
-										
-										.open-account-link>div:hover span {
-											visibility: visible;
-											opacity: 1;
-											transform: translateX(0px);
-											-moz-transform: translateX(0px);
-											-ms-transform: translateX(0px)
-										}
-									</style>
-									<div class="open-account-link">
-										<div>
-											<a href=""><img src="images/plus.svg" alt="" /><span>open account</span></a>
-
+							<ul class="nav row" role="tablist">
+								<li class="nav-item" role="presentation">
+									<a class="nav-link active bor5" id="standard-account-tab" data-toggle="pill" href="#standard-account" role="tab" aria-controls="standard-account" aria-selected="true">
+										standard account
+									</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link bor5" id="pro-account-tab" data-toggle="pill" href="#pro-account" role="tab" aria-controls="pro-account" aria-selected="false">
+										pro account
+									</a>
+								</li>
+								<li>
+									<a href="open-additional-account.html" class="open-account-link">
+										<p><i></i></p>
+										<span>open account</span>
+									</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane show active" id="standard-account" role="tabpanel" aria-labelledby="standard-account-tab">
+									<div class="row tab-box hl-tab">
+										<div class="hl-tab-btn">
+											<a href="javascript:" class="on">
+												mt4
+											</a>
+										</div>
+										<div class="hl-tab-btn">
+											<a href="javascript:">
+												mt5
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="pro-account" role="tabpanel" aria-labelledby="pro-account-tab">
+									<div class="row tab-box hl-tab">
+										<div class="hl-tab-btn">
+											<a href="javascript:" class="on">
+												mt4
+											</a>
+										</div>
+										<div class="hl-tab-btn">
+											<a href="javascript:">
+												mt5
+											</a>
 										</div>
 									</div>
 
 								</div>
 							</div>
-							<div class="form-group">
-								<div class="form-row tab-box">
-									<div class="">
-										<a href="javascript:" class="on">
-											mt4
-										</a>
-									</div>
-									<div class="">
-										<a href="javascript:">
-											mt5
-										</a>
-									</div>
-								</div>
-							</div>
-							<a href="javascript:">live account</a>
+
 						</div>
 
-						<div>
+						<!--<div>
 							<div class="accordion" id="accordionExample">
 								<div class="card">
 									<div class="card-header" id="headingOne">
+										<div>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+
 										<h2 class="mb-0">
         <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Collapsible Group Item #1
+          .
         </button>
       </h2>
 									</div>
 
 									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 										<div class="card-body">
-											Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+											...
 										</div>
 									</div>
 								</div>
@@ -498,13 +444,13 @@
 									<div class="card-header" id="headingTwo">
 										<h2 class="mb-0">
         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
+          2
         </button>
       </h2>
 									</div>
 									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 										<div class="card-body">
-											Some placeholder content for the second accordion panel. This panel is hidden by default.
+											2
 										</div>
 									</div>
 								</div>
@@ -512,19 +458,19 @@
 									<div class="card-header" id="headingThree">
 										<h2 class="mb-0">
         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
+         3
         </button>
       </h2>
 									</div>
 									<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 										<div class="card-body">
-											And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+											3
 										</div>
 									</div>
 								</div>
 							</div>
 
-						</div>
+						</div>-->
 
 					</div>
 				</div>
@@ -657,7 +603,7 @@
 			</div>
 		</div>
 
-		<div class="modal bonus-modal content-modal" id="tradingBonus-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal fade bonus-modal  content-modal" id="tradingBonus-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-body">
@@ -701,7 +647,7 @@
 				<div class="modal-content">
 					<div class="modal-body">
 						<div class="bonus-modal-img">
-							<img src="images/bonusContest.jpg" alt="" class="w-100" />
+							<img src="images/contestBonus.jpg" alt="" class="w-100" />
 						</div>
 						<p class="bonus-modal-date">
 							<span>5/27/2022</span>
@@ -736,9 +682,66 @@
 			</div>
 		</div>
 
+		<!--open account-->
+		<div class="modal fade logOut-modal common-modal" id="openAcc-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-md modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="content-modal-text">
+							<p class="modal-icon"><img src="images/icon-error.svg" alt="" /></p>
+							<div class="modal-text text-uppercase">
+								<p><b>Your account is not verified. </b></p>
+								<p><b>Please verify your account to receive the full benefits of mygo:</b></p>
+							</div>
+							<ul class="modal-ul">
+								<li><i><img src="images/icon-check.svg" alt="" /></i>verified status</li>
+								<li><i><img src="images/icon-toogle.svg" alt="" /></i>eligible to trade</li>
+								<li><i><img src="images/icon-faster-w.svg" alt="" /></i>faster withdrawal</li>
+							</ul>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-6 col-md-4">
+								<button type="button" class="buttons buttons-trans" data-dismiss="modal">Cancel</button>
+							</div>
+							<div class="col-6 col-md-4">
+								<button type="button" class="buttons buttons-success" data-dismiss="modal">Confirm</button>
+							</div>
+						</div>
+					</div>
+					<div class="green-line"></div>
+					<div class="red-line"></div>
+				</div>
+			</div>
+		</div>
+
+		<!--log out-->
+		<div class="modal fade logOut-modal common-modal" id="logOut-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-md modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="content-modal-text">
+							<p class="modal-icon"><img src="images/icon-warning.svg" alt="" /></p>
+							<div class="modal-text">
+								<p>Are you sure you want to log out?</p>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-6 col-md-4">
+								<button type="button" class="buttons buttons-trans" data-dismiss="modal">Cancel</button>
+							</div>
+							<div class="col-6 col-md-4">
+								<button type="button" class="buttons buttons-success" onclick="window.open('login.html','_self')">Confirm</button>
+							</div>
+						</div>
+					</div>
+					<div class="green-line"></div>
+					<div class="red-line"></div>
+				</div>
+			</div>
+		</div>
+
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery-confirm.min.js"></script>
 		<script src="js/NProgress.min.js"></script>
 		<script src="js/loading.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
@@ -747,23 +750,8 @@
 		<script src="js/index.js"></script>
 		<script src="js/account-status.js"></script>
 		<script>
-			$(function(){
-				
-			$(".email").click(function() {
-				$.confirm({
-					theme: 'Modern',
-					icon: "fa fa-smile-o",
-					title: "Success!",
-					content: "操作成功！正在处理中...",
-					type: 'orange',
-					typeAnimated: true,
-					buttons: {
-						OK: {
-							btnClass: 'btn-orange',
-						},
-					}
-				});
-			});
+			$(function() {
+				//			$("#openAcc-modal").modal('show');
 			});
 		</script>
 	</body>

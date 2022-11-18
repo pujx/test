@@ -1,9 +1,381 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="favicon.ico">
+		<title>GO Markets | Upload Files</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/loading.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+		</style>
 	</head>
+
 	<body>
+		<div class="wrapper">
+			<aside class="main-sidebar noselect">
+				<section class="sidebar">
+					<div class="sidebar-logo">
+						<a href="https://gmsc.gomarkets.com/" target="_blank"><img src="images/logo.svg" /></a>
+					</div>
+					<div class="sidebar-account">
+						<p>
+							<img src="images/menu-head-img.svg" alt="" />
+						</p>
+						<!--if not verified-->
+						<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="red">not verified</span>
+							<a href="">click here to verify</a>
+						</div>
+						<!--if verified-->
+						<!--<div class="sidebar-status">
+							<h2>nguyen van john doe <br />(2nd Account)</h2>
+							<span class="green">verified</span>
+						</div>-->
+					</div>
+				
+					<div class="sidebar-menu">
+						<h5>Dashboard</h5>
+						<ul>
+							<li>
+								<a href="account-status.html">
+									<i><img src="images/menu-account-status.svg" alt="" /></i>
+									<span>account status</span>
+								</a>
+							</li>
+							<li>
+								<a href="account-profile.html">
+									<i><img src="images/menu-profile.svg" alt="" /></i>
+									<span>account profile</span>
+								</a>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-management.svg" alt="" /></i>
+									<span>acount management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="change-password.html">change password</a>
+									</li>
+									<li>
+										<a href="change-leverage.html">change leverage</a>
+									</li>
+									<li>
+										<a href="open-additional-account.html">open additional account</a>
+									</li>
+									<li>
+										<a href="link-account.html">link account</a>
+									</li>
+									<li>
+										<a href="trading-history.html">trading history</a>
+									</li>
+									<li>
+										<a href="subscribe-to-share-cfd.html">subscribe to share cfd</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-fund.svg" alt="" /></i>
+									<span>fund management</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="deposit.html">deposit</a>
+									</li>
+									<li>
+										<a href="withdrawal.html">withdrawal</a>
+									</li>
+									<li>
+										<a href="internal-transfer.html">internal transfer</a>
+									</li>
+									<li>
+										<a href="account-record.html">account record</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview active menu-icon-down menu-open">
+								<a href="javascript:">
+									<i><img src="images/menu-tools.svg" alt="" /></i>
+									<span>useful tools</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="upload-files.html" class="linkChecked">upload files</a><i></i>
+									</li>
+									<li>
+										<a href="MT4&5-genesis.html">mt4&mt5 genesis</a>
+									</li>
+									<li>
+										<a href="trading-central.html">trading central</a>
+									</li>
+									<li>
+										<a href="download-center.html">download center</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:">
+									<i><img src="images/menu-copy-trade.svg" alt="" /></i>
+									<span>copy trade</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="my-accounts.html">my accounts</a>
+									</li>
+									<li>
+										<a href="gaiafund.html">gaia fund list</a>
+									</li>
+									<li>
+										<a href="my-follow-list.html">my follower list</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-sign-out">
+								<a href="login.html">
+									<i><img src="images/menu-sign-out.svg" alt="" /></i>
+									<span>log out</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sidebar-action">
+						<h5>quick action <a href="quick-action.html" id="open-tools-modal"><img src="images/menu-quick-action.svg"/></a></h5>
+						<ul id="page-tools-box">
+							<li>
+								<a href="deposit.html" data-box="lList1">
+									<div class="tools-item">
+										<i><img src="images/tools-deposit.svg" alt="" /></i>
+										<span>Deposit</span>
+										<p><img src="images/action-close.svg" alt="" width="15" /></p>
+									</div>
+								</a>
+								<a href="withdrawal.html" data-box="lList1">
+									<div class="tools-item">
+										<i><img src="images/tools-withdrawal.svg" alt="" /></i>
+										<span>withdrawl</span>
+										<p><img src="images/action-close.svg" alt="" width="15" /></p>
+									</div>
+								</a>
+								<a href="internal-transfer.html" data-box="lList1">
+									<div class="tools-item">
+										<i><img src="images/tools-internal-transfer.svg" alt="" /></i>
+										<span>internal transfer</span>
+										<p><img src="images/action-close.svg" alt="" width="15" /></p>
+									</div>
+								</a>
+								<a href="open-additional-account.html" data-box="lList1">
+									<div class="tools-item">
+										<i><img src="images/tools-openaccount.svg" alt="" /></i>
+										<span>open account</span>
+										<p><img src="images/action-close.svg" alt="" width="15" /></p>
+									</div>
+								</a>
+								<a href="" data-box="lList1">
+									<div class="tools-item">
+										<i><img src="images/tools-instruction.svg" alt="" /></i>
+										<span>instructions</span>
+										<p><img src="images/action-close.svg" alt="" width="15" /></p>
+									</div>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+<div class="sidebar-contact">
+						<h5>contact</h5>
+						<div class="sidebar-contact-box">
+							<a href="javascript:"><img src="images/menu-mail.svg" alt="" /></a>
+							<a href="javascript:"><img src="images/menu-callback.svg" alt="" /></a>
+						</div>
+					</div>
+				</section>
+			</aside>
+
+			<header class="main-header">
+				<div class="h-box">
+					<div class="h-logo">
+						<a href="javascript:"><img src="images/logo.svg" /></a>
+					</div>
+					<a href="login.html" class="h-welcome">
+						<img src="images/welcome-smile.svg" alt="" />
+						<span>welcome!</span>
+						<img src="images/welcome-pong.svg" alt="" />
+					</a>
+					<a href="javascript:" class="h-tips">
+						<img src="images/header-tips.svg" width="22" />
+						<span>New contest next month!</span>
+					</a>
+					<a href="login.html" class="h-signout" data-target="#logOut-modal" data-toggle="modal">
+						<i><img src="images/menu-sign-out.svg" alt="" width="14"/></i>
+						<span>log out</span>
+					</a>
+					<div class="c-hamburger c-hamburger--htla noselect sidebar-toggle" data-toggle="push-menu">
+						<span></span>
+					</div>
+
+				</div>
+				<div class="h-verify-tips bor10">
+					your account is not verified. Please
+					<a href="javascript:">verify your account</a> to take full advantage of our services!
+				</div>
+			</header>
+
+			<div class="content-wrapper">
+				<div class="box">
+					<div class="box-body">
+						<div class="upload-box">
+							<div class="row">
+								<div class="col-xl-6">
+									<ul class="nav row" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a class="nav-link active bor5" id="standard-account-tab" data-toggle="pill" href="#standard-account" role="tab" aria-controls="standard-account" aria-selected="true">
+												proof of id
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a class="nav-link bor5" id="pro-account-tab" data-toggle="pill" href="#pro-account" role="tab" aria-controls="pro-account" aria-selected="false">
+												proof of address
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane show active" id="standard-account" role="tabpanel" aria-labelledby="standard-account-tab">
+											<div class="mt-5 mb-5">
+												<p><b>File submitted:</b>&nbsp;<span>CMND123.jpg</span></p>
+												<p><b>Status:</b>&nbsp;<strong class="text-green">Accepted</strong></p>
+											</div>
+											<div class="">
+												<div class="row justify-content-xl-end">
+													<div class="upload-l-box">
+														<div class="upload-files-box">
+															<label for="" class="choose-file-title">choose a file type</label>
+															<ul class="row nav" role="tablist">
+																<li class="nav-item" role="presentation">
+																	<a href="#id-card" class="nav-link bor5 active" id="id-card-tab" class="active" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">id card</a>
+																</li>
+																<li class="nav-item" role="presentation">
+																	<a href="#passport" class="nav-link bor5" id="passport-tab" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">passport</a>
+																</li>
+																<li class="nav-item" role="presentation">
+																	<a href="#license" class="nav-link bor5" id="license-tab" data-toggle="tab" role="tab" aria-controls="contact" aria-selected="false">driver’s license</a>
+																</li>
+															</ul>
+															<div class="tab-content" id="myTabContent">
+																<div id='id-card' class="tab-pane show active" role="tabpanel" aria-labelledby="id-card-tab">
+																	<p class="payment-title"><img src="images/idcard.svg" alt="" /></p>
+																</div>
+																<div id='passport' class="tab-pane" role="tabpanel" aria-labelledby="passport-tab">
+																	<p class="payment-title"><img src="images/passport.svg" alt="" /></p>
+																</div>
+																<div id='license' class="tab-pane" role="tabpanel" aria-labelledby="license-tab">
+																	<p class="payment-title"><img src="images/driver-license.svg" alt="" /></p>
+																</div>
+															</div>
+															<ul class="payment-tips">
+																<li><span>Your photo must be valid</span></li>
+																<li><span>Your photo must be in color</span></li>
+																<li><span>Please attach front and back of document</span></li>
+																<li><span>Must be different that already provided documents</span></li>
+															</ul>
+														</div>
+
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<div class="tab-pane" id="pro-account" role="tabpanel" aria-labelledby="pro-account-tab">
+											<div class="mt-5 mb-5">
+												<p><b>File submitted:</b>&nbsp;<span>giaykhenthuongquy42020.jpg</span></p>
+												<p><b>Status:</b>&nbsp;<strong class="text-red">Rejected</strong></p>
+											</div>
+											<div class="">
+												<div class="row justify-content-xl-end">
+													<div class="upload-l-box">
+														<div class="upload-files-box">
+															<label for="" class="choose-file-title">choose a file type</label>
+															<ul class="row nav" role="tablist">
+																<li class="nav-item" role="presentation">
+																	<a href="#address-proof" class="nav-link bor5 active" id="address-proof-tab" class="active" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">address proof</a>
+																</li>
+																<li class="nav-item" role="presentation">
+																	<a href="#bank-statement" class="nav-link bor5" id="bank-statement-tab" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">bank statement</a>
+																</li>
+															</ul>
+															<div class="tab-content">
+																<div id='address-proof' class="tab-pane show active" role="tabpanel" aria-labelledby="address-proof-tab">
+																	<p class="payment-title"><img src="images/address-proof.svg" alt="" /></p>
+																	<ul class="payment-tips">
+																		<li><span>Show your residential address</span></li>
+																		<li><span>Should be within 90 days</span></li>
+																		<li><span>Show provisions of services</span></li>
+																		<li><span>Must be different that already provided documents</span></li>
+																	</ul>
+																</div>
+																<div id='bank-statement' class="tab-pane" role="tabpanel" aria-labelledby="bank-statement-tab">
+																	<p class="payment-title"><img src="images/bank-statement.svg" alt="" /></p>
+																	<ul class="payment-tips">
+																		<li><span>Show your residential address</span></li>
+																		<li><span>Show your account number</span></li>
+																		<li><span>Should be within 90 days</span></li>
+																		<li><span>Must be different that already provided documents</span></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6">
+										<div class="upload-box-r">
+									<div class="browse-file-box bor10">
+										<img src="images/upload-files.svg" alt="" />
+										<p class="text-uppercase">drag and drop your file here or</p>
+										<button type="button" class="buttons buttons-success">Browse file</button>
+										<span>File types: .png, .jpg, .pdf</span>
+										<span>Max file size: 12mb</span>
+									</div>
+									<button type="button" class="buttons buttons-success">SUBMIT</button>
+
+										</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="footer-box">
+					<div class="footer-link">
+						<a href="" target="_blank">privacy policy</a> <b></b>
+						<a href="" target="_blank">Product Disclosure Statement</a>
+					</div>
+					<div class="footer-text">
+						<p>GO Markets brand is authorized and regulated in various jurisdictions.</p>
+						<p>Risk Warning: Trading Forex and Derivatives carries a high level of risk, including the risk of losing substantially more than your initial deposit. Leverage magnifies both gains and losses. You should only trade in risk capital (capital you can afford to lose). Trading leveraged products may not be suitable for all investors, please ensure that you fully understand the risks involved, and take into consideration your level of experience, investment objectives and seek independent advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to use the services provided by GO Markets based on the legal requirements in his/her country of residence. Before you start to trade, please take some to fully read our
+							<a href="" target="_blank">Product Disclosure Statement(PDS)</a>.</p>
+						<p>This website is owned and operated by GO Markets. All contents © <span class="footer-year"></span> GO Markets. All rights reserved.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/NProgress.min.js"></script>
+		<script src="js/loading.js"></script>
+		<script src="js/index.js"></script>
 	</body>
+
 </html>
