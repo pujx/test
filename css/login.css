@@ -218,7 +218,9 @@ button {
 .left-box {
 	width: 50%;
 	background: #091F2c;
-	opacity: .9
+	opacity: .9;
+	position: fixed;
+	height: 100%;
 }
 
 .left-box .left-box-logo {
@@ -266,12 +268,15 @@ button {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	border-radius: 20px;
+	border-radius: 20px;-webkit-border-radius: 20px;-moz-border-radius: 20px;
 	padding: 0px 20px;
-	background: rgba(9, 31, 44, 0.5);
-	box-shadow: inset 39.8333px -39.8333px 39.8333px rgba(7, 24, 33, 0.1), inset -39.8333px 39.8333px 39.8333px rgba(255, 255, 255, 0.1);
-	-webkit-box-shadow: inset 39.8333px -39.8333px 39.8333px rgba(7, 24, 33, 0.1), inset -39.8333px 39.8333px 39.8333px rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(39.8333px);
+	filter: blur(5px);
+-webkit-filter: blur(5px);
+backdrop-filter: blur(5px);
+    background: rgba(9, 31, 44, .9);
+    box-shadow: inset 39.8333px -39.8333px 39.8333px rgb(7 24 33 / 10%), inset -39.8333px 39.8333px 39.8333px rgb(255 255 255 / 10%);
+    -webkit-box-shadow: inset 39.8333px -39.8333px 39.8333px rgb(7 24 33 / 10%), inset -39.8333px 39.8333px 39.8333px rgb(255 255 255 / 10%);
+	
 }
 
 .right-box .right-form-top {
@@ -529,6 +534,7 @@ button {
 	.right-form-top .left-box-logo {
 		display: none;
 	}
+	.right-box{margin-left: 50%;}
 }
 
 @media screen and (max-width:1199px) {
