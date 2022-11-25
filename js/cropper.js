@@ -3,68 +3,55 @@ $(function() {
 		this.imageWrap = $('#J_upload_box');
 		this.uploadBtnWrap = $('#J_file_wrap');
 		this.preImg = $('#J_file_box_img');
-		this.uploadImgClickBox = $('.upload-img-click-box'); // 2个父级上传
 		this.cropImg = null;
-		this.uploadParentBtn = null; // 某一个父级上传
-		this.uploadBtnDirection = null;
+		//  this.uploadBtn = $('#J_file'); 
 		this.cropBtn = $('#J_crop');
-		this.pics = {
-			left: {},
-			right: {}
-		};
+		this.pics = {};
 		this.upload();
 	}
 	PictureEdit.prototype.upload = function() {
 		var that = this;
 		that.delPics();
 		that.crop();
-		that.getUploadBtn(); //获取点击按钮
-		that.uploadOuterLayerParentBtnDelete(); // 点击外层关闭按钮
 	};
 	$('#J_file_wrap').on('click', function() {
-		$("#J_file").attr("type", "file");
 		if(typeof FileReader == "undefined") {
-			$.DialogByZ.Autofade({Content: "Your browser does not support FileReader,Please upload it in another browser."});
+			$.confirm({
+				title: "Error!",
+				content: "您的浏览器不支持 FileReader ,请换个浏览器进行上传",
+				type: "red",
+				typeAnimated: true,
+				buttons: {
+					tryAgain: {
+						text: "关闭",
+						btnClass: "btn-red",
+					},
+				}
+			});
 		} else {
 			$('#cropperModal').modal('show');
 		}
 	});
-
-//	$("#J_file").on("click", function() {
-//		var listl_len1 = $("#J_upload_box .item").length;
-//		if(listl_len1 >= 4) {
-//			$.DialogByZ.Autofade({Content: "最多上传4张图片~"});
-//			return false;
-//		}
-//	});
-	
-	$(".upload-click").on("click", function() {
-		var listl_len1 = $(this).parent().children(".upload-img-box .item").length;
-		if(listl_len1 >= 4) {
-			$.DialogByZ.Autofade({Content: "Upload up to 4 pictures"});
-			return false;
-		}else{
-			$('#cropperModal').modal('show');
-		}
-	});
-	
-	
 	//add
 	PictureEdit.prototype.crop = function() {
 		var that = this;
 		that.cropBtn.click(function() {
 			if($(".previewImg img").attr("src") == null) {
-			$.DialogByZ.Autofade({Content: "尚未上传身份证，你之后可以在My RM上传证件，或email至newaccounts@radexmarkets.com"});
+				$.confirm({
+					title: "Error!",
+					content: "图片不能为空",
+					type: "orange",
+					typeAnimated: true,
+					buttons: {
+						tryAgain: {
+							text: "OK",
+							btnClass: "btn-orange",
+						},
+					}
+				});
 				return false;
 			} else {
 				that.addPics();
-				$("#pop-upload-bg").show();
-				$(".previewImg").children("img").remove();
-				$(".cropper-container").hide();
-				$("#J_file").attr("type", "text");
-				$("#J_file_box_img").attr("src", "");
-				$("#pop-upload-bg").show();
-			$('#cropperModal').modal('hide');
 			}
 		});
 	};
@@ -87,71 +74,25 @@ $(function() {
 			key = this.getFileKey(),
 			data = '';
 		this.cropImg = this.preImg.cropper('getCroppedCanvas', {
-//			width: 200,
-//			height: 200
+			width: 200,
+			height: 200
 		});
 		data = this.cropImg.toDataURL();
 		thumb.css('backgroundImage', 'url(' + data + ')').attr('key', key);
-		var newThumb = thumb.clone(true);
 		thumb.insertBefore(this.uploadBtnWrap);
-		this.uploadParentBtn.append(newThumb);
-		this.pics[this.uploadBtnDirection][key] = data.split(',').pop();
-		this.uploadOuterLayerParentBtnIsShow();
+		this.pics[key] = data.split(',').pop();
 	};
 	// delete images
-	PictureEdit.prototype.delPics = function(outerLayerDom) {
+	PictureEdit.prototype.delPics = function() {
 		var that = this;
-		var newDom = outerLayerDom || that.imageWrap;
-		newDom.on('click', 'i', function() {
+		that.imageWrap.on('click', 'i', function() {
 			var parent = $(this).parent('.item'),
 				key = parent.attr('key');
 			parent.remove();
-			if(!outerLayerDom) {
-				that.uploadParentBtn.find('div[key =' + key + ']').remove();
-			}
-			delete that.pics[that.uploadBtnDirection][key];
-			that.uploadOuterLayerParentBtnIsShow();
+			delete that.pics[key];
+
 		});
 	};
-	// getBtn
-	PictureEdit.prototype.getUploadBtn = function() {
-		var that = this;
-		$('.upload-click').on('click', function() {
-			that.uploadParentBtn = $(this).parent();
-			if(that.uploadParentBtn.attr('id') === 'J_upload_box1') {
-				//显示上传地址证明弹框
-				that.uploadBtnDirection = 'right';
-				$(".upload-address-ul").show();
-				$(".identity-select,.identity-dropdown").hide();
-			} else {
-				//显示上传身份证和护照的弹框
-				that.uploadBtnDirection = 'left';
-				$(".upload-address-ul").hide();
-				$(".identity-select,.identity-dropdown").show();
-			}
-			var listl_img = that.uploadParentBtn.children('.item');
-			listl_img.each(function(key, val) {
-				var newVal = $(val).clone(true);
-				newVal.insertAfter(that.uploadBtnWrap);
-			});
-		})
-	}
-	// OuterLayerBtn-show
-	PictureEdit.prototype.uploadOuterLayerParentBtnIsShow = function() {
-		var uploadOuterLayerBtn = this.uploadParentBtn.children('a');
-//		setTimeout(function() {
-//			var listl_len1 = $("#J_upload_box .item").length;
-//			if(listl_len1 >= 4) {
-//				uploadOuterLayerBtn.hide()
-//			} else {
-//				uploadOuterLayerBtn.show()
-//			}
-//		}, 10)
-	}
-	// OuterLayerBtn-delete
-	PictureEdit.prototype.uploadOuterLayerParentBtnDelete = function() {
-		this.delPics(this.uploadImgClickBox)
-	}
 	// base 64
 	PictureEdit.prototype.getPicsData = function() {
 		var arr = [];
@@ -164,26 +105,20 @@ $(function() {
 });
 
 $("#cropperModal").on("hide.bs.modal", function() {
-	$("#J_file").attr("type", "text");
+	$("#J_file").attr("type", "file");
 	$(".previewImg").children("img").remove();
-	$("#J_upload_box .item").remove();
 });
 $('#cropperModal').on('show.bs.modal', function(event) {
 	$(".cropper-container").hide();
-	$("#pop-upload-bg").show();
-	$("#J_file").attr("type", "file");
 })
 
 function selectImg(file) {
-	$("#pop-upload-bg").hide();
-	$("#upload-select-loading").css("display", "block");
 	if(!file.files || !file.files[0]) {
 		return;
 	}
 	const reader = new FileReader()
 	const that = this;
 	reader.onloadend = function() {
-
 		const result = this.result
 		const img = new Image()
 		img.src = result
@@ -193,39 +128,12 @@ function selectImg(file) {
 			imgArtwork = data
 			var replaceSrc = imgSrc;
 			$('#J_file_box_img').cropper('replace', replaceSrc, false);
-			$("#upload-select-loading").css("display", "none");
-
 		}
 	}
 	reader.readAsDataURL(file.files[0]);
-	//限制上传图片的大小
-	var isIE = /msie/i.test(navigator.userAgent) && !window.opera;
-	var fileSize = 0;
-	if(isIE && !file.files) {
-		fileSize = file.Size
-	} else {
-		fileSize = file.files[0].size
-	}
-	var size = fileSize / 1024;
-	if(size > 10000) {
-		$.DialogByZ.Autofade({Content: "文件大小不能超过 10M"});
-		file.value = "";
-		$("#pop-upload-bg").show();
-		$("#upload-select-loading").css("display", "none");
-		return
-	}
-	//判断图片格式
-	var name = file.value;
-	var fileName = name.substring(name.lastIndexOf(".") + 1).toLowerCase();
-	if(fileName != "jpg" && fileName != "jpeg" && fileName != "pdf" && fileName != "png" && fileName != "dwg" && fileName != "gif") {
-		
-			$.DialogByZ.Autofade({Content: "请选择正确的图片格式（jpg,png,gif,dwg,pdf,gif )！"});
-		file.value = "";
-		$("#pop-upload-bg").show();
-		$("#upload-select-loading").css("display", "none");
-		return
-	}
+	$("#J_file").attr("type", "text");
 }
+
 $('#J_file_box_img').cropper({
 	aspectRatio: NaN,
 	preview: '.previewImg',
@@ -240,6 +148,23 @@ $('#J_file_box_img').cropper({
 	touchDragZoom: true,
 	rotatable: true,
 	crop: function(e) {}
+});
+$(".cropper-rotate-btn").on("click", function() {
+	$('#J_file_box_img').cropper("rotate", 45);
+});
+$(".cropper-rotate-btnL").on("click", function() {
+	$('#J_file_box_img').cropper("rotate", -45);
+});
+var flagX = true;
+$(".cropper-scaleX-btn").on("click", function() {
+	if(flagX) {
+		$('#J_file_box_img').cropper("scaleX", -1);
+		flagX = false;
+	} else {
+		$('#J_file_box_img').cropper("scaleX", 1);
+		flagX = true;
+	}
+	flagX != flagX;
 });
 
 function compress(img, compressNum) {

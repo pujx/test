@@ -36,6 +36,25 @@ $(function() {
 				window.open(h, "_self");
 			});
 		}
+		$.confirm({
+				theme: 'Modern',
+				icon: "modal-icon-warning",
+				title: "",
+				content: "Success!",
+  				animation: 'zoom',
+    			closeAnimation: 'scale',
+				buttons: {
+//					Cancel: {
+//						btnClass: 'buttons buttons-trans',
+//					},
+					OK: {
+						btnClass: 'buttons buttons-success',
+					},
+				}
+			});
+			
+	
+	
 	});
 
 	$(".data-listl").on("click", "li a", function() {
@@ -61,22 +80,6 @@ $(function() {
 		} else {
 
 			$(this).appendTo($("#rList"));
-						$.confirm({
-				theme: 'Modern',
-				icon: "modal-icon-warning",
-				title: "",
-				content: "Success!",
-  				animation: 'zoom',
-    			closeAnimation: 'scale',
-				buttons: {
-//					Cancel: {
-//						btnClass: 'buttons buttons-trans',
-//					},
-					OK: {
-						btnClass: 'buttons buttons-success',
-					},
-				}
-			});
 			$("#rList a").click(function(e) {
 				e.preventDefault();
 			});

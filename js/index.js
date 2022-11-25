@@ -29,12 +29,13 @@ $(function() {
 			$('.scale-up').stop().fadeOut();
 		}
 	});
+
 });
 
 $(function() {
 	$(".treeview>a").click(function() {
 		if($("body").hasClass("main-sidebar-open")) {} else {
-//			$(this).parent().toggleClass("active");
+			//			$(this).parent().toggleClass("active");
 			$(this).siblings().stop().slideToggle().parent().siblings().children("ul").slideUp();
 			$(this).parent().stop().toggleClass("menu-icon-down");
 			$(this).parent().siblings().removeClass("menu-icon-down");
@@ -96,3 +97,13 @@ $(function() {
 		});
 	});
 });
+
+function addnewareacode() {
+	var areacodevalue = $("input#registration_phone_main_phone").val();
+	$("span#newareacode").html(areacodevalue);
+}
+
+function selCountry() {
+	var sel = $("#country option:selected").attr("title");
+	$("#CountryNumber").html(sel)
+}

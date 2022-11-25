@@ -6,9 +6,9 @@
 	};
 	var Selector = {
 		wrapper: ".wrapper",
-//		contentWrapper: ".content-wrapper",
+		contentWrapper: ".content-wrapper",
 		layoutBoxed: ".layout-boxed",
-//		mainFooter: ".main-footer",
+		mainFooter: ".footer-box",
 		mainHeader: ".main-header",
 		sidebar: ".sidebar",
 		controlSidebar: ".control-sidebar",
@@ -64,21 +64,21 @@
 		if($("body").hasClass(ClassName.fixed)) {
 			$(Selector.contentWrapper).css("min-height", windowHeight - footerHeight)
 		} else {
-			var postSetHeight;
+//			var postSetHeight;
 			if(windowHeight >= sidebarHeight) {
 //				$(Selector.contentWrapper).css("min-height", windowHeight - neg);
 				$(Selector.contentWrapper).css("min-height", windowHeight - footerHeight);
-				postSetHeight = windowHeight - neg
+//				postSetHeight = windowHeight - neg
 			} else {
-				$(Selector.contentWrapper).css("min-height", sidebarHeight - footerHeight);
-				postSetHeight = sidebarHeight
+				$(Selector.contentWrapper).css("min-height",  windowHeight - footerHeight - 95);
+//				postSetHeight = sidebarHeight
 			}
-			var $controlSidebar = $(Selector.controlSidebar);
-			if(typeof $controlSidebar !== "undefined") {
-				if($controlSidebar.height() > postSetHeight) {
-					$(Selector.contentWrapper).css("min-height", $controlSidebar.height())
-				}
-			}
+//			var $controlSidebar = $(Selector.controlSidebar);
+//			if(typeof $controlSidebar !== "undefined") {
+//				if($controlSidebar.height() > postSetHeight) {
+//					$(Selector.contentWrapper).css("min-height", $controlSidebar.height())
+//				}
+//			}
 		}
 	};
 	Layout.prototype.fixSidebar = function() {
@@ -133,7 +133,7 @@
 }(jQuery) + function($) {
 	var DataKey = "fabadmin.pushmenu";
 	var Default = {
-		collapseScreenSize: 991,
+		collapseScreenSize: 767,
 		expandOnHover: false,
 		expandTransitionDelay: 200
 	};

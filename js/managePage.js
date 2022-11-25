@@ -11,9 +11,6 @@ $(document).ready(function() {
 	mouseIn("#minimalBalanceTitle", "#pop-minimal-balance");
     mouseIn("#mainRiskTip","#pop-mainRiskTip");
     
-    
-    
-	// 公共配置
 	Highcharts.setOptions({
 		chart: {
 			type: 'solidgauge'
