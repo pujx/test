@@ -270,10 +270,10 @@ button {
 	left: 0;
 	border-radius: 20px;-webkit-border-radius: 20px;-moz-border-radius: 20px;
 	padding: 0px 20px;
-	filter: blur(5px);
--webkit-filter: blur(5px);
-backdrop-filter: blur(5px);
-    background: rgba(9, 31, 44, .9);
+	/*filter: blur(39px);*/
+	/*-webkit-filter: blur(39px);*/
+	backdrop-filter: blur(39.8333px);
+    background: rgba(9, 31, 44, .5);
     box-shadow: inset 39.8333px -39.8333px 39.8333px rgb(7 24 33 / 10%), inset -39.8333px 39.8333px 39.8333px rgb(255 255 255 / 10%);
     -webkit-box-shadow: inset 39.8333px -39.8333px 39.8333px rgb(7 24 33 / 10%), inset -39.8333px 39.8333px 39.8333px rgb(255 255 255 / 10%);
 	
