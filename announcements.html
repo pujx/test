@@ -7,12 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="icon" href="favicon.ico">
-		<title>GO Markets | Trading Central</title>
+		<title>GO Markets | 交易时间调整公告</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/loading.css" />
-		<link rel="stylesheet" href="css/animate.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 		<style type="text/css">
 			@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
@@ -32,11 +31,11 @@
 							<h2>nguyen van john doe <br/>(2nd Account)</h2><span class="red">not verified</span>
 							<a href="upload-files.html" target="_blank">click here to verify</a>
 						</div>
-						<!--<div class="sidebar-status"><h2>nguyen van john doe <br/>(2nd Account)</h2><span class="green">verified</span></div>--></div>
+					</div>
 					<div class="sidebar-menu">
 						<h5>Dashboard</h5>
 						<ul>
-							<li>
+							<li class="active">
 								<a href="account-status.html"><i><img src="images/menu-account-status.svg" alt=""/></i><span>account status</span></a>
 							</li>
 							<li>
@@ -85,7 +84,7 @@
 									</li>
 								</ul>
 							</li>
-							<li class="treeview active menu-icon-down menu-open">
+							<li class="treeview">
 								<a href="javascript:"><i><img src="images/menu-tools.svg" alt=""/></i><span>useful tools</span></a>
 								<ul class="treeview-menu">
 									<li>
@@ -94,7 +93,7 @@
 										<a href="MT4&5-genesis.html">mt4&mt5 genesis</a>
 									</li>
 									<li>
-										<a href="javascript:" class="linkChecked">trading central</a>
+										<a href="trading-central.html">trading central</a>
 									</li>
 									<li>
 										<a href="download-center.html">download center</a>
@@ -177,10 +176,16 @@
 			</header>
 			<div class="content-wrapper">
 				<div class="box">
-					<div class="box-title"><span class="title-checked">trading central</span></div>
+					<div class="box-title"><span class="title-checked">交易时间调整公告</span></div>
 					<div class="box-body">
-						<div class="trading-central-box">
-							<p id="frame-loading"><i class="spinner-grow"></i></p><iframe id="tradingcentral" src="https://site.recognia.com/gomarkets/serve.shtml?tkn=fwtX1UqvMNMUJOafwki7cy6ci0d0b2%2BxBKht0CXfk7y1qipCnmt%2FPMnhaK15iufKaRRWhZoofO4N0lzawTY8ts5p620C2cYx" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" leftmargin="0" topmargin="0" allowTransparency="true"></iframe></div>
+						<div class="notice-box">
+							<p>您好！</p>
+							<p>2022年美国夏令时将于<b style="color: #48cc7f;"> 03月14日（下周一）</b>正式开始，受此影响，GO Markets 高汇<b style="color: #48cc7f;">平台时间将由 GMT+2 时间延长一小时至 GMT+3 时间</b>。</p><br/>
+							<p><b>“本次调整对我的交易会产生何种影响？”</b></p>
+							<p>目前，GO Markets 高汇交易平台上显示的时间为“GMT+2”，自周一开盘后，平台时间将显示为“GMT+3”。虽然每天的产品延期依然会在平台时间晚上 12 点进行，但是换算成澳洲时间将会变成澳洲东部时间早上 08:00, 北京时间早上 5:00 或 GMT 标准时间晚上 09:00。</p><br/>
+							<p><b>“本次调整对我的 EA 会产生何种影响？”</b></p>
+							<p>如您需使用 EA 交易、自动交易或任何算法交易系统，本次时间调整会对您的交易产生一定的影响。请您务必检查确认是否需要手动调整。</p><br/>
+							<p>交易愉快！</p><br/></div>
 					</div>
 				</div>
 			</div>
@@ -192,7 +197,7 @@
 				<div class="footer-text">
 					<p>GO Markets brand is authorized and regulated in various jurisdictions.</p>
 					<p>Risk Warning: Trading Forex and Derivatives carries a high level of risk, including the risk of losing substantially more than your initial deposit. Leverage magnifies both gains and losses. You should only trade in risk capital (capital you can afford to lose). Trading leveraged products may not be suitable for all investors, please ensure that you fully understand the risks involved, and take into consideration your level of experience, investment objectives and seek independent advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to use the services provided by GO Markets based on the legal requirements in his/her country of residence. Before you start to trade, please take some to fully read our
-						 <a href="https://www.int.gomarkets.com/legal-documents/" target="_blank">Product Disclosure Statement(PDS)</a>.</p>
+						<a href="https://www.int.gomarkets.com/legal-documents/" target="_blank">Product Disclosure Statement(PDS)</a>.</p>
 					<p>This website is owned and operated by GO Markets. All contents © <span class="footer-year"></span> GO Markets. All rights reserved.</p>
 				</div>
 			</div>
@@ -450,11 +455,6 @@
 		<script src="js/loading.js"></script>
 		<script src="js/sidebar.js"></script>
 		<script src="js/index.js"></script>
-		<script>
-			$("#tradingcentral").load(function() {
-				$("#frame-loading").fadeOut();
-			})
-		</script>
 	</body>
 
 </html>
