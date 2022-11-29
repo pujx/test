@@ -107,3 +107,13 @@ function selCountry() {
 	var sel = $("#country option:selected").attr("title");
 	$("#CountryNumber").html(sel)
 }
+
+
+$(window).scroll(function(e) {
+    
+    var mHeader = ($(".main-header").height() - 10);
+		if($(window).scrollTop() > mHeader)
+			$(".main-header").addClass("sticky");
+		else
+			$(".main-header").removeClass("sticky");
+	});
