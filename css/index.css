@@ -463,7 +463,10 @@ transition:background .3s;-moz-transition:background .3s;-ms-transition:backgrou
 
 
 .resetPwdBox .footer-box{margin-left:0}
-.resetPwdBox header{padding:20px 30px;height:75px;background:#091F2C}
+.resetPwdBox header{background: #091F2C;
+    padding: 0 20px;
+    line-height: 75px;
+    height: 75px;}
 .resetPwdBox header>a{display:inline-block;margin-top:5px}
 .resetPwdBox header .rightBar{float:right}
 .resetPwdBox header .rightBar a{display:inline-block;margin-left:20px;vertical-align:middle;background:#48cc7f;border-radius:5px;width:36px;height:36px;line-height:36px;text-align:center}
@@ -472,6 +475,19 @@ transition:background .3s;-moz-transition:background .3s;-ms-transition:backgrou
 .resetPwd.box{margin:50px 0 20px 0}
 .reset-password-box{padding-top:15px}
 .reset-password-box h5{text-align:center;font-weight:bold;font-size:24px;text-transform:uppercase}
+@media screen and (max-width:991px) {
+    .resetPwdBox header{
+            padding: 0 15px;
+            line-height: 62px;
+            height: 65px;
+    }
+    .resetPwdBox header .rightBar a{width: 25px;margin-left: 10px;
+    height: 25px;
+    line-height: 25px;}
+     .resetPwdBox header .rightBar a img{width: 50%;}
+}
+
+
 
 
 .stock-box .stock-question-box{border:1px solid #e6e7ea;margin-bottom:30px}
