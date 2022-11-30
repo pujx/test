@@ -10,6 +10,7 @@
 		<title>GO Markets | Account Status</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/owl.carousel.css" />
+		<link rel="stylesheet" href="css/jquery-confirm.min.css" />
 		<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/loading.css" />
@@ -227,124 +228,31 @@
 			<div class="content-wrapper">
 				<div class="box">
 					<div class="row">
-
-						<style>
-							.info-box {
-								display: block;
-								font-size: 24px;
-								font-weight: bold;
-								text-transform: uppercase;
-								position: relative;
-								padding: 42px 20px;
-								text-align: center;
-								color: #fff;
-								overflow: hidden;
-								transition: all .5s
-							}
-							
-							.info-box .info-box-text {
-								position: relative;
-								z-index: 1;
-								transition: all .5s
-							}
-							
-							.info-bg {
-								transition: all .5s
-							}
-							
-							.info-box:hover .info-bg {
-								transform: skew(5deg, 0deg);
-								transition: all .5s
-							}
-							
-							.info-bg {
-								width: 100%;
-								height: 100%;
-								position: absolute;
-								left: 0;
-								top: 0;
-								bottom: 0;
-								right: 0;
-								transition: all .5s
-							}
-							
-							.info-box i {}
-							
-							.info-box b {}
-							
-							.info-box:hover {
-								color: #fff;
-								transition: all .5s
-							}
-							
-							.info-box.info-deposit {
-								-webkit-transition: all .5s;
-								background: linear-gradient(92.07deg, #48CC7F 0%, #00481E 100%);
-								transition: all .5s
-							}
-							
-							.info-box.info-deposit:hover {
-								transition: all .5s;
-								background: linear-gradient(92.07deg, #48CC7F 0%, #008939 100%);
-								transition: all .5s
-							}
-							
-							.info-box.info-withdrawal {
-								background: linear-gradient(92.07deg, #1F6DCA 0%, #00244F 100%);
-								transition: all .5s
-							}
-							
-							.info-box.info-withdrawal:hover {
-								background: linear-gradient(92.07deg, #1F6DCA 0%, #003C84 100%);
-								transition: all .5s
-							}
-							
-							.info-box.info-transfer {
-								background: linear-gradient(92.07deg, #F26B3E 0%, #441100 100%);
-								transition: all .5s
-							}
-							
-							.info-box.info-transfer:hover {
-								background: linear-gradient(92.07deg, #F26B3E 0%, #812000 100%);
-								transition: all .5s
-							}
-							
-							@media only screen and (max-width:1199px) {
-								.info-box {
-									font-size: 16px;
-									padding: 20px;
-									margin: 5px 0
-								}
-							}
-							
-							@media only screen and (max-width:991px) {
-								.box {
-									margin: 10px
-								}
-							}
-						</style>
-
-						<div class="col-xl-4">
-							<a href="javascript:" class="info-box info-deposit bor5">
+						<div class="col-md-6 col-xl-4">
+							<a href="deposit.html" class="info-box info-deposit bor5">
+								<span class="info-bg"></span>
 								<img src="images/info-green-bg.png" alt="" class="info-bg" />
+								<p><i></i></p>
 								<div class="info-box-text">
 									<i><img src="images/tools-deposit.svg"/></i>
 									<b>deposit</b>
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-4">
-							<a href="javascript:" class="info-box info-withdrawal bor5">
+						<div class="col-md-6 col-xl-4">
+							<a href="withdrawal.html" class="info-box info-withdrawal bor5">
 								<img src="images/info-blue-bg.png" alt="" class="info-bg" />
+								<p><i></i></p>
 								<div class="info-box-text">
 									<i><img src="images/tools-withdrawal.svg"/></i>
 									<b>withdrawal</b>
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-4">
-							<a href="javascript:" class="info-box info-transfer bor5">
+						<div class="col-md-6 col-xl-4">
+							<a href="internal-transfer.html" class="info-box info-transfer bor5">
 								<img src="images/info-orange-bg.png" alt="" class="info-bg" />
+								<p><i></i></p>
 								<div class="info-box-text">
 									<i><img src="images/tools-internal-transfer.svg"/></i>
 									<b>internal transfer</b>
@@ -484,8 +392,8 @@
 										<li class="account-login">&nbsp;</li>
 										<li class="account-detail">
 											<div class="unlink-box">
-												<button type="button" class="buttons buttons-success">Deposit now</button>
-												<a href="javascript:" title="unlink">
+												<button type="button" class="buttons buttons-success" onclick="window.open('deposit.html','_self')">Deposit now</button>
+												<a href="javascript:" title="unlink" class="unlinkBtn">
 													<em><img src="images/unlink-right.png" alt="" /></em>
 													<i><img src="images/unlink-left.png" alt="" /></i>
 												</a>
@@ -497,12 +405,11 @@
 
 							</div>
 						</div>
-	<div class="hl-slider">
+						<div class="hl-slider">
 							<div class="hl-click">
 								<div class="hl-click-box">
 									<p class="account-num">
-										<span>Account 1/5</span>
-										<em>Current Account</em>
+										<span>Account 2/5</span>
 									</p>
 									<p class="toogle-icon">
 										<span></span>
@@ -569,8 +476,8 @@
 										<li class="account-login">&nbsp;</li>
 										<li class="account-detail">
 											<div class="unlink-box">
-												<button type="button" class="buttons buttons-success">Deposit now</button>
-												<a href="javascript:" title="unlink">
+												<button type="button" class="buttons buttons-success" onclick="window.open('deposit.html','_self')">Deposit now</button>
+												<a href="javascript:" title="unlink" class="unlinkBtn">
 													<em><img src="images/unlink-right.png" alt="" /></em>
 													<i><img src="images/unlink-left.png" alt="" /></i>
 												</a>
@@ -582,12 +489,11 @@
 
 							</div>
 						</div>
-	<div class="hl-slider">
+						<div class="hl-slider">
 							<div class="hl-click">
 								<div class="hl-click-box">
 									<p class="account-num">
-										<span>Account 1/5</span>
-										<em>Current Account</em>
+										<span>Account 3/5</span>
 									</p>
 									<p class="toogle-icon">
 										<span></span>
@@ -654,8 +560,8 @@
 										<li class="account-login">&nbsp;</li>
 										<li class="account-detail">
 											<div class="unlink-box">
-												<button type="button" class="buttons buttons-success">Deposit now</button>
-												<a href="javascript:" title="unlink">
+												<button type="button" class="buttons buttons-success" onclick="window.open('deposit.html','_self')">Deposit now</button>
+												<a href="javascript:" title="unlink" class="unlinkBtn">
 													<em><img src="images/unlink-right.png" alt="" /></em>
 													<i><img src="images/unlink-left.png" alt="" /></i>
 												</a>
@@ -1230,6 +1136,7 @@
 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-confirm.min.js"></script>
 		<script src="js/chosen-1.1.8.min.js"></script>
 		<script src="js/chosen.js"></script>
 		<script src="js/NProgress.min.js"></script>
