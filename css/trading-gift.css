@@ -1,698 +1,153 @@
-@charset"utf-8";
-.trading-gift-page {
-	max-width: 1920px;
-	margin: 0 auto;
-}
-
-.inner-page.trading-gift-page table {
-	margin-bottom: 0;
-}
-
-.pro-max-box1 {
-	padding: 20px 0 60px;
-}
-
-.pro-max-box {
-	background-image: url(../images/gift-12promax.png);
-	background-position: right bottom;
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.pro-max-box .max-box-left h3 {
-	font-size: 38px;
-	color: #231f20;
-	font-weight: bold;
-	margin: 35px 0;
-}
-
-.pro-max-box .max-box-left h4 {
-	font-size: 25px;
-}
-
-.pro-max-box .max-box-left h4 span {
-	color: #515151;
-	display: inline-block;
-	margin-right: 10px;
-}
-
-.pro-max-box .max-box-left h4 b {
-	color: #161616;
-	font-weight: normal;
-}
-
-.pro-max-box .max-box-left table {
-	margin: 66px 0 0;
-}
-
-.bor000 {
-	border: 1px solid #303030;
-}
-
-.bg-green {
-	background-color: #06b572;
-}
-
-.bg-fff {
-	background-color: #fff !important;
-}
-
-.bg-black {
-	background-color: #000;
-}
-
-.bg-gray {
-	background-color: #f3f3f3;
-}
-
-.pro-max-box .max-box-left>table th {
-	font-size: 30px;
-	text-align: center;
-	padding: 43px 5px;
-}
-
-.pro-max-box .max-box-left>table td {
-	font-size: 20px;
-	text-align: center;
-	padding: 30px 5px;
-}
-
-.hw-box {
-	padding: 60px 0;
-}
-
-.hw-box .lun-gift-intro {
-	background: #fff;
-	text-align: center;
-	padding: 30px;
-}
-
-.hw-box .lun-gift-intro>h3 {
-	color: #242424;
-	font-weight: bold;
-	margin: 0;
-	margin: 15px 0 25px;
-}
-
-.lun-gift-intro .lun-gift-size span {
-	font-size: 18px;
-	color: #515151;
-}
-
-.lun-gift-size {
-	margin-bottom: 25px;
-}
-
-.lun-gift-intro .lun-gift-num {
-	color: #000;
-	font-size: 18px
-}
-
-.lun-gift-intro h3 span {
-	font-weight: normal;
-}
-
-.lun-gift-intro .lun-gift-num p {
-	margin-bottom: 5px
-}
-
-.lun-gift-intro .lun-gift-num p span {
-	color: #a40000
-}
-
-.lun-foot {
-	margin-top: 100px
-}
-
-.lun-foot>div>div {
-	position: relative;
-	transition: all 0.8s
-}
-
-.lun-foot .lun-foot-txt {
-	text-align: center;
-	margin-bottom: 17px
-}
-
-.lun-foot .lun-foot-txt h3 {
-	margin-bottom: 15px;
-	margin-top: 0;
-	font-weight: bold
-}
-
-.lun-foot .lun-foot-txt p {
-	font-size: 18px;
-	margin-bottom: 0;
-	line-height: 28px
-}
-
-.lun-foot .lun-foot-txt p span {
-	color: #a40000
-}
-
-.lun-dyson-HD01 {
-	background: #bd0d26;
-	color: #fff;
-	padding-top: 80px;
-	width: 115%
-}
-
-.lun-dyson-HD01>b {
-	position: absolute;
-	width: 8px;
-	height: 65px;
-	background: #fff;
-	right: 0;
-	top: 45px
-}
-
-.lun-dyson-HD01>p {
-	text-align: right;
-	margin-top: 60px
-}
-
-.lun-dyson-HD01>h2 {
-	position: absolute;
-	bottom: 44px;
-	left: 45px;
-	font-weight: bold
-}
-
-.lun-dyson-HD01>span {
-	position: absolute;
-	bottom: -70px;
-	display: block;
-	width: 8px;
-	background: #fff;
-	height: 88px;
-	left: 64px
-}
-
-.lun-dyson-V10 {
-	color: #fff;
-	padding: 0 7%;
-	margin-left: 9%;
-	width: 115%;
-	z-index: 9
-}
-
-.lun-dyson-V10 .V10-top {
-	border: 10px solid #a40000
-}
-
-.lun-dyson-V10 .V10-top h2 {
-	position: absolute;
-	font-weight: bold;
-	left: 45px;
-	top: 12px
-}
-
-.lun-dyson-V10 h1 {
-	font-weight: bold;
-	text-align: right;
-	font-size: 50px;
-	margin-right: 81px
-}
-
-.lun-P20>h1 {
-	color: #fff;
-	font-weight: bold;
-	text-align: right;
-	position: relative;
-	padding-top: 65px;
-	margin-bottom: 72px;
-	font-size: 52px
-}
-
-.lun-P20>h1:after {
-	background: #a40000;
-	bottom: -25px;
-	content: "";
-	height: 6px;
-	right: 0;
-	position: absolute;
-	width: 40px
-}
-
-.lun-P20>div {
-	background: #fff;
-	padding-top: 45px
-}
-
-img {
-	max-width: 100%;
-}
-
-table.common-table span {
-	color: #a40000;
-}
-
-table.second th {
-	font-size: 20px;
-	padding: 25px 2px;
-}
-
-table.second td {
-	padding: 20px 2px;
-	font-size: 16px;
-}
-
-.iphone12-wrap {
-	background-color: #f2f2f2;
-	padding: 60px 0;
-}
-
-.iphone12-wrap .iphone12-img {
-	text-align: center;
-}
-
-.iphone12-wrap h3 {
-	font-size: 25px;
-	color: #231f20;
-	font-weight: bold;
-	margin: 30px 0 25px 0;
-}
-
-.iphone12-l,
-.iphone12-r {
-	background: #fff;
-	padding: 40px 0
-}
-
-.iphone12-wrap h4 {
-	font-size: 18px;
-}
-
-.iphone12-wrap h4 span {
-	color: #515151;
-	display: inline-block;
-	margin-right: 10px;
-}
-
-.iphone12-wrap h4 b {
-	color: #161616;
-	font-weight: normal;
-}
-
-.iphone12-wrap table {
-	margin: 40px 0 30px;
-}
-
-.iphone12-text {
-	padding-left: 20px;
-}
-
-.iPadPro {
-	background-color: #000;
-	background-image: url(../images/gift-ipad.png);
-	background-position: right bottom;
-	background-repeat: no-repeat;
-	padding: 60px 0;
-}
-
-.iPadPro h3 {
-	font-size: 30px;
-	color: #fff;
-	font-weight: bold;
-	margin-top: 70px;
-}
-
-.iPadPro h4 {
-	color: #fff;
-	font-size: 22px;
-	margin: 28px 0 50px 0;
-}
-
-.iPadPro table th {
-	font-size: 24px;
-}
-
-.iPadPro table span {
-	color: #a40000;
-}
-
-.inner-page.trading-gift-page .new-title {
-	color: #fff;
-	position: relative;
-	overflow: hidden;
-}
-
-.new-title p {
-	position: absolute;
-	background: #f27f0c;
-	transform: rotate(40deg);
-	-moz-transform: rotate(40deg);
-	-webkit-transform: rotate(40deg);
-	-ms-transform: rotate(40deg);
-	-o-transform: rotate(40deg);
-	right: -26px;
-	top: 3px;
-	font-size: 12px;
-	padding: 2px 27px;
-	text-align: center;
-	color: #fff;
-}
-
-.hw-box2 .s-wrap.iphone-wrap {
-	box-shadow: 0 0 10px 1px #ddd;
-}
-
-.active {
-	background: url(../images/gift-active-bg.jpg) repeat-x;
-	padding-top: 55px;
-}
-
-.active .activeTit h2 {
-	color: #a40000;
-	padding-bottom: 15px;
-	border-bottom: 1px solid #e6e7ea;
-	font-size: 18px;
-	margin-bottom: 20px;
-	margin-top: 40px;
-}
-
-p.no-spo {
-	margin-bottom: 40px;
-}
-
-.activeDetail {
-	padding: 15px;
-}
-
-.activeDetail>div>div:nth-child(odd) {
-	padding-right: 40px
-}
-
-.activeDetail>div>div:nth-child(even) {
-	padding-left: 40px
-}
-
-.activeDetail .singleBox {
-	border-top-left-radius: 60px;
-	border-bottom-right-radius: 60px;
-	background-color: #fff;
-	margin-bottom: 85px;
-	min-height: 255px;
-	color: #000
-}
-
-.activeDetail .singleBox i {
-	margin-left: 20px;
-	display: block;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	background: #a40000;
-	text-align: center;
-	padding: 20px;
-	width: 120px;
-	height: 120px;
-}
-
-.activeDetail .singleBox i img {
-	-ms-transition: all 0.8s;
-	transition: all 0.8s;
-	-webkit-transition: all 0.8s;
-	-moz-transition: all 0.8s;
-	width: 80%;
-	margin-top: 8px;
-}
-
-.activeDetail .singleBox p {
-	line-height: 24px;
-	text-align: justify
-}
-
-.activeClause {
-	padding: 0 0 80px
-}
-
-.activeRule {
-	background: #fff;
-	padding: 10px 40px 40px;
-	box-shadow: 0 0 10px 2px #ddd;
-}
-
-.activeRule p {
-	line-height: 24px;
-	position: relative;
-	text-align: justify
-}
-
-.iphone-wrap img {
-	width: 100%;
-}
-
-.text-green {
-	color: #20bf55;
-}
-
-.activeRule p span {}
-
-.activeRule p a {
-	color: #20bf55;
-}
-
-.active>p {
-	margin-bottom: -2px
-}
-
-.active>p img {
-	transition: all 0.8s
-}
-
-@media only screen and (min-width:768px) and (max-width:1870px) {
-	.pro-max-box {
-		background-size: 37%;
-	}
-	.pro-max-box .max-box-left h3 {
-		font-size: 30px;
-	}
-	.pro-max-box .max-box-left h4 {
-		font-size: 20px;
-	}
-	.pro-max-box .max-box-left>table th {
-		font-size:16px;
-		padding: 22px 5px;
-	}
-	.pro-max-box .max-box-left>table td {
-		font-size: 14px;
-		padding: 20px 5px;
-	}
-	table.second td {
-		padding: 20px 2px;
-		font-size: 16px;
-	}
-	table.second th {
-		font-size:14px;
-	}
-	.iPadPro h3 {
-		margin-top: 0;
-	}
-}
-
-@media (min-width:1600px) {
-	.trading-gift-page .container {
-		width: 1560px!important;
-		max-width: 1560px;
-	}
-}
-
-@media only screen and (min-width:1200px) and (max-width:1599px) {
-	.iphone12-wrap table th {
-		font-size: 14px;
-		padding: 22px 5px;
-	}
-	table.second td {
-		font-size: 12px;
-		padding: 10px 0;
-	}
-}
-
-@media screen and (min-width:992px) and (max-width:1199px) {
-	.xsMax-right {
-		min-height: 512px
-	}
-	.xsMax-right .xsMax-2 {
-		top: 39px;
-		width: 36%
-	}
-	.activeDetail .singleBox i {
-		width: 100px;
-		height: 100px;
-		margin-left: 2%;
-	}
-	.activeDetail .singleBox i img {
-		margin-top: 6px
-	}
-	.activeDetail .singleBox h3 {
-		font-size: 20px
-	}
-	.activeDetail .singleBox p {
-		line-height: 22px
-	}
-	.hw-box table.second th {
-		padding: 15px 2px;
-		font-size: 15px;
-	}
-	.hw-box table.second td {
-		font-size: 13px;
-	}
-	.iPadPro {
-		background-size: contain;
-	}
-}
-
-@media (max-width:1199px) {
-	.iPadPro h4 {
-		font-size: 18px;
-	}
-	.iPadPro h3 {
-		font-size: 24px;
-	}
-	.iphone12-l,
-	.iphone-wrap {
-		margin-bottom: 25px;
-	}
-	.gift {
-		display: none
-	}
-	.hw-box .lun-gift-intro {
-		padding: 30px 15px;
-	}
-	.lun-dyson-HD01>span {
-		display: none
-	}
-	.pro-max-box .max-box-left h4 {
-		font-size: 18px;
-	}
-	.pro-max-box .max-box-left h3 {
-		font-size: 24px
-	}
-	.pro-max-box .max-box-left table {
-		margin: 30px 0 0 0;
-	}
-	.max-box-left>p {
-		display: none;
-	}
-}
-
-@media screen and (min-width:768px) and (max-width:991px) {
-	.xsMax-right {
-		min-height: 524px
-	}
-	.iPadPro {
-		background-size: contain;
-	}
-	.activeDetail>div>div:nth-child(odd) {
-		padding-right: 30px;
-	}
-	.activeDetail>div>div:nth-child(even) {
-		padding-left: 15px;
-	}
-}
-
-@media (max-width:991px) {
-	.activeClause {
-		padding: 0;
-	}
-	.ipad-text {
-		text-align: center;
-	}
-	.max-box-left {
-		text-align: center;
-	}
-	.activeRule {
-		padding: 10px 15px 40px;
-	}
-	.iphone12-text {
-		text-align: center;
-		padding-right: 20px;
-	}
-	.activeDetail .singleBox {
-		border-radius: 0;
-		margin-bottom: 20px;
-		border: 1px solid #e8e8e8;
-		border-top: 5px solid #a40000;
-	}
-	.activeDetail .singleBox .col-md-3 {
-		display: none
-	}
-	.activeDetail .singleBox.align-items-center {
-		-webkit-box-align: inherit!important;
-		-ms-flex-align: inherit!important;
-		align-items: inherit!important;
-		padding-top: 20px;
-	}
-}
-
-@media (min-width:1200px) {
-	.activeDetail .singleBox:hover i img {
-		margin-top: 5px
-	}
-}
-
-@media screen and (min-width:1580px) and (max-width:1909px) {
-	.iPadPro {
-		background-size: 46%;
-	}
-}
-
-@media screen and (min-width:1200px) and (max-width:1579px) {
-	.activeDetail .singleBox i {
-		margin-left: 5px;
-	}
-	.iPadPro {
-		background-size: 50%;
-	}
-}
-
-@media (max-width:767px) {
-	.activeDetail .singleBox.align-items-center {
-		min-height: auto;
-	}
-	.hw-box {
-		padding: 40px 0;
-	}
-	.pro-max-box1 {
-		padding: 0 0 20px 0;
-	}
-	.activeDetail>div>div:nth-child(odd) {
-		padding-right: 15px;
-	}
-	.activeDetail>div>div:nth-child(even) {
-		padding-left: 15px;
-	}
-	.pro-max-box {
-		background-image: none;
-	}
-	.pro-max-box .max-box-left>table td {
-		font-size: 16px;
-		padding: 18px 5px;
-	}
-	.pro-max-box .max-box-left>table th {
-		padding: 20px 5px;
-		font-size: 18px;
-	}
-	.iphone12-wrap h3 {
-		font-size: 24px;
-	}
-	table.second th {
-		font-size: 18px;
-		padding: 20px 5px;
-	}
-	table.second td {
-		padding: 18px 2px;
-		font-size: 16px;
-	}
-	.iPadPro {
-		padding: 0;
-		background-image: none;
-	}
-	.inner-page .iPadPro table {
-		margin-bottom: 30px;
-	}
-	.iPadPro h3 {
-		margin-top: 60px;
-	}
+@charset"utf-8";.inner-page.trading-gift-page table{margin-bottom:0}
+.pro-max-box1{padding:60px 0}
+@media only screen and (min-width:1600px){.pro-max-box .d-md-none{display:block !important}
+}@media only screen and (max-width:1599px){.pro-max-box{background-image:url(../images/gift-iphonepromax.png);background-position:right bottom;background-repeat:no-repeat;background-size:contain}
+}.pro-max-box .max-box-left h3{font-size:28px;color:#231f20;font-weight:bold;margin:30px 0}
+.pro-max-box .max-box-left h4{font-size:22px}
+.pro-max-box .max-box-left h4 span{color:#515151;display:inline-block;margin-right:10px}
+.pro-max-box .max-box-left h4 b{color:#161616;font-weight:normal}
+.pro-max-box .max-box-left table{margin:65px 0 0}
+.bor000{border:1px solid #303030}
+.bg-green{background-color:#06b572}
+.bg-fff{background-color:#fff !important}
+.bg-black{background-color:#000}
+.bg-gray{background:#e7e7e7}
+.max-box-left p img{width: 35px;}
+.trading-gift-page tr:nth-child(even){background:#f5f5f5}
+.pro-max-box .max-box-left>table th{font-size:20px;text-align:center;padding:10px 5px}
+.pro-max-box .max-box-left>table td{font-size: 16px;text-align: center;padding: 9px 5px;}
+.hw-box{padding:45px 0}
+.hw-box .lun-gift-intro{background:#fff;text-align:center;padding:30px}
+.hw-box .lun-gift-intro>h3{color:#242424;font-weight:bold;margin:10px 0}
+.lun-gift-intro .lun-gift-size span{font-size:16px;color:#515151}
+.lun-gift-size{margin-bottom:25px}
+.lun-gift-intro .lun-gift-num{color:#000;font-size:18px}
+.lun-gift-intro h3 span{font-weight:normal}
+.lun-gift-intro .lun-gift-num p{margin-bottom:5px}
+.lun-gift-intro .lun-gift-num p span{color:#a40000}
+.lun-foot{margin-top:100px}
+.lun-foot>div>div{position:relative;transition:all 0.8s}
+.lun-foot .lun-foot-txt{text-align:center;margin-bottom:17px}
+.lun-foot .lun-foot-txt h3{margin-bottom:15px;margin-top:0;font-weight:bold}
+.lun-foot .lun-foot-txt p{font-size:18px;margin-bottom:0;line-height:28px}
+.lun-foot .lun-foot-txt p span{color:#a40000}
+.lun-dyson-HD01{background:#bd0d26;color:#fff;padding-top:80px;width:115%}
+.lun-dyson-HD01>b{position:absolute;width:8px;height:65px;background:#fff;right:0;top:45px}
+.lun-dyson-HD01>p{text-align:right;margin-top:60px}
+.lun-dyson-HD01>h2{position:absolute;bottom:44px;left:45px;font-weight:bold}
+.lun-dyson-HD01>span{position:absolute;bottom:-70px;display:block;width:8px;background:#fff;height:88px;left:64px}
+.lun-dyson-V10{color:#fff;padding:0 7%;margin-left:9%;width:115%;z-index:9}
+.lun-dyson-V10 .V10-top{border:10px solid #a40000}
+.lun-dyson-V10 .V10-top h2{position:absolute;font-weight:bold;left:45px;top:12px}
+.lun-dyson-V10 h1{font-weight:bold;text-align:right;font-size:50px;margin-right:81px}
+.lun-P20>h1{color:#fff;font-weight:bold;text-align:right;position:relative;padding-top:65px;margin-bottom:72px;font-size:52px}
+.lun-P20>h1:after{background:#a40000;bottom:-25px;content:"";height:6px;right:0;position:absolute;width:40px}
+.lun-P20>div{background:#fff;padding-top:45px}
+img{max-width:100%}
+table.common-table span{color:#a40000}
+table.second th{font-size:18px;padding:15px 2px}
+table.second td{padding:15px 2px;font-size:14px}
+.iphone12-wrap{background-color:#f2f2f2;padding:60px 0}
+.iphone12-wrap .iphone12-img{text-align:center;margin-top:10px;overflow:hidden;height:100%}
+.iphone12-wrap h3{font-size:24px;color:#231f20;font-weight:bold;margin:30px 0 25px 0}
+.iphone12-l,.iphone12-r{background:#fff;padding:40px 0}
+.iphone12-wrap h4{font-size:18px}
+.iphone12-wrap h4 span{color:#515151;display:inline-block;margin-right:10px}
+.iphone12-wrap h4 b{color:#161616;font-weight:normal}
+.iphone12-wrap table{margin:40px 0 30px}
+.iphone12-text{padding-left:20px}
+.iPadPro{background-image:url(../images/gift-ipad.png);background-position:right bottom;background-repeat:no-repeat;padding:60px 0;background-color:#000;background-size:722px 375px}
+.iPadPro h3{font-size:26px;color:#fff;font-weight:bold}
+.iPadPro h4{color:#fff;font-size:22px;margin-bottom:50px}
+.iPadPro table span{color:#a40000}
+.inner-page.trading-gift-page .new-title{color:#fff;position:relative;overflow:hidden}
+.new-title p{position:absolute;background:#f27f0c;transform:rotate(40deg);-moz-transform:rotate(40deg);-webkit-transform:rotate(40deg);-ms-transform:rotate(40deg);-o-transform:rotate(40deg);right:-26px;top:3px;font-size:12px;padding:2px 27px;text-align:center;color:#fff}
+.hw-box2 .s-wrap.iphone-wrap{box-shadow:0 0 10px 1px #ddd;
+-webkit-box-shadow:0 0 10px 1px #ddd;
+border-top-left-radius: 36px;
+-webkit-border-top-left-radius: 36px;
+border-top-right-radius: 36px;
+-webkit-border-top-right-radius: 36px;
+}
+.trading-gift-form{margin-top: 60px;}
+.active{background:url(../images/gift-active-bg.jpg) repeat-x;padding-top:55px}
+.active .activeTit h2{color:#a40000;padding-bottom:15px;border-bottom:1px solid #e6e7ea;font-size:18px;margin-bottom:20px;margin-top:40px}
+p.no-spo{margin-bottom:40px}
+.activeDetail{padding:15px}
+.activeDetail>div>div:nth-child(odd){padding-right:40px}
+.activeDetail>div>div:nth-child(even){padding-left:40px}
+.activeDetail .singleBox{border-top-left-radius:60px;border-bottom-right-radius:60px;background-color:#fff;margin-bottom:85px;min-height:255px;color:#000}
+.activeDetail .singleBox i{margin-left:20px;display:block;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;background:#a40000;text-align:center;padding:20px;width:120px;height:120px}
+.activeDetail .singleBox i img{-ms-transition:all 0.8s;transition:all 0.8s;-webkit-transition:all 0.8s;-moz-transition:all 0.8s;width:80%;margin-top:8px}
+.activeDetail .singleBox p{line-height:24px;text-align:justify}
+.activeClause{padding:0 0 80px}
+.activeRule{background:#fff;padding:10px 40px 40px;box-shadow:0 0 10px 2px #ddd}
+.activeRule p{line-height:24px;position:relative;text-align:justify}
+.iphone-wrap img{width:100%}
+.text-green{color:#20bf55}
+.activeRule p span{}
+.activeRule p a{color:#20bf55}
+.active>p{margin-bottom:-2px}
+.active>p img{transition:all 0.8s}
+@media (min-width:1600px){.trading-gift-page .container{width:1300px!important;max-width:1300px}
+}.iphone-wrap .swiper-slide{overflow:hidden}
+@media screen and (min-width:1580px) and (max-width:1909px){.iPadPro{background-size:46%}
+}@media screen and (min-width:1200px) and (max-width:1579px){.activeDetail .singleBox i{margin-left:5px}
+.iPadPro{background-size:50%}
+}@media (min-width:1200px){.max-box-left p img{transition:all 0.8s ease-in-out;-webkit-transition:all 0.8s ease-in-out;-moz-transition:all 0.8s ease-in-out;-o-transition:all 0.8s ease-in-out}
+.trading-gift-page table tbody tr:hover{background:#ddd !important}
+.max-box-left:hover p img{transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg)}
+.activeDetail .singleBox:hover i img{margin-top:5px}
+.gift-12promax{overflow:hidden}
+/*.iphone-wrap .swiper-slide img,.iphone12-wrap img,.gift-12promax img,.singleBox{transition:all .5s;-webkit-transition:all .5s;-moz-transition:all .5s}*/
+/*.iphone-wrap:hover img,.iphone12-r:hover img,.iphone12-l:hover img,.gift-12promax:hover img{transform:scale(1.02,1.02);-webkit-transform:scale(1.02,1.02);-moz-transform:scale(1.02,1.02);-ms-transform:scale(1.02,1.02)}*/
+.singleBox:hover{box-shadow:0 0 15px 0px #b1b1b1;-webkit-box-shadow:0 0 15px 0px #b1b1b1}
+}@media screen and (min-width:992px) and (max-width:1199px){.xsMax-right{min-height:512px}
+.xsMax-right .xsMax-2{top:39px;width:36%}
+.activeDetail .singleBox i{width:100px;height:100px;margin-left:2%}
+.activeDetail .singleBox i img{margin-top:6px}
+.activeDetail .singleBox h3{font-size:20px}
+.activeDetail .singleBox p{line-height:22px}
+.hw-box table.second th{font-size:15px}
+.hw-box table.second td{font-size:14px}
+.iPadPro{background-size:contain}
+}@media only screen and (max-width:1599px){table.second td{padding:10px 2px;font-size:14px}
+table.second th{font-size:16px;padding:10px 2px}
+}@media only screen and (min-width:768px) and (max-width:1870px){.pro-max-box{background-size:37%}
+.iphone12-wrap h3{font-size:22px}
+}@media (max-width:1199px){.iPadPro h4{font-size:18px}
+.iPadPro h3{font-size:24px}
+.iphone12-l,.iphone-wrap{margin-bottom:45px}
+.gift{display:none}
+.hw-box .lun-gift-intro{padding:30px 15px}
+.lun-dyson-HD01>span{display:none}
+.pro-max-box .max-box-left h4{font-size:18px}
+.pro-max-box .max-box-left table{margin:30px 0 0 0}
+.max-box-left>p{display:none}
+}@media screen and (min-width:768px) and (max-width:991px){.xsMax-right{min-height:524px}
+.iPadPro{background-size:contain}
+.activeDetail>div>div:nth-child(odd){padding-right:30px}
+.activeDetail>div>div:nth-child(even){padding-left:15px}
+}@media (max-width:991px){.pro-max-box .max-box-left>table td{padding:10px 2px;font-size:14px}
+.pro-max-box .max-box-left h3{font-size:22px;margin:30px 0 10px 0}
+.pro-max-box .max-box-left>table th{font-size:16px;padding:10px 2px}
+.activeClause{padding:0}
+.ipad-text{text-align:center}
+.max-box-left{text-align:center}
+.activeRule{padding:10px 15px 40px}
+.iphone12-text{text-align:center;padding-right:20px}
+.activeDetail .singleBox{border-radius:0;margin-bottom:20px;border:1px solid #e8e8e8;border-top:5px solid #a40000}
+.activeDetail .singleBox .col-md-3{display:none}
+.activeDetail .singleBox.align-items-center{-webkit-box-align:inherit!important;-ms-flex-align:inherit!important;align-items:inherit!important;padding-top:20px}
+}@media (max-width:767px){.activeDetail .singleBox.align-items-center{min-height:auto}
+.iphone12-wrap .iphone12-img{margin-top:0}
+.hw-box{padding:0}
+.pro-max-box1{padding:15px 0 45px 0}
+.activeDetail>div>div:nth-child(odd){padding-right:15px}
+.activeDetail>div>div:nth-child(even){padding-left:15px}
+.pro-max-box{background-image:none}
+.iphone12-wrap h3{font-size:22px;margin:30px 0 10px 0}
+.iPadPro{padding:0;background-image:none}
+.inner-page .iPadPro table{margin-bottom:30px}
+.iPadPro h3{margin-top:60px;margin-bottom:10px}
 }
