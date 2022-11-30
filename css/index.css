@@ -408,8 +408,17 @@ transition:background .3s;-moz-transition:background .3s;-ms-transition:backgrou
 }
 .hl-click .account-balance span{}
 .hl-click .toogle-icon{position: absolute;margin: 0;cursor: pointer;right: 0;top: 3px;}
-.hl-click .toogle-icon span{transition: background .3s;display: block;width: 25px;height: 25px;background: url(../images/ci_expand.svg);background-repeat: none;background-size: cover;}
-.hl-slider.open .hl-click .toogle-icon span{background: url(../images/ci_shrink.svg);}
+.hl-click .toogle-icon span{
+	/*transition: background .3s;*/
+display: block;width: 25px;height: 25px;
+/*background: url(../images/ci_expand.svg);*/
+background:url(../images/toggle.png);
+background-position: 25px 0;
+background-repeat: none;background-size: cover;}
+.hl-slider.open .hl-click .toogle-icon span{
+	/*background: url(../images/ci_shrink.svg);*/
+background-position:0 0;
+	}
 .hl-slider.open .hl-click .account-login,.hl-slider.open .hl-click .account-detail{background: #48CC7F;}
 
 .hl-content .account-login{width:25%}
