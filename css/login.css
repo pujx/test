@@ -250,16 +250,23 @@ button {
 }
 
 .right-box .right-form {
-width: 573px;
+    width: 573px;
     padding: 40px;
     position: relative;
     color: #fff;
-    margin: 5% auto;
+    margin: 0 auto;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
     overflow: hidden;
     z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .p-reletive {
@@ -281,6 +288,8 @@ width: 573px;
     background: rgba(9, 31, 44, .5);
 	backdrop-filter: blur(39.8333px);
     -webkit-backdrop-filter: blur(39.8333px);
+    -moz-backdrop-filter: blur(39.8333px);
+    -ms-backdrop-filter: blur(39.8333px);
     box-shadow: inset 39.8333px -39.8333px 39.8333px rgb(7 24 33 / 10%), inset -39.8333px 39.8333px 39.8333px rgb(255 255 255 / 10%);
     -webkit-box-shadow: inset 39.8333px -39.8333px 39.8333px rgb(7 24 33 / 10%), inset -39.8333px 39.8333px 39.8333px rgb(255 255 255 / 10%);
 	
