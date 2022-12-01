@@ -143,20 +143,24 @@ a.buttons[disabled]:hover {
 	color: #fff !important;
 }
 
-input::-webkit-input-placeholder {
-	color: rgba(255, 255, 255, .4);
+input.form-control::-webkit-input-placeholder {
+	color: #fff;
+	opacity: .5;
 }
 
-input:-moz-placeholder {
-	color: rgba(255, 255, 255, .4);
+input.form-control:-moz-placeholder {
+	color: #fff;
+	opacity: .5;
 }
 
-input::-moz-placeholder {
-	color: rgba(255, 255, 255, .4);
+input.form-control::-moz-placeholder {
+	color: #fff;
+	opacity: .5;
 }
 
-input:-ms-input-placeholder {
-	color: rgba(255, 255, 255, .4);
+input.form-control:-ms-input-placeholder {
+	color: #fff;
+	opacity: .5;
 }
 
 input:-internal-autofill-previewed,
@@ -187,9 +191,9 @@ button {
 .login_box {
 	width: 100%;
 	height: 100%;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	position: relative;
-	max-width: 1920px
+	/*max-width: 1920px*/
 }
 
 .login_box .carousel_box {
@@ -204,6 +208,7 @@ button {
 	position: fixed;
 	margin: 0 auto;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .login-container {
@@ -245,13 +250,20 @@ button {
 }
 
 .right-box .right-form {
-	width: 573px;
-	padding: 40px;
-	position: relative;
-	color: #fff;
-	margin: 5% auto;
-	border-radius: 20px;
-	overflow: hidden;
+width: 573px;
+    padding: 40px;
+    position: relative;
+    color: #fff;
+    margin: 5% auto;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    /* width: 600px; */
+    /* height: 300px; */
+    /*background-color: rgba(9, 31, 44, 0.5);*/
+    box-shadow: inset 39.8333px -39.8333px 39.8333px rgb(7 24 33 / 10%), inset -39.8333px 39.8333px 39.8333px rgb(255 255 255 / 10%);
+    overflow: hidden;
+    z-index: 10;
 }
 
 .p-reletive {
@@ -270,8 +282,6 @@ button {
 	left: 0;
 	border-radius: 20px;-webkit-border-radius: 20px;-moz-border-radius: 20px;
 	padding: 0px 20px;
-	/*filter: blur(39px);*/
-	/*-webkit-filter: blur(39px);*/
 	backdrop-filter: blur(39.8333px);
     background: rgba(9, 31, 44, .5);
     box-shadow: inset 39.8333px -39.8333px 39.8333px rgb(7 24 33 / 10%), inset -39.8333px 39.8333px 39.8333px rgb(255 255 255 / 10%);
