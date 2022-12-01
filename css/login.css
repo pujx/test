@@ -258,10 +258,6 @@ width: 573px;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    /* width: 600px; */
-    /* height: 300px; */
-    /*background-color: rgba(9, 31, 44, 0.5);*/
-    box-shadow: inset 39.8333px -39.8333px 39.8333px rgb(7 24 33 / 10%), inset -39.8333px 39.8333px 39.8333px rgb(255 255 255 / 10%);
     overflow: hidden;
     z-index: 10;
 }
@@ -282,8 +278,9 @@ width: 573px;
 	left: 0;
 	border-radius: 20px;-webkit-border-radius: 20px;-moz-border-radius: 20px;
 	padding: 0px 20px;
-	backdrop-filter: blur(39.8333px);
     background: rgba(9, 31, 44, .5);
+	backdrop-filter: blur(39.8333px);
+    -webkit-backdrop-filter: blur(39.8333px);
     box-shadow: inset 39.8333px -39.8333px 39.8333px rgb(7 24 33 / 10%), inset -39.8333px 39.8333px 39.8333px rgb(255 255 255 / 10%);
     -webkit-box-shadow: inset 39.8333px -39.8333px 39.8333px rgb(7 24 33 / 10%), inset -39.8333px 39.8333px 39.8333px rgb(255 255 255 / 10%);
 	
