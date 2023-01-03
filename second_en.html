@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="css/index.css" />
+
+	</head>
+	<body>
+		
+		
+	
+	<div class="wrap wrap1">
+		<div class="top-box">
+			<p> <b>USDT Quantity: </b><span>300 USDT</span></p>
+		</div>
+		<form action="">
+			<div>
+				<label for="">Payment Method:</label>
+				<p>USDT</p>
+			</div>
+			<div>
+				<label for="">Chain Name:</label>
+				<div class="check-box">
+					<input type="radio" checked="checked"/>ERC20
+				</div>
+			</div>
+			<div class="copy-box">
+				<label for="">USDT Quantity:</label>
+				<input id="number" type="text" value="6548989" style="width: 150px;color: #f00;font-size: 18px;" readonly="readonly"/>
+   				<a href="javascript:" class="btn" data-clipboard-action="copy" data-clipboard-target="#number">Copy</a><span style="display: none;">Success!</span>
+			</div>
+			<div class="copy-box">
+				<label for="">Payment path:</label>
+				<input type="text" value="0xbb2044D242ACbaeE7F58F012f5e7DCCeB8Ef53D0" id="address" readonly="readonly"/>
+				<a href="javascript:"  class="btn" data-clipboard-action="copy" data-clipboard-target="#address">Copy</a><span style="display: none;">Success!</span>
+			</div>
+			<p style="font-size: 14px;font-weight: bold;"><em class="text-red">*</em>Please Note: additional fees might incurred by USDT transactions. <span class="text-red">Please check the final received quantity (amount). Deposited amount must match the final received quantity (amount).</span></p>
+		</form>
+		
+		<div class="text-box">
+			<ul>
+				<li class="text-red">Please do not deposit any Non <b>ERC20_ USDT </b>product. Any non ERC20_ USDT deposit is not retrieveable.</li>
+				<li>The transfer quantity(amount) MUST match with the order quantity (amount), Any greater or less quantity (amount) will not get credited nor refundable.</li>
+				<li>A singe order/ transaction can only be validated once, please do attempt to refresh the payment address. Any order/deposit generated via the repeated payment URL is not retrievable.</li>
+				<li>Please make sure your computer and browser are safe to prevent any information being leaked or falsify.</li>
+			</ul>
+			
+		</div>
+		<div class="btn-box">
+			<button type="button">I have completed the deposit</button>
+		</div>
+			
+	</div>
+	
+	
+			
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/clipboard.min.js"></script>
+		<script>
+    var clipboard = new ClipboardJS('.btn');
+clipboard.on('success', function(e) {
+	alert("Success!");
+    });
+        clipboard.on('error', function(e) {
+        alert('Error,This browser does not support!');
+    });
+		</script>
+	
+	
+	
+	
+	</body>
+</html>
