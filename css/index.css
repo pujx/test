@@ -39,11 +39,16 @@ ul{padding:0}
 .modal-call-back>div input{border:none;text-align:center;width:100%;border-radius:0;-webkit-border-radius:0;-moz-border-radius:0;padding-left:5px;padding-right:5px}
 .modal-call-back>div input:focus{border-color:#eaeaea !important;-webkit-box-shadow:none;box-shadow:none}
 .modal-call-back>input{padding-left:95px;overflow:hidden}
-.modal-call-back>div{    position: absolute;
+.modal-call-back>div{position: absolute;
   border-right: 1px solid #BECAD6;
   width: 80px;
   text-align: center;
-  line-height: 40px;}
+  line-height: 32px;
+  z-index: 0;
+  display: inline-block;
+  height: 80%;
+  top: 4px;
+  left: 14px;}
 #call-back-modal.modal .modal-header{border-bottom:none;padding:45px 15px 30px}
 #call-back-modal.modal .modal-header .close{font-size:50px;position:absolute;right:15px;top:5px;font-weight:400}
 #call-back-modal.modal .modal-body{padding:0 15px 0}
@@ -130,7 +135,6 @@ form .buttons{width:100%;margin-top:15px}
 @media screen and (min-width:992px){.buttons:hover,.buttons2:hover{box-shadow:0 4px 4px 0 rgba(0,0,0,.25);-webkit-box-shadow:0 4px 4px 0 rgba(0,0,0,.25)}
 .buttons-trans:hover{background:#fff;border:1px solid #122D3C}
 }option{font-size:13px}
-.form-group{margin-right:-10px;margin-left:-10px}
 .form-group:last-child{margin-bottom:0}
 @media only screen and (min-width:992px){.form-horizontal .form-group{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center !important;align-items:center !important}
 .buttons-group .col-md-6{width:25%}
@@ -295,6 +299,8 @@ form .buttons{width:100%;margin-top:15px}
 #cropperModal .modal-header{display:none}
 #cropperModal .modal-footer{padding: 30px 0 60px;}
 #cropperModal .modal-footer .buttons{width:25%}
+#cropperModal .modal-footer .buttons.buttons-gray{background: #f2f6f9;
+  color: #122D3C;}
 #cropperModal .modal-body label{width:auto;text-align:center;min-width:130px;display:inline-block;font-size:14px;cursor:pointer;transition:all .5s;padding: 10px 5px;}
 .cropper{cursor:pointer;overflow:hidden;width:100%;margin-bottom:20px;max-width:100%;height:200px;background:#fdfdfd;border:1px dashed #e3e3e3;padding:15px;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;-ms-border-radius:6px;position:relative}
 .cropper:hover{border-color:#4286f4;transition:all .5s}
