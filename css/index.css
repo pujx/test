@@ -307,7 +307,7 @@ form .buttons{width:100%;margin-top:15px}
 .preview-box-parcel .square{margin-top:10px;border:solid 1px #ddd}
 .tailoring-content .tailoring-content-three{width:100%;height:40px;border-top:1px solid #DDD;padding-top:10px;display:none}
 @media screen and (max-width:991px){
-  #cropperModal .modal-body{padding: 45px 30px 0;}
+  #cropperModal .modal-body{padding: 30px 10px 0}
   #cropperModal .modal-footer{padding-bottom: 45px;}
 }
 
