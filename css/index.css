@@ -344,8 +344,8 @@ to{opacity:1}
 .success-steps .download-box a:hover{color:#fff !important}
 .success-steps .download-box a img{margin-right:8px}
 .download-btns a:hover,.download-btns a:focus{color:#fff !important}
-.success-steps h5{border-top:2px dashed #f1f1f1;padding-top:30px;margin-bottom:15px;font-size:18px}
-.success-steps h5 img{margin-right:10px}
+.success-steps h5{border-top:2px dashed #f1f1f1;padding-top:30px;margin-bottom:15px;font-size:18px;position: relative;padding-left: 25px;}
+.success-steps h5 img{margin-right:10px;position: absolute;left: 0;}
 .success-steps .contact-box{margin-top:15px}
 .success-steps .contact-box p{margin-bottom:5px}
 .col-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
