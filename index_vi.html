@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/jquery-confirm.min.css" />
 	<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
-	<link rel="stylesheet" href="css/cropper.min.css" />
 	<link rel="stylesheet" href="css/interInput.css" />
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/fonts.css">
@@ -65,28 +64,29 @@
 		</div>
 	</header>
 
+
 	<aside class="step-body">
 		<p class="step-bar-bg"></p>
 		<p class="step-bar-bg-active"></p>
 		<div class="step-header">
 			<div class="container">
 				<div class="step-bar">
-					<div class="step-bar-active" style="width: 67%;"></div>
+					<div class="step-bar-active" style="width: 15%;"></div>
 				</div>
 				<ul class="row">
-					<li class="step-active step-finish col-xs-offset-1 col-xs-2">
+					<li class="step-active col-xs-offset-1 col-xs-2">
 						<span></span>
 						<p>Bắt đầu đăng ký</p>
 					</li>
-					<li class="step-active step-finish col-xs-2">
+					<li class="col-xs-2">
 						<span></span>
 						<p>Thông tin tài khoản</p>
 					</li>
-					<li class="step-active step-finish col-xs-2">
+					<li class="col-xs-2">
 						<span></span>
 						<p>Thông tin cá nhân</p>
 					</li>
-					<li class="step-active col-xs-2">
+					<li class="col-xs-2">
 						<span></span>
 						<p>Nộp tài liệu</p>
 					</li>
@@ -101,124 +101,133 @@
 	<section class="main-content">
 		<div class="container">
 			<div class="box">
-				<h5 class="box-title"><i></i>Gửi tài liệu của bạn</h5>
-				<div class="title-line">
-					<p></p>
-				</div>
+				<h5 class="box-title"><i></i>Thông tin tài khoản</h5>
+				<div class="well-success">Xin vui lòng điền chính xác thông tin email để nhận được email xác nhận tài
+					khoản và tiếp tục hoàn tất việc mở tài khoản của bạn.</div>
 				<div class="box-body">
-					<div class="upload-box">
-						<p>Vui lòng gửi bằng Tài liệu định danh hợp lệ của bạn để mở tài khoản giao dịch của bạn tại GO
-							Markets theo các hướng dẫn bên dưới. Theo các yêu cầu quy định, chúng tôi có thể yêu cầu bạn
-							gửi Tài liệu định vị.</p>
-						<p>Tên và ngày sinh của bạn phải nằm trên tài liệu được cấp bởi các cơ quan có thẩm quyển. Chúng
-							tôi thường chấp nhận các loại tài liệu sau:</p>
-						<form action="">
-							<div class="card-title">
-								<div id="card-title">
-									<div class="row">
-										<div class="col-md-6 col-lg-3">
-											<a href="#card-tabs1" class="card-titles-on"><i
-													class="fa fa-dot-circle-o"></i>tài liệu chứng mình danh tính</a>
-										</div>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="" class="col-lg-3 control-label"><em>*</em>Họ và tên đệm:</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" placeholder="Họ và tên đệm">
+							</div>
+							<p class="col-lg-4 help-block"></p>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-lg-3 control-label"><em>*</em>Tên:</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" placeholder="Tên">
+							</div>
+							<p class="col-lg-4 help-block"></p>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-lg-3 control-label"><em>*</em>Địa chỉ email:</label>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" placeholder="Địa chỉ email">
+							</div>
+							<p class="col-lg-4 help-block"></p>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-lg-3 control-label"><em>*</em>Quốc gia:</label>
+							<div class="col-lg-5">
+								<div class="row change-address">
+									<div class="col-lg-4">
+										<select class="form-control form-control-chosen"
+											data-placeholder="Vui lòng chọn">
+											<option value="">Vui lòng chọn</option>
+										</select>
+									</div>
+									<div class="col-lg-4">
+										<select name="" class="form-control form-control-chosen"
+											data-placeholder="Vui lòng chọn">
+											<option value="">Vui lòng chọn</option>
+										</select>
+									</div>
+									<div class="col-lg-4">
+										<select name="" class="form-control form-control-chosen"
+											data-placeholder="Vui lòng chọn">
+											<option value="">Vui lòng chọn</option>
+										</select>
 									</div>
 								</div>
 							</div>
-							<ul>
-								<li>• <b>Lưu ý:</b>Tài liệu định danh của bạn phải còn hiệu lực sử dụng. Nếu nó đã hết
-									hạn, vui lòng cập nhật kịp thời tài liệu mới của bạn. Khi gửi tài liệu, vui lòng
-									cung cấp cả hai mặt.</li>
-								<li>• Không lưu trực tiếp trong cửa sổ chụp ảnh theo mặc định, vui lòng đảm bảo chụp
-									toàn bộ ảnh của cả hai mặt giấy tờ của bạn và sau đó lưu lại.</li>
-							</ul>
-							<div class="card-tabs">
-								<input type="hidden" id="imgId" />
-								<ul id="card-tabs1" class="card-tabs-on">
-									<li>
-										<div class="row">
-											<div class="col-md-6">
-												<h4 class="card-tabs-title">tài liệu chứng mình danh tính</h4>
-												<div class="cropper" data-toggle="modal" onclick="test('finalImg')">
-													<div class="choose-pic">
-														<img id="finalImg" src="images/upload-files.svg"
-															class="img-responsive">
-														<p>Chọn ảnh</p>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<h4 class="card-tabs-title">tài liệu chứng mình danh tính</h4>
-												<div class="cropper" data-toggle="modal" onclick="test('finalImg2')">
-													<div class="choose-pic">
-														<img id="finalImg2" src="images/upload-files.svg"
-															class="img-responsive">
-														<p>Chọn ảnh</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-
-
-							<div class="card-title mT15">
-								<div id="card-title">
-									<div class="row">
-										<div class="col-md-6 col-lg-3">
-											<a href="#card-tabs1" class="card-titles-on"><i
-													class="fa fa-dot-circle-o"></i>tài liệu chứng mình địa chỉ</a>
-										</div>
+							<p class="col-lg-4 help-block"></p>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-lg-3 control-label"><em>*</em>Số điện thoại:</label>
+							<div class="col-lg-5">
+								<div class="changeTel" style="">
+									<input type="text" class="form-control" placeholder="Số điện thoại" />
+									<div class="changeTelSel">
+										<em class="telLine"></em>
+										<input maxlength="30" onkeyup="addnewareacode()" onchange="addnewareacode()"
+											type="text" name="registration[phone][main_phone]"
+											id="registration_phone_main_phone" />
 									</div>
 								</div>
 							</div>
-							<ul>
-								<li>• Sao kê thẻ tín dụng / ngân hàng.</li>
-								<li>• Hóa đơn tiện ích, ví dụ: Điện thoại cố định, Điện, Gas, Internet.</li>
-							</ul>
-							<div class="card-tabs">
-								<ul id="card-tabs1" class="card-tabs-on">
-									<li>
-										<div class="row">
-											<div class="col-md-6">
-												<h4 class="card-tabs-title">tài liệu chứng mình địa chỉ</h4>
-												<div class="cropper" data-toggle="modal" onclick="test('finalImg3')">
-													<div class="choose-pic">
-														<img id="finalImg3" src="images/upload-files.svg"
-															class="img-responsive">
-														<p>Chọn ảnh</p>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<h4 class="card-tabs-title">tài liệu chứng mình địa chỉ</h4>
-												<div class="cropper" data-toggle="modal" onclick="test('finalImg4')">
-													<div class="choose-pic">
-														<img id="finalImg4" src="images/upload-files.svg"
-															class="img-responsive">
-														<p>Chọn ảnh</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-								</ul>
+							<p class="col-lg-4 help-block"></p>
+						</div>
+						<div class="form-group has-input-tips">
+							<label for="" class="col-lg-3 control-label"><em>*</em>Mật khẩu:</label>
+							<div class="col-lg-5">
+								<input type="password" class="form-control" placeholder="Mật khẩu">
 							</div>
-
-
-							<div class="form-group">
-								<div class="row">
-									<div class="col-md-6 col-lg-4  col-md-offset-3 col-lg-offset-4">
-										<button type="button" class="buttons buttons-success"
-											onclick="window.open('step5_vi.html','_self')"><i
-												class="fa fa-spinner fa-spin"></i>Hoàn thành đăng ký</button>
-									</div>
-								</div>
+							<p class="col-lg-4 help-block">error!</p>
+						</div>
+						<div class="form-group input-tips">
+							<label for="" class="col-lg-3 control-label">&nbsp;</label>
+							<div class="col-lg-5">
+								<span class="f12">Your password must be between 8-12
+									characters
+									with numbers
+									and letters and must not contain special characters</span>
 							</div>
-						</form>
-					</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-lg-3 control-label"><em>*</em>Xác nhận mật khẩu:</label>
+							<div class="col-lg-5">
+								<input type="password" class="form-control" placeholder="Xác nhận mật khẩu">
+							</div>
+							<p class="col-lg-4 help-block"></p>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-lg-3 control-label"><em>*</em>Vui lòng chọn loại tài khoản:</label>
+							<div class="col-lg-5">
+								<select name="" class="form-control form-control-chosen"
+									data-placeholder="Vui lòng chọn">
+									<option value="">Vui lòng chọn</option>
+									<option value="">Tài khoản cá nhân</option>
+								</select>
+							</div>
+							<p class="col-lg-4 help-block"></p>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-lg-3 control-label"><em>*</em>Vui lòng chọn nền tảng giao
+								dịch:</label>
+							<div class="col-lg-5">
+								<select name="" class="form-control form-control-chosen"
+									data-placeholder="Vui lòng chọn">
+									<option value="">Vui lòng chọn</option>
+									<option value="">Tài khoản MT4</option>
+									<option value="">Tài khoản CFD chứng khoán MT5</option>
+								</select>
+							</div>
+							<p class="col-lg-4 help-block"></p>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-offset-3 col-md-2">
+								<button type="button" class="buttons buttons-success"
+									onclick="window.open('step2-1_vi.html','_self')"><i
+										class="fa fa-spinner fa-spin"></i>Tiếp tục</button>
+							</div>
+						</div>
+					</form>
+
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<footer class="main-footer">
 		<div class="container">
@@ -238,9 +247,10 @@
 					and take into consideration your level of experience, investment objectives and seek independent
 					advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to
 					use the services provided by GO Markets based on the legal requirements in his/her country of
-					residence. Before you start to trade, please take some to fully read our <a
-						href="https://www.int.gomarkets.com/legal-documents/" target="_blank">Product Disclosure
-						Statement(PDS)</a>.</p>
+					residence. Before you start to trade, please take some to fully read our
+					<a href="https://www.int.gomarkets.com/legal-documents/" target="_blank">Product Disclosure
+						Statement(PDS)</a>.
+				</p>
 				<p>This website is owned and operated by GO Markets. All contents © <span id="footer-year"></span> GO
 					Markets. All rights reserved.</p>
 			</div>
@@ -474,7 +484,7 @@
 						<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Phone
 								Number:</label>
 							<div class="col-sm-7 modal-call-back">
-								<div><span id="CountryNumber">+86</span></div><input type="text" class="form-control"
+								<div><span id="CountryNumber">-</span></div><input type="text" class="form-control"
 									placeholder="Phone Number" id="phonenumber">
 							</div>
 						</div>
@@ -491,54 +501,13 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="modal fade" id="cropperModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-body">
-					<div class="container-fluid">
-						<label title="Choose Picture" for="chooseImg" class="buttons buttons-gray btn-sm">
-							<input type="file" accept="image/jpg,image/jpeg,image/png" name="file" id="chooseImg"
-								class="hidden" onChange="selectImg(this)">
-							Chọn ảnh
-						</label>
-						<div class="tailoring-content">
-							<div class="tailoring-content-two">
-								<div class="tailoring-box-parcel col-sm-12">
-									<img id="tailoringImg">
-								</div>
-								<div class="preview-box-parcel hidden-xs hidden-sm">
-									<p>Preview Picture:</p>
-									<div class="square previewImg"></div>
-								</div>
-							</div>
-							<div class="tailoring-content-three">
-								<button class="buttons buttons-success btn-xs cropper-rotate-btnL" type="button"><i
-										class="fa fa-rotate-left"></i></button>
-								<button class="buttons buttons-success btn-xs cropper-rotate-btn" type="button"><i
-										class="fa fa-rotate-right"></i></button>
-								<button class="buttons buttons-success btn-xs  cropper-scaleX-btn" type="button"><i
-										class="fa fa-arrows-h"></i></button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="buttons buttons-gray btn-sm" data-dismiss="modal">Cancel</button>
-					<button class="buttons buttons-success btn-sm" id="sureCut" type="button"
-						data-dismiss="modal">Submit</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery-confirm.min.js"></script>
-	<script src="js/cropper.min.js"></script>
-	<script src="js/cropper.js"></script>
+	<script src="js/chosen-1.1.8.min.js"></script>
+	<script src="js/telInput.js"></script>
+	<script src="js/chosen.js"></script>
 	<script src="js/common.js"></script>
-
 </body>
 
 </html>

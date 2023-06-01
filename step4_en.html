@@ -15,6 +15,15 @@
 		<link rel="stylesheet" href="css/cropper.min.css" />
 		<link rel="stylesheet" href="css/interInput.css" />
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
+			rel="stylesheet">
+		<style type="text/css">
+			@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;700&display=swap);
+		</style>
 		<!--[if lt IE 9]>
       			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
@@ -26,42 +35,33 @@
 
 	<body>
 		<header class="main-header">
-			<div class="container">
-				<nav class="navbar">
-				<a href="https://www.int.gomarkets.com/" target="_blank" class="logo"><img src="images/logo.png" alt="logo"></a>
-					<div class="navbar-custom-menu">
-						<ul>
-							<li>
-									<div class="header-dropdown btn-group">
-											<button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                								<img src="images/uk.png" height="18" alt="zh-hans" width="27" />UK
-					                			<span class="fa fa-angle-down"></span>
-											</button>
-											<ul class="dropdown-menu dropdown-menu-right">
-												<li>
-													<a href="step4_zh.html"><img src="images/zh-hans.png" height="18" alt="en" width="27" />CN </a>
-												</li>
-												<li>
-													<a href="step4_vi.html"><img src="images/vi.png" height="18" alt="vi" width="27" />VI</a>
-												</li>
-											</ul>
-										</div>
+			<div class="container-fluid">
+				<div class="h-box">
+					<a href="https://www.int.gomarkets.com/" target="_blank" class="h-logo">
+						<img src="images/logo.svg" height="24"></a>
+					<div class="rightBar  d-flex justify-content-md-end">
+						<div class="drop_box">
+							<div class="noselect drop_toogle d-flex">
+								<img src="images/language.svg" alt="">
+								<span>English</span>
+								<i></i>
+							</div>
+							<ul class="scale_up bor5">
+								<li>
+									<a href="javascript:" onclick="alert('Coming soon')">繁體中文</a>
 								</li>
-							<li>
-								<a href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNDIxMl8yNTcxODdfODAwMDI0MjEyXzJf" target="_blank" class="right-bar-link right-bar-service" title="online service"><i></i></a>
-							</li>
-							<li>
-								<a href="javascript:" class="right-bar-link right-bar-tel" title="call back" data-toggle="modal" data-target="#call-back-modal"><i></i></a>
-							</li>
-							<li>
-								<a href="mailto:support@gomarkets.sc" class="right-bar-link right-bar-mail" title="email"><i></i></a>
-							</li>
-							<li>
-								<a href="tel:+248 4 671 903" class="right-bar-user">Call Us:<b>+248 4 671 903</b></a>
-							</li>
-						</ul>
+								<li>
+									<a href="javascript:" onclick="alert('Coming soon')">简体中文</a>
+								</li>
+							</ul>
+						</div>
+						<a href="mailto:"><img src="images/menu-mail.svg" alt=""></a>
+						<a href="javascript:" data-toggle="modal" data-target="#call-back-modal">
+							<img src="images/menu-callback.svg" alt="">
+						</a>
+						<a href="javascript:" class="h_callUs">Call Us: +248 4 671 903</a>
 					</div>
-				</nav>
+				</div>
 			</div>
 		</header>
 
@@ -187,7 +187,7 @@
 													<h4 class="card-tabs-title">ID Front side</h4>
 													<div class="cropper" data-toggle="modal" onclick="test('finalImg')">
 														<div class="choose-pic">
-															<img id="finalImg" src="images/upload-icon.png" class="img-responsive">
+															<img id="finalImg" src="images/upload-files.svg" class="img-responsive">
 															<p>Choose a picture</p>
 														</div>
 													</div>
@@ -196,7 +196,7 @@
 													<h4 class="card-tabs-title">ID Back side</h4>
 													<div class="cropper" data-toggle="modal"  onclick="test('finalImg2')">
 														<div class="choose-pic">
-															<img id="finalImg2" src="images/upload-icon.png" class="img-responsive">
+															<img id="finalImg2" src="images/upload-files.svg" class="img-responsive">
 															<p>Choose a picture</p>
 														</div>
 													</div>
@@ -211,7 +211,7 @@
 													<h4 class="card-tabs-title">passport</h4>
 													<div class="cropper" data-toggle="modal"  onclick="test('finalImg3')">
 														<div class="choose-pic">
-															<img id="finalImg3" src="images/upload-icon.png" class="img-responsive">
+															<img id="finalImg3" src="images/upload-files.svg" class="img-responsive">
 															<p>Choose a picture</p>
 														</div>
 													</div>
@@ -226,7 +226,7 @@
 													<h4 class="card-tabs-title">driver's license Front side</h4>
 													<div class="cropper" data-toggle="modal"  onclick="test('finalImg4')">
 														<div class="choose-pic">
-															<img id="finalImg4" src="images/upload-icon.png" class="img-responsive">
+															<img id="finalImg4" src="images/upload-files.svg" class="img-responsive">
 															<p>Choose a picture</p>
 														</div>
 													</div>
@@ -235,7 +235,7 @@
 													<h4 class="card-tabs-title">driver's license Back side</h4>
 													<div class="cropper" data-toggle="modal"  onclick="test('finalImg5')">
 														<div class="choose-pic">
-															<img id="finalImg5" src="images/upload-icon.png" class="img-responsive">
+															<img id="finalImg5" src="images/upload-files.svg" class="img-responsive">
 															<p>Choose a picture</p>
 														</div>
 													</div>
@@ -250,7 +250,7 @@
 													<h4 class="card-tabs-title">Other Documents</h4>
 													<div class="cropper" data-toggle="modal"  onclick="test('finalImg6')">
 														<div class="choose-pic">
-															<img id="finalImg6" src="images/upload-icon.png" class="img-responsive">
+															<img id="finalImg6" src="images/upload-files.svg" class="img-responsive">
 															<p>Choose a picture</p>
 														</div>
 													</div>
@@ -525,15 +525,12 @@
 		<div class="modal fade" id="cropperModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<label title="Choose Picture" for="chooseImg" class="buttons buttons-gray btn-sm">
-							<input type="file" accept="image/jpg,image/jpeg,image/png" name="file" id="chooseImg" class="hidden" onChange="selectImg(this)">
-							 Choose Picture
-                		</label>
-					</div>
 					<div class="modal-body">
 						<div class="container-fluid">
+							<label title="Choose Picture" for="chooseImg" class="buttons buttons-gray btn-sm">
+								<input type="file" accept="image/jpg,image/jpeg,image/png" name="file" id="chooseImg" class="hidden" onChange="selectImg(this)">
+								 Choose Picture
+							</label>
 							<div class="tailoring-content">
 								<div class="tailoring-content-two">
 									<div class="tailoring-box-parcel col-sm-12">

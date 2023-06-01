@@ -14,6 +14,15 @@
 		<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
 		<link rel="stylesheet" href="css/interInput.css" />
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
+			rel="stylesheet">
+		<style type="text/css">
+			@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;700&display=swap);
+		</style>
 		<!--<link rel="stylesheet" href="css/loading.css" />-->
 		<!--[if lt IE 9]>
       			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -26,42 +35,33 @@
 
 	<body>
 		<header class="main-header">
-			<div class="container">
-				<nav class="navbar">
-				<a href="https://chn.gomarkets.com/" target="_blank" class="logo"><img src="images/logo.png" alt="logo"></a>
-					<div class="navbar-custom-menu">
-						<ul>
-							<li>
-									<div class="header-dropdown btn-group">
-											<button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                								<img src="images/zh-hans.png" height="18" alt="en" width="27" />中文          
-					                			<span class="fa fa-angle-down"></span>
-											</button>
-											<ul class="dropdown-menu dropdown-menu-right">
-												<li>
-													<a href="step5_en.html"><img src="images/uk.png" height="18" alt="zh-hans" width="27" />英文</a>
-												</li>
-												<li>
-													<a href="step5_vi.html"><img src="images/vi.png" height="18" alt="vi" width="27" />越南文</a>
-												</li>
-											</ul>
-										</div>
+			<div class="container-fluid">
+				<div class="h-box">
+					<a href="https://www.int.gomarkets.com/" target="_blank" class="h-logo">
+						<img src="images/logo.svg" height="24"></a>
+					<div class="rightBar  d-flex justify-content-md-end">
+						<div class="drop_box">
+							<div class="noselect drop_toogle d-flex">
+								<img src="images/language.svg" alt="">
+								<span>English</span>
+								<i></i>
+							</div>
+							<ul class="scale_up bor5">
+								<li>
+									<a href="javascript:" onclick="alert('Coming soon')">繁體中文</a>
 								</li>
-							<li>
-								<a href="https://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNDIxMl8yNTcxODdfODAwMDI0MjEyXzJf" target="_blank" class="right-bar-link right-bar-service" title="online service"><i></i></a>
-							</li>
-							<li>
-								<a href="javascript:" class="right-bar-link right-bar-tel" title="call back" data-toggle="modal" data-target="#call-back-modal"><i></i></a>
-							</li>
-							<li>
-								<a href="mailto:AsiaSupport@gomarkets.sc " class="right-bar-link right-bar-mail" title="email"><i></i></a>
-							</li>
-							<li>
-								<a href="tel:400-120-8537" class="right-bar-user">联系我们：<b>400 120 8537</b></a>
-							</li>
-						</ul>
+								<li>
+									<a href="javascript:" onclick="alert('Coming soon')">简体中文</a>
+								</li>
+							</ul>
+						</div>
+						<a href="mailto:"><img src="images/menu-mail.svg" alt=""></a>
+						<a href="javascript:" data-toggle="modal" data-target="#call-back-modal">
+							<img src="images/menu-callback.svg" alt="">
+						</a>
+						<a href="javascript:" class="h_callUs">Call Us: +248 4 671 903</a>
 					</div>
-				</nav>
+				</div>
 			</div>
 		</header>
 
@@ -99,97 +99,97 @@
 			</div>
 		</aside>
 		<section class="main-content">
-			<div class="container success-steps">
+			<div class="container">
 				<div class="box">
 					<h5 class="box-title"><i></i>注册成功</h5>
-					<div class="title-line"><p></p></div>
-					<div class="box-body">
-								<div class="successful-box">
-									<img src="images/success-icon.png" alt="" />
-									<p class="">恭喜您的交易账户注册成功！</p>
-								</div>
-							<div class="old-data">
+					<div class="box-body success-steps">
+						<div class="successful-box">
+							<svg width="80" height="80">
+								<circle fill="none" stroke="#20bf55" stroke-width="4" cx="380" cy="80" r="35"
+									stroke-linecap="round" class="circle" transform="rotate(-90 190 230)" />
+								<polyline fill="none" stroke="#20bf55" stroke-width="4"
+									points="20,40 34,54 62,30" stroke-linecap="round"
+									stroke-linejoin="round" class="tick" />
+							</svg>
+							<h2>恭喜您的交易账户注册成功！</h2>
+						</div>
+						<div class="old-data">
 							<form action="" class="form-horizontal">
 								<ul>
 									<li>
 										<div class="row">
 											<label for="" class="col-md-6">姓名：</label>
-											<p class="col-md-6">Test Name</p>
+											<p class="col-md-6">-</p>
 										</div>
 									</li>
 									<li>
 										<div class="row">
 											<label for="" class="col-md-6">用户名：</label>
-											<p class="col-md-6">China Text Name</p>
+											<p class="col-md-6">-</p>
 										</div>
 									</li>
 									<li>
 										<div class="row">
-											<label for="" class="col-md-6">密   码：</label>
-											<p class="col-md-6">123456</p>
+											<label for="" class="col-md-6">密   码：</label>
+											<p class="col-md-6">你在开户时设置的密码。</p>
 										</div>
 									</li>
 								</ul>
-								<div class="form-group">
-									<div class="col-lg-offset-4 col-md-offset-3 col-md-6 col-lg-4">
-										<button type="button" class="buttons buttons-success"><i class="fa fa-spinner fa-spin"></i>注册完成</button>
+								<div class="form-row justify-content-lg-center">
+									<div class="col-12 col-lg-4">
+										<button type="button" class="buttons buttons-success" onclick="window.open('https://mygo.gomarkets.mu/','_self')">
+											<div class="spinner-border" role="status">
+												<span class="sr-only">Loading...</span>
+											</div>注册完成
+										</button>
+										<p class="countdown"><span id="num">10</span> 秒后跳转到 MYGO。</p>
 									</div>
 								</div>
 							</form>
-						</div>	
-					</div>
-				</div>
-				
-				<div class="box">
-					<h5 class="box-title"><em class="first-step"></em>第一步，提交文件</h5>
-					<div class="title-line"><p></p></div>
-					<div class="box-body">
-					  <div class="contact-box">
-					  	<p>如果您还没有上传您的开户证明文件，请点击 <a href="https://mygo.gomarkets.com" target="_blank">此处</a> 上传提交，您也可以通过扫描或数码拍摄后发送邮件至 <a href="mailto:AsiaAccounts@gomarkets.sc">AsiaAccounts@gomarkets.sc</a> 完成您的资料申请。</p>
-					  	<p><b>请注意：</b></p>
-					  	<ul>
-					  		<li>如果您开户时填写的地址信息与身份证一致，只需上传身份证正反面即可。</li>
-					  		<li>如果您开户时填写的地址信息与身份证上不同，除了上传身份证以外，您还需要提供一份有您开户地址和您姓名的有效地址证明。银行、水电煤费用单必须是纸质版且有效期在 6 个月内的邮寄账单，我们不接受电子版本的结账单。如果您提交的是户口本，请提供有地址信息的首页和有您名字的所在页，共两页。</li>
-					  	</ul>
-					  </div>
-					</div>
-					<h5 class="box-title"><em class="second-step"></em>第二步，账户注资</h5>
-					<div class="title-line"><p></p></div>
-					<div class="box-body">
-					  <div class="contact-box">
-					  	<p>GO Markets 高汇为客户提供快速、安全的网上银行入金终端，现在就登录 <a href="https://mygo.gomarkets.com" target="_blank">“我的GO”</a> 为您的账户注入资金。最低入金额为 500 美元。</p>
-					  	<p>任何情况下 GO Markets 高汇都不接受第三方的汇款或取款，我们只接受付款名称和 GO Markets 高汇真实账户名称相同的款项，这是澳大利亚政府监控反洗黑钱法规的其中一项要求。</p>
-					  </div>
-					</div>
-					<h5 class="box-title"><em class="next-step"></em>第三步，下载平台</h5>
-					<div class="title-line"><p></p></div>
-					<div class="box-body">
-					  <div class="contact-box">
-					  	<!--<p>GO Markets provides customers with fast and secure online payment terminals. Now log on to <a href="https://mygo.gomarkets.com/zh/mygo/login" target="_blank">“我的GO”</a>  and fund your account. The minimum funding amount is $500.</p>-->
-					  	<!--<p>Under no circumstances will GO Markets accept remittances or withdrawals from third parties. We only accept payments with the same name as our live account holder's name, which is one of the requirements of the Australian government's anti-money laundering regulations.</p>-->
-					 	<div class="row">
-					 		<div class="buttons-group download-btns">
-								<div class="col-lg-offset-3 col-md-6 col-lg-3">
-									<a href="https://download.mql5.com/cdn/web/go.markets.pty/mt4/gomarketscn4setup.exe" class="buttons buttons-success"><i></i>下载 Windows MT4</a>
+						</div>
+						
+						<h5 class="d-flex align-items-center"><img src="images/success-upload.svg" alt=""> 第一步，提交文件</h5>
+						<div class="note-box">
+							<p>如果您还没有上传您的开户证明文件，请 <a
+									href="https://mygo.gomarkets.mu/" target="_blank">点击此处  </a>上传提交，您也可以通过扫描或数码拍摄后发送邮件至 <a
+									href="mailto:AsiaAccounts@gomarkets.sc">AsiaAccounts@gomarkets.sc</a> 完成您的资料申请。</p>
+							<p><b>请注意：</b></p>
+							<ul>
+								<li>如果您开户时填写的地址信息与身份证一致，只需上传身份证正反面即可。</li>
+								<li>如果您开户时填写的地址信息与身份证上不同，除了上传身份证以外，您还需要提供一份有您开户地址和您姓名的有效地址证明。银行、水电煤费用单必须是纸质版且有效期在 6 个月内的邮寄账单，我们不接受电子版本的结账单。如果您提交的是户口本，请提供有地址信息的首页和有您名字的所在页，共两页。</li>
+							</ul>
+							
+						</div>
+						
+						<h5 class="d-flex align-items-center"><img src="images/success-fund.svg" alt="" width="18"> 第二步，账户注资</h5>
+						<div class="fund-box">
+							<p>GO Markets 高汇为客户提供快速、安全的网上银行入金终端，现在就登录 <a href="https://mygo.gomarkets.mu/" target="_blank">"我的 GO"</a> 为您的账户注入资金。最低入金额为 500 美元。</p>
+							<p>任何情况下 GO Markets 高汇都不接受第三方的汇款或取款，我们只接受付款名称和 GO Markets 高汇真实账户名称相同的款项，这是澳大利亚政府监控反洗黑钱法规的其中一项要求。</p>
+	
+						</div>
+	
+						<h5 class="d-flex align-items-center"><img src="images/success-download.svg" alt=""> 第三步，下载平台</h5>
+	
+						<div class="download-box">
+							<div class="form-row justify-content-lg-center">
+								<div class="col-12 col-md-5 col-xl-3">
+									<a href="https://download.mql5.com/cdn/web/go.markets.pty/mt4/gomarketscn4setup.exe"
+										class="buttons buttons-gray"><img src="images/download-windows.svg" style="width:18px;">下载 Windows MT4
+									</a>
 								</div>
-								<div class="col-md-6 col-lg-3">
-									<a href="http://dl.gomarkets.com.au/GoTraderMT4Archive.zip" class="buttons buttons-black"><i></i>下载苹果 Mac MT4</a>
+								<div class="col-12 col-md-5 col-xl-3">
+									<a href="http://dl.gomarkets.com.au/GoTraderMT4Archive.zip"
+										class="buttons buttons-success"><img src="images/download-mac.svg" style="margin-top:-3px;width: 20px;">下载苹果 Mac MT4
+									</a>
 								</div>
 							</div>
-					 	</div>
-					  </div>
-					  
-					</div>
-				</div>
-				<div class="box">
-					<h5 class="box-title"><i></i>联系我们</h5>
-					<div class="title-line"><p></p></div>
-					<div class="box-body">
+						</div>
+	
+						<h5 class="d-flex align-items-center"><img src="images/success-contact.svg" width="16" alt="">联系我们</h5>
 						<div class="contact-box">
-							<p><b>服务热线</b></p>
-							<p>中文服务： <a href="tel:400-120-8537">400-120-8537</a></p>
-							<p>英文服务：<a href="tel:+248 4 671 903">+248 4 671 903</a></p>
-							<p>如果您有任何疑问或需要帮助，欢迎您随时与我们取得联系。</p>
+							<p>中文服务： <a href="tel:400 120 8537">400 120 8537</a></p>
+							<p>英文服务： <a href="tel:+248 4 671 903">+248 4 671 903</a></p>
+							<p class="mt10">如果您有任何疑问或需要帮助，欢迎您随时与我们取得联系。</p>
 						</div>
 					</div>
 				</div>

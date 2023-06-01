@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8" />
@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/jquery-confirm.min.css" />
 	<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
-	<link rel="stylesheet" href="css/cropper.min.css" />
 	<link rel="stylesheet" href="css/interInput.css" />
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/fonts.css">
@@ -71,28 +70,28 @@
 		<div class="step-header">
 			<div class="container">
 				<div class="step-bar">
-					<div class="step-bar-active" style="width: 67%;"></div>
+					<div class="step-bar-active" style="width: 32%;"></div>
 				</div>
 				<ul class="row">
 					<li class="step-active step-finish col-xs-offset-1 col-xs-2">
 						<span></span>
-						<p>Bắt đầu đăng ký</p>
-					</li>
-					<li class="step-active step-finish col-xs-2">
-						<span></span>
-						<p>Thông tin tài khoản</p>
-					</li>
-					<li class="step-active step-finish col-xs-2">
-						<span></span>
-						<p>Thông tin cá nhân</p>
+						<p>Start Your Application</p>
 					</li>
 					<li class="step-active col-xs-2">
 						<span></span>
-						<p>Nộp tài liệu</p>
+						<p>Account Profile</p>
 					</li>
 					<li class="col-xs-2">
 						<span></span>
-						<p>Đăng ký hoàn tất</p>
+						<p>Personal Details</p>
+					</li>
+					<li class="col-xs-2">
+						<span></span>
+						<p>Document Submission</p>
+					</li>
+					<li class="col-xs-2">
+						<span></span>
+						<p>Registration Complete</p>
 					</li>
 				</ul>
 			</div>
@@ -101,133 +100,167 @@
 	<section class="main-content">
 		<div class="container">
 			<div class="box">
-				<h5 class="box-title"><i></i>Gửi tài liệu của bạn</h5>
-				<div class="title-line">
-					<p></p>
-				</div>
-				<div class="box-body">
-					<div class="upload-box">
-						<p>Vui lòng gửi bằng Tài liệu định danh hợp lệ của bạn để mở tài khoản giao dịch của bạn tại GO
-							Markets theo các hướng dẫn bên dưới. Theo các yêu cầu quy định, chúng tôi có thể yêu cầu bạn
-							gửi Tài liệu định vị.</p>
-						<p>Tên và ngày sinh của bạn phải nằm trên tài liệu được cấp bởi các cơ quan có thẩm quyển. Chúng
-							tôi thường chấp nhận các loại tài liệu sau:</p>
-						<form action="">
-							<div class="card-title">
-								<div id="card-title">
-									<div class="row">
-										<div class="col-md-6 col-lg-3">
-											<a href="#card-tabs1" class="card-titles-on"><i
-													class="fa fa-dot-circle-o"></i>tài liệu chứng mình danh tính</a>
-										</div>
-									</div>
+				<h5 class="box-title"><i></i>Important</h5>
+				<div class="step2-box">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-bordered">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+										style="border-top: 1px solid #e6e7ea;">
+										GO Markets Financial service license
+										<i></i>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingOne">
+								<div class="panel-body">
+									<p>GO Markets' financial service license allows it to provide financial services. To
+										all investors who receive the financial services that GO Markets provide, GO
+										Markets fulfils the obligations that the financial service license outlines.</p>
 								</div>
 							</div>
-							<ul>
-								<li>• <b>Lưu ý:</b>Tài liệu định danh của bạn phải còn hiệu lực sử dụng. Nếu nó đã hết
-									hạn, vui lòng cập nhật kịp thời tài liệu mới của bạn. Khi gửi tài liệu, vui lòng
-									cung cấp cả hai mặt.</li>
-								<li>• Không lưu trực tiếp trong cửa sổ chụp ảnh theo mặc định, vui lòng đảm bảo chụp
-									toàn bộ ảnh của cả hai mặt giấy tờ của bạn và sau đó lưu lại.</li>
-							</ul>
-							<div class="card-tabs">
-								<input type="hidden" id="imgId" />
-								<ul id="card-tabs1" class="card-tabs-on">
-									<li>
-										<div class="row">
-											<div class="col-md-6">
-												<h4 class="card-tabs-title">tài liệu chứng mình danh tính</h4>
-												<div class="cropper" data-toggle="modal" onclick="test('finalImg')">
-													<div class="choose-pic">
-														<img id="finalImg" src="images/upload-files.svg"
-															class="img-responsive">
-														<p>Chọn ảnh</p>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<h4 class="card-tabs-title">tài liệu chứng mình danh tính</h4>
-												<div class="cropper" data-toggle="modal" onclick="test('finalImg2')">
-													<div class="choose-pic">
-														<img id="finalImg2" src="images/upload-files.svg"
-															class="img-responsive">
-														<p>Chọn ảnh</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-								</ul>
+						</div>
+						<div class="panel panel-bordered">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Client Agreement Form
+										<i></i>
+									</a>
+								</h4>
 							</div>
-
-
-							<div class="card-title mT15">
-								<div id="card-title">
-									<div class="row">
-										<div class="col-md-6 col-lg-3">
-											<a href="#card-tabs1" class="card-titles-on"><i
-													class="fa fa-dot-circle-o"></i>tài liệu chứng mình địa chỉ</a>
-										</div>
-									</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingTwo">
+								<div class="panel-body">
+									<p>Online sign up is intended to be completed in conjunction with relevant
+										provisions of the respective Client Agreement Form.</p>
 								</div>
 							</div>
-							<ul>
-								<li>• Sao kê thẻ tín dụng / ngân hàng.</li>
-								<li>• Hóa đơn tiện ích, ví dụ: Điện thoại cố định, Điện, Gas, Internet.</li>
-							</ul>
-							<div class="card-tabs">
-								<ul id="card-tabs1" class="card-tabs-on">
-									<li>
-										<div class="row">
-											<div class="col-md-6">
-												<h4 class="card-tabs-title">tài liệu chứng mình địa chỉ</h4>
-												<div class="cropper" data-toggle="modal" onclick="test('finalImg3')">
-													<div class="choose-pic">
-														<img id="finalImg3" src="images/upload-files.svg"
-															class="img-responsive">
-														<p>Chọn ảnh</p>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<h4 class="card-tabs-title">tài liệu chứng mình địa chỉ</h4>
-												<div class="cropper" data-toggle="modal" onclick="test('finalImg4')">
-													<div class="choose-pic">
-														<img id="finalImg4" src="images/upload-files.svg"
-															class="img-responsive">
-														<p>Chọn ảnh</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-								</ul>
+						</div>
+						<div class="panel panel-bordered">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Product Suitability
+										<i></i>
+									</a>
+								</h4>
 							</div>
-
-
-							<div class="form-group">
-								<div class="row">
-									<div class="col-md-6 col-lg-4  col-md-offset-3 col-lg-offset-4">
-										<button type="button" class="buttons buttons-success"
-											onclick="window.open('step5_vi.html','_self')"><i
-												class="fa fa-spinner fa-spin"></i>Hoàn thành đăng ký</button>
-									</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingThree">
+								<div class="panel-body">
+									<p>Before you open an account with GO Markets to trade Derivatives, it is important
+										that you read GO Markets’ legal documents including GO Markets Product
+										Disclosure Statement, GO Markets Financial Services Guide, GO Markets General
+										Terms and Conditions.</p>
 								</div>
 							</div>
-						</form>
+						</div>
+						<div class="panel panel-bordered">
+							<div class="panel-heading" role="tab" id="headingFour">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										Derivatives Risk Warning
+										<i></i>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingFour">
+								<div class="panel-body">
+									<p>Trading Derivatives carries a high degree of risk and may not be suitable for
+										every investor. If you are in any doubt, it is important that you seek
+										independent financial advice.</p>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-bordered">
+							<div class="panel-heading" role="tab" id="headingFive">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+										Warning if you elect not to provide all information
+										<i></i>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingFive">
+								<div class="panel-body">
+									<p>Unless you provide all information, we have asked for, there is risk we may not
+										be able to assess whether you have ability to understand the risks involved and
+										the product suitability. It is essential that you provide accurate and full
+										information and if, at a future date, any circumstance adversely affect this
+										information you are required to write to us advising us of these details.</p>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-bordered">
+							<div class="panel-heading" role="tab" id="headingSix">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+										Country Restrictions
+										<i></i>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseSix" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingSix">
+								<div class="panel-body">
+									<p>(a) Applicants from outside Australia must check their local laws and regulations
+										before applying for an account. GO Markets cannot accept any live account
+										applications from clients who are residents of Israel, Belgium, Canada, Japan,
+										New Zealand, Turkey, United States of America and Vietnam. If you feel that you
+										may qualify for an exemption, please email support@gomarkets.sc. In this email
+										you will need to provide us with details of the grounds for your exemption
+										before applying for an account.</p>
+									<p>(b) GO Markets does not accept applications from applicants in the following
+										countries: Afghanistan,Barbados,Haiti,Iran,Iraq,Lebanon,Libya,Myanmar,NEW
+										ZEALAND Retail,Nicaragua,North Korea (DPRK),PAKISTAN,Panama,Somalia,South
+										Sudan,State of Palestine,Syria,Timor-Leste,USA,Venezuela,Yemen and Zimbabwe.</p>
+								</div>
+							</div>
+						</div>
+
 					</div>
+					<p class="step-2-box-p"><b>All information provided is protected by 128-bit SSL secure encryption.
+							Select your account type, and then click the next button.</b></p>
+					<form class="form-horizontal">
+
+						<div class="form-group buttons-group">
+							<div class="col-lg-offset-4 col-md-6 col-lg-2">
+								<button type="button" class="buttons buttons-success" id="submitBtn"
+									onclick="window.open('index.html','_self')"><i
+										class="fa fa-spinner fa-spin"></i>Previous</button>
+							</div>
+							<div class="col-md-6 col-lg-2">
+								<button type="button" class="buttons buttons-success" id="submitBtn"
+									onclick="window.open('step3_en.html','_self')"><i
+										class="fa fa-spinner fa-spin"></i>Next</button>
+							</div>
+						</div>
+					</form>
+
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<footer class="main-footer">
 		<div class="container">
 			<div class="footer-menu">
-				<a target="_blank" href="https://www.int.gomarkets.com/contact-us/">Liên hệ chúng tôi</a>
+				<a target="_blank" href="https://www.int.gomarkets.com/contact-us/">Contact Us</a>
 				<!--<span>|</span>
-					<a target="_blank" href="https://www.gomarkets.com/legal-documents/">Chính sách bảo mật</a>
+					<a target="_blank" href="https://www.gomarkets.com/legal-documents/">Privacy Policy</a>
 					<span>|</span>
-					<a target="_blank" href="https://www.gomarkets.com/legal-documents/">Tuyên bố công bố sản phẩm</a>-->
+					<a target="_blank" href="https://www.gomarkets.com/legal-documents/">Product Disclosure Statement</a>-->
 			</div>
 			<div class="footer-text">
 				<p>GO Markets brand is authorized and regulated in various jurisdictions. </p>
@@ -268,9 +301,9 @@
 						<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Country:</label>
 							<div class="col-sm-7">
 								<select id="country" class="form-control form-control-chosen"
-									data-placeholder="Vui lòng chọn" name="country" title="country"
+									data-placeholder="Please choose one item" name="country" title="country"
 									onkeyup="selCountry()" onchange="selCountry()">
-									<option value="" title="-">Vui lòng chọn</option>
+									<option value="" title="-">Please choose one item</option>
 									<option value="CN" title="+86">中国</option>
 									<option value="GB" title="+44">英国</option>
 									<option value="US" title="+001">美国</option>
@@ -491,54 +524,13 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="modal fade" id="cropperModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-body">
-					<div class="container-fluid">
-						<label title="Choose Picture" for="chooseImg" class="buttons buttons-gray btn-sm">
-							<input type="file" accept="image/jpg,image/jpeg,image/png" name="file" id="chooseImg"
-								class="hidden" onChange="selectImg(this)">
-							Chọn ảnh
-						</label>
-						<div class="tailoring-content">
-							<div class="tailoring-content-two">
-								<div class="tailoring-box-parcel col-sm-12">
-									<img id="tailoringImg">
-								</div>
-								<div class="preview-box-parcel hidden-xs hidden-sm">
-									<p>Preview Picture:</p>
-									<div class="square previewImg"></div>
-								</div>
-							</div>
-							<div class="tailoring-content-three">
-								<button class="buttons buttons-success btn-xs cropper-rotate-btnL" type="button"><i
-										class="fa fa-rotate-left"></i></button>
-								<button class="buttons buttons-success btn-xs cropper-rotate-btn" type="button"><i
-										class="fa fa-rotate-right"></i></button>
-								<button class="buttons buttons-success btn-xs  cropper-scaleX-btn" type="button"><i
-										class="fa fa-arrows-h"></i></button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="buttons buttons-gray btn-sm" data-dismiss="modal">Cancel</button>
-					<button class="buttons buttons-success btn-sm" id="sureCut" type="button"
-						data-dismiss="modal">Submit</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery-confirm.min.js"></script>
-	<script src="js/cropper.min.js"></script>
-	<script src="js/cropper.js"></script>
+	<script src="js/chosen-1.1.8.min.js"></script>
+	<script src="js/chosen.js"></script>
+	<script src="js/telInput.js"></script>
 	<script src="js/common.js"></script>
-
 </body>
 
 </html>
