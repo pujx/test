@@ -39,7 +39,14 @@ ul{padding:0}
 .modal-call-back>div input{border:none;text-align:center;width:100%;border-radius:0;-webkit-border-radius:0;-moz-border-radius:0;padding-left:5px;padding-right:5px}
 .modal-call-back>div input:focus{border-color:#eaeaea !important;-webkit-box-shadow:none;box-shadow:none}
 .modal-call-back>input{padding-left:95px;overflow:hidden}
-.modal-call-back>div{position:absolute;border-right:1px solid #BECAD6;width:85px;top:1px;height:95%;left:10px;text-align:center;line-height:40px}
+.modal-call-back>div{    position: absolute;
+  border-right: 1px solid #BECAD6;
+  width: 85px;
+  top: 2px;
+  height: 90%;
+  left: 11px;
+  text-align: center;
+  line-height: 36px;}
 #call-back-modal.modal .modal-header{border-bottom:none;padding:45px 15px 30px}
 #call-back-modal.modal .modal-header .close{font-size:50px;position:absolute;right:15px;top:5px;font-weight:400}
 #call-back-modal.modal .modal-body{padding:0 15px 0}
@@ -226,7 +233,7 @@ form .buttons{width:100%;margin-top:15px}
 .step-2-box-p{margin:30px 0 35px;vertical-align:middle;color:#3A4C56}
 @media only screen and (max-width:767px){#trade-type{margin-top:8px}
 }.panel-group .panel-heading{padding:0}
-.panel-group .panel-title a{display:block;padding:20px 0px;text-transform:capitalize;position:relative}
+.panel-group .panel-title a{display:block;padding:20px 30px 20px 0;text-transform:capitalize;position:relative}
 .panel-group .panel-title a:focus{color:#0BAB47 !important}
 .panel-group .panel-title a i{position:absolute;display:block;width:24px;height:24px;background-image:url(../images/collapse-arrow.svg);background-repeat:no-repeat;right:0;top:15px;-webkit-transform:rotate(-180deg);-moz-transform:rotate(-180deg);-ms-transform:rotate(-180deg);-o-transform:rotate(-180deg);transform:rotate(-180deg);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
 .panel-group .panel-title a.collapsed i{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)}
