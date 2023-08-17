@@ -157,9 +157,11 @@ top: 5px !important;right: 8px !important;
 .btn-send-code button{background:none;font-weight:normal;font-size:13px;color:#3A4C56;text-decoration:underline}
 .btn-send-code button[disabled]{color:#bfbfbf}
 .chosen-container .chosen-drop{z-index:2}
-.chosen-search{
+.chosen-container-single .chosen-search{
   z-index: 2;
+  display: none !important;
 }
+.chosen-container.chosen-container-active .chosen-search{display: block !important;}
 .chosen-container-active.chosen-with-drop .chosen-single,.chosen-container .chosen-drop,.chosen-container-active .chosen-single{border:1px solid #0BAB47 !important;transition:all .5s}
 .chosen-container-single .chosen-single{height:40px !important;line-height:38px !important;border:1px solid #BECAD6 !important;border-radius:4px !important;background:none !important;box-shadow:none !important}
 .chosen-container .chosen-results::-webkit-scrollbar-track{background:rgba(190,202,214,0.4)}
