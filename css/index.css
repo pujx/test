@@ -168,7 +168,7 @@ top: 5px !important;right: 8px !important;
 .chosen-container .chosen-results::-webkit-scrollbar{width:6px;height:1px}
 .chosen-container .chosen-results::-webkit-scrollbar-thumb{background:rgba(66,94,110,0.6);border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px}
 .chosen-container .chosen-results,.chosen-container .chosen-results li.no-results{color:#3A4C56}
-.chosen-container .chosen-results li:hover,.chosen-container .chosen-results li.highlighted{background:#0BAB47 !important;transition:all .2s}
+.chosen-container .chosen-results li:hover,.chosen-container .chosen-results li.highlighted{background:#0BAB47 !important;color: #fff !important;transition:all .2s}
 .chosen-container-single a:not([href]):not([tabindex]).chosen-single:not(.chosen-default){color:#3A4C56 !important}
 .chosen-container-single .chosen-single div{top:2px !important}
 .chosen-container-single .chosen-single div b{background:none !important}
