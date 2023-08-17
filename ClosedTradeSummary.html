@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="icon" href="favicon.ico">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/jquery-confirm.min.css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/chosen.min.css">
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <style type="text/css">
+            @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;700&display=swap);
+        </style>
+        <!--IE兼容-->
+        <!--[if lt IE 9]>
+                  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+                  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+    </head>
+<body >
+	<header class="main-header">
+		<div class="container-fluid">
+			<div class="h-box">
+				<a href="https://www.int.gomarkets.com/" target="_blank" class="h-logo">
+					<img src="images/logo.svg"></a>
+				<div class="rightBar  d-flex justify-content-end">
+					<div class="c-hamburger c-hamburger--htla noselect sidebar-toggle"
+							data-toggle="push-menu"></div>
+					<!-- link to EN - contact page -->
+					<a href="javascript:" class="h_contact" target="_blank">
+						<img src="images/contact-green.svg" alt="">
+						<span>Contact us</span>
+					</a>
+					<div class="drop_box">
+						<div class="noselect drop_toogle d-flex">
+							<img src="images/language.svg" alt="">
+							<span>EN</span>
+							<i></i>
+						</div>
+						<ul class="scale_up bor5">
+							<li>
+								<a href="ClosedTradeSummary_CN.html">简体中文</a>
+								<a href="javascript:">한국어</a>
+							</li>
+						</ul>
+					</div>
+					<div class="drop_box logout_box">
+						<div class="d-flex align-items-center">
+							<div class="logout-name">
+								<p>CHINAIB TEST A/C</p>
+								<span>26003</span>
+							</div>
+							<span><img src="images/logout.svg" alt=""></span>
+						</div>
+						<ul class="scale_up">
+							<li>
+								<a href="login.html">SignOut</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+		<aside class="main-sidebar">
+			<section class="sidebar">
+                <div class="sidebar-pc-toggle d-flex justify-content-end">
+                    <div class="c-hamburger c-hamburger--htla noselect sidebar-toggle" data-toggle="push-menu">
+                    </div>
+                </div>
+				<div class="sidebar-menu">
+                    <ul>
+                        <li class="dashboard">
+                            <a href="Home.html" id="dashboard"><i></i><span>Dashboard</span></a>
+                        </li>
+                        <li class="clients">
+                            <a href="Clients.html" id="clients"><i></i><span>Clients</span></a>
+                        </li>
+                        <li class="closedTradeSummary">
+                            <a href="ClosedTradeSummary.html" id="closedTradeSummary"><i></i><span>Closed Trade
+                                    Summary</span></a>
+                        </li>
+                        <li class="closedTradeDetails">
+                            <a href="ClosedTradeDetails.html" id="closedTradeDetails"><i></i><span>Closed Trade
+                                    Details</span></a>
+                        </li>
+                        <li class="openTradeDetails">
+                            <a href="OpenTradeDetails.html" id="openTradeDetails"><i></i><span>Open Trade
+                                    Details</span></a>
+                        </li>
+                        <li class="commissionSummary">
+                            <a href="CommissionSummary.html" id="commissionSummary"><i></i><span>Commission
+                                    Summary</span></a>
+                        </li>
+                        <li class="commissionDetails">
+                            <a href="CommissionDetails.html" id="commissionDetails"><i></i><span>Commission
+                                    Details</span></a>
+                        </li>
+                        <li class="clientDeposits">
+                            <a href="ClientDeposits.html" id="clientDeposits"><i></i><span>Client Deposits</span></a>
+                        </li>
+                        <li class="clientWithdrawals">
+                            <a href="ClientWithdrawals.html" id="clientWithdrawals"><i></i><span>Client
+                                    Withdrawals</span></a>
+                        </li>
+                    </ul>
+
+				</div>
+			</section>
+		</aside>
+        <div class="content-wrapper">
+            <div class="box">
+                <div class="box-title"><span class="title-checked">Customer Volume/Trade Summary</span></div>
+                <p>Instructional text on what to do so you can generate your repors </p>
+                <div class="form-box">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <label>From</label>
+                                <span class="date-input">
+                                    <input type="text" readonly class="form-control" id="dateinfo1">
+                                </span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label>To</label>
+                                <span class="date-input">
+                                    <input type="text" readonly class="form-control" id="dateinfo2">
+                                </span>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label>IB Options</label>
+                                <select name="" class="form-control form-control-chosen">
+                                    <option value="">sdc </option>
+                                    <option value="">21233 </option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label>Customer Options</label>
+                                <select name="" class="form-control form-control-chosen">
+                                    <option value="">sdc </option>
+                                    <option value="">21233 </option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label class="search-label">&nbsp;</label>
+                                <span class="search-input">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center form-buttons">
+                            <div class="col-6 col-xl-2">
+                                <a href="javascript:" class="buttons buttons-success"> <div class="spinner-border" role="status"></div>查询</a>
+                            </div>
+                            <div class="col-6 col-xl-2">
+                                <a href="javascript:" class="buttons buttons-success"> <div class="spinner-border" role="status"></div>导出</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="table-box">
+                    <div class="table-responsive">
+                        <table class="table" id="table">
+                            <thead>
+                                <tr>
+                                    <th>Trading Item</th>
+                                    <th>Trading Lots</th>
+                                    <th>Settlement currency</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AUDCAD</td>
+                                    <td>0.05</td>
+                                    <td>USD</td>
+                                </tr>
+                                <tr>
+                                    <td>AUDCAD</td>
+                                    <td>0.05</td>
+                                    <td>USD</td>
+                                </tr>
+                                <tr>
+                                    <td>AUDCAD</td>
+                                    <td>0.05</td>
+                                    <td>USD</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <nav class="nav-box"><span class="table-total">Trading Size: <strong>1.18</strong></span>
+                        <div class="row justify-content-center justify-content-md-end align-items-center">
+                            <div class="show_cols d-flex align-items-center">
+                                <span class="show_cols_span">显示列数:</span>
+                                <div class="show_cols_sel">
+                                    <select name="" class="form-control form-control-chosen" id="">
+                                        <option>10</option>
+                                        <option>20</option>
+                                        <option>30</option>
+                                        <option>40</option>
+                                        <option>50</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <ul class="pagination">
+                                <li class="prev">
+                                    <a href="javascript:" class="disabled"><img src="images/next-icon.svg" alt=""></a>
+                                </li>
+                                <li class="current">
+                                    <a href="javascript:">1</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:">2</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:">3</a>
+                                </li>
+                                <li>
+                                    <span>...</span>
+                                </li>
+                                <li>
+                                    <a href="javascript:">12</a>
+                                </li>
+                                <li class="next">
+                                    <a href="javascript:"><img src="images/next-icon.svg" alt=""></a>
+                                </li>
+                            </ul>
+    
+                        </div>
+                    </nav>
+    
+    
+    
+                </div>
+    
+            </div>
+        </div>
+        <div class="foot">
+            This website is owned and operated by GO Markets. All contents © <span id="footer-year"></span> GO Markets. All rights reserved.
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-confirm.min.js"></script>
+        <script src="js/chosen.jquery.min.js"></script>
+        <script src="js/chosen.js"></script>
+        <script type="text/javascript" src="jedate/jedate_en.min.js"></script>
+        <script src="js/common.js"></script>
+    </body>
+    
+    </html>

@@ -34,13 +34,13 @@
 			<div class="drop_box">
 				<div class="noselect drop_toogle d-felx">
 					<img src="images/language-black.svg" alt="">
-					<span>EN</span>
+					<span>한국어</span>
 					<i></i>
 				</div>
 				<ul class="scale_up bor5">
 					<li>
+						<a href="login.html">EN</a>
 						<a href="login_CN.html">简体中文</a>
-						<a href="login_KR.html">한국어</a>
 					</li>
 				</ul>
 			</div>
@@ -56,23 +56,23 @@
 						<div class="col-md-12">
 							<div class="form-group">
 								<label><em>*</em>Account</label>
-								<input type="text" class="form-control" placeholder="Please enter your account"
+								<input type="text" class="form-control" placeholder="계정 번호를 입력해 주세요"
 									id="account" autocomplete="new-password" />
 							</div>
 						</div>
 						<div class="col-md-12">
 							<div class="form-group">
 								<label><em>*</em>Password</label>
-								<input type="password" class="form-control" placeholder="Please enter your password"
+								<input type="password" class="form-control" placeholder="비밀번호를 입력해 주세요"
 									id="password" autocomplete="new-password" />
 							</div>
 						</div>
 					</div>
 					<div class="forgot_pwd">
-						<a href="https://mygo.gomarkets.mu/" target="_blank">Forgot your Password?</a>
+						<a href="https://mygo.gomarkets.mu/" target="_blank">비밀번호를 잊어버리셨나요?</a>
 					</div>
 					<div class="login-btn">
-						<button type="button" id="login-btn" class="buttons buttons-success bor5"><div class="spinner-border" role="status"></div>Login</button>
+						<button type="button" id="login-btn" class="buttons buttons-success bor5"><div class="spinner-border" role="status"></div>로그인</button>
 					</div>
 					<div class="signup-text">
 						<span>Don’t have an account yet? <a href="https://gmsc.gomarkets.mu/Partner/IntroducingBrokers" target="_blank">Partner Signup</a></span>
@@ -123,11 +123,11 @@
 					closeIcon: true,
 					theme: 'Material',
 					icon: "modal-icon-warning",
-					title: "Account can not be empty.",
+					title: "계정 이름을 입력해 주세요",
 					content: "",
 					buttons: {
 						"OK": {
-							text:"OK",
+							text:"네",
 							btnClass: 'buttons buttons-success',
 						},
 					}
@@ -159,7 +159,7 @@
 				// 	}
 				// });
 			}else{
-				window.open('file:///G:/Project/Penny/GOMarkets/IBReport/Home.html','_self')
+				window.open('file:///G:/Project/Penny/GOMarkets/IBReport/Home_KR.html','_self')
 			}
 
 
