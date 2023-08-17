@@ -1,35 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta name="format-detection" content="telephone=no" />
-	<link rel="icon" href="favicon.ico">
-	<title></title>
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/jquery-confirm.min.css" />
-	<link rel="stylesheet" href="css/chosen-1.0.8.min.css" />
-	<link rel="stylesheet" href="css/interInput.css" />
-	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
-		rel="stylesheet">
-	<style type="text/css">
-		@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;700&display=swap);
-	</style>
-	<!--[if lt IE 9]>
-      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
-       <![endif]-->
-	<!--[if lte IE 8]>
- 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
- 		<![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-confirm.min.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/chosen.min.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;700&display=swap);
+    </style>
+    <!--IE兼容-->
+    <!--[if lt IE 9]>
+                  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+                  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
 </head>
 
 <body>
@@ -37,479 +31,227 @@
 		<div class="container-fluid">
 			<div class="h-box">
 				<a href="https://www.int.gomarkets.com/" target="_blank" class="h-logo">
-					<img src="images/logo.svg" height="24"></a>
-				<div class="rightBar  d-flex justify-content-md-end">
+					<img src="images/logo.svg"></a>
+				<div class="rightBar  d-flex justify-content-end">
+					<div class="c-hamburger c-hamburger--htla noselect sidebar-toggle"
+							data-toggle="push-menu"></div>
+					<!-- link to EN - contact page -->
+					<a href="javascript:" class="h_contact" target="_blank">
+						<img src="images/contact-green.svg" alt="">
+						<span>Contact us</span>
+					</a>
 					<div class="drop_box">
 						<div class="noselect drop_toogle d-flex">
 							<img src="images/language.svg" alt="">
-							<span>English</span>
+							<span>EN</span>
 							<i></i>
 						</div>
 						<ul class="scale_up bor5">
 							<li>
-								<a href="javascript:" onclick="alert('Coming soon')">繁體中文</a>
-							</li>
-							<li>
-								<a href="javascript:" onclick="alert('Coming soon')">简体中文</a>
+								<a href="CommissionSummary_CN.html">简体中文</a>
+								<a href="javascript:">한국어</a>
 							</li>
 						</ul>
 					</div>
-					<a href="mailto:"><img src="images/menu-mail.svg" alt=""></a>
-					<a href="javascript:" data-toggle="modal" data-target="#call-back-modal">
-						<img src="images/menu-callback.svg" alt="">
-					</a>
-					<a href="javascript:" class="h_callUs">Call Us: +248 4 671 903</a>
+					<div class="drop_box logout_box">
+						<div class="d-flex align-items-center">
+							<div class="logout-name">
+								<p>CHINAIB TEST A/C</p>
+								<span>26003</span>
+							</div>
+							<span><img src="images/logout.svg" alt=""></span>
+						</div>
+						<ul class="scale_up">
+							<li>
+								<a href="login.html">SignOut</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-	<aside class="step-body">
-		<p class="step-bar-bg"></p>
-		<p class="step-bar-bg-active"></p>
-		<div class="step-header">
-			<div class="container">
-				<div class="step-bar">
-					<div class="step-bar-active" style="width: 15%;"></div>
-				</div>
-				<ul class="row">
-					<li class="step-active col-xs-offset-1 col-xs-2">
-						<span></span>
-						<p>Start Your Application</p>
-					</li>
-					<li class="col-xs-2">
-						<span></span>
-						<p>Account Profile</p>
-					</li>
-					<li class="col-xs-2">
-						<span></span>
-						<p>Personal Details</p>
-					</li>
-					<li class="col-xs-2">
-						<span></span>
-						<p>Document Submission</p>
-					</li>
-					<li class="col-xs-2">
-						<span></span>
-						<p>Registration Complete</p>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</aside>
-	<section class="main-content">
-		<div class="container">
-			<div class="box">
-				<h5 class="box-title"><i></i>Account Profile</h5>
-				<div class="well-success">Please fill in your email address correctly so that you can receive the
-					account verification email we sent to you in time to continue your account opening application.
-				</div>
-				<div class="box-body">
-					<form class="form-horizontal">
-						<div class="form-group">
-							<label for="" class="col-lg-3 control-label"><em>*</em>Family Name:</label>
-							<div class="col-lg-5">
-								<input type="text" class="form-control" placeholder="please type in your Family Name">
-							</div>
-							<p class="col-lg-4 help-block success-block">check</p>
-						</div>
-						
-						<div class="form-group has-input-tips">
-							<label for="" class="col-lg-3 control-label"><em>*</em>Given Name:</label>
-							<div class="col-lg-5">
-								<input type="password" class="form-control" placeholder="Given Name">
-							</div>
-							<p class="col-lg-4 help-block">error!</p>
-						</div>
-						<div class="form-group input-tips">
-							<label for="" class="col-lg-3 control-label">&nbsp;</label>
-							<div class="col-lg-5">
-								<span class="f12">Please type in your given name on your ID Certificate in letters</span>
-							</div>
-						</div>
+    <aside class="main-sidebar">
+        <section class="sidebar">
+			<div class="sidebar-pc-toggle d-flex justify-content-end">
+                <div class="c-hamburger c-hamburger--htla noselect sidebar-toggle"
+                        data-toggle="push-menu">
+            </div>
+        </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="dashboard">
+                        <a href="Home.html" id="dashboard"><i></i><span>Dashboard</span></a>
+                    </li>
+                    <li class="clients">
+                        <a href="Clients.html" id="clients"><i></i><span>Clients</span></a>
+                    </li>
+                    <li class="closedTradeSummary">
+                        <a href="ClosedTradeSummary.html" id="closedTradeSummary"><i></i><span>Closed Trade
+                                Summary</span></a>
+                    </li>
+                    <li class="closedTradeDetails">
+                        <a href="ClosedTradeDetails.html" id="closedTradeDetails"><i></i><span>Closed Trade
+                                Details</span></a>
+                    </li>
+                    <li class="openTradeDetails">
+                        <a href="OpenTradeDetails.html" id="openTradeDetails"><i></i><span>Open Trade
+                                Details</span></a>
+                    </li>
+                    <li class="commissionSummary">
+                        <a href="CommissionSummary.html" id="commissionSummary"><i></i><span>Commission
+                                Summary</span></a>
+                    </li>
+                    <li class="commissionDetails">
+                        <a href="CommissionDetails.html" id="commissionDetails"><i></i><span>Commission
+                                Details</span></a>
+                    </li>
+                    <li class="clientDeposits">
+                        <a href="ClientDeposits.html" id="clientDeposits"><i></i><span>Client Deposits</span></a>
+                    </li>
+                    <li class="clientWithdrawals">
+                        <a href="ClientWithdrawals.html" id="clientWithdrawals"><i></i><span>Client
+                                Withdrawals</span></a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </aside>
+    <div class="content-wrapper">
+        <div class="box">
+            <div class="box-title"><span class="title-checked">Commission Summary</span></div>
+            <p>Instructional text on what to do so you can generate your repors </p>
+            <div class="form-box">
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label>From</label>
+                            <span class="date-input">
+                                <input type="text" readonly class="form-control" id="dateinfo1">
+                            </span>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>To</label>
+                            <span class="date-input">
+                                <input type="text" readonly class="form-control" id="dateinfo2">
+                            </span>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>IB Options</label>
+                            <select name="" class="form-control form-control-chosen">
+                                <option value="">sdc </option>
+                                <option value="">21233 </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Customer Options</label>
+                            <select name="" class="form-control form-control-chosen">
+                                <option value="">sdc </option>
+                                <option value="">21233 </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label class="search-label">&nbsp;</label>
+                            <span class="search-input">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center form-buttons">
+                        <div class="col-6 col-xl-2">
+                            <a href="javascript:" class="buttons buttons-success"> <div class="spinner-border" role="status"></div>查询</a>
+                        </div>
+                        <div class="col-6 col-xl-2">
+                            <a href="javascript:" class="buttons buttons-success"> <div class="spinner-border" role="status"></div>导出</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="table-box">
+                <div class="table-responsive">
+                    <table class="table" id="table">
+                        <thead>
+                            <tr>
+                                <th>Trading Item</th>
+                                <th>Pip Commission Amount</th>
+                                <th>Lot Commission Amount</th>
+                                <th>Settlement currency</th>
+                            </tr>
+                        </thead>
+                        <!-- <caption>
+                            <div class="spinner-border" role="status"></div>
+                            Loading, please wait...
+                        </caption> -->
+                        <tbody>
+                            <tr>
+                                <td>USDCAD</td>
+                                <td>$0.10</td>
+                                <td>$0.00</td>
+                                <td>USD</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <nav class="nav-box"><span class="table-total">Trading Commission: <strong>$0.00</strong></span>
+                    <div class="row justify-content-center justify-content-md-end align-items-center">
+                        <div class="show_cols d-flex align-items-center">
+                            <span class="show_cols_span">显示列数:</span>
+                            <div class="show_cols_sel">
+                                <select name="" class="form-control form-control-chosen" id="">
+                                    <option>10</option>
+                                    <option>20</option>
+                                    <option>30</option>
+                                    <option>40</option>
+                                    <option>50</option>
+                                </select>
+                            </div>
+                        </div>
+                        <ul class="pagination">
+                            <li class="prev">
+                                <a href="javascript:" class="disabled"><img src="images/next-icon.svg" alt=""></a>
+                            </li>
+                            <li class="current">
+                                <a href="javascript:">1</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">2</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">3</a>
+                            </li>
+                            <li>
+                                <span>...</span>
+                            </li>
+                            <li>
+                                <a href="javascript:">12</a>
+                            </li>
+                            <li class="next">
+                                <a href="javascript:"><img src="images/next-icon.svg" alt=""></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
 
 
-						<div class="form-group">
-							<label for="" class="col-lg-3 control-label"><em>*</em>Email address:</label>
-							<div class="col-lg-5">
-								<input type="text" class="form-control" placeholder="Please type in your email address">
-							</div>
-							<p class="col-lg-4 help-block error-block">!</p>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-lg-3 control-label"><em>*</em>Country:</label>
-							<div class="col-lg-5">
-								<select class="form-control form-control-chosen" data-placeholder="Please choose..."
-									id="select-country">
-									<option value="">Please choose...</option>
-									<option value="">China</option>
-								</select>
-							</div>
-							<p class="col-lg-4 help-block"></p>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-lg-3 control-label"><em>*</em>Phone Number:</label>
-							<div class="col-lg-5">
-								<div class="changeTel" style="">
-									<input type="text" class="form-control" placeholder="Type in phone number" />
-									<div class="changeTelSel">
-										<em class="telLine"></em>
-										<input maxlength="30" onkeyup="addnewareacode()" onchange="addnewareacode()"
-											type="text" name="registration[phone][main_phone]"
-											id="registration_phone_main_phone" />
-									</div>
-								</div>
-							</div>
-							<p class="col-lg-4 help-block"></p>
-						</div>
-						
-						<div class="form-group has-input-tips">
-							<label for="" class="col-lg-3 control-label"><em>*</em>Password:</label>
-							<div class="col-lg-5">
-								<input type="password" class="form-control" placeholder="Password">
-							</div>
-							<p class="col-lg-4 help-block">error!</p>
-						</div>
-						<div class="form-group input-tips">
-							<label for="" class="col-lg-3 control-label">&nbsp;</label>
-							<div class="col-lg-5">
-								<span class="f12">Your password shall contain 8-12 digits, with numbers and letters</span>
-							</div>
-						</div>
 
+            </div>
 
-
-						<div class="form-group">
-							<label for="" class="col-lg-3 control-label"><em>*</em>Confirm Password:</label>
-							<div class="col-lg-5">
-								<input type="password" class="form-control"
-									placeholder="Please retype in your password">
-							</div>
-							<p class="col-lg-4 help-block"></p>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-lg-3 control-label"><em>*</em>Please select your account
-								type:</label>
-							<div class="col-lg-5">
-								<select name="" class="form-control form-control-chosen"
-									data-placeholder="Please choose one item">
-									<option value="">Please choose one item</option>
-									<option value="">Individual Account</option>
-								</select>
-							</div>
-							<p class="col-lg-4 help-block"></p>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-lg-3 control-label"><em>*</em>Please select platform:</label>
-							<div class="col-lg-5">
-								<select name="" class="form-control form-control-chosen"
-									data-placeholder="Please choose one item">
-									<option value="">Please choose one item</option>
-									<option value="">MT4 account</option>
-									<option value="">MT5 stock CFD account</option>
-								</select>
-							</div>
-							<p class="col-lg-4 help-block"></p>
-						</div>
-						<div class="form-group">
-							<div class="col-lg-offset-3 col-md-2">
-								<button type="button" class="buttons buttons-success"
-									onclick="window.open('step2-1_en.html','_self')"><i
-										class="fa fa-spinner fa-spin"></i>Next</button>
-							</div>
-						</div>
-					</form>
-
-				</div>
-			</div>
-		</div>
-
-	</section>
-	<footer class="main-footer">
-		<div class="container">
-			<div class="footer-menu">
-				<a target="_blank" href="https://www.int.gomarkets.com/contact-us/">Contact Us</a>
-				<!--<span>|</span>
-					<a target="_blank" href="https://www.gomarkets.com/legal-documents/">Privacy Policy</a>
-					<span>|</span>
-					<a target="_blank" href="https://www.gomarkets.com/legal-documents/">Product Disclosure Statement</a>-->
-			</div>
-			<div class="footer-text">
-				<p>GO Markets brand is authorized and regulated in various jurisdictions. </p>
-				<p><b>Risk Warning:</b> Trading Forex and Derivatives carries a high level of risk, including the risk
-					of losing substantially more than your initial deposit. Leverage magnifies both gains and losses.
-					You should only trade in risk capital (capital you can afford to lose). Trading leveraged products
-					may not be suitable for all investors, please ensure that you fully understand the risks involved,
-					and take into consideration your level of experience, investment objectives and seek independent
-					advice if necessary. It is the responsibility of the Client to ascertain whether hee is permitted to
-					use the services provided by GO Markets based on the legal requirements in his/her country of
-					residence. Before you start to trade, please take some to fully read our <a
-						href="https://www.int.gomarkets.com/legal-documents/" target="_blank">Product Disclosure
-						Statement(PDS)</a>.</p>
-				<p>This website is owned and operated by GO Markets. All contents © <span id="footer-year"></span> GO
-					Markets. All rights reserved.</p>
-			</div>
-		</div>
-	</footer>
-
-	<div class="modal fade" id="call-back-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header"><button type="button" class="close" data-dismiss="modal"
-						aria-hidden="true">×</button>
-					<h4 class="modal-title">Call Back</h4>
-				</div>
-				<div class="modal-body">
-					<p><i class="fa fa-edit"></i>请正确填写您的信息，我们会尽快给您回电</p>
-					<form class="form-horizontal">
-						<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Name:</label>
-							<div class="col-sm-7"><input type="email" class="form-control" id="" placeholder="Name">
-							</div>
-						</div>
-						<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Email:</label>
-							<div class="col-sm-7"><input type="text" class="form-control" id="" placeholder="Email">
-							</div>
-						</div>
-						<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Country:</label>
-							<div class="col-sm-7">
-								<select id="country" class="form-control form-control-chosen"
-									data-placeholder="Please choose one item" name="country" title="country"
-									onkeyup="selCountry()" onchange="selCountry()">
-									<option value="" title="-">Please choose one item</option>
-									<option value="CN" title="+86">中国</option>
-									<option value="GB" title="+44">英国</option>
-									<option value="US" title="+001">美国</option>
-									<option value="CA" title="+1">加拿大</option>
-									<option value="AU" title="+61">澳大利亚</option>
-									<option value="TW" title="+886">中国台湾</option>
-									<option value="ID" title="+62">印度尼西亚</option>
-									<option value="SG" title="+65">新加坡</option>
-									<option value="" title="">-----------</option>
-									<option value="AL" title="+355">阿尔巴尼亚</option>
-									<option value="DZ" title="+213">阿尔及利亚</option>
-									<option value="AD" title="+376">安道尔</option>
-									<option value="AN" title="+599">荷属安的列斯群岛</option>
-									<option value="AG" title="+1268">安提瓜</option>
-									<option value="AR" title="+54">阿根廷</option>
-									<option value="AM" title="+374">亚美尼亚</option>
-									<option value="AW" title="+297">阿鲁巴</option>
-									<option value="AT" title="+43">奥地利</option>
-									<option value="AZ" title="+994">阿塞拜疆</option>
-									<option value="BS" title="+1242">巴哈马群岛</option>
-									<option value="BH" title="+973">巴林</option>
-									<option value="BD" title="+880">孟加拉</option>
-									<option value="BB" title="+268">巴巴多斯</option>
-									<option value="BY" title="+375">白俄罗斯</option>
-									<option value="BE" title="+32">比利时</option>
-									<option value="BZ" title="+501">伯利兹</option>
-									<option value="BJ" title="+229">贝宁</option>
-									<option value="BM" title="+441">百慕大</option>
-									<option value="BT" title="+975">不丹</option>
-									<option value="BO" title="+591">玻利维亚</option>
-									<option value="BA" title="+00387">波黑</option>
-									<option value="BW" title="+267">博茨瓦纳</option>
-									<option value="BR" title="+55">巴西</option>
-									<option value="VG" title="+001284">英属维尔京群岛</option>
-									<option value="BN" title="+673">文莱达鲁萨兰国</option>
-									<option value="BG" title="+359">保加利亚</option>
-									<option value="BF" title="+226">布基纳法索</option>
-									<option value="KH" title="+855">柬埔寨</option>
-									<option value="CM" title="+237">咔麦隆</option>
-									<option value="CA" title="+1">加拿大</option>
-									<option value="IC" title="+34">加那利群岛</option>
-									<option value="CV" title="+238">佛得角</option>
-									<option value="KY" title="+1-345">开曼群岛</option>
-									<option value="CF" title="+236">中非</option>
-									<option value="TD" title="+235">查德</option>
-									<option value="CL" title="+56">智利</option>
-									<option value="CO" title="+57">哥伦比亚</option>
-									<option value="CK" title="+682">库克群岛</option>
-									<option value="CR" title="+506">哥斯达黎加</option>
-									<option value="HR" title="+385">克罗埃西亚</option>
-									<option value="CY" title="+357">塞浦路斯</option>
-									<option value="CZ" title="+420">捷克共和国</option>
-									<option value="DK" title="+45">丹麦</option>
-									<option value="DJ" title="+253">吉布提</option>
-									<option value="DM" title="+1849">多米尼加岛</option>
-									<option value="TP" title="+670">东帝汶</option>
-									<option value="DO" title="+1849">多米尼加共和国</option>
-									<option value="EC" title="+593">厄瓜多尔</option>
-									<option value="EG" title="+20">埃及</option>
-									<option value="SV" title="+503">萨尔瓦多</option>
-									<option value="GQ" title="+240">赤道几内亚共和国</option>
-									<option value="EE" title="+372">爱沙尼亚</option>
-									<option value="ET" title="+251">埃塞俄比亚</option>
-									<option value="FO" title="+298">法罗群岛</option>
-									<option value="FJ" title="+679">斐济群岛</option>
-									<option value="FI" title="+358">芬兰</option>
-									<option value="FR" title="+33">法国</option>
-									<option value="GF" title="+594">法属圭亚那</option>
-									<option value="GA" title="+241">加蓬共和国</option>
-									<option value="GM" title="+220">冈比亚</option>
-									<option value="GE" title="+995">乔治亚</option>
-									<option value="DE" title="+49">德国</option>
-									<option value="GH" title="+233">加纳</option>
-									<option value="GI" title="+350">直布罗陀</option>
-									<option value="GR" title="+30">希腊</option>
-									<option value="GL" title="+45">格陵兰</option>
-									<option value="GD" title="+1473">格瑞那达国</option>
-									<option value="GP" title="+00590">瓜德罗普</option>
-									<option value="GT" title="+502">瓜地马拉</option>
-									<option value="GN" title="+00224">几内亚</option>
-									<option value="GY" title="+592">盖亚那</option>
-									<option value="HT" title="+509">海地</option>
-									<option value="HN" title="+504">洪都拉斯</option>
-									<option value="HK" title="+852">中国香港</option>
-									<option value="HU" title="+36">匈牙利</option>
-									<option value="IS" title="+354">冰岛</option>
-									<option value="IN" title="+91">印度</option>
-									<option value="ID" title="+62">印度尼西亚</option>
-									<option value="IE" title="+353">爱尔兰</option>
-									<option value="IL" title="+00972">以色列</option>
-									<option value="IT" title="+39">意大利</option>
-									<option value="JM" title="+876">牙买加</option>
-									<option value="JO" title="+962">约旦</option>
-									<option value="KZ" title="+7">哈萨克斯坦</option>
-									<option value="KE" title="+254">肯尼亚</option>
-									<option value="KW" title="+965">科威特</option>
-									<option value="KG" title="+996">吉尔吉斯斯坦</option>
-									<option value="LA" title="+856">老挝</option>
-									<option value="LV" title="+371">拉脱维亚</option>
-									<option value="LB" title="+961">黎巴嫩</option>
-									<option value="LS" title="+266">莱索托</option>
-									<option value="LR" title="+231">利比里亚</option>
-									<option value="LI" title="+423">列支敦斯登</option>
-									<option value="LT" title="+370">立陶宛</option>
-									<option value="LU" title="+352">卢森堡</option>
-									<option value="MO" title="+853">中国澳门</option>
-									<option value="MK" title="+389">马其顿</option>
-									<option value="MG" title="+261">马达加斯加</option>
-									<option value="MW" title="+265">马拉维</option>
-									<option value="MY" title="+60">马来西亚</option>
-									<option value="MV" title="+960">马尔代夫</option>
-									<option value="MT" title="00356">马耳他</option>
-									<option value="MH" title="+692">马绍尔群岛</option>
-									<option value="MQ" title="+596">马提尼克岛</option>
-									<option value="MR" title="+222">茅利塔尼亚</option>
-									<option value="MU" title="+230">毛里求斯</option>
-									<option value="MX" title="+52">墨西哥</option>
-									<option value="MD" title="+373">摩尔多瓦</option>
-									<option value="MC" title="+377">摩纳哥</option>
-									<option value="MN" title="+976">蒙古</option>
-									<option value="ME" title="+382">黑山</option>
-									<option value="MS" title="+001664">蒙特塞拉特</option>
-									<option value="MA" title="+212">摩洛哥</option>
-									<option value="MZ" title="+258">莫桑比克</option>
-									<option value="NA" title="+264">纳米比亚</option>
-									<option value="NR" title="+674">瑙鲁</option>
-									<option value="NP" title="+977">尼泊尔</option>
-									<option value="NL" title="+31">荷兰</option>
-									<option value="NC" title="+687">新喀里多尼亚</option>
-									<option value="NZ" title="+64">新西兰</option>
-									<option value="NI" title="+505">尼加拉瓜</option>
-									<option value="NE" title="+227">尼日尔</option>
-									<option value="NO" title="+47">挪威</option>
-									<option value="OM" title="+968">阿曼</option>
-									<option value="PK" title="+92">巴基斯坦</option>
-									<option value="PA" title="+507">巴拿马</option>
-									<option value="PG" title="+675">巴布亚新几内亚</option>
-									<option value="PY" title="+595">巴拉圭</option>
-									<option value="PE" title="+51">秘鲁</option>
-									<option value="PH" title="+63">菲律宾</option>
-									<option value="PL" title="+48">波兰</option>
-									<option value="PT" title="+351">葡萄牙</option>
-									<option value="QA" title="+974">卡塔尔</option>
-									<option value="RE" title="+262">留尼汪岛</option>
-									<option value="RO" title="+40">罗马尼亚</option>
-									<option value="RU" title="+7">俄国</option>
-									<option value="RW" title="+250">卢旺达</option>
-									<option value="WS" title="+685">西萨摩亚</option>
-									<option value="SM" title="+378">圣马力诺共和国</option>
-									<option value="SA" title="+966">沙特阿拉伯</option>
-									<option value="SN" title="+221">塞内加尔</option>
-									<option value="RS" title="+381">塞尔维亚</option>
-									<option value="SC" title="+248">塞舌尔共和国</option>
-									<option value="SL" title="+232">塞拉利昂</option>
-									<option value="SG" title="+65">新加坡</option>
-									<option value="SK" title="+421">斯洛伐克共和国</option>
-									<option value="SI" title="+386">斯洛文尼亚</option>
-									<option value="SB" title="+677">所罗门群岛</option>
-									<option value="ZA" title="+27">南非</option>
-									<option value="KR" title="+82">韩国</option>
-									<option value="ES" title="+34">西班牙</option>
-									<option value="LK" title="+0094">斯里兰卡</option>
-									<option value="KN" title="+1 869">圣基茨</option>
-									<option value="LC" title="+1-758">圣卢西亚</option>
-									<option value="PM" title="(+7)812">圣彼得堡</option>
-									<option value="VC" title="+1784">圣文森特</option>
-									<option value="SR" title="+597">苏里南</option>
-									<option value="SZ" title="+41">瑞士</option>
-									<option value="SE" title="+46">瑞典</option>
-									<option value="CH" title="+41">瑞士</option>
-									<option value="TJ" title="+992">塔吉克斯坦</option>
-									<option value="PF" title="+00689">大溪地</option>
-									<option value="TW" title="+886">中国台湾</option>
-									<option value="TZ" title="+255">坦桑尼亚</option>
-									<option value="TH" title="+66">泰国</option>
-									<option value="TG" title="+228">多哥</option>
-									<option value="TO" title="+675">汤加</option>
-									<option value="TN" title="+216">突尼斯</option>
-									<option value="TR" title="+90">土耳其</option>
-									<option value="TM" title="+993">土库曼</option>
-									<option value="UG" title="+256">乌干达</option>
-									<option value="UA" title="+380">乌克兰</option>
-									<option value="AE" title="+971">阿拉伯联合酋长国</option>
-									<option value="GB" title="+44">英国</option>
-									<option value="US" title="+001">美国</option>
-									<option value="UY" title="+598">乌拉圭</option>
-									<option value="UZ" title="+998">乌兹别克斯坦</option>
-									<option value="VU" title="+00678">瓦努阿图共和国</option>
-									<option value="VA" title="+379">梵蒂冈</option>
-									<option value="VE" title="+58">委内瑞拉</option>
-									<option value="VN" title="+84">越南</option>
-									<option value="YE" title="+967">也门</option>
-									<option value="ZM" title="+260">赞比亚</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>City:</label>
-							<div class="col-sm-7"><input type="text" class="form-control" id="" placeholder="City">
-							</div>
-						</div>
-						<div class="form-group"><label for="" class="col-sm-4 control-label"><em>*</em>Phone
-								Number:</label>
-							<div class="col-sm-7 modal-call-back">
-								<div>
-									<!--<span id="CountryNumber">+86</span>-->
-									<input type="text" id="CountryNumber" value="+86" />
-								</div><input type="text" class="form-control" placeholder="Phone Number"
-									id="phonenumber">
-							</div>
-						</div>
-						<div class="form-group"><label for="" class="col-sm-4 control-label">Comments:</label>
-							<div class="col-sm-7"><textarea name="" rows="" cols="" class="form-control"></textarea>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="modal-footer"><button type="button" class="buttons buttons-success btn-sm"
-						data-dismiss="modal">Submit<i class="fa fa-angle-right"></i></button>
-					<a class="" href="https://www.gomarkets.com/legal-documents/" target="_blank">Privacy Policy</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery-confirm.min.js"></script>
-	<script src="js/chosen-1.1.8.min.js"></script>
-	<script src="js/telInput.js"></script>
-	<script src="js/chosen.js"></script>
-	<script src="js/common.js"></script>
-	<script>
-		$(function () {
-			$("#select-country").siblings(".chosen-container").children("a").addClass("error-form-control");
-		});
-	</script>
+        </div>
+    </div>
+    <div class="foot">
+        This website is owned and operated by GO Markets. All contents © <span id="footer-year"></span> GO Markets. All
+        rights reserved.
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-confirm.min.js"></script>
+    <script src="js/chosen.jquery.min.js"></script>
+    <script src="js/chosen.js"></script>
+    <script type="text/javascript" src="jedate/jedate_en.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>
