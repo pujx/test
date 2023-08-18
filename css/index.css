@@ -199,22 +199,27 @@ body.sidebar-open{overflow:hidden}
 .sidebar-menu>ul>li.closedTradeDetails>a i{background-image:url(../images/m-closed-detail.svg)}
 .sidebar-menu>ul>li.active.closedTradeDetails>a i{background-image:url(../images/m-closed-detail-hover.svg)}
 .sidebar-menu>ul>li.openTradeDetails>a i{background-image:url(../images/m-open-details.svg)}
-.sidebar-menu>ul>li.openTradeDetails>a:hover i,.sidebar-menu>ul>li.active.openTradeDetails>a i{background-image:url(../images/m-open-details-hover.svg)}
+.sidebar-menu>ul>li.active.openTradeDetails>a i{background-image:url(../images/m-open-details-hover.svg)}
 .sidebar-menu>ul>li.commissionSummary>a i{background-image:url(../images/m-com-summary.svg)}
-.sidebar-menu>ul>li.commissionSummary>a:hover i,.sidebar-menu>ul>li.active.commissionSummary>a i{background-image:url(../images/m-com-summary-hover.svg)}
+.sidebar-menu>ul>li.active.commissionSummary>a i{background-image:url(../images/m-com-summary-hover.svg)}
 .sidebar-menu>ul>li.commissionDetails>a i{background-image:url(../images/m-com-details.svg)}
-.sidebar-menu>ul>li.commissionDetails>a:hover i,.sidebar-menu>ul>li.active.commissionDetails>a i{background-image:url(../images/m-com-details-hover.svg)}
+.sidebar-menu>ul>li.active.commissionDetails>a i{background-image:url(../images/m-com-details-hover.svg)}
 .sidebar-menu>ul>li.clientDeposits>a i{background-image:url(../images/m-client-deposit.svg)}
-.sidebar-menu>ul>li.clientDeposits>a:hover i,.sidebar-menu>ul>li.active.clientDeposits>a i{background-image:url(../images/m-client-deposit-hover.svg)}
+.sidebar-menu>ul>li.active.clientDeposits>a i{background-image:url(../images/m-client-deposit-hover.svg)}
 .sidebar-menu>ul>li.clientWithdrawals>a i{background-image:url(../images/m-client-withdrawal.svg)}
-.sidebar-menu>ul>li.clientWithdrawals>a:hover i,.sidebar-menu>ul>li.active.clientWithdrawals>a i{background-image:url(../images/m-client-withdrawal-hover.svg)}
+.sidebar-menu>ul>li.active.clientWithdrawals>a i{background-image:url(../images/m-client-withdrawal-hover.svg)}
 
 @media screen and (min-width:1200px){
-    .sidebar-menu>ul>li>a:hover{background:rgba(52,251,127,.1);color:#0BAB47}
+.sidebar-menu>ul>li>a:hover{background:rgba(52,251,127,.1);color:#0BAB47}
 .sidebar-menu>ul>li.dashboard>a:hover i{background-image:url(../images/m-dashboard-hover.svg)}
 .sidebar-menu>ul>li.clients>a:hover i{background-image:url(../images/m-clients-hover.svg)}
 .sidebar-menu>ul>li.closedTradeSummary>a:hover i{background-image:url(../images/m-closed-sum-hover.svg)}
 .sidebar-menu>ul>li.closedTradeDetails>a:hover i{background-image:url(../images/m-closed-detail-hover.svg)}
+.sidebar-menu>ul>li.openTradeDetails>a:hover i{background-image:url(../images/m-open-details-hover.svg)}
+.sidebar-menu>ul>li.commissionSummary>a:hover i{background-image:url(../images/m-com-summary-hover.svg)}
+.sidebar-menu>ul>li.commissionDetails>a:hover i{background-image:url(../images/m-com-details-hover.svg)}
+.sidebar-menu>ul>li.clientDeposits>a:hover i{background-image:url(../images/m-client-deposit-hover.svg)}
+.sidebar-menu>ul>li.clientWithdrawals>a:hover i{background-image:url(../images/m-client-withdrawal-hover.svg)}
 
 }
 
