@@ -190,7 +190,6 @@ body.sidebar-open{overflow:hidden}
 .sidebar-menu>ul>li>a{display:block;font-size:14px;line-height:1.3;padding:13px;transition:all .3s}
 
 
-.sidebar-menu>ul>li>a:hover{background:rgba(52,251,127,.1);color:#0BAB47}
 .sidebar-menu>ul>li.dashboard>a i{background-image:url(../images/m-dashboard.svg)}
 .sidebar-menu>ul>li.active.dashboard>a i{background-image:url(../images/m-dashboard-hover.svg)}
 .sidebar-menu>ul>li.clients>a i{background-image:url(../images/m-clients.svg)}
@@ -211,6 +210,7 @@ body.sidebar-open{overflow:hidden}
 .sidebar-menu>ul>li.clientWithdrawals>a:hover i,.sidebar-menu>ul>li.active.clientWithdrawals>a i{background-image:url(../images/m-client-withdrawal-hover.svg)}
 
 @media screen and (min-width:1200px){
+    .sidebar-menu>ul>li>a:hover{background:rgba(52,251,127,.1);color:#0BAB47}
 .sidebar-menu>ul>li.dashboard>a:hover i{background-image:url(../images/m-dashboard-hover.svg)}
 .sidebar-menu>ul>li.clients>a:hover i{background-image:url(../images/m-clients-hover.svg)}
 .sidebar-menu>ul>li.closedTradeSummary>a:hover i{background-image:url(../images/m-closed-sum-hover.svg)}
